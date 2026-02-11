@@ -1,0 +1,25 @@
+[app]
+name = "efficient-advertising"
+version = "1.0.0"
+description = "WordPress site for Efficient Advertising"
+
+[app.env]
+# These will be set by Wasmer Edge's MySQL database
+DB_HOST = "${DB_HOST}"
+DB_NAME = "${DB_NAME}"
+DB_USER = "${DB_USER}"
+DB_PASSWORD = "${DB_PASSWORD}"
+
+[dependencies]
+"wordpress/wordpress" = "^6.4"
+
+[[app.volumes]]
+name = "wp-content"
+mount = "/app/wp-content"
+
+[build]
+type = "wordpress"
+
+[deploy]
+replicas = 1
+region = "global"
