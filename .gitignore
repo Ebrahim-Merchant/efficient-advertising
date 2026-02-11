@@ -1,17 +1,42 @@
-# WordPress
+# WordPress Core Files (don't track WordPress itself)
+/index.php
+/license.txt
+/readme.html
+/wp-*.php
+/xmlrpc.php
+/wp-admin/
+/wp-includes/
 wp-config.php
 .htaccess
+
+# WordPress Content (except custom theme)
+wp-content/*
+!wp-content/themes/
+wp-content/themes/*
+!wp-content/themes/efficient-modern/
 
 # Uploads
 wp-content/uploads/*
 !wp-content/uploads/.gitkeep
 
-# Cache
+# Cache & Optimization
 wp-content/cache/
 wp-content/w3tc-config/
+wp-content/litespeed/
+wp-content/speedycache-config/
+wp-content/wflogs/
+wp-content/wflogs-old/
+wp-content/object-cache.php
+wp-content/advanced-cache-backup.php
+wp-content/.litespeed_conf.dat
 
-# Plugins (comment out if you want to track them)
-# wp-content/plugins/
+# Maintenance & Backups
+wp-content/ai1wm-backups/
+wp-content/updraft/
+wp-content/maintenance/
+wp-content/maintenance.php
+wp-content/mc_data/
+wp-content/index.php-old
 
 # Logs
 *.log
