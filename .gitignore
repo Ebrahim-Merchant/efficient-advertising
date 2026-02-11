@@ -1,0 +1,38 @@
+# WordPress
+wp-config.php
+.htaccess
+
+# Uploads
+wp-content/uploads/*
+!wp-content/uploads/.gitkeep
+
+# Cache
+wp-content/cache/
+wp-content/w3tc-config/
+
+# Plugins (comment out if you want to track them)
+# wp-content/plugins/
+
+# Logs
+*.log
+logs/
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Backups
+*.sql
+*.tar.gz
+*.zip
+backup/
+backups/
+
+# Local environment
+local-xdebuginfo.php
