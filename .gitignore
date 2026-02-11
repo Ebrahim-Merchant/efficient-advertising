@@ -1,25 +1,9 @@
-# WordPress Core Files (don't track WordPress itself)
-/index.php
-/license.txt
-/readme.html
-/wp-*.php
-/xmlrpc.php
-/wp-admin/
-/wp-includes/
+# WordPress config (keep local only)
 wp-config.php
-.htaccess
 
-# WordPress Content (except custom theme)
-wp-content/*
-!wp-content/themes/
-wp-content/themes/*
-!wp-content/themes/efficient-modern/
-
-# Uploads
-wp-content/uploads/*
-!wp-content/uploads/.gitkeep
-
-# Cache & Optimization
+# WordPress Content (track only custom theme)
+wp-content/plugins/
+wp-content/uploads/
 wp-content/cache/
 wp-content/w3tc-config/
 wp-content/litespeed/
@@ -29,14 +13,17 @@ wp-content/wflogs-old/
 wp-content/object-cache.php
 wp-content/advanced-cache-backup.php
 wp-content/.litespeed_conf.dat
-
-# Maintenance & Backups
 wp-content/ai1wm-backups/
 wp-content/updraft/
 wp-content/maintenance/
 wp-content/maintenance.php
 wp-content/mc_data/
 wp-content/index.php-old
+
+# Other themes (keep only efficient-modern)
+wp-content/themes/Efficient/
+wp-content/themes/twentytwentyfive/
+wp-content/themes/twentytwentythree/
 
 # Logs
 *.log
@@ -61,3 +48,4 @@ backups/
 
 # Local environment
 local-xdebuginfo.php
+.htaccess
