@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EfficientAdvt.Com — Pre-Launch Deployment Checklist — Hostinger</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; font-size: 14px; color: #1a1a1a; background: #f4f6f8; line-height: 1.6; }
+  .page-wrap { max-width: 1000px; margin: 0 auto; padding: 30px 20px; }
+
+  .cover { background: linear-gradient(135deg, #0d1b2a 0%, #1b3a5c 60%, #7c3aed 100%); color: #fff; border-radius: 12px; padding: 44px 50px 38px; margin-bottom: 28px; }
+  .cover-logo { font-size: 11px; letter-spacing: 3px; text-transform: uppercase; opacity: .6; margin-bottom: 12px; }
+  .cover h1 { font-size: 28px; font-weight: 800; margin-bottom: 8px; }
+  .cover .subtitle { font-size: 15px; opacity: .8; margin-bottom: 20px; }
+  .cover-meta { display: flex; gap: 24px; flex-wrap: wrap; margin-top: 20px; }
+  .cover-meta-item { background: rgba(255,255,255,0.12); border-radius: 8px; padding: 10px 18px; }
+  .cover-meta-item .label { font-size: 10px; letter-spacing: 2px; text-transform: uppercase; opacity: .7; display: block; margin-bottom: 3px; }
+  .cover-meta-item .value { font-size: 14px; font-weight: 700; }
+
+  .section-title { font-size: 17px; font-weight: 700; color: #1b3a5c; padding: 10px 0 6px; margin: 28px 0 14px; border-bottom: 2px solid #e0e7ef; }
+
+  .card { background: #fff; border-radius: 10px; margin-bottom: 12px; box-shadow: 0 2px 8px rgba(0,0,0,.06); overflow: hidden; }
+  .card-header { display: flex; align-items: center; gap: 10px; padding: 13px 18px; background: #fafafa; border-bottom: 1px solid #f0f0f0; }
+  .card-body { padding: 14px 18px; font-size: 13px; }
+  .card-body p { margin-bottom: 7px; }
+  .card-body ul, .card-body ol { margin: 6px 0 6px 20px; }
+  .card-body li { margin-bottom: 5px; }
+  code { background: #f1f5f9; padding: 2px 6px; border-radius: 4px; font-family: 'Consolas', monospace; font-size: 12px; }
+  pre { background: #1e293b; color: #e2e8f0; padding: 14px 18px; border-radius: 8px; font-size: 12px; overflow-x: auto; margin: 10px 0; line-height: 1.7; }
+  pre .comment { color: #94a3b8; }
+  pre .key { color: #7dd3fc; }
+  pre .val { color: #86efac; }
+
+  .badge { font-size: 10px; font-weight: 700; padding: 3px 9px; border-radius: 20px; text-transform: uppercase; letter-spacing: .5px; white-space: nowrap; }
+  .badge.blocker { background: #fee2e2; color: #991b1b; }
+  .badge.required { background: #ffedd5; color: #9a3412; }
+  .badge.done { background: #dcfce7; color: #166534; }
+  .badge.info { background: #dbeafe; color: #1e40af; }
+  .badge.warn { background: #fef9c3; color: #713f12; }
+
+  .card-title { font-size: 14px; font-weight: 700; color: #1a1a1a; flex: 1; }
+  .step-num { background: #1b3a5c; color: #fff; width: 26px; height: 26px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; flex-shrink: 0; }
+
+  .done-box { background: #f0fdf4; border-left: 4px solid #16a34a; border-radius: 6px; padding: 10px 14px; margin: 8px 0; font-size: 12.5px; color: #14532d; }
+  .warn-box { background: #fffbeb; border-left: 4px solid #f59e0b; border-radius: 6px; padding: 10px 14px; margin: 8px 0; font-size: 12.5px; color: #713f12; }
+  .info-box { background: #eff6ff; border-left: 4px solid #3b82f6; border-radius: 6px; padding: 10px 14px; margin: 8px 0; font-size: 12.5px; color: #1e3a5f; }
+  .danger-box { background: #fff1f2; border-left: 4px solid #e11d48; border-radius: 6px; padding: 10px 14px; margin: 8px 0; font-size: 12.5px; color: #881337; }
+
+  table { width: 100%; border-collapse: collapse; margin: 10px 0; }
+  th { background: #1b3a5c; color: #fff; padding: 9px 12px; text-align: left; font-size: 12px; }
+  td { padding: 9px 12px; border-bottom: 1px solid #f0f4f8; font-size: 13px; vertical-align: top; }
+  tr:last-child td { border-bottom: none; }
+
+  .check { color: #16a34a; font-weight: 700; }
+  .cross { color: #dc2626; font-weight: 700; }
+  .warn { color: #d97706; font-weight: 700; }
+
+  .footer { text-align: center; margin-top: 40px; padding: 20px; color: #888; font-size: 12px; border-top: 1px solid #e0e7ef; }
+  @media print { body { background: #fff; } .page-wrap { padding: 0; } .cover { border-radius: 0; } }
+</style>
+</head>
+<body>
+<div class="page-wrap">
+
+  <div class="cover">
+    <div class="cover-logo">Pre-Production Deployment Audit</div>
+    <h1>EfficientAdvt.Com — Hostinger Launch Checklist</h1>
+    <div class="subtitle">All critical issues verified &bull; Step-by-step migration guide &bull; Nothing left to chance</div>
+    <div class="cover-meta">
+      <div class="cover-meta-item"><span class="label">From</span><span class="value">LocalWP (efficientadvt.local)</span></div>
+      <div class="cover-meta-item"><span class="label">To</span><span class="value">Hostinger (efficientadvt.com)</span></div>
+      <div class="cover-meta-item"><span class="label">WordPress</span><span class="value">6.8.2</span></div>
+      <div class="cover-meta-item"><span class="label">Date</span><span class="value">March 11, 2026</span></div>
+    </div>
+  </div>
+
+  <!-- ── FIXES ALREADY APPLIED (just now) ── -->
+  <div class="section-title">✅ Fixes Applied in This Pre-Launch Session</div>
+
+  <div class="card">
+    <div class="card-header"><span class="badge done">Done</span><span class="card-title">ga4-fix — Consolidated duplicate gtag declarations in header.php</span></div>
+    <div class="card-body">
+      <p>Both the GA4 block and Google Ads block were independently declaring <code>window.dataLayer</code> and <code>function gtag(){}</code>. Google's specification says only one <code>gtag.js</code> script + one initialization is needed. Both tags now share a single block:</p>
+      <pre><span class="comment">&lt;!-- Single unified gtag block --&gt;</span>
+<span class="key">&lt;script</span> async src="https://www.googletagmanager.com/gtag/js?id=G-38EQB75ZRX"<span class="key">&gt;&lt;/script&gt;</span>
+&lt;script&gt;
+  <span class="val">window.dataLayer = window.dataLayer || [];</span>
+  <span class="val">function gtag(){dataLayer.push(arguments);}</span>
+  <span class="val">gtag('js', new Date());</span>
+  <span class="val">gtag('config', 'G-38EQB75ZRX');  </span><span class="comment">// GA4</span>
+  <span class="val">gtag('config', 'AW-854448823'); </span><span class="comment">// Google Ads</span>
+&lt;/script&gt;</pre>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header"><span class="badge done">Done</span><span class="card-title">wp-config — WP_ENVIRONMENT_TYPE set to 'production' + security constants added</span></div>
+    <div class="card-body">
+      <div class="done-box">
+        <strong>Changed in wp-config.php:</strong>
+        <ul style="margin-top:5px">
+          <li><code>WP_ENVIRONMENT_TYPE</code>: <code>'local'</code> → <code>'production'</code></li>
+          <li><code>FORCE_SSL_ADMIN</code>: added <code>true</code> — forces wp-admin over HTTPS</li>
+          <li><code>DISALLOW_FILE_EDIT</code>: added <code>true</code> — disables theme/plugin editor in dashboard (security best practice)</li>
+          <li><code>WP_DEBUG_LOG</code>: added <code>false</code> — ensures no debug.log on production</li>
+          <li><code>WP_DEBUG_DISPLAY</code>: added <code>false</code> — no PHP errors shown on screen</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header"><span class="badge done">Done</span><span class="card-title">https-redirect — HTTPS enforcement added to .htaccess</span></div>
+    <div class="card-body">
+      <p>Added a <code>301 Permanent Redirect</code> rule inside the WordPress rewrite block. All <code>http://</code> requests will be permanently redirected to <code>https://</code>. This works with Hostinger's free Let's Encrypt SSL.</p>
+      <pre><span class="comment"># Force HTTPS on all requests</span>
+<span class="val">RewriteCond %{HTTPS} off</span>
+<span class="val">RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]</span></pre>
+    </div>
+  </div>
+
+  <!-- ── CRITICAL: MUST DO BEFORE GOING LIVE ── -->
+  <div class="section-title">🔴 MUST DO — Blockers Before Going Live (Your Action Required)</div>
+
+  <div class="card">
+    <div class="card-header"><span class="badge blocker">Blocker 1</span><span class="card-title">Create a MySQL database on Hostinger and update wp-config.php</span></div>
+    <div class="card-body">
+      <p>Your current <code>wp-config.php</code> has local database credentials that will NOT work on Hostinger. You must update these before (or immediately after) uploading:</p>
+      <div class="danger-box"><strong>Current (LocalWP — will fail on Hostinger):</strong><br>
+        DB_NAME = <code>local</code> &nbsp;|&nbsp; DB_USER = <code>root</code> &nbsp;|&nbsp; DB_PASSWORD = <code>root</code> &nbsp;|&nbsp; DB_HOST = <code>localhost</code>
+      </div>
+      <p><strong>Steps to get your Hostinger DB credentials:</strong></p>
+      <ol>
+        <li>Login to <strong>Hostinger hPanel</strong> → <strong>Databases → MySQL Databases</strong></li>
+        <li>Click <strong>Create New Database</strong> — note the database name (will be like <code>u123456789_efficientadvt</code>)</li>
+        <li>Create a database user and assign it to the database with ALL PRIVILEGES</li>
+        <li>Note the hostname (usually <code>localhost</code> on Hostinger shared hosting)</li>
+        <li>Update these 4 lines in <code>wp-config.php</code>:</li>
+      </ol>
+      <pre><span class="key">define</span>( 'DB_NAME',     '<span class="val">u123456789_your_db_name</span>' );
+<span class="key">define</span>( 'DB_USER',     '<span class="val">u123456789_your_db_user</span>' );
+<span class="key">define</span>( 'DB_PASSWORD', '<span class="val">YourStrongPassword123!</span>' );
+<span class="key">define</span>( 'DB_HOST',     '<span class="val">localhost</span>' );</pre>
+      <div class="warn-box"><strong>⚠️ Do this BEFORE importing the database on Hostinger.</strong></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header"><span class="badge blocker">Blocker 2</span><span class="card-title">Migrate site using All-in-One WP Migration (handles URL replace automatically)</span></div>
+    <div class="card-body">
+      <p>The database currently has <code>http://efficientadvt.local</code> in many places (siteurl, home, Elementor data, logo URL, theme options, etc.). This must be replaced with <code>https://efficientadvt.com</code> on the live site.</p>
+      <p><strong>Recommended method — All-in-One WP Migration (already installed):</strong></p>
+      <ol>
+        <li>In your <strong>local WordPress</strong> dashboard → <strong>Plugins → Activate All-in-One WP Migration</strong></li>
+        <li>Go to <strong>All-in-One WP Migration → Export</strong></li>
+        <li>Click <strong>Advanced Options</strong> and set:<br>
+          &nbsp;&nbsp;• <em>Replace:</em> <code>http://efficientadvt.local</code><br>
+          &nbsp;&nbsp;• <em>With:</em> <code>https://efficientadvt.com</code></li>
+        <li>Export as <strong>.wpress</strong> file and download it</li>
+        <li>On Hostinger: Install WordPress fresh (minimum version), then install All-in-One WP Migration plugin</li>
+        <li>Go to <strong>All-in-One WP Migration → Import</strong> → upload the <code>.wpress</code> file</li>
+        <li>After import: Update <code>wp-config.php</code> with the Hostinger DB credentials</li>
+      </ol>
+      <div class="info-box"><strong>Why this method?</strong> All-in-One WP Migration handles the serialized PHP data in the database correctly — manually running SQL REPLACE() on serialized data corrupts string length counts and breaks WordPress. The plugin does it safely.</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header"><span class="badge blocker">Blocker 3</span><span class="card-title">Enable Free SSL in Hostinger hPanel before going live</span></div>
+    <div class="card-body">
+      <ol>
+        <li>Login to <strong>Hostinger hPanel → SSL → SSL Certificates</strong></li>
+        <li>Select your domain <strong>efficientadvt.com</strong> → Install <strong>Let's Encrypt Free SSL</strong></li>
+        <li>Wait 5–10 minutes for SSL to propagate</li>
+        <li>Visit <code>https://efficientadvt.com</code> — should show a green padlock</li>
+      </ol>
+      <div class="info-box">The HTTPS redirect in <code>.htaccess</code> we added will only work correctly after SSL is installed on the server. Installing SSL before pointing DNS is fine — Hostinger pre-provisions it.</div>
+    </div>
+  </div>
+
+  <!-- ── REQUIRED STEPS ── -->
+  <div class="section-title">🟠 Required Steps — Complete in Order</div>
+
+  <div class="card">
+    <div class="card-header"><span class="badge required">Step 1</span><span class="card-title">Point your domain DNS to Hostinger nameservers</span></div>
+    <div class="card-body">
+      <p>At your domain registrar, update the nameservers to Hostinger's:</p>
+      <pre>ns1.dns-parking.com
+ns2.dns-parking.com</pre>
+      <p><em>(Verify the exact nameservers in your Hostinger hPanel → Domains → NS Records)</em></p>
+      <div class="warn-box"><strong>DNS propagation takes 4–48 hours.</strong> Plan your launch accordingly. During this window, your local site remains accessible at <code>efficientadvt.local</code>.</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header"><span class="badge required">Step 2</span><span class="card-title">Create a full backup with UpdraftPlus before deploying</span></div>
+    <div class="card-body">
+      <p>Before migrating, create a full backup of the current local site:</p>
+      <ol>
+        <li>In your local WordPress → <strong>Settings → UpdraftPlus</strong></li>
+        <li>Click <strong>Backup Now</strong> — backup files + database</li>
+        <li>Download the backup ZIP files to a safe location</li>
+      </ol>
+      <div class="warn-box">This is your safety net. If anything goes wrong during migration, you can restore from here.</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header"><span class="badge required">Step 3</span><span class="card-title">Remove local-xdebuginfo.php from the site root (Hostinger won't need it)</span></div>
+    <div class="card-body">
+      <p>The file <code>local-xdebuginfo.php</code> is a LocalWP development tool — it should NOT be uploaded to production at all. It is currently blocked via <code>.htaccess</code>, but deleting it is cleaner.</p>
+      <div class="info-box">We have already blocked web access to it in <code>.htaccess</code>. Before uploading to Hostinger, delete this file from the local folder: <br><code>c:\Users\merch\Local Sites\EfficientAdvt.Com\app\public\local-xdebuginfo.php</code></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header"><span class="badge required">Step 4</span><span class="card-title">After migration: Test the full site checklist</span></div>
+    <div class="card-body">
+      <table>
+        <tr><th>Test</th><th>What to Check</th></tr>
+        <tr><td>Homepage loads</td><td>Visit <code>https://efficientadvt.com</code> — no broken images, correct logo</td></tr>
+        <tr><td>HTTP → HTTPS redirect</td><td>Visit <code>http://efficientadvt.com</code> — should auto-redirect to https</td></tr>
+        <tr><td>wp-admin login</td><td>Visit <code>https://efficientadvt.com/wp-admin</code> — should force HTTPS</td></tr>
+        <tr><td>Contact Form 7</td><td>Submit a test enquiry — verify email arrives</td></tr>
+        <tr><td>Payment page</td><td>Open <code>/payment/</code> — form should load, PayPal redirect should go to efficientadvt.com</td></tr>
+        <tr><td>Images &amp; media</td><td>Check no broken images (Media Library URLs should now be https://efficientadvt.com)</td></tr>
+        <tr><td>Analytics</td><td>Open Google Analytics → Realtime — visit the site, confirm your visit appears</td></tr>
+        <tr><td>Google Search Console</td><td>Add <code>https://efficientadvt.com</code> property and verify ownership</td></tr>
+        <tr><td>Wordfence scan</td><td>WP Admin → Wordfence → Scan — run a full scan after migration</td></tr>
+        <tr><td>LiteSpeed Cache</td><td>Clear all cache after migration: LiteSpeed → Toolbox → Purge All</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <!-- ── ABOUT DELETED HOSTINGER FILES ── -->
+  <div class="section-title">ℹ️ About the Deleted Hostinger Files — No Impact</div>
+
+  <div class="card">
+    <div class="card-header"><span class="badge info">Clarified</span><span class="card-title">hostinger-mu-plugin.php &amp; hostinger-preview-domain.php — deletion has no negative impact</span></div>
+    <div class="card-body">
+      <p>These files were orphaned leftovers from a <em>previous</em> Hostinger account setup. Here's why their deletion is safe:</p>
+      <ul>
+        <li><strong>What they were:</strong> Auto-installed single-file plugins that Hostinger adds when you install WordPress through their panel. They were tied to a previous Hostinger account configuration.</li>
+        <li><strong>Why they're gone:</strong> They referenced non-existent Hostinger API endpoints, causing PHP notices on every page load.</li>
+        <li><strong>Will Hostinger re-add them?</strong> Only if you use Hostinger's "<em>Install WordPress</em>" button — which you are NOT doing (you're migrating via All-in-One WP Migration). When migrating, Hostinger does not inject these files automatically.</li>
+        <li><strong>If Hostinger did add them:</strong> They'd be the <em>current</em> version tied to your new account — which would be correct and desired behavior.</li>
+      </ul>
+      <div class="done-box"><strong>✅ Conclusion: No impact. Safe to proceed.</strong> The deletion cleaned up stale files that were causing errors, not removing critical functionality.</div>
+    </div>
+  </div>
+
+  <!-- ── PRE-LAUNCH SECURITY STATUS ── -->
+  <div class="section-title">🛡️ Pre-Launch Security Status</div>
+
+  <table>
+    <tr><th>Check</th><th>Status</th><th>Detail</th></tr>
+    <tr><td>SQL Injection in payment form</td><td class="check">✅ Fixed</td><td><code>$wpdb->insert()</code> + full sanitization</td></tr>
+    <tr><td>CSRF on payment form</td><td class="check">✅ Fixed</td><td>wp_nonce_field + wp_verify_nonce</td></tr>
+    <tr><td>Suspicious YuQ.js.php</td><td class="check">✅ Deleted</td><td>Web shell pattern file removed</td></tr>
+    <tr><td>WP File Manager (RCE risk)</td><td class="check">✅ Deleted</td><td>High CVE history plugin removed</td></tr>
+    <tr><td>Duplicate security plugins</td><td class="check">✅ Fixed</td><td>MalCare removed, Wordfence active only</td></tr>
+    <tr><td>Sensitive files exposed</td><td class="check">✅ Blocked</td><td>readme.html, license.txt etc. blocked in .htaccess</td></tr>
+    <tr><td>wp-config.php accessible</td><td class="check">✅ Blocked</td><td>.htaccess &lt;Files&gt; directive</td></tr>
+    <tr><td>Error log path disclosure</td><td class="check">✅ Fixed</td><td>error_log deleted + .htaccess block</td></tr>
+    <tr><td>Security HTTP headers</td><td class="check">✅ Added</td><td>X-Frame-Options, CSP, Referrer-Policy, etc.</td></tr>
+    <tr><td>HTTPS enforcement</td><td class="check">✅ Added</td><td>301 redirect rule in .htaccess</td></tr>
+    <tr><td>WordPress debug mode</td><td class="check">✅ Off</td><td>WP_DEBUG = false, WP_DEBUG_DISPLAY = false</td></tr>
+    <tr><td>File editor in dashboard</td><td class="check">✅ Disabled</td><td>DISALLOW_FILE_EDIT = true</td></tr>
+    <tr><td>SSL admin forced</td><td class="check">✅ Added</td><td>FORCE_SSL_ADMIN = true</td></tr>
+    <tr><td>Migration plugins</td><td class="check">✅ Inactive</td><td>Installed but deactivated in DB</td></tr>
+    <tr><td>jQuery version</td><td class="check">✅ Fixed</td><td>WP core jQuery replaces bundled 3.3.1</td></tr>
+    <tr><td>PayPal demo domain URL</td><td class="check">✅ Fixed</td><td>home_url() used — auto-uses production domain</td></tr>
+    <tr><td>DB charset</td><td class="check">✅ Fixed</td><td>utf8mb4 (emoji + full Unicode support)</td></tr>
+    <tr><td>GA analytics tracking</td><td class="check">✅ Active</td><td>GA4 G-38EQB75ZRX + Ads AW-854448823 (unified)</td></tr>
+    <tr><td>Database local URL (siteurl/home)</td><td class="warn">⚠️ Must replace</td><td>Currently: http://efficientadvt.local — will be fixed by All-in-One WP Migration export with URL replacement</td></tr>
+    <tr><td>DB credentials in wp-config.php</td><td class="warn">⚠️ Must update</td><td>Update with Hostinger MySQL credentials after creating DB</td></tr>
+    <tr><td>Default table prefix wp_</td><td class="warn">⚠️ Low risk</td><td>SQL injection fixed — this is a minor hardening point</td></tr>
+  </table>
+
+  <!-- ── QUICK REFERENCE ── -->
+  <div class="section-title">📋 Quick Reference — Files Modified in This Session</div>
+
+  <table>
+    <tr><th>File</th><th>Change</th></tr>
+    <tr><td><code>wp-content/themes/Efficient/header.php</code></td><td>Consolidated GA4 + Google Ads into single unified gtag block (no duplicate dataLayer)</td></tr>
+    <tr><td><code>wp-config.php</code></td><td>WP_ENVIRONMENT_TYPE → production; added FORCE_SSL_ADMIN, DISALLOW_FILE_EDIT, WP_DEBUG_LOG/DISPLAY = false</td></tr>
+    <tr><td><code>.htaccess</code></td><td>Added 301 HTTP→HTTPS redirect rule inside WordPress rewrite block</td></tr>
+  </table>
+
+  <div class="footer">
+    Pre-Launch Checklist — EfficientAdvt.Com → Hostinger Migration &mdash; March 11, 2026 &mdash; GitHub Copilot
+  </div>
+
+</div>
+</body>
+</html>

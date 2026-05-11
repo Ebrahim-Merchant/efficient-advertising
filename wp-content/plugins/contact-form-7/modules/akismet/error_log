@@ -1,0 +1,20 @@
+[08-Sep-2024 06:41:57 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wpcf7_include_module_file() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/akismet/akismet.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/akismet/akismet.php on line 8
+[08-Sep-2024 21:08:23 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wpcf7_include_module_file() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/akismet/akismet.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/akismet/akismet.php on line 8
+[17-Sep-2024 03:05:43 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wpcf7_include_module_file() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/akismet/akismet.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/akismet/akismet.php on line 8
+[09-Feb-2025 10:09:17 Asia/Karachi] PHP Fatal error:  Uncaught Error: Call to undefined function wpcf7_include_module_file() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/akismet/akismet.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/akismet/akismet.php on line 8
+[09-Feb-2025 10:09:18 Asia/Karachi] PHP Fatal error:  Uncaught Error: Call to undefined function wpcf7_include_module_file() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/akismet/akismet.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/akismet/akismet.php on line 8

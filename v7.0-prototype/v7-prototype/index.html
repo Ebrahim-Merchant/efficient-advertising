@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efficient Advertising | V7 Merged Prototype</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@400;700&family=Nunito+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="dark-theme">
+    <div class="custom-cursor" id="cursor"></div>
+    <div class="noise-overlay"></div>
+    <div class="glow-orb" id="orb"></div>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <div class="logo-shield"><i class="fas fa-layer-group"></i></div>
+                <span>EFFICIENT</span>
+            </a>
+            <div class="nav-right">
+                <a href="#work" class="nav-link hover-target">Solutions</a>
+                <a href="#capabilities" class="nav-link hover-target">Services</a>
+                <a href="#ea-quote" class="btn-neumorphic hover-target">Get Quote</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-top">
+                <p class="fade-up">Dubai's Premier Media House</p>
+                <div class="hero-stats fade-up delay-1">
+                    <span>Est. 2008</span>
+                    <span class="dot"></span>
+                    <span>300+ Products</span>
+                </div>
+            </div>
+            
+            <div class="hero-main fade-up delay-2">
+                <h1 class="massive-text hover-target">
+                    WE PRINT <br>
+                    <span class="indent-text text-neon">THE FUTURE.</span>
+                </h1>
+            </div>
+            
+            <div class="hero-bottom fade-up delay-3">
+                <p class="hero-desc">Elevating brands through precision large format printing, architectural signage, and immersive fleet branding.</p>
+                <div class="scroll-indicator">
+                    <span class="scroll-text">DRAG TO EXPLORE</span>
+                    <div class="scroll-line"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="capabilities" id="work">
+        <div class="marquee hover-target">
+            <div class="marquee-content">
+                <span>LARGE FORMAT</span><span class="spacer">•</span>
+                <span>3D NEON SIGNAGE</span><span class="spacer">•</span>
+                <span>VEHICLE WRAPPING</span><span class="spacer">•</span>
+                <span>CORPORATE GIFTS</span><span class="spacer">•</span>
+                <span>LARGE FORMAT</span><span class="spacer">•</span>
+                <span>3D NEON SIGNAGE</span><span class="spacer">•</span>
+                <span>VEHICLE WRAPPING</span><span class="spacer">•</span>
+                <span>CORPORATE GIFTS</span><span class="spacer">•</span>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="neu-grid mt-4">
+                <div class="neu-card reveal hover-target">
+                    <div class="neu-icon-box"><i class="fas fa-map"></i></div>
+                    <h3>Large Format</h3>
+                    <p>Massive scale prints, flexes, and backdrops that dominate spaces.</p>
+                </div>
+                <div class="neu-card reveal hover-target" style="transition-delay: 150ms;">
+                    <div class="neu-icon-box"><i class="fas fa-bolt"></i></div>
+                    <h3>Neon Signage</h3>
+                    <p>3D structural signage and LED displays built for impact.</p>
+                </div>
+                <div class="neu-card reveal hover-target" style="transition-delay: 300ms;">
+                    <div class="neu-icon-box"><i class="fas fa-car"></i></div>
+                    <h3>Fleet Wrapping</h3>
+                    <p>High-fidelity vehicle branding for mobile marketing impact.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rest of the sections following the Merged V7 pattern -->
+    <section class="container mt-4 mb-2">
+        <div class="neu-card reveal" style="padding: 60px; display: flex; gap: 40px; align-items: center;">
+            <div style="flex: 1;">
+                <span class="tagline">Same-Day Service</span>
+                <h2 style="font-size: 3rem; margin: 1rem 0;">Urgent Printing?</h2>
+                <p style="color: var(--text-secondary); margin-bottom: 2rem;">We offer express turnaround for roll-ups, banners, and backdrops at our Ras Al Khor facility.</p>
+                <a href="#" class="btn-neumorphic hover-target"><i class="fab fa-whatsapp"></i> Instant WhatsApp</a>
+            </div>
+            <div style="flex: 1; height: 300px; background: var(--shadow-dark); border-radius: 20px; box-shadow: var(--neu-in);"></div>
+        </div>
+    </section>
+
+    <footer class="footer-neu" id="contact">
+        <div class="container text-center">
+            <h2 class="massive-text footer-text hover-target">LET'S BUILD.</h2>
+            <div class="social-neu mt-2">
+                <a href="#" class="btn-neumorphic icon-only hover-target"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="btn-neumorphic icon-only hover-target"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            <p class="mt-4 copy">&copy; 2026 Efficient Advertising. Redefining physical media.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

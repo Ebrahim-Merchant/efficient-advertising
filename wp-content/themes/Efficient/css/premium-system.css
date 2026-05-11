@@ -1,0 +1,346 @@
+/* 
+ * Premium System CSS - Extracted from header.php
+ * Part of the "Lightweight WooCommerce" (Phase 2) Implementation.
+ */
+
+/* ===== TOP ROW ===== */
+.logtophead {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: 12px 0;
+}
+
+/* ── LEFT: logo + tagline ── */
+.ea-toprow-left {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-shrink: 0;
+}
+.ea-toprow-left .middle {
+  flex-shrink: 0;
+  width: auto !important;
+  padding: 0 !important;
+  float: none !important;
+}
+.ea-toprow-left .logo img {
+  width: auto !important;
+  height: 72px !important;
+  display: block;
+  object-fit: contain;
+  -webkit-user-drag: none;
+  user-select: none;
+  -webkit-user-select: none;
+  pointer-events: none;
+}
+.logtophead .think {
+  font-size: 18px !important;
+  font-weight: 800 !important;
+  color: #1e293b !important;
+  margin: 0 !important;
+  line-height: 1.45;
+  white-space: nowrap;
+  letter-spacing: 0.2px;
+}
+
+/* ── RIGHT: flag+loc | phone | search | buttons ── */
+.ea-toprow-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-shrink: 0;
+}
+
+/* Fix for Vertical List in Header: Force Horizontal Navigation */
+.navbar-nav {
+  display: flex !important;
+  flex-direction: row !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  float: none !important;
+}
+
+.navbar-nav > li {
+  float: none !important;
+  display: inline-block !important;
+}
+
+.navbar-nav > li > a {
+  padding: 10px 15px !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.5px !important;
+  white-space: nowrap !important;
+  color: #334155 !important;
+  transition: all 0.3s ease;
+}
+
+.navbar-nav > li > a:hover {
+  color: #2563eb !important;
+  background: transparent !important;
+}
+
+.navbar-nav > li .dropdown-menu {
+  border: none;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  border-top: 2px solid #2563eb;
+  padding: 10px 0;
+}
+
+.ea-toprow-flag-loc {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+.ea-toprow-flag-loc > img {
+  width: 32px;
+  height: 21px;
+  border-radius: 3px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.22);
+  display: block;
+  flex-shrink: 0;
+}
+.ea-toprow-location {
+  display: block;
+  color: #475569;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.5;
+  white-space: normal;
+  max-width: 120px;
+  text-decoration: none !important;
+}
+.ea-toprow-location:hover { color: #1e293b !important; text-decoration: none !important; }
+
+.ea-toprow-divider {
+  width: 1px;
+  height: 36px;
+  background: #e2e8f0;
+  flex-shrink: 0;
+}
+
+.ea-toprow-phone {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #16a34a !important;
+  font-weight: 700;
+  font-size: 14px;
+  white-space: nowrap;
+  text-decoration: none !important;
+}
+.ea-toprow-phone:hover { color: #15803d !important; text-decoration: none !important; }
+
+.ea-toprow-search {
+  display: flex;
+  align-items: center;
+  background: #f1f5f9;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 34px;
+  transition: border-color 0.2s;
+}
+.ea-toprow-search:focus-within { border-color: #2563eb; background: #fff; }
+.ea-toprow-search input {
+  border: none !important;
+  background: transparent !important;
+  padding: 0 6px 0 14px !important;
+  height: 34px !important;
+  font-size: 12px !important;
+  color: #1e293b !important;
+  width: 140px;
+  outline: none !important;
+  box-shadow: none !important;
+  line-height: 34px !important;
+}
+.ea-toprow-search input::placeholder { color: #94a3b8; }
+.ea-toprow-search button {
+  border: none !important;
+  background: #2563eb;
+  color: #fff;
+  height: 34px;
+  width: 34px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 0 20px 20px 0;
+  transition: background 0.2s;
+  padding: 0;
+}
+.ea-toprow-search button:hover { background: #1d4ed8; }
+
+@media (max-width: 1280px) {
+  .ea-toprow-flag-loc { display: none; }
+  .ea-toprow-right { gap: 14px; }
+}
+@media (max-width: 1024px) {
+  .ea-toprow-search { display: none; }
+  .ea-toprow-phone .ph-text { display: none; }
+}
+@media (max-width: 767px) {
+  .ea-toprow-phone { display: none; }
+  .ea-toprow-divider { display: none; }
+}
+
+/* ===== FULL-WIDTH LAYOUT — overrides Bootstrap 3 fixed container widths ===== */
+html, body {
+  width: 100% !important;
+  max-width: 100% !important;
+  overflow-x: hidden;
+}
+.container,
+.navbar > .container,
+.navbar > .container-fluid {
+  width: 100% !important;
+  max-width: 1440px !important;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  box-sizing: border-box !important;
+}
+.homebaner,
+.homebaner img,
+#header,
+#footer,
+nav.navbar {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-height: auto !important;
+  background: #ffffff !important;
+  border: none !important;
+  margin-bottom: 0 !important;
+}
+
+/* Hide redundant navbar brand if using custom logo */
+.navbar-brand { display: none !important; }
+
+/* Center the Main Nav in the Bottom Header Row */
+.headerbottom {
+  border-top: 1px solid #f1f5f9;
+  padding: 5px 0;
+}
+
+#myNavbar {
+  display: flex !important;
+  justify-content: center;
+  border: none !important;
+}
+
+/* =====================================================================
+   OPTION C — PURE GOTHAM TYPOGRAPHY SYSTEM
+   ===================================================================== */
+html { font-size: 17px !important; }
+body {
+  font-family: 'Gotham', 'Helvetica Neue', Arial, sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 1rem !important;
+  line-height: 1.7 !important;
+  color: #1f2937;
+}
+
+body p, body li, body td, body input, body textarea, body select, body button {
+  font-family: 'Gotham', 'Helvetica Neue', Arial, sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 1rem !important;
+  line-height: 1.7 !important;
+}
+
+h1, .h1, .sp-hero-h1, .cat-hero-title, .ea-hero-h1 {
+  font-family: 'Gotham', 'Helvetica Neue', Arial, sans-serif !important;
+  font-weight: 900 !important;
+  font-size: clamp(2rem, 5vw, 3rem) !important;
+  line-height: 1.15 !important;
+  letter-spacing: -0.02em;
+  color: #0f172a;
+}
+
+.sp-hero h1, .sp-hero .sp-hero-h1, .cat-hero h1, .cat-hero .cat-hero-title, .ea-seo-hero h1 {
+  color: #ffffff !important;
+}
+
+h2, .h2, .sp-sec-hdr h2, .cat-sec-hdr h2, .ea-sec-title {
+  font-family: 'Gotham', 'Helvetica Neue', Arial, sans-serif !important;
+  font-weight: 700 !important;
+  font-size: clamp(1.5rem, 3.5vw, 2.2rem) !important;
+  line-height: 1.25 !important;
+  letter-spacing: -0.01em;
+  color: #1e293b;
+}
+
+h3, .h3, .sp-why-title, .cat-why-title, .ea-card-title {
+  font-family: 'Gotham', 'Helvetica Neue', Arial, sans-serif !important;
+  font-weight: 600 !important;
+  font-size: clamp(1.15rem, 2.5vw, 1.5rem) !important;
+  line-height: 1.3 !important;
+  color: #1e293b;
+}
+
+h4, .h4 {
+  font-family: 'Gotham', 'Helvetica Neue', Arial, sans-serif !important;
+  font-weight: 600 !important;
+  font-size: 1.1rem !important;
+  color: #334155;
+}
+
+small, .small, .sp-panel-label, .sp-breadcrumb, .cat-breadcrumb, .sp-spec-label, .sp-pricing-tbl th, .sp-trust-item, figcaption {
+  font-family: 'Gotham', 'Helvetica Neue', Arial, sans-serif !important;
+  font-weight: 300 !important;
+  font-size: 0.82rem !important;
+  letter-spacing: 0.03em;
+  color: #64748b;
+}
+
+.sp-panel-val, .sp-spec-val, strong, b {
+  font-family: 'Gotham', 'Helvetica Neue', Arial, sans-serif !important;
+  font-weight: 700 !important;
+  color: inherit;
+}
+
+.navbar-nav > li > a, .dropdown-menu > li > a, .navbar .think {
+  font-family: 'Gotham', 'Helvetica Neue', Arial, sans-serif !important;
+}
+
+.btn, .sp-btn-wa, .sp-btn-quote, .sp-btn-call, .sp-price-wa, .sp-panel-cta, .ea-cta-btn {
+  font-family: 'Gotham', 'Helvetica Neue', Arial, sans-serif !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.02em;
+}
+
+/* ── Footer / Dark Sections ── */
+#footer, #footer p, #footer li, #footer a, #footer span, #footer h2, #footer h3, #footer h4, .foterlogo p, .footerheading p {
+  font-family: 'Gotham', 'Helvetica Neue', Arial, sans-serif !important;
+  font-size: 0.9rem !important;
+  color: rgba(255,255,255,0.82) !important;
+}
+#footer .footerheading h2, #footer .footerheading h3 {
+  font-size: clamp(1rem, 2vw, 1.25rem) !important;
+  font-weight: 700 !important;
+  color: #ffffff !important;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.ea-dark-section, .ea-dark-section p, .ea-dark-section li, .ea-dark-section span, .ea-dark-section a, .ea-dark-section label {
+  color: rgba(255,255,255,0.82) !important;
+}
+.ea-dark-section h1, .ea-dark-section h2, .ea-dark-section h3, .ea-dark-section h4, .ea-dark-section .ea-stat-number {
+  color: #ffffff !important;
+}
+.ea-dark-section .ea-stat-label {
+  color: rgba(255,255,255,0.65) !important;
+  font-size: 0.82rem !important;
+}
+
+.sp-hero, .sp-hero p, .sp-hero h1, .sp-hero h2, .sp-hero h3, .cat-hero, .cat-hero p, .cat-hero h1, .cat-hero h2, .cat-hero h3, .sp-trust-bar, .sp-trust-bar p, .sp-cta-strip, .sp-cta-strip p, .sp-cta-strip h2 {
+  color: #ffffff !important;
+}
+
+@media (max-width: 767px) { html { font-size: 15px; } }

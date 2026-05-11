@@ -1,0 +1,97 @@
+/* ═══════════════════════════════════════════════════════════════════
+   EA-HOMEPAGE-PREMIUM-V2-GLOBAL
+   Status: PTR-005 Premium Typography Active
+   Fonts: Manrope (Headings), Inter (Body)
+   ═══════════════════════════════════════════════════════════════════ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@700;800&display=swap');
+
+:root {
+  --ea-font-heading: 'Manrope', sans-serif;
+  --ea-font-body: 'Inter', sans-serif;
+}
+
+/* Global Typography Apply - Forced Universal */
+body.ea-preview-active-v2,
+body.ea-preview-active-v2 p,
+body.ea-preview-active-v2 span,
+body.ea-preview-active-v2 div,
+body.ea-preview-active-v2 li,
+body.ea-preview-active-v2 a,
+body.ea-preview-active-v2 td,
+body.ea-preview-active-v2 input,
+body.ea-preview-active-v2 textarea,
+body.ea-preview-active-v2 button {
+  font-family: var(--ea-font-body) !important;
+}
+
+body.ea-preview-active-v2 h1,
+body.ea-preview-active-v2 h2,
+body.ea-preview-active-v2 h3,
+body.ea-preview-active-v2 h4,
+body.ea-preview-active-v2 h5,
+body.ea-preview-active-v2 h6,
+body.ea-preview-active-v2 .ea-hp-label,
+body.ea-preview-active-v2 .ea-hp-hero-label,
+body.ea-preview-active-v2 .navbar-nav a,
+body.ea-preview-active-v2 .ea-premium-heading {
+  font-family: var(--ea-font-heading) !important;
+}
+
+/* ── PTR-004: AGENCY GLOW (HERO) ── */
+
+body.ea-preview-active-v2 #ea-hp-hero {
+  background: #112338 !important; /* Deeper, more premium navy */
+  padding: 110px 0 !important; /* Elite vertical rhythm */
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+/* Suble Radial Glow Overlay */
+body.ea-preview-active-v2 #ea-hp-hero::before {
+  content: "" !important;
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  width: 150% !important;
+  height: 150% !important;
+  background: radial-gradient(
+    circle at center,
+    rgba(43, 77, 112, 0.4) 0%,
+    rgba(17, 35, 56, 0) 70%
+  ) !important;
+  z-index: 1 !important;
+  pointer-events: none !important;
+}
+
+/* Ensure content sits above the glow */
+body.ea-preview-active-v2 #ea-hp-hero .container,
+body.ea-preview-active-v2 #ea-hp-hero .ea-hp-hero-inner {
+  position: relative !important;
+  z-index: 2 !important;
+}
+
+/* Refine Hero Heading Spacing */
+body.ea-preview-active-v2 #ea-hp-hero h1 {
+  margin-bottom: 30px !important;
+  line-height: 1.1 !important;
+  letter-spacing: -0.5px !important;
+}
+
+/* V2 GLOBAL INDICATOR (Bottom Right) */
+body.ea-preview-active-v2::after {
+  content: "V2 MIRROR ACTIVE";
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #FFC107;
+  color: #000;
+  padding: 4px 8px;
+  font-size: 10px;
+  font-weight: 900;
+  border-radius: 4px;
+  z-index: 999999;
+  pointer-events: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}

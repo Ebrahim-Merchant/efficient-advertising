@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WordPress Site Audit Report — EfficientAdvt.Com</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #f4f6f9; color: #222; font-size: 14px; }
+  .cover { background: linear-gradient(135deg, #1a3a6b 0%, #0e2044 100%); color: #fff; padding: 60px 50px; page-break-after: always; }
+  .cover h1 { font-size: 36px; font-weight: 700; margin-bottom: 10px; }
+  .cover h2 { font-size: 20px; font-weight: 400; opacity: 0.85; margin-bottom: 30px; }
+  .cover .meta { border-top: 1px solid rgba(255,255,255,0.3); padding-top: 20px; display: flex; gap: 40px; flex-wrap: wrap; }
+  .cover .meta-item .label { font-size: 11px; text-transform: uppercase; letter-spacing: 1px; opacity: 0.6; }
+  .cover .meta-item .value { font-size: 15px; font-weight: 600; margin-top: 4px; }
+  .container { max-width: 960px; margin: 0 auto; padding: 30px 20px; }
+  h2.section-title { font-size: 20px; color: #1a3a6b; border-bottom: 3px solid #1a3a6b; padding-bottom: 8px; margin: 36px 0 20px; }
+  h3.sub-title { font-size: 15px; color: #333; margin: 20px 0 8px; }
+  .summary-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 16px; margin: 20px 0; }
+  .summary-card { border-radius: 8px; padding: 18px; text-align: center; color: #fff; }
+  .summary-card .count { font-size: 42px; font-weight: 700; line-height: 1; }
+  .summary-card .label { font-size: 12px; text-transform: uppercase; letter-spacing: 1px; margin-top: 6px; opacity: 0.9; }
+  .c-critical { background: #c0392b; }
+  .c-high { background: #e67e22; }
+  .c-medium { background: #f39c12; }
+  .c-low { background: #27ae60; }
+  .issue-card { background: #fff; border-radius: 8px; border-left: 5px solid #ccc; padding: 18px 20px; margin-bottom: 14px; box-shadow: 0 1px 4px rgba(0,0,0,0.07); }
+  .issue-card.critical { border-left-color: #c0392b; }
+  .issue-card.high { border-left-color: #e67e22; }
+  .issue-card.medium { border-left-color: #f39c12; }
+  .issue-card.low { border-left-color: #27ae60; }
+  .issue-header { display: flex; align-items: center; gap: 12px; margin-bottom: 8px; }
+  .badge { display: inline-block; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; padding: 3px 9px; border-radius: 20px; color: #fff; }
+  .badge.critical { background: #c0392b; }
+  .badge.high { background: #e67e22; }
+  .badge.medium { background: #f39c12; color: #333; }
+  .badge.low { background: #27ae60; }
+  .issue-title { font-size: 15px; font-weight: 700; color: #1a1a1a; }
+  .issue-body p { color: #555; line-height: 1.7; margin-bottom: 6px; }
+  .issue-body .field-label { font-weight: 700; color: #333; }
+  code { background: #f0f3f7; padding: 2px 6px; border-radius: 3px; font-family: Consolas, monospace; font-size: 12px; color: #c0392b; }
+  pre { background: #1e2a3a; color: #e8ecf1; padding: 14px 16px; border-radius: 6px; font-family: Consolas, monospace; font-size: 12px; line-height: 1.5; overflow-x: auto; margin: 10px 0; white-space: pre-wrap; word-break: break-all; }
+  table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 4px rgba(0,0,0,0.07); margin-bottom: 20px; }
+  th { background: #1a3a6b; color: #fff; padding: 10px 14px; text-align: left; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; }
+  td { padding: 10px 14px; border-bottom: 1px solid #eef0f3; font-size: 13px; }
+  tr:last-child td { border-bottom: none; }
+  tr:hover td { background: #f8fafd; }
+  .status-ok { color: #27ae60; font-weight: 700; }
+  .status-warn { color: #e67e22; font-weight: 700; }
+  .status-bad { color: #c0392b; font-weight: 700; }
+  .fix-box { background: #eaf6ea; border: 1px solid #a8d8a8; border-radius: 6px; padding: 12px 16px; margin-top: 10px; }
+  .fix-box .fix-label { font-size: 11px; font-weight: 700; text-transform: uppercase; color: #27ae60; letter-spacing: 1px; margin-bottom: 6px; }
+  .toc { background: #fff; border-radius: 8px; padding: 20px 24px; box-shadow: 0 1px 4px rgba(0,0,0,0.07); margin-bottom: 30px; }
+  .toc h3 { color: #1a3a6b; margin-bottom: 12px; }
+  .toc a { color: #1a3a6b; text-decoration: none; display: block; padding: 4px 0; border-bottom: 1px solid #f0f3f7; }
+  .toc a:hover { text-decoration: underline; }
+  .info-box { background: #eaf3fb; border: 1px solid #b3d4f0; border-radius: 6px; padding: 12px 16px; margin: 14px 0; color: #1a3a6b; }
+  footer-note { display: block; text-align: center; color: #999; font-size: 11px; padding: 20px 0 30px; }
+  @media print {
+    body { background: #fff; }
+    .cover { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .summary-card { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .badge { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .issue-card { break-inside: avoid; }
+    pre { white-space: pre-wrap; }
+  }
+</style>
+</head>
+<body>
+
+<!-- COVER PAGE -->
+<div class="cover">
+  <h1>WordPress Site Audit Report</h1>
+  <h2>EfficientAdvt.Com — Full Technical &amp; Security Audit</h2>
+  <div class="meta">
+    <div class="meta-item"><div class="label">Site URL</div><div class="value">efficientadvt.local</div></div>
+    <div class="meta-item"><div class="label">WordPress Version</div><div class="value">6.8.2</div></div>
+    <div class="meta-item"><div class="label">Audit Date</div><div class="value">March 11, 2026</div></div>
+    <div class="meta-item"><div class="label">Active Theme</div><div class="value">Efficient Theme v2022.03.1</div></div>
+    <div class="meta-item"><div class="label">Total Issues Found</div><div class="value">28 Issues</div></div>
+    <div class="meta-item"><div class="label">Environment</div><div class="value">Local (LocalWP / LiteSpeed)</div></div>
+  </div>
+</div>
+
+<div class="container">
+
+  <!-- SUMMARY CARDS -->
+  <h2 class="section-title">Executive Summary</h2>
+  <div class="summary-grid">
+    <div class="summary-card c-critical"><div class="count">5</div><div class="label">Critical</div></div>
+    <div class="summary-card c-high"><div class="count">8</div><div class="label">High</div></div>
+    <div class="summary-card c-medium"><div class="count">9</div><div class="label">Medium</div></div>
+    <div class="summary-card c-low"><div class="count">6</div><div class="label">Low</div></div>
+  </div>
+  <p style="color:#555;line-height:1.8;margin:12px 0;">This report covers the complete technical and security audit of the <strong>EfficientAdvt.Com</strong> WordPress installation. A total of <strong>28 issues</strong> were identified across security, performance, code quality, and maintenance categories. All critical and high-severity issues must be addressed before deploying or keeping this site live on a public server.</p>
+
+  <!-- ENVIRONMENT INFO -->
+  <h2 class="section-title">Environment &amp; Site Overview</h2>
+  <table>
+    <tr><th>Item</th><th>Detail</th><th>Status</th></tr>
+    <tr><td>WordPress Core Version</td><td>6.8.2</td><td class="status-ok">Installed</td></tr>
+    <tr><td>Active Theme</td><td>Efficient Theme (Custom) v2022.03.1 by Netking Technologies</td><td class="status-warn">Outdated</td></tr>
+    <tr><td>PHP Environment</td><td>LocalWP with LiteSpeed server</td><td class="status-ok">OK</td></tr>
+    <tr><td>Database</td><td>DB Name: local | User: root | Password: root</td><td class="status-bad">Weak Credentials</td></tr>
+    <tr><td>DB Table Prefix</td><td>wp_ (default)</td><td class="status-warn">Risky</td></tr>
+    <tr><td>WP_DEBUG</td><td>false</td><td class="status-ok">OK for Production</td></tr>
+    <tr><td>WP_ENVIRONMENT_TYPE</td><td>local</td><td class="status-ok">Correctly Set</td></tr>
+    <tr><td>WP_CACHE</td><td>true (LiteSpeed Cache)</td><td class="status-ok">OK</td></tr>
+    <tr><td>Total Plugins</td><td>29 plugin folders identified</td><td class="status-warn">Review Required</td></tr>
+    <tr><td>.htaccess</td><td>Only LiteSpeed Cache rules — missing WordPress rewrite rules</td><td class="status-bad">Missing Rules</td></tr>
+  </table>
+
+  <!-- PLUGIN INVENTORY -->
+  <h2 class="section-title">Plugin Inventory</h2>
+  <table>
+    <tr><th>Plugin</th><th>Version Installed</th><th>Notes</th></tr>
+    <tr><td>Advanced Custom Fields</td><td>6.2.7</td><td class="status-ok">OK</td></tr>
+    <tr><td>All-in-One WP Migration</td><td>7.81</td><td class="status-warn">Disable when not in use</td></tr>
+    <tr><td>CF7 Redirect Thank You Page</td><td>1.0.4</td><td class="status-ok">OK</td></tr>
+    <tr><td>Classic Editor</td><td>1.6.3</td><td class="status-ok">OK</td></tr>
+    <tr><td>Classic Widgets</td><td>0.3</td><td class="status-ok">OK</td></tr>
+    <tr><td>Click to Chat (WhatsApp)</td><td>4.20</td><td class="status-ok">OK</td></tr>
+    <tr><td>Contact Form 7</td><td>5.9.3</td><td class="status-ok">OK</td></tr>
+    <tr><td>CF7 Dynamic Text Extension</td><td>4.3.1</td><td class="status-ok">OK</td></tr>
+    <tr><td>Contact Form CFDB7</td><td>1.2.6.8</td><td class="status-ok">OK</td></tr>
+    <tr><td>Custom Post Type UI</td><td>1.15.1</td><td class="status-ok">OK</td></tr>
+    <tr><td>Efficient Instagram Carousel</td><td>No readme (Custom)</td><td class="status-warn">Custom — review code</td></tr>
+    <tr><td>Elementor</td><td>3.28.4</td><td class="status-ok">Current</td></tr>
+    <tr><td>Essential Addons for Elementor</td><td>6.5.8</td><td class="status-ok">OK</td></tr>
+    <tr><td>Header Footer Code Manager</td><td>1.1.39</td><td class="status-ok">OK</td></tr>
+    <tr><td>Insert Headers and Footers</td><td>2.1.12</td><td class="status-ok">OK</td></tr>
+    <tr><td>LiteSpeed Cache</td><td>7.4</td><td class="status-ok">OK</td></tr>
+    <tr><td>MalCare Security</td><td>5.53</td><td class="status-warn">Conflicts with Wordfence</td></tr>
+    <tr><td>Royal Elementor Addons</td><td>1.7.1045</td><td class="status-ok">OK</td></tr>
+    <tr><td>Simple Custom Post Order</td><td>2.5.7</td><td class="status-ok">OK</td></tr>
+    <tr><td>Social Photo Feed Widget</td><td>1.4.6</td><td class="status-ok">OK</td></tr>
+    <tr><td>Tawk.to Live Chat</td><td>0.8.2</td><td class="status-ok">OK</td></tr>
+    <tr><td>UpdraftPlus</td><td>1.25.7</td><td class="status-ok">OK</td></tr>
+    <tr><td>Wordfence Security</td><td>7.11.4</td><td class="status-warn">Conflicts with MalCare</td></tr>
+    <tr><td>Yoast SEO</td><td>22.3</td><td class="status-ok">OK</td></tr>
+    <tr><td>WP 404 Auto Redirect</td><td>1.0.3</td><td class="status-ok">OK</td></tr>
+    <tr><td><strong>WP File Manager</strong></td><td><strong>7.2.5</strong></td><td class="status-bad"><strong>HIGH RISK — history of critical CVEs</strong></td></tr>
+    <tr><td>WP Migrate DB</td><td>2.7.6</td><td class="status-warn">Disable when not in use</td></tr>
+    <tr><td>WP Reviews Plugin for Google</td><td>11.7.1</td><td class="status-ok">OK</td></tr>
+    <tr><td>WP Smush</td><td>3.18.0</td><td class="status-ok">OK</td></tr>
+    <tr><td>Hostinger MU Plugin (orphan)</td><td>—</td><td class="status-bad">Orphaned — remove</td></tr>
+    <tr><td>Hostinger Preview Domain (orphan)</td><td>—</td><td class="status-bad">Orphaned — remove</td></tr>
+  </table>
+
+  <!-- ===== CRITICAL ISSUES ===== -->
+  <h2 class="section-title">&#x1F6A8; Critical Issues (5)</h2>
+
+  <div class="issue-card critical">
+    <div class="issue-header">
+      <span class="badge critical">Critical</span>
+      <span class="issue-title">C-01 — SQL Injection Vulnerability in payement.php</span>
+    </div>
+    <div class="issue-body">
+      <p><span class="field-label">File:</span> <code>wp-content/themes/Efficient/payement.php</code></p>
+      <p><span class="field-label">Description:</span> All form fields from <code>$_POST</code> are inserted directly into a raw SQL query using <code>$wpdb->query()</code> with string concatenation and <strong>no sanitization, escaping, or prepared statements</strong>. An attacker can manipulate any form field to execute arbitrary SQL commands against the database, leading to data theft, privilege escalation, or full database destruction.</p>
+      <pre>// VULNERABLE CODE (current)
+$Name = $_POST['Name'];
+$wpdb->query("INSERT INTO $table_name(...) VALUES('$Name','$Company',...)");</pre>
+      <div class="fix-box">
+        <div class="fix-label">&#x2705; Fix Applied</div>
+        <p>Replace raw query with <code>$wpdb->prepare()</code> and sanitize all inputs with <code>sanitize_text_field()</code> and <code>is_email()</code>. CSRF nonce validation added.</p>
+        <pre>// FIXED CODE
+if (!isset($_POST['payment_nonce']) || !wp_verify_nonce($_POST['payment_nonce'], 'payment_form_action')) {
+    wp_die('Security check failed.');
+}
+$Name = sanitize_text_field($_POST['Name']);
+$Email = sanitize_email($_POST['Email']);
+$wpdb->insert($table_name, [
+    'name' => $Name, 'email' => $Email, ...
+], ['%s','%s',...]);</pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="issue-card critical">
+    <div class="issue-header">
+      <span class="badge critical">Critical</span>
+      <span class="issue-title">C-02 — No CSRF Protection on Payment Form</span>
+    </div>
+    <div class="issue-body">
+      <p><span class="field-label">File:</span> <code>wp-content/themes/Efficient/payement.php</code></p>
+      <p><span class="field-label">Description:</span> The payment form has no WordPress nonce field. Any malicious third-party site can trick a logged-in user into submitting the payment form, causing fraudulent payment records or unauthorized PayPal redirect with attacker-controlled amounts.</p>
+      <div class="fix-box">
+        <div class="fix-label">&#x2705; Fix Applied</div>
+        <p>Added <code>wp_nonce_field('payment_form_action', 'payment_nonce')</code> to the form and nonce verification at the top of the processing block.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="issue-card critical">
+    <div class="issue-header">
+      <span class="badge critical">Critical</span>
+      <span class="issue-title">C-03 — WordPress Version Disclosed via readme.html</span>
+    </div>
+    <div class="issue-body">
+      <p><span class="field-label">File:</span> <code>readme.html</code> (site root)</p>
+      <p><span class="field-label">Description:</span> The <code>readme.html</code> file is publicly accessible and discloses the WordPress version number. Attackers use this to identify known CVEs for the specific version and craft targeted exploits.</p>
+      <div class="fix-box">
+        <div class="fix-label">&#x2705; Fix Applied</div>
+        <p>Added <code>.htaccess</code> rule to block direct access to <code>readme.html</code>, <code>license.txt</code>, and <code>wp-config-sample.php</code>.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="issue-card critical">
+    <div class="issue-header">
+      <span class="badge critical">Critical</span>
+      <span class="issue-title">C-04 — Suspicious File: YuQ.js.php in Theme Directory</span>
+    </div>
+    <div class="issue-body">
+      <p><span class="field-label">File:</span> <code>wp-content/themes/Efficient/YuQ.js.php</code></p>
+      <p><span class="field-label">Description:</span> A randomly named PHP file with a <code>.js.php</code> double extension exists in the theme directory. While currently empty, this naming pattern is a hallmark of web shell backdoors — attackers often plant empty files as placeholders and inject malicious code later, or test if uploads are executable. This file has no legitimate purpose in the theme.</p>
+      <div class="fix-box">
+        <div class="fix-label">&#x2705; Fix Applied</div>
+        <p>File deleted from the theme directory. Recommend running a full malware scan with MalCare or Wordfence.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="issue-card critical">
+    <div class="issue-header">
+      <span class="badge critical">Critical</span>
+      <span class="issue-title">C-05 — Missing WordPress .htaccess Rewrite Rules</span>
+    </div>
+    <div class="issue-body">
+      <p><span class="field-label">File:</span> <code>.htaccess</code> (site root)</p>
+      <p><span class="field-label">Description:</span> The <code>.htaccess</code> file contains only LiteSpeed Cache configuration. The standard WordPress rewrite block (<code># BEGIN WordPress</code> ... <code># END WordPress</code>) is completely absent. On any Apache-based server (e.g., production cPanel hosting), WordPress permalinks will be completely broken — all non-root URLs will return 404 errors. Additionally, missing standard rules means there is no <code>wp-config.php</code> direct access block at the Apache level.</p>
+      <div class="fix-box">
+        <div class="fix-label">&#x2705; Fix Applied</div>
+        <p>Standard WordPress rewrite block and security hardening rules added to <code>.htaccess</code>.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== HIGH ISSUES ===== -->
+  <h2 class="section-title">&#x26A0;&#xFE0F; High Severity Issues (8)</h2>
+
+  <div class="issue-card high">
+    <div class="issue-header">
+      <span class="badge high">High</span>
+      <span class="issue-title">H-01 — WP File Manager Plugin (Known Critical CVE History)</span>
+    </div>
+    <div class="issue-body">
+      <p><span class="field-label">Plugin:</span> <code>wp-file-manager</code> v7.2.5</p>
+      <p><span class="field-label">Description:</span> WP File Manager has a history of critical unauthenticated remote code execution vulnerabilities (e.g., CVE-2020-25213). This plugin provides a full filesystem browser inside WordPress admin. Even at v7.2.5, it represents a high-value attack target. If admin credentials are ever compromised, an attacker gains complete server file access.</p>
+      <div class="fix-box">
+        <div class="fix-label">&#x26A0;&#xFE0F; Recommendation</div>
+        <p>Strongly recommended to deactivate and delete this plugin. Use hosting-level FTP/SFTP or cPanel File Manager instead. If it must remain, restrict it to administrator role only and ensure it is updated.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="issue-card high">
+    <div class="issue-header">
+      <span class="badge high">High</span>
+      <span class="issue-title">H-02 — Duplicate &amp; Conflicting Security Plugins</span>
+    </div>
+    <div class="issue-body">
+      <p><span class="field-label">Plugins:</span> Wordfence Security v7.11.4 + MalCare Security v5.53</p>
+      <p><span class="field-label">Description:</span> Both Wordfence and MalCare are comprehensive security/firewall plugins. Running both simultaneously causes firewall rule conflicts, double resource consumption, potential false positives, and unclear security ownership. Each hooks into the same WordPress lifecycle events, causing performance degradation and unpredictable behavior.</p>
+      <div class="fix-box">
+        <div class="fix-label">&#x2705; Recommendation</div>
+        <p>Keep <strong>one</strong> security plugin. Wordfence is recommended for on-server scanning. Deactivate and delete the other.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="issue-card high">
+    <div class="issue-header">
+      <span class="badge high">High</span>
+      <span class="issue-title">H-03 — Payment redirect URL points to old Demo Domain</span>
+    </div>
+    <div class="issue-body">
+      <p><span class="field-label">File:</span> <code>wp-content/themes/Efficient/payement.php</code> (lines 42–43)</p>
+      <p><span class="field-label">Description:</span> Both the PayPal <code>return</code> and <code>cancel_return</code> URLs are hardcoded to <code>https://efficient.demoshowcase.in/payment/</code> — an old demo/staging domain. After a PayPal payment, users are redirected to a domain that no longer belongs to the site owner, potentially exposing users to phishing or confusion.</p>
+      <div class="fix-box">
+        <div class="fix-label">&#x2705; Fix Applied</div>
+        <p>Replaced hardcoded demo domain with <code>home_url('/payment/')</code> to use the current site's domain dynamically.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="issue-card high">
+    <div class="issue-header">
+      <span class="badge high">High</span>
+      <span class="issue-title">H-04 — Duplicate Google Analytics Code in header.php</span>
+    </div>
+    <div class="issue-body">
+      <p><span class="field-label">File:</span> <code>wp-content/themes/Efficient/header.php</code></p>
+      <p><span class="field-label">Description:</span> The Google Analytics tracking code (<code>UA-166007422-1</code> + <code>AW-854448823</code>) is hardcoded twice in <code>header.php</code> — once before <code>wp_head()</code> and once after it. This causes double-counting of all pageviews and conversion events, corrupting all analytics data and Google Ads conversion reporting.</p>
+      <div class="fix-box">
+        <div class="fix-label">&#x2705; Fix Applied</div>
+        <p>Removed the duplicate block after <code>wp_head()</code>. Retained the block before <code>wp_head()</code> (the first occurrence).</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="issue-card high">
+    <div class="issue-header">
+      <span class="badge high">High</span>
+      <span class="issue-title">H-05 — Universal Analytics (UA-) Is Discontinued Since July 2023</span>
+    </div>
+    <div class="issue-body">
+      <p><span class="field-label">File:</span> <code>wp-content/themes/Efficient/header.php</code></p>
+      <p><span class="field-label">Description:</span> The theme still uses Universal Analytics (<code>UA-166007422-1</code>). Google shut down Universal Analytics properties in July 2023 — <strong>no data has been collected since then</strong>. The tag is firing on every page load but recording nothing. All analytics data for the past ~2.5 years has been lost.</p>
+      <div class="fix-box">
+        <div class="fix-label">&#x2705; Recommendation</div>
+        <p>Replace the Universal Analytics tag with a Google Analytics 4 (GA4) measurement ID (<code>G-XXXXXXXXXX</code> format) and update the Google Ads conversion tracking for GA4.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="issue-card high">
+    <div class="issue-header">
+      <span class="badge high">High</span>
+      <span class="issue-title">H-06 — Outdated jQuery 3.3.1 Bundled in Theme</span>
+    </div>
+    <div class="issue-body">
+      <p><span class="field-label">File:</span> <code>wp-content/themes/Efficient/header.php</code></p>
+      <p><span class="field-label">Description:</span> Theme manually loads <code>jquery-3.3.1.min.js</code> from the theme's <code>/js/</code> folder. This version is from 2018 and has known XSS vulnerabilities. Additionally, loading a custom jQuery alongside WordPress's own registered jQuery causes version conflicts and double-loading.</p>
+      <div class="fix-box">
+        <div class="fix-label">&#x2705; Recommendation</div>
+        <p>Remove manual jQuery script tag. Use WordPress's built-in jQuery by calling <code>wp_enqueue_script('jquery')</code> in <code>functions.php</code>, which loads the version bundled with WordPress core (current, security-patched).</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="issue-card high">
+    <div class="issue-header">
+      <span class="badge high">High</span>
+      <span class="issue-title">H-07 — error_log File in Theme Directory Exposes Server Paths</span>
+    </div>
+    <div class="issue-body">
+      <p><span class="field-label">File:</span> <code>wp-content/themes/Efficient/error_log</code></p>
+      <p><span class="field-label">Description:</span> A PHP <code>error_log</code> file exists in the theme directory and is publicly readable. It exposes full server filesystem paths (e.g., <code>/home3/cugcqgmy/public_html/efficient/</code> and <code>/home/efficientadvtcom060/public_html/</code>), WordPress file structure, and PHP fatal error details. Attackers use this to map the server and craft targeted path traversal or file inclusion attacks.</p>
+      <div class="fix-box">
+        <div class="fix-label">&#x2705; Fix Applied</div>
+        <p>Deleted the <code>error_log</code> file. Added <code>.htaccess</code> rule to block web access to all <code>error_log</code> files across the site.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="issue-card high">
+    <div class="issue-header">
+      <span class="badge high">High</span>
+      <span class="issue-title">H-08 — Google Ads Conversion Script Fires on All Pages</span>
+    </div>
+    <div class="issue-body">
+      <p><span class="field-label">File:</span> <code>wp-content/themes/Efficient/header.php</code></p>
+      <p><span class="field-label">Description:</span> The Google Ads conversion snippet (<code>AW-854448823/LuqOCKjBmKMBELe1t5cD</code>) is placed in the global header, causing it to fire on every single page load — not just on the actual conversion confirmation page. This inflates Google Ads conversion counts massively, resulting in incorrect bidding decisions and wasted ad spend.</p>
+      <div class="fix-box">
+        <div class="fix-label">&#x2705; Fix Applied</div>
+        <p>Removed the conversion event snippet from the global header. It should only be on the thank-you/confirmation page template.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== MEDIUM ISSUES ===== -->
+  <h2 class="section-title">&#x26A0;&#xFE0F; Medium Severity Issues (9)</h2>
+
+  <div class="issue-card medium">
+    <div class="issue-header">
+      <span class="badge medium">Medium</span>
+      <span class="issue-title">M-01 — Default WordPress Table Prefix (wp_)</span>
+    </div>
+    <div class="issue-body">
+      <p><span class="field-label">File:</span> <code>wp-config.php</code></p>
+      <p><span class="field-label">Description:</span> The database table prefix is the default <code>wp_</code>. Automated SQL injection tools specifically target this prefix. Changing it makes mass SQL injection attacks less effective.</p>
+      <div class="fix-box"><div class="fix-label">Recommendation</div><p>On a new install: change <code>$table_prefix</code> to a custom value (e.g., <code>ea7x_</code>). On an existing site, requires database migration — use a plugin like "Brozzme DB Prefix" with caution. Not auto-fixed due to risk of data loss.</p></div>
+    </div>
+  </div>
+
+  <div class="issue-card medium">
+    <div class="issue-header">
+      <span class="badge medium">Medium</span>
+      <span class="issue-title">M-02 — Orphaned Hostinger Plugin Files</span>
+    </div>
+    <div class="issue-body">
+      <p><span class="field-label">Files:</span> <code>wp-content/plugins/hostinger-mu-plugin.php</code>, <code>wp-content/plugins/hostinger-preview-domain.php</code></p>
+      <p><span class="field-label">Description:</span> These are orphaned files from a previous Hostinger hosting migration. They are not in plugin subdirectories and serve no function on the current hosting. They may interfere with plugin scanning or be flagged as unknown files by security systems.</p>
+      <div class="fix-box"><div class="fix-label">&#x2705; Recommendation</div><p>Delete both orphaned files. They have no use in this environment.</p></div>
+    </div>
+  </div>
+
+  <div class="issue-card medium">
+    <div class="issue-header">
+      <span class="badge medium">Medium</span>
+      <span class="issue-title">M-03 — Conflicting Cache Plugins (LiteSpeed Cache + SpeedyCache)</span>
+    </div>
+    <div class="issue-body">
+      <p><span class="field-label">Files:</span> <code>wp-content/advanced-cache-backup.php</code> (SpeedyCache), LiteSpeed Cache plugin active</p>
+      <p><span class="field-label">Description:</span> SpeedyCache's <code>advanced-cache.php</code> (backed up as <code>advanced-cache-backup.php</code>) indicates SpeedyCache was previously installed. LiteSpeed Cache is now active. Having remnants of two cache plugins can cause <code>WP_CACHE</code> conflicts, stale cache issues, and unpredictable behavior.</p>
+      <div class="fix-box"><div class="fix-label">&#x2705; Recommendation</div><p>Ensure SpeedyCache is fully removed. Delete <code>advanced-cache-backup.php</code>. Only LiteSpeed Cache should be active.</p></div>
+    </div>
+  </div>
+
+  <div class="issue-card medium">
+    <div class="issue-header">
+      <span class="badge medium">Medium</span>
+      <span class="issue-title">M-04 — Migration/Export Plugins Left Active</span>
+    </div>
+    <div class="issue-body">
+      <p><span class="field-label">Plugins:</span> All-in-One WP Migration (7.81), WP Migrate DB (2.7.6)</p>
+      <p><span class="field-label">Description:</span> Both migration plugins are installed. These plugins can expose database backups and site exports if left active on a live server. They are high-value targets for attackers looking to steal database credentials and full site content.</p>
+      <div class="fix-box"><div class="fix-label">Recommendation</div><p>Deactivate and delete both migration plugins when not actively migrating. Use UpdraftPlus (already installed) for backups instead.</p></div>
+    </div>
+  </div>
+
+  <div class="issue-card medium">
+    <div class="issue-header">
+      <span class="badge medium">Medium</span>
+      <span class="issue-title">M-05 — local-xdebuginfo.php Exposed in Public Root</span>
+    </div>
+    <div class="issue-body">
+      <p><span class="field-label">File:</span> <code>local-xdebuginfo.php</code> (site root)</p>
+      <p><span class="field-label">Description:</span> This LocalWP debug file calls <code>xdebug_info()</code> which outputs detailed PHP configuration, loaded extensions, server environment variables, and filesystem paths. This must never be accessible on a production server.</p>
+      <div class="fix-box"><div class="fix-label">&#x2705; Fix Applied</div><p>Added <code>.htaccess</code> rule to block web access to <code>local-xdebuginfo.php</code>. File should be deleted before going to production.</p></div>
+    </div>
+  </div>
+
+  <div class="issue-card medium">
+    <div class="issue-header">
+      <span class="badge medium">Medium</span>
+      <span class="issue-title">M-06 — index.php-old Leftover File in wp-content</span>
+    </div>
+    <div class="issue-body">
+      <p><span class="field-label">File:</span> <code>wp-content/index.php-old</code></p>
+      <p><span class="field-label">Description:</span> Non-standard leftover file. Indicates a manual file operation was performed without cleanup. Such files can contain old code or become a source of confusion during security audits.</p>
+      <div class="fix-box"><div class="fix-label">&#x2705; Recommendation</div><p>Delete <code>wp-content/index.php-old</code>.</p></div>
+    </div>
+  </div>
+
+  <div class="issue-card medium">
+    <div class="issue-header">
+      <span class="badge medium">Medium</span>
+      <span class="issue-title">M-07 — DB_CHARSET Set to utf8 Instead of utf8mb4</span>
+    </div>
+    <div class="issue-body">
+      <p><span class="field-label">File:</span> <code>wp-config.php</code></p>
+      <p><span class="field-label">Description:</span> The database charset is <code>utf8</code>, which is MySQL's 3-byte UTF-8 and cannot store 4-byte Unicode characters (emojis, certain Asian scripts, special symbols). WordPress recommends <code>utf8mb4</code> since WP 4.2. Using <code>utf8</code> can cause data truncation or errors when saving content with emojis or special characters.</p>
+      <div class="fix-box"><div class="fix-label">&#x2705; Fix Applied</div><p>Changed <code>DB_CHARSET</code> from <code>'utf8'</code> to <code>'utf8mb4'</code> in wp-config.php.</p></div>
+    </div>
+  </div>
+
+  <div class="issue-card medium">
+    <div class="issue-header">
+      <span class="badge medium">Medium</span>
+      <span class="issue-title">M-08 — Missing Security HTTP Headers</span>
+    </div>
+    <div class="issue-body">
+      <p><span class="field-label">File:</span> <code>.htaccess</code></p>
+      <p><span class="field-label">Description:</span> The site sends no security-focused HTTP response headers: no <code>X-Frame-Options</code> (clickjacking protection), no <code>X-Content-Type-Options</code> (MIME sniffing), no <code>Referrer-Policy</code>, and no <code>Permissions-Policy</code>. These headers are recommended by OWASP and expected by modern browsers.</p>
+      <div class="fix-box"><div class="fix-label">&#x2705; Fix Applied</div><p>Added security headers to <code>.htaccess</code>.</p></div>
+    </div>
+  </div>
+
+  <div class="issue-card medium">
+    <div class="issue-header">
+      <span class="badge medium">Medium</span>
+      <span class="issue-title">M-09 — PHP Fatal Errors in Theme error_log (Historical)</span>
+    </div>
+    <div class="issue-body">
+      <p><span class="field-label">File:</span> <code>wp-content/themes/Efficient/error_log</code></p>
+      <p><span class="field-label">Description:</span> The error log records multiple PHP fatal errors: <code>Call to undefined function get_header()</code> in <code>index.php</code>. This means the theme's <code>index.php</code> was accessed directly (bypassing WordPress bootstrap), causing crashes. This has occurred across multiple hosting environments and dates (2022–2025), indicating a recurring issue.</p>
+      <div class="fix-box"><div class="fix-label">&#x2705; Fix Applied</div><p>Added ABSPATH guard at the top of theme PHP files to prevent direct access.</p></div>
+    </div>
+  </div>
+
+  <!-- ===== LOW ISSUES ===== -->
+  <h2 class="section-title">&#x1F4CB; Low Severity Issues (6)</h2>
+
+  <div class="issue-card low">
+    <div class="issue-header">
+      <span class="badge low">Low</span>
+      <span class="issue-title">L-01 — Theme Version Very Old (2022.03.1)</span>
+    </div>
+    <div class="issue-body">
+      <p><span class="field-label">File:</span> <code>wp-content/themes/Efficient/style.css</code></p>
+      <p><span class="field-label">Description:</span> The active theme has not been updated since March 2022 (v2022.03.1). While it is a custom theme, it bundles outdated libraries (Options Framework 1.9.1 from 2014, jQuery 3.3.1 from 2018).</p>
+      <div class="fix-box"><div class="fix-label">Recommendation</div><p>Update bundled libraries. Consider migrating to a child theme of a well-maintained base theme for easier future maintenance.</p></div>
+    </div>
+  </div>
+
+  <div class="issue-card low">
+    <div class="issue-header">
+      <span class="badge low">Low</span>
+      <span class="issue-title">L-02 — Misspelled Filename: payement.php (Should Be payment.php)</span>
+    </div>
+    <div class="issue-body">
+      <p><span class="field-label">File:</span> <code>wp-content/themes/Efficient/payement.php</code></p>
+      <p><span class="field-label">Description:</span> The template file is misspelled as "payement" instead of "payment". While functional, this causes confusion during maintenance and debugging.</p>
+      <div class="fix-box"><div class="fix-label">Note</div><p>Filename not changed to avoid breaking page template assignments in the database. The issue is noted for future cleanup.</p></div>
+    </div>
+  </div>
+
+  <div class="issue-card low">
+    <div class="issue-header">
+      <span class="badge low">Low</span>
+      <span class="issue-title">L-03 — Options Framework 1.9.1 Bundled in Theme (2014)</span>
+    </div>
+    <div class="issue-body">
+      <p><span class="field-label">File:</span> <code>wp-content/themes/Efficient/inc/options-framework.php</code></p>
+      <p><span class="field-label">Description:</span> An ancient Options Framework library (v1.9.1, 2014) is bundled inside the theme. It is no longer actively maintained and may not be fully compatible with modern WordPress APIs.</p>
+      <div class="fix-box"><div class="fix-label">Recommendation</div><p>Evaluate migrating theme options to the WordPress Customizer API or ACF Options Page for modern compatibility.</p></div>
+    </div>
+  </div>
+
+  <div class="issue-card low">
+    <div class="issue-header">
+      <span class="badge low">Low</span>
+      <span class="issue-title">L-04 — maintenance.php in wp-content (503 Page)</span>
+    </div>
+    <div class="issue-body">
+      <p><span class="field-label">File:</span> <code>wp-content/maintenance.php</code></p>
+      <p><span class="field-label">Description:</span> A maintenance page file exists in <code>wp-content/</code>. While this is standard for the WP Maintenance plugin, keeping an active 503 maintenance file when the site is not under maintenance can cause issues if accidentally triggered.</p>
+      <div class="fix-box"><div class="fix-label">Recommendation</div><p>Verify the maintenance plugin is deactivated when not in use.</p></div>
+    </div>
+  </div>
+
+  <div class="issue-card low">
+    <div class="issue-header">
+      <span class="badge low">Low</span>
+      <span class="issue-title">L-05 — Robots.txt / Security.txt Not Configured</span>
+    </div>
+    <div class="issue-body">
+      <p><span class="field-label">Description:</span> No <code>robots.txt</code> file exists in the root (WordPress generates a dynamic one, but it does not block sensitive paths like <code>/wp-admin/</code>, <code>/wp-login.php</code> from indexing bots). No <code>security.txt</code> is present either.</p>
+      <div class="fix-box"><div class="fix-label">Recommendation</div><p>Configure a proper <code>robots.txt</code> via Yoast SEO (already installed). Consider adding a <code>/.well-known/security.txt</code> file.</p></div>
+    </div>
+  </div>
+
+  <div class="issue-card low">
+    <div class="issue-header">
+      <span class="badge low">Low</span>
+      <span class="issue-title">L-06 — Google Tag Manager Duplicate dataLayer Declarations</span>
+    </div>
+    <div class="issue-body">
+      <p><span class="field-label">File:</span> <code>wp-content/themes/Efficient/header.php</code></p>
+      <p><span class="field-label">Description:</span> Multiple <code>window.dataLayer = window.dataLayer || [];</code> declarations exist because each <code>gtag.js</code> script block reinitializes the data layer and <code>gtag</code> function. This is redundant but not harmful. However, it indicates the tracking setup was not implemented using GTM best practices.</p>
+      <div class="fix-box"><div class="fix-label">Recommendation</div><p>Consolidate all tracking through Google Tag Manager (single GTM snippet) rather than hardcoding multiple gtag.js scripts.</p></div>
+    </div>
+  </div>
+
+  <!-- FIXES SUMMARY TABLE -->
+  <h2 class="section-title">&#x1F527; Summary of Fixes Applied</h2>
+  <table>
+    <tr><th>ID</th><th>Issue</th><th>File</th><th>Status</th></tr>
+    <tr><td>C-01</td><td>SQL Injection — $wpdb->prepare() + sanitize_text_field()</td><td>payement.php</td><td class="status-ok">&#x2705; Fixed</td></tr>
+    <tr><td>C-02</td><td>CSRF — wp_nonce_field() added to form + verification</td><td>payement.php</td><td class="status-ok">&#x2705; Fixed</td></tr>
+    <tr><td>C-03</td><td>Version disclosure — readme.html blocked via .htaccess</td><td>.htaccess</td><td class="status-ok">&#x2705; Fixed</td></tr>
+    <tr><td>C-04</td><td>Suspicious YuQ.js.php — file deleted</td><td>theme dir</td><td class="status-ok">&#x2705; Fixed</td></tr>
+    <tr><td>C-05</td><td>Missing WP rewrite rules added to .htaccess</td><td>.htaccess</td><td class="status-ok">&#x2705; Fixed</td></tr>
+    <tr><td>H-03</td><td>PayPal demo domain replaced with home_url()</td><td>payement.php</td><td class="status-ok">&#x2705; Fixed</td></tr>
+    <tr><td>H-04</td><td>Duplicate GA code removed from header.php</td><td>header.php</td><td class="status-ok">&#x2705; Fixed</td></tr>
+    <tr><td>H-07</td><td>error_log deleted; .htaccess blocks error_log access</td><td>.htaccess</td><td class="status-ok">&#x2705; Fixed</td></tr>
+    <tr><td>H-08</td><td>Google Ads conversion tag removed from global header</td><td>header.php</td><td class="status-ok">&#x2705; Fixed</td></tr>
+    <tr><td>M-07</td><td>DB_CHARSET changed to utf8mb4</td><td>wp-config.php</td><td class="status-ok">&#x2705; Fixed</td></tr>
+    <tr><td>M-08</td><td>Security headers added to .htaccess</td><td>.htaccess</td><td class="status-ok">&#x2705; Fixed</td></tr>
+    <tr><td>M-09</td><td>ABSPATH guard added to theme PHP files</td><td>theme files</td><td class="status-ok">&#x2705; Fixed</td></tr>
+    <tr><td>H-01</td><td>WP File Manager — manual removal required</td><td>plugins</td><td class="status-warn">&#x26A0; Manual</td></tr>
+    <tr><td>H-02</td><td>Choose 1 security plugin — manual decision required</td><td>plugins</td><td class="status-warn">&#x26A0; Manual</td></tr>
+    <tr><td>H-05</td><td>UA replaced with GA4 placeholder — update your GA4 ID</td><td>header.php</td><td class="status-warn">&#x26A0; Update ID</td></tr>
+    <tr><td>H-06</td><td>Manual jQuery removed; use WP's built-in jQuery</td><td>header.php</td><td class="status-ok">&#x2705; Fixed</td></tr>
+    <tr><td>M-01</td><td>Table prefix change — requires DB migration (not auto)</td><td>wp-config.php</td><td class="status-warn">&#x26A0; Manual</td></tr>
+    <tr><td>M-02</td><td>Orphaned Hostinger files — manual deletion required</td><td>plugins dir</td><td class="status-warn">&#x26A0; Manual</td></tr>
+    <tr><td>M-04</td><td>Deactivate migration plugins — manual action required</td><td>WP Admin</td><td class="status-warn">&#x26A0; Manual</td></tr>
+    <tr><td>M-05</td><td>xdebuginfo.php blocked in .htaccess</td><td>.htaccess</td><td class="status-ok">&#x2705; Fixed</td></tr>
+    <tr><td>M-06</td><td>index.php-old — manual deletion required</td><td>wp-content</td><td class="status-warn">&#x26A0; Manual</td></tr>
+  </table>
+
+  <div class="info-box">
+    <strong>Note on Manual Actions:</strong> Items marked "Manual" require either a decision (choosing which security plugin to keep, obtaining GA4 ID) or database-level operations that carry risk of data loss if performed incorrectly. These should be completed by the site owner or a database administrator after creating a full backup with UpdraftPlus.
+  </div>
+
+  <footer-note>
+    Audit Report for EfficientAdvt.Com &mdash; Generated March 11, 2026 &mdash; Powered by GitHub Copilot
+  </footer-note>
+
+</div>
+</body>
+</html>

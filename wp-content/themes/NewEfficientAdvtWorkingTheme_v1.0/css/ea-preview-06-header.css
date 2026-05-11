@@ -1,0 +1,236 @@
+/**
+ * EA Preview 06 — Standardised Dark Header (all pages)
+ * Preview key: ?ea_preview=header
+ *
+ * Applies to: category pages, product pages, all SEO landing pages,
+ *             contact, thank-you — any page that currently shows a white header.
+ *
+ * PREVIEW ONLY — no live changes.
+ * Injected via mu-plugins/ea-preview-loader.php in wp_footer at priority 999.
+ * Remove by deleting/disabling this file and removing 'header' key from loader.
+ */
+
+/* ── Variables (from premium-homepage.css — redeclared here for pages that don't load it) ── */
+:root {
+  --hp-dark:    #0A0A14;
+  --hp-dark2:   #0D1020;
+  --hp-dark3:   #0F0F1E;
+  --hp-amber:   #FFBA09;
+  --hp-border:  rgba(255, 186, 9, 0.18);
+  --hp-white:   #ffffff;
+  --hp-muted:   rgba(255, 255, 255, 0.70);
+}
+
+/* ══════════════════════════════════════════
+   1. LOGO ROW — dark navy background
+   ══════════════════════════════════════════ */
+.navbar.navbar-inverse {
+  background: var(--hp-dark) !important;
+  border: none !important;
+}
+
+/* ══════════════════════════════════════════
+   2. LOGO ROW — height + tagline visibility
+   ══════════════════════════════════════════ */
+.logtophead {
+  min-height: 82px !important;
+}
+
+.ea-hdr-tagline {
+  color: rgba(255, 255, 255, 0.96) !important;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.18);
+}
+
+/* Logo: lift brightness on dark bg */
+.ea-hdr-brand .logo img {
+  filter: brightness(1.35) contrast(1.08) saturate(1.05);
+}
+
+/* ══════════════════════════════════════════
+   3. SEARCH BAR — dark style
+   ══════════════════════════════════════════ */
+.ea-toprow-search {
+  background: var(--hp-dark3) !important;
+  border-color: rgba(255, 255, 255, 0.12) !important;
+}
+.ea-toprow-search input {
+  color: var(--hp-white) !important;
+  background: transparent !important;
+}
+.ea-toprow-search input::placeholder {
+  color: var(--hp-muted) !important;
+}
+.ea-toprow-search button {
+  background: var(--hp-amber) !important;
+}
+
+/* ══════════════════════════════════════════
+   4. NAV ROW (headerbottom) — dark background
+   ══════════════════════════════════════════ */
+.headerbottom {
+  background: var(--hp-dark) !important;
+  border-top: 1px solid var(--hp-border) !important;
+  border-bottom: 1px solid var(--hp-border) !important;
+  overflow: visible !important;
+}
+
+/* ══════════════════════════════════════════
+   5. MEGA NAV — full width layout
+   ══════════════════════════════════════════ */
+.ea-mega-nav {
+  background: transparent !important;
+  width: 100% !important;
+}
+
+.ea-mega-list {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  justify-content: space-between !important;
+  align-items: stretch !important;
+  gap: 4px !important;
+  width: 100% !important;
+}
+
+.ea-mega-list > .ea-mega-item {
+  flex: 0 1 auto !important;
+  min-width: 0 !important;
+}
+
+/* ══════════════════════════════════════════
+   6. NAV LINKS — white text, amber hover
+   ══════════════════════════════════════════ */
+.ea-mega-list > .ea-mega-item > .ea-mega-link {
+  background: transparent !important;
+  color: rgba(255, 255, 255, 0.85) !important;
+  border-bottom-color: transparent !important;
+  font-size: 11.6px !important;
+  font-weight: 700 !important;
+  padding: 10px 7px !important;
+  letter-spacing: 0.002em !important;
+  white-space: nowrap !important;
+}
+
+.ea-mega-list > .ea-mega-item > .ea-mega-link:hover,
+.ea-mega-list > .ea-mega-item.is-open > .ea-mega-link {
+  background: rgba(255, 255, 255, 0.04) !important;
+  color: var(--hp-amber) !important;
+  border-bottom-color: var(--hp-amber) !important;
+}
+
+/* ══════════════════════════════════════════
+   7. MEGA PANELS — rounded, styled
+   ══════════════════════════════════════════ */
+.ea-mega-panel {
+  border-radius: 16px !important;
+}
+
+.ea-mega-panel .ea-panel-sublist li a {
+  font-size: 14px !important;
+  line-height: 1.45 !important;
+  white-space: normal !important;
+  display: block !important;
+}
+
+.ea-mega-panel h4,
+.ea-mega-panel h5,
+.ea-mega-panel .ea-panel-title,
+.ea-mega-panel .ea-panel-head {
+  font-size: 15px !important;
+  line-height: 1.35 !important;
+}
+
+/* ══════════════════════════════════════════
+   8. RESPONSIVE — 1440px
+   ══════════════════════════════════════════ */
+@media (max-width: 1440px) {
+  .ea-mega-list > .ea-mega-item > .ea-mega-link {
+    font-size: 11.2px !important;
+    padding-left: 6px !important;
+    padding-right: 6px !important;
+  }
+}
+
+@media (max-width: 1280px) {
+  .ea-mega-list > .ea-mega-item > .ea-mega-link {
+    font-size: 10.8px !important;
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+  }
+}
+
+/* ══════════════════════════════════════════
+   9. RESPONSIVE — 767px mobile
+   ══════════════════════════════════════════ */
+@media (max-width: 767px) {
+  .logtophead {
+    min-height: 56px !important;
+  }
+  .ea-hdr-brand {
+    padding: 6px 0 !important;
+  }
+  .ea-hdr-brand .logo img {
+    height: 44px !important;
+  }
+}
+
+/* ══════════════════════════════════════════
+   10. MEGA MENU GRID & COLUMNS (Multi-column list)
+   ══════════════════════════════════════════ */
+.ea-mega-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 24px !important;
+  width: 100% !important;
+  padding: 10px 0 !important;
+}
+
+.ea-mega-col {
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.ea-mega-col-title {
+  font-family: 'Outfit', sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 13px !important;
+  color: #D4A73A !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.08em !important;
+  margin-bottom: 12px !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+  padding-bottom: 6px !important;
+}
+
+.ea-mega-col-list {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.ea-mega-col-list li {
+  margin-bottom: 8px !important;
+}
+
+.ea-mega-col-list li a {
+  font-family: 'Outfit', sans-serif !important;
+  font-weight: 500 !important;
+  font-size: 13px !important;
+  color: rgba(255, 255, 255, 0.75) !important;
+  text-decoration: none !important;
+  transition: color 0.2s ease, padding-left 0.2s ease !important;
+  display: inline-block !important;
+}
+
+.ea-mega-col-list li a:hover {
+  color: #D4A73A !important;
+  padding-left: 4px !important;
+}
+
+@media (max-width: 767px) {
+  .ea-mega-grid {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+    padding: 15px 10px !important;
+  }
+}
+

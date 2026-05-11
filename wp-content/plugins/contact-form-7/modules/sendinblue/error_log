@@ -1,0 +1,48 @@
+[08-Sep-2024 21:10:34 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_filter() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/sendinblue/contact-form-properties.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/sendinblue/contact-form-properties.php on line 3
+[08-Sep-2024 21:10:37 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/sendinblue/doi.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/sendinblue/doi.php on line 9
+[08-Sep-2024 21:10:40 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wpcf7_include_module_file() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/sendinblue/sendinblue.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/sendinblue/sendinblue.php on line 8
+[17-Sep-2024 03:05:52 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_filter() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/sendinblue/contact-form-properties.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/sendinblue/contact-form-properties.php on line 3
+[17-Sep-2024 03:05:52 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/sendinblue/doi.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/sendinblue/doi.php on line 9
+[17-Sep-2024 03:05:53 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wpcf7_include_module_file() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/sendinblue/sendinblue.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/sendinblue/sendinblue.php on line 8
+[09-Feb-2025 10:11:31 Asia/Karachi] PHP Fatal error:  Uncaught Error: Call to undefined function add_filter() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/sendinblue/contact-form-properties.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/sendinblue/contact-form-properties.php on line 3
+[09-Feb-2025 10:11:32 Asia/Karachi] PHP Fatal error:  Uncaught Error: Call to undefined function add_filter() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/sendinblue/contact-form-properties.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/sendinblue/contact-form-properties.php on line 3
+[09-Feb-2025 10:11:35 Asia/Karachi] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/sendinblue/doi.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/sendinblue/doi.php on line 9
+[09-Feb-2025 10:11:37 Asia/Karachi] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/sendinblue/doi.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/sendinblue/doi.php on line 9
+[09-Feb-2025 10:11:39 Asia/Karachi] PHP Fatal error:  Uncaught Error: Call to undefined function wpcf7_include_module_file() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/sendinblue/sendinblue.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/sendinblue/sendinblue.php on line 8
+[09-Feb-2025 10:11:42 Asia/Karachi] PHP Fatal error:  Uncaught Error: Call to undefined function wpcf7_include_module_file() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/sendinblue/sendinblue.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/sendinblue/sendinblue.php on line 8

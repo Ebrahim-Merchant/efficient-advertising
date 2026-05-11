@@ -1,0 +1,372 @@
+/**
+ * EA Preview 05 — Final Alignment Review
+ * =====================================================================
+ * PREVIEW MODE ONLY — activated via ?ea_preview=alignment
+ *
+ * Scope: Homepage · Category pages · Product pages
+ *
+ * Builds on Preview 04 (warm bg + light cards + premium FAQ) and adds
+ * product page typography alignment to match homepage/category direction.
+ *
+ * Typography changes only — NO layout, grid, spacing, image, or
+ * structural changes. NO live changes. Awaiting approval.
+ * =====================================================================
+ */
+
+/* ═══════════════════════════════════════════════════════════════════ */
+/* PART 1 — WARM BASE                                                 */
+/* ═══════════════════════════════════════════════════════════════════ */
+
+html,
+body {
+    background-color: #F5F2EC !important;
+}
+
+/* Homepage and category: all sections transparent so base bg shows */
+body.home section,
+body.home .section,
+body.tax-product_cat section,
+body.tax-product_cat .section,
+body.page-template-index section,
+body.page-template-index .section {
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+}
+
+/* Remove harsh dark-class blocks */
+body [class*="dark-section"],
+body [class*="bg-dark"],
+body [class*="section-dark"],
+body [class*="bg-black"] {
+    background-color: #F5F2EC !important;
+    background-image: none !important;
+}
+
+/* ─── Homepage section backgrounds ─────────────────────────────────── */
+body.home #ea-hp-hero,
+body.home #ea-hp-trust-strip,
+body.home #ea-hp-products,
+body.home #ea-hp-reviews,
+body.home #ea-hp-why,
+body.page-template-index #ea-hp-hero,
+body.page-template-index #ea-hp-trust-strip,
+body.page-template-index #ea-hp-products,
+body.page-template-index #ea-hp-reviews,
+body.page-template-index #ea-hp-why {
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+}
+
+body.home #ea-hp-services,
+body.home #ea-hp-portfolio,
+body.home #ea-hp-videos,
+body.home #ea-hp-faq,
+body.page-template-index #ea-hp-services,
+body.page-template-index #ea-hp-portfolio,
+body.page-template-index #ea-hp-videos,
+body.page-template-index #ea-hp-faq {
+    background-color: #FAF8F4 !important;
+    background-image: none !important;
+}
+
+body.home #ea-hp-cta,
+body.page-template-index #ea-hp-cta,
+body.home .ea-hp-cta-inner,
+body.page-template-index .ea-hp-cta-inner {
+    background-color: #F7F3E8 !important;
+    background-image: none !important;
+}
+
+/* ─── Category section backgrounds ─────────────────────────────────── */
+body.tax-product_cat .ea-cat-hero {
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+}
+
+body.tax-product_cat .ea-cat-grid-section,
+body.tax-product_cat .ea-cat-products-grid {
+    background-color: #FAF8F4 !important;
+    background-image: none !important;
+}
+
+body.tax-product_cat .ea-cat-cta,
+body.tax-product_cat .ea-cat-why {
+    background-color: #F7F3E8 !important;
+    background-image: none !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════════ */
+/* PART 2 — LIGHT CARDS (homepage + category)                        */
+/* ═══════════════════════════════════════════════════════════════════ */
+
+body.home .ea-hp-service-card,
+body.home .ea-product-card,
+body.home .ea-hp-review-card,
+body.home .ea-hp-video-card,
+body.home .ea-hp-why-card,
+body.page-template-index .ea-hp-service-card,
+body.page-template-index .ea-product-card,
+body.page-template-index .ea-hp-review-card,
+body.page-template-index .ea-hp-video-card,
+body.page-template-index .ea-hp-why-card,
+body.tax-product_cat .ea-hp-why-card {
+    background: #FFFFFF !important;
+    background-image: none !important;
+    border: 1px solid rgba(212, 175, 55, 0.18) !important;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.06) !important;
+}
+
+/* Category sub-pills */
+body.tax-product_cat .ea-cat-sub-pill {
+    background: #FFFFFF !important;
+    border: 1px solid rgba(212, 175, 55, 0.28) !important;
+    color: #3a3a3a !important;
+}
+body.tax-product_cat .ea-cat-sub-pill:hover {
+    background: #F7F3E8 !important;
+}
+
+/* Category product cards */
+body.tax-product_cat .ea-cat-product-card {
+    background: #FFFFFF !important;
+    border: 1px solid rgba(212, 175, 55, 0.18) !important;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.06) !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════════ */
+/* PART 3 — HOMEPAGE TYPOGRAPHY                                       */
+/* ═══════════════════════════════════════════════════════════════════ */
+
+.ea-hp-section-header h2  { color: #1a1a1a !important; }
+.ea-hp-hero-content h1    { color: #1a1a1a !important; }
+.ea-hp-cta-inner h2       { color: #1a1a1a !important; }
+.ea-hp-service-card h3    { color: #1a1a1a !important; }
+#ea-hp-products .ea-product-card__body h4 { color: #1a1a1a !important; }
+.ea-hp-video-card h3      { color: #1a1a1a !important; }
+
+.ea-hp-section-header p   { color: #555555 !important; }
+.ea-hp-hero-content > p   { color: #555555 !important; }
+.ea-hp-hero-micro         { color: #555555 !important; }
+.ea-hp-service-card p     { color: #555555 !important; }
+#ea-hp-products .ea-product-card__body p { color: #555555 !important; }
+.ea-hp-cta-inner p        { color: #555555 !important; }
+.ea-hp-faq-answer p       { color: #555555 !important; }
+.ea-hp-review-text        { color: #555555 !important; }
+.ea-hp-trust-item span    { color: #666666 !important; }
+.ea-hp-review-meta span   { color: #777777 !important; }
+.ea-hp-review-meta strong { color: #1a1a1a; }
+.ea-hp-faq-item summary   { color: #1a1a1a; }
+
+body.home .ea-hp-service-card h3,
+body.page-template-index .ea-hp-service-card h3 { color: #1a1a1a !important; }
+body.home .ea-hp-service-card p,
+body.page-template-index .ea-hp-service-card p   { color: #555555 !important; }
+body.home .ea-hp-why-card h3,
+body.page-template-index .ea-hp-why-card h3,
+body.tax-product_cat .ea-hp-why-card h3          { color: #1a1a1a !important; }
+body.home .ea-hp-why-card p,
+body.page-template-index .ea-hp-why-card p,
+body.tax-product_cat .ea-hp-why-card p           { color: #555555 !important; }
+body.home #ea-hp-products .ea-product-card__body h4,
+body.page-template-index #ea-hp-products .ea-product-card__body h4 { color: #1a1a1a !important; }
+body.home #ea-hp-products .ea-product-card__body p,
+body.page-template-index #ea-hp-products .ea-product-card__body p  { color: #555555 !important; }
+
+/* ═══════════════════════════════════════════════════════════════════ */
+/* PART 4 — CATEGORY PAGE TYPOGRAPHY                                  */
+/* ═══════════════════════════════════════════════════════════════════ */
+
+body.tax-product_cat .ea-cat-breadcrumb a,
+body.tax-product_cat .ea-cat-breadcrumb .sep,
+body.tax-product_cat .ea-cat-breadcrumb .current { color: #666666 !important; }
+
+body.tax-product_cat .ea-cat-hero-inner h1,
+body.tax-product_cat .ea-cat-hero h1              { color: #1a1a1a !important; }
+
+body.tax-product_cat .ea-cat-hero-inner p,
+body.tax-product_cat .ea-cat-hero p               { color: #555555 !important; }
+
+body.tax-product_cat .ea-cat-count                { color: #555555 !important; }
+body.tax-product_cat .ea-cat-pagination .page-numbers { color: #555555 !important; }
+
+body.tax-product_cat .ea-hp-container h2,
+body.tax-product_cat .ea-cat-cta h2               { color: #1a1a1a !important; }
+body.tax-product_cat .ea-hp-container > p,
+body.tax-product_cat .ea-cat-cta p                { color: #555555 !important; }
+
+/* ═══════════════════════════════════════════════════════════════════ */
+/* PART 5 — PREMIUM FAQ STYLING (from Preview 04)                    */
+/* ═══════════════════════════════════════════════════════════════════ */
+
+body.home .ea-hp-faq-list,
+body.page-template-index .ea-hp-faq-list {
+    max-width: 900px !important;
+    margin: 0 auto !important;
+    padding: 8px 30px 30px !important;
+    background: #ffffff !important;
+    border-radius: 14px !important;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.04) !important;
+    border: 1px solid rgba(212, 175, 55, 0.15) !important;
+}
+
+body.home .ea-hp-faq-item,
+body.page-template-index .ea-hp-faq-item {
+    background: transparent !important;
+    border: none !important;
+    border-bottom: 1px solid #eeeeee !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    padding: 4px 0 !important;
+    margin: 0 !important;
+}
+
+body.home .ea-hp-faq-item:last-child,
+body.page-template-index .ea-hp-faq-item:last-child { border-bottom: none !important; }
+
+body.home .ea-hp-faq-item:hover,
+body.page-template-index .ea-hp-faq-item:hover {
+    background: #FAF8F4 !important;
+    border-radius: 8px !important;
+}
+
+body.home .ea-hp-faq-item summary,
+body.page-template-index .ea-hp-faq-item summary {
+    font-weight: 600 !important;
+    font-size: 16px !important;
+    color: #111111 !important;
+    padding: 18px 0 !important;
+    cursor: pointer !important;
+    list-style: none !important;
+}
+
+body.home .ea-hp-faq-item summary span:first-child,
+body.page-template-index .ea-hp-faq-item summary span:first-child { color: #111111 !important; }
+
+body.home .ea-hp-faq-answer,
+body.page-template-index .ea-hp-faq-answer {
+    color: #555555 !important;
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+    margin-top: 0 !important;
+    padding-bottom: 16px !important;
+}
+
+body.home .ea-hp-faq-answer p,
+body.page-template-index .ea-hp-faq-answer p {
+    color: #555555 !important;
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+}
+
+/* FAQ icon — closed state */
+body.home .ea-hp-faq-icon,
+body.page-template-index .ea-hp-faq-icon {
+    color: #D4AF37 !important;
+    background-color: #FAF8F4 !important;
+    border: 1px solid rgba(212, 175, 55, 0.40) !important;
+    flex-shrink: 0 !important;
+}
+body.home .ea-hp-faq-icon svg,
+body.page-template-index .ea-hp-faq-icon svg {
+    stroke: #D4AF37 !important;
+    width: 18px !important;
+    height: 18px !important;
+}
+
+/* FAQ icon — open state */
+body.home details[open] .ea-hp-faq-icon,
+body.page-template-index details[open] .ea-hp-faq-icon {
+    background-color: #D4AF37 !important;
+    border-color: #D4AF37 !important;
+    color: #ffffff !important;
+}
+body.home details[open] .ea-hp-faq-icon svg,
+body.page-template-index details[open] .ea-hp-faq-icon svg {
+    stroke: #ffffff !important;
+}
+
+@media (max-width: 768px) {
+    body.home .ea-hp-faq-list,
+    body.page-template-index .ea-hp-faq-list {
+        padding: 8px 20px 20px !important;
+        margin: 0 15px !important;
+        border-radius: 10px !important;
+    }
+    body.home .ea-hp-faq-item summary,
+    body.page-template-index .ea-hp-faq-item summary {
+        font-size: 15px !important;
+        padding: 14px 0 !important;
+    }
+}
+
+/* ═══════════════════════════════════════════════════════════════════ */
+/* PART 6 — PRODUCT PAGE TYPOGRAPHY ALIGNMENT (NEW in Preview 05)    */
+/* ═══════════════════════════════════════════════════════════════════ */
+/*
+ * The product page (.ea-pp) already uses a warm cream foundation
+ * (#F4F2ED hero, #F7F5F0 features). These overrides align heading and
+ * body text colours with the homepage/category preview direction.
+ *
+ * Changes:
+ *   Headings: #1A1A2E (dark navy) → #111111 (charcoal, matches preview)
+ *   Body text: rgba(26,26,46,0.65) → #555555 (matches homepage preview)
+ *   Section BGs: nudged to match preview warm palette
+ *   Card borders: aligned to gold rgba(212,175,55,x) family
+ *
+ * NOT changed (intentional product-page design features):
+ *   #ea-pp-faq  background: amber #FFBA09 (product FAQ band — contrast)
+ *   #ea-pp-cta  background: #1A1A2E (dark CTA strip — contrast)
+ *   Sticky mobile bar: #0A0A14 (mobile UX element)
+ *   .ea-pp-acc-icon dark navy circle (amber FAQ bg makes it readable)
+ */
+
+/* ─── Section background nudge ─────────────────────────────────────── */
+body.single-product #ea-pp-hero     { background-color: #F5F2EC !important; }
+body.single-product #ea-pp-trust-bar { background-color: #F5F2EC !important; border-bottom-color: rgba(212,175,55,0.12) !important; }
+body.single-product #ea-pp-features  { background-color: #FAF8F4 !important; }
+body.single-product #ea-pp-specs     { background-color: #FFFFFF !important; }
+body.single-product #ea-pp-artwork   { background-color: #FAF8F4 !important; }
+body.single-product #ea-pp-related   { background-color: #F5F2EC !important; }
+body.single-product #ea-pp-reviews   { background-color: #FFFFFF !important; }
+/* Note: #ea-pp-faq (amber) and #ea-pp-cta (dark navy) preserved */
+
+/* ─── Heading colour alignment: dark navy → charcoal ───────────────── */
+body.single-product .ea-pp-title             { color: #111111 !important; }
+body.single-product .ea-pp-features-header h2 { color: #111111 !important; }
+body.single-product .ea-pp-specs-header h2    { color: #111111 !important; }
+body.single-product .ea-pp-hto-left h2        { color: #111111 !important; }
+body.single-product .ea-pp-artwork-card h3    { color: #111111 !important; }
+body.single-product .ea-pp-related-header h2  { color: #111111 !important; }
+body.single-product .ea-product-card__body h4 { color: #111111 !important; }
+body.single-product .ea-pp-step-body h4       { color: #111111 !important; }
+body.single-product .ea-pp-feature-card h4    { color: #111111 !important; }
+
+/* ─── Body text alignment: rgba navy → warm gray ─────────────────── */
+body.single-product .ea-pp-short-desc          { color: #555555 !important; }
+body.single-product .ea-pp-features-header p   { color: #555555 !important; }
+body.single-product .ea-pp-specs-header p      { color: #555555 !important; }
+body.single-product .ea-pp-hto-left > p        { color: #555555 !important; }
+body.single-product .ea-pp-step-body p         { color: #555555 !important; }
+body.single-product .ea-pp-feature-card p      { color: #555555 !important; }
+body.single-product .ea-product-card__body p   { color: #555555 !important; }
+body.single-product .ea-pp-acc-answer          { color: #555555 !important; }
+body.single-product .ea-pp-spec-table td:last-child { color: #555555 !important; }
+
+/* ─── Card border alignment: navy-opacity → gold-opacity ─────────── */
+body.single-product .ea-pp-config             { border-color: rgba(212, 175, 55, 0.20) !important; }
+body.single-product .ea-pp-feature-card       { border-color: rgba(212, 175, 55, 0.15) !important; }
+body.single-product .ea-pp-card-grid .ea-product-card { border-color: rgba(212, 175, 55, 0.18) !important; }
+body.single-product .ea-pp-artwork-card       { border-color: rgba(212, 175, 55, 0.35) !important; }
+body.single-product .ea-pp-spec-table tr      { border-bottom-color: rgba(212, 175, 55, 0.12) !important; }
+body.single-product #ea-pp-specs              { border-top-color: rgba(212, 175, 55, 0.10) !important; }
+
+/* ─── Breadcrumb: navy → warm gray ───────────────────────────────── */
+body.single-product .ea-breadcrumb li         { color: rgba(26, 26, 46, 0.45) !important; }
+body.single-product .ea-breadcrumb li a       { color: #666666 !important; }
+body.single-product .ea-breadcrumb li.active  { color: #333333 !important; }
+
+/* ─── HEADER & FOOTER — UNCHANGED ────────────────────────────────── */
+/* No rules targeting #header, .header, #footer, .footer, .sticky-bar */

@@ -1,0 +1,263 @@
+/**
+ * EA Preview FAQ — Warm Background + Light Components + Premium FAQ
+ * =====================================================================
+ * PREVIEW MODE ONLY — activated via ?ea_preview=faq
+ * URL: http://newefficientadvertising09042026.local/?ea_preview=faq
+ *
+ * Builds on Preview 03 direction (warm bg + light cards).
+ * Adds enhanced FAQ section styling on homepage only.
+ *
+ * Real theme selectors used (mapped from generic brief):
+ *   .faq-section       → #ea-hp-faq .ea-hp-faq-list
+ *   .faq-item          → details.ea-hp-faq-item
+ *   .faq-question      → .ea-hp-faq-item summary
+ *   .faq-answer        → .ea-hp-faq-answer
+ *   .faq-toggle        → .ea-hp-faq-icon
+ *
+ * NO live changes. NO layout, spacing, or structural changes.
+ * =====================================================================
+ */
+
+/* ═══════════════════════════════════════════════════════════════════ */
+/* PART 1 — WARM BASE (carried from preview-02/03)                   */
+/* ═══════════════════════════════════════════════════════════════════ */
+
+html,
+body {
+    background-color: #F5F2EC !important;
+}
+
+body.home section,
+body.home .section,
+body.page-template-index section,
+body.page-template-index .section {
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+}
+
+body [class*="dark-section"],
+body [class*="bg-dark"],
+body [class*="section-dark"],
+body [class*="bg-black"] {
+    background-color: #F5F2EC !important;
+    background-image: none !important;
+}
+
+body.home #ea-hp-hero,
+body.home #ea-hp-trust-strip,
+body.home #ea-hp-products,
+body.home #ea-hp-reviews,
+body.home #ea-hp-why,
+body.page-template-index #ea-hp-hero,
+body.page-template-index #ea-hp-trust-strip,
+body.page-template-index #ea-hp-products,
+body.page-template-index #ea-hp-reviews,
+body.page-template-index #ea-hp-why {
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+}
+
+body.home #ea-hp-services,
+body.home #ea-hp-portfolio,
+body.home #ea-hp-videos,
+body.home #ea-hp-faq,
+body.page-template-index #ea-hp-services,
+body.page-template-index #ea-hp-portfolio,
+body.page-template-index #ea-hp-videos,
+body.page-template-index #ea-hp-faq {
+    background-color: #FAF8F4 !important;
+    background-image: none !important;
+}
+
+body.home #ea-hp-cta,
+body.page-template-index #ea-hp-cta,
+body.home .ea-hp-cta-inner,
+body.page-template-index .ea-hp-cta-inner {
+    background-color: #F7F3E8 !important;
+    background-image: none !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════════ */
+/* PART 2 — LIGHT CARDS (carried from preview-03)                    */
+/* ═══════════════════════════════════════════════════════════════════ */
+
+body.home .ea-hp-service-card,
+body.home .ea-product-card,
+body.home .ea-hp-review-card,
+body.home .ea-hp-video-card,
+body.home .ea-hp-why-card,
+body.page-template-index .ea-hp-service-card,
+body.page-template-index .ea-product-card,
+body.page-template-index .ea-hp-review-card,
+body.page-template-index .ea-hp-video-card,
+body.page-template-index .ea-hp-why-card {
+    background: #FFFFFF !important;
+    background-image: none !important;
+    border: 1px solid rgba(212, 175, 55, 0.18) !important;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.06) !important;
+}
+
+/* Typography — homepage */
+.ea-hp-section-header h2 { color: #1a1a1a !important; }
+.ea-hp-hero-content h1   { color: #1a1a1a !important; }
+.ea-hp-cta-inner h2      { color: #1a1a1a !important; }
+.ea-hp-section-header p  { color: #555555 !important; }
+.ea-hp-hero-content > p  { color: #555555 !important; }
+.ea-hp-hero-micro        { color: #555555 !important; }
+.ea-hp-cta-inner p       { color: #555555 !important; }
+.ea-hp-review-text       { color: #555555 !important; }
+.ea-hp-trust-item span   { color: #666666 !important; }
+.ea-hp-review-meta span  { color: #777777 !important; }
+.ea-hp-review-meta strong { color: #1a1a1a; }
+
+body.home .ea-hp-service-card h3,
+body.page-template-index .ea-hp-service-card h3 { color: #1a1a1a !important; }
+body.home .ea-hp-service-card p,
+body.page-template-index .ea-hp-service-card p   { color: #555555 !important; }
+body.home .ea-hp-why-card h3,
+body.page-template-index .ea-hp-why-card h3      { color: #1a1a1a !important; }
+body.home .ea-hp-why-card p,
+body.page-template-index .ea-hp-why-card p       { color: #555555 !important; }
+body.home #ea-hp-products .ea-product-card__body h4,
+body.page-template-index #ea-hp-products .ea-product-card__body h4 { color: #1a1a1a !important; }
+body.home #ea-hp-products .ea-product-card__body p,
+body.page-template-index #ea-hp-products .ea-product-card__body p  { color: #555555 !important; }
+
+
+/* ═══════════════════════════════════════════════════════════════════ */
+/* PART 3 — PREMIUM FAQ STYLING (new in Preview 4)                   */
+/* ═══════════════════════════════════════════════════════════════════ */
+
+/* ─── FAQ SECTION: reset section bg to neutral, apply card to list ─ */
+body.home #ea-hp-faq,
+body.page-template-index #ea-hp-faq {
+    background-color: #FAF8F4 !important;
+    background-image: none !important;
+}
+
+/* ─── FAQ LIST WRAPPER → white card container ─────────────────────── */
+/* Maps to: .faq-section { max-width: 900px; background: #fff; ... }  */
+body.home .ea-hp-faq-list,
+body.page-template-index .ea-hp-faq-list {
+    max-width: 900px !important;
+    margin: 0 auto !important;
+    padding: 8px 30px 30px !important;
+    background: #ffffff !important;
+    border-radius: 14px !important;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.04) !important;
+    border: 1px solid rgba(212, 175, 55, 0.15) !important;
+}
+
+/* ─── FAQ ITEMS ────────────────────────────────────────────────────── */
+/* Maps to: .faq-item { border-bottom: 1px solid #eee; padding: 18px 0; } */
+body.home .ea-hp-faq-item,
+body.page-template-index .ea-hp-faq-item {
+    background: transparent !important;
+    border: none !important;
+    border-bottom: 1px solid #eeeeee !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    padding: 4px 0 !important;
+    margin: 0 !important;
+}
+
+/* Last item: no border */
+body.home .ea-hp-faq-item:last-child,
+body.page-template-index .ea-hp-faq-item:last-child {
+    border-bottom: none !important;
+}
+
+/* ─── FAQ ITEM HOVER ───────────────────────────────────────────────── */
+/* Maps to: .faq-item:hover { background: #faf8f4; border-radius: 8px; } */
+body.home .ea-hp-faq-item:hover,
+body.page-template-index .ea-hp-faq-item:hover {
+    background: #FAF8F4 !important;
+    border-radius: 8px !important;
+}
+
+/* ─── FAQ QUESTION (summary) ───────────────────────────────────────── */
+/* Maps to: .faq-question { font-weight:600; font-size:16px; color:#111; } */
+body.home .ea-hp-faq-item summary,
+body.page-template-index .ea-hp-faq-item summary {
+    font-weight: 600 !important;
+    font-size: 16px !important;
+    color: #111111 !important;
+    padding: 18px 0 !important;
+    cursor: pointer !important;
+    list-style: none !important;
+}
+
+body.home .ea-hp-faq-item summary span:first-child,
+body.page-template-index .ea-hp-faq-item summary span:first-child {
+    color: #111111 !important;
+}
+
+/* ─── FAQ ANSWER ───────────────────────────────────────────────────── */
+/* Maps to: .faq-answer { color: #555; font-size: 14px; line-height: 1.6; } */
+body.home .ea-hp-faq-answer,
+body.page-template-index .ea-hp-faq-answer {
+    color: #555555 !important;
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+    margin-top: 0 !important;
+    padding-bottom: 16px !important;
+}
+
+body.home .ea-hp-faq-answer p,
+body.page-template-index .ea-hp-faq-answer p {
+    color: #555555 !important;
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+}
+
+/* ─── FAQ ICON ─────────────────────────────────────────────────────── */
+/* Maps to: .faq-toggle { font-size: 18px; color: #D4A73A; } */
+/* Closed state: warm ivory circle with gold border */
+body.home .ea-hp-faq-icon,
+body.page-template-index .ea-hp-faq-icon {
+    color: #D4AF37 !important;
+    background-color: #FAF8F4 !important;
+    border: 1px solid rgba(212, 175, 55, 0.40) !important;
+    flex-shrink: 0 !important;
+}
+
+body.home .ea-hp-faq-icon svg,
+body.page-template-index .ea-hp-faq-icon svg {
+    stroke: #D4AF37 !important;
+    width: 18px !important;
+    height: 18px !important;
+}
+
+/* Open state: gold circle with white chevron */
+body.home details[open] .ea-hp-faq-icon,
+body.page-template-index details[open] .ea-hp-faq-icon {
+    background-color: #D4AF37 !important;
+    border-color: #D4AF37 !important;
+    color: #ffffff !important;
+}
+
+body.home details[open] .ea-hp-faq-icon svg,
+body.page-template-index details[open] .ea-hp-faq-icon svg {
+    stroke: #ffffff !important;
+}
+
+/* ─── MOBILE ───────────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+    body.home .ea-hp-faq-list,
+    body.page-template-index .ea-hp-faq-list {
+        padding: 8px 20px 20px !important;
+        margin: 0 15px !important;
+        border-radius: 10px !important;
+    }
+
+    body.home .ea-hp-faq-item summary,
+    body.page-template-index .ea-hp-faq-item summary {
+        font-size: 15px !important;
+        padding: 14px 0 !important;
+    }
+}
+
+/* ─── HEADER & FOOTER — UNCHANGED ─────────────────────────────────── */
+/* No rules targeting header, footer, sticky bar, or whatsapp float.  */

@@ -1,0 +1,12 @@
+[08-Sep-2024 06:27:56 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "WPCF7_PLUGIN_DIR" in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/admin/admin.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/admin/admin.php on line 3
+[08-Sep-2024 21:02:02 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "WPCF7_PLUGIN_DIR" in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/admin/admin.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/admin/admin.php on line 3
+[17-Sep-2024 03:05:16 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "WPCF7_PLUGIN_DIR" in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/admin/admin.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/admin/admin.php on line 3

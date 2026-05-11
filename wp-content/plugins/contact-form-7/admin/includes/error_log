@@ -1,0 +1,60 @@
+[08-Sep-2024 06:29:12 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "ABSPATH" in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/admin/includes/class-contact-forms-list-table.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/admin/includes/class-contact-forms-list-table.php on line 4
+[08-Sep-2024 06:29:24 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/admin/includes/config-validator.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/admin/includes/config-validator.php on line 3
+[08-Sep-2024 06:30:18 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/admin/includes/welcome-panel.php:230
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/admin/includes/welcome-panel.php on line 230
+[08-Sep-2024 21:02:37 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "ABSPATH" in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/admin/includes/class-contact-forms-list-table.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/admin/includes/class-contact-forms-list-table.php on line 4
+[08-Sep-2024 21:02:40 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/admin/includes/config-validator.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/admin/includes/config-validator.php on line 3
+[08-Sep-2024 21:03:15 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/admin/includes/welcome-panel.php:230
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/admin/includes/welcome-panel.php on line 230
+[17-Sep-2024 03:05:19 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "ABSPATH" in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/admin/includes/class-contact-forms-list-table.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/admin/includes/class-contact-forms-list-table.php on line 4
+[17-Sep-2024 03:05:20 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/admin/includes/config-validator.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/admin/includes/config-validator.php on line 3
+[17-Sep-2024 03:05:21 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/admin/includes/welcome-panel.php:230
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/admin/includes/welcome-panel.php on line 230
+[09-Feb-2025 10:06:16 Asia/Karachi] PHP Fatal error:  Uncaught Error: Undefined constant "ABSPATH" in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/admin/includes/class-contact-forms-list-table.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/admin/includes/class-contact-forms-list-table.php on line 4
+[09-Feb-2025 10:06:18 Asia/Karachi] PHP Fatal error:  Uncaught Error: Undefined constant "ABSPATH" in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/admin/includes/class-contact-forms-list-table.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/admin/includes/class-contact-forms-list-table.php on line 4
+[09-Feb-2025 10:06:26 Asia/Karachi] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/admin/includes/config-validator.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/admin/includes/config-validator.php on line 3
+[09-Feb-2025 10:06:27 Asia/Karachi] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/admin/includes/config-validator.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/admin/includes/config-validator.php on line 3
+[09-Feb-2025 10:06:51 Asia/Karachi] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/admin/includes/welcome-panel.php:230
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/admin/includes/welcome-panel.php on line 230
+[09-Feb-2025 10:06:53 Asia/Karachi] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/admin/includes/welcome-panel.php:230
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/admin/includes/welcome-panel.php on line 230

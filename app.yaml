@@ -1,0 +1,25 @@
+name: efficient-advt
+app_id: da_nZyIPt1UGol4
+owner: ebrahim-merchant
+package: .
+capabilities:
+  instaboot:
+    mode: null
+    requests:
+    - path: /wp-login.php
+      headers:
+      - name: Accept
+        value: text/html
+      - name: Accept-Language
+        value: en-US
+    max_age: 59m
+  database:
+    engine: mysql
+volumes:
+- name: wp-uploads
+  mount: /app/wp-content/uploads
+scaling:
+  mode: single_concurrency
+redirect:
+  force_https: true
+kind: wasmer.io/App.v0

@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Master Overview</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap');
+
+        :root {
+            --primary: #6366f1;
+            --primary-light: #818cf8;
+            --secondary: #ec4899;
+            --bg-color: #0f172a;
+            --card-bg: rgba(30, 41, 59, 0.7);
+            --card-border: rgba(255, 255, 255, 0.1);
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent-green: #10b981;
+            --accent-blue: #3b82f6;
+            --accent-purple: #8b5cf6;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Outfit', sans-serif;
+            background: var(--bg-color);
+            color: var(--text-main);
+            min-height: 100vh;
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(99, 102, 241, 0.15), transparent 25%),
+                radial-gradient(circle at 90% 80%, rgba(236, 72, 153, 0.15), transparent 25%),
+                radial-gradient(circle at 50% 50%, rgba(59, 130, 246, 0.1), transparent 30%);
+            background-attachment: fixed;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 4rem;
+            animation: fadeInDown 1s ease-out;
+        }
+
+        h1 {
+            font-size: 4rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--primary-light), var(--secondary), var(--accent-blue));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: -1px;
+        }
+
+        p.subtitle {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .main-section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin: 4rem 0 2rem;
+            position: relative;
+            display: inline-block;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .main-section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 20%;
+            width: 60%;
+            height: 4px;
+            background: linear-gradient(90deg, transparent, var(--primary), transparent);
+            border-radius: 2px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+
+        .section-card {
+            background: var(--card-bg);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid var(--card-border);
+            border-radius: 24px;
+            padding: 2.5rem;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+            transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease;
+            position: relative;
+            overflow: hidden;
+            animation: fadeInUp 1s ease-out backwards;
+        }
+
+        .section-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .section-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .section-card:hover::before {
+            opacity: 1;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: var(--text-main);
+        }
+
+        h2 span.icon-wrapper {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+
+        .site-label {
+            display: inline-block;
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: var(--accent-blue);
+            margin-bottom: 0.5rem;
+        }
+
+        .site-group {
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .site-group:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+
+        .site-group h3 {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            padding: 1rem 1.25rem;
+            margin-bottom: 0.75rem;
+            border-radius: 12px;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid transparent;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        li:hover {
+            background: rgba(255, 255, 255, 0.06);
+            border-color: rgba(255, 255, 255, 0.1);
+            transform: translateX(5px);
+        }
+
+        li .dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--primary-light);
+            box-shadow: 0 0 10px var(--primary-light);
+        }
+
+        li a {
+            color: inherit;
+            text-decoration: none;
+            flex-grow: 1;
+            font-weight: 500;
+        }
+
+        .badge {
+            font-size: 0.75rem;
+            font-weight: 600;
+            padding: 4px 10px;
+            border-radius: 20px;
+            margin-left: auto;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .badge-active { background: rgba(16, 185, 129, 0.2); color: #6ee7b7; box-shadow: 0 0 10px rgba(16, 185, 129, 0.1); }
+        .badge-recent { background: rgba(236, 72, 153, 0.2); color: #fbcfe8; box-shadow: 0 0 10px rgba(236, 72, 153, 0.1); }
+        .badge-nested { background: rgba(99, 102, 241, 0.2); color: #c7d2fe; box-shadow: 0 0 10px rgba(99, 102, 241, 0.1); }
+        .badge-standard { background: rgba(255, 255, 255, 0.1); color: #cbd5e1; }
+        .badge-custom { background: rgba(139, 92, 246, 0.2); color: #ddd6fe; box-shadow: 0 0 10px rgba(139, 92, 246, 0.1); }
+
+        .theme-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 10px;
+        }
+
+        .theme-pill {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 6px 12px;
+            border-radius: 100px;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            transition: all 0.2s;
+        }
+        
+        .theme-pill:hover {
+            background: rgba(255, 255, 255, 0.1);
+            color: var(--text-main);
+        }
+
+        .theme-pill.highlight {
+            border-color: var(--primary-light);
+            color: var(--primary-light);
+            background: rgba(99, 102, 241, 0.1);
+        }
+
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <span class="site-label">Dashboard View</span>
+            <h1>Global Master Overview</h1>
+            <p class="subtitle">Complete catalog of all prototypes and themes across all Local Sites environments on this machine.</p>
+        </header>
+
+        <!-- PROTOTYPES SECTION -->
+        <h2 class="main-section-title">🚀 All Prototypes Environment</h2>
+        <div class="grid" style="margin-bottom: 4rem;">
+            
+            <div class="section-card" style="animation-delay: 0.1s;">
+                <h2><span class="icon-wrapper">💻</span> EfficientAdvt.Com (Main)</h2>
+                <ul>
+                    <li><div class="dot"></div><a href="v2-prototype/index.html">v2-prototype</a></li>
+                    <li><div class="dot"></div><a href="v3-prototype/index.html">v3-prototype</a></li>
+                    <li><div class="dot"></div><a href="v4-prototype/index.html">v4-prototype</a></li>
+                    <li><div class="dot"></div><a href="v5-prototype/index.html">v5-prototype</a></li>
+                    <li><div class="dot"></div><a href="v6-prototype/index.html">v6-prototype</a></li>
+                    <li><div class="dot"></div><a href="v7-prototype/index.html">v7-prototype</a></li>
+                    <li><div class="dot"></div><a href="v7.0-prototype/index.html">v7.0-prototype</a></li>
+                    <li><div class="dot"></div><a href="v7.1-prototype/index.html">v7.1-prototype</a></li>
+                    <li><div class="dot"></div><a href="v7.2-prototype/index.html">v7.2-prototype</a></li>
+                </ul>
+            </div>
+
+            <div class="section-card" style="animation-delay: 0.2s;">
+                <h2><span class="icon-wrapper">✨</span> EfficientAdvt.Com (Recent/Nested)</h2>
+                <div class="site-group">
+                    <h3>Root Level</h3>
+                    <ul>
+                        <li><div class="dot"></div><a href="v8-prototype/index.html">v8-prototype</a> <span class="badge badge-recent">Recent</span></li>
+                        <li><div class="dot"></div><a href="v9-prototype/index.html">v9-prototype</a> <span class="badge badge-recent">Recent</span></li>
+                        <li><div class="dot"></div><a href="v10-prototype/index.html">v10-prototype</a> <span class="badge badge-recent">Recent</span></li>
+                    </ul>
+                </div>
+                <div class="site-group">
+                    <h3>Nested Directories</h3>
+                    <ul>
+                        <li><div class="dot"></div>v9-prototype/v8-prototype/ <span class="badge badge-nested">Nested</span></li>
+                        <li><div class="dot"></div>v7.0-prototype/v7-prototype/ <span class="badge badge-nested">Nested</span></li>
+                        <li><div class="dot"></div>Copilot/v9-prototype/ <span class="badge badge-nested">Nested</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section-card" style="animation-delay: 0.3s;">
+                <h2><span class="icon-wrapper">🌍</span> Other Local Sites</h2>
+                <div class="site-group">
+                    <h3>efficientadvt</h3>
+                    <ul>
+                        <li><div class="dot"></div>theme: efficient-modern/v8-prototype/ <span class="badge badge-nested">Inside Theme</span></li>
+                    </ul>
+                    <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 1rem; line-height: 1.5;">
+                        A hidden <strong>v8-prototype</strong> folder resides deep inside the <em>efficient-modern</em> theme folder over in the <em>efficientadvt</em> local site.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- THEMES SECTION -->
+        <h2 class="main-section-title">🎨 All WordPress Themes Hub</h2>
+        <div class="grid">
+            
+            <div class="section-card" style="animation-delay: 0.4s;">
+                <h2><span class="icon-wrapper">🎯</span> EfficientAdvt.Com</h2>
+                <ul>
+                    <li><div class="dot" style="background:#10b981; box-shadow:0 0 10px #10b981;"></div>Efficient <span class="badge badge-active">Active</span></li>
+                    <li><div class="dot"></div>Efficient-backup-20260313</li>
+                    <li><div class="dot"></div>twentytwentyfive <span class="badge badge-standard">WP Core</span></li>
+                    <li><div class="dot"></div>twentytwentythree <span class="badge badge-standard">WP Core</span></li>
+                </ul>
+            </div>
+
+            <div class="section-card" style="animation-delay: 0.5s;">
+                <h2><span class="icon-wrapper">⚡</span> efficient-modern Group</h2>
+                <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.5rem;">
+                    The following Local Sites all share exactly identical theme setups, featuring the <strong>efficient-modern</strong> theme alongside all classic WordPress default themes from twentyeleven up to twentytwentyfive.
+                </p>
+                
+                <div class="site-group">
+                    <h3>Sites in this group:</h3>
+                    <ul>
+                        <li><div class="dot"></div>efficient-advertising</li>
+                        <li><div class="dot"></div>efficientadvt</li>
+                        <li><div class="dot"></div>eprint1</li>
+                        <li><div class="dot"></div>EfficientPrint</li>
+                    </ul>
+                </div>
+                
+                <div class="site-group">
+                    <h3>Installed Themes for all 4 sites:</h3>
+                    <div class="theme-list">
+                        <span class="theme-pill highlight">efficient-modern</span>
+                        <span class="theme-pill">twentytwentyfive</span>
+                        <span class="theme-pill">twentytwentyfour</span>
+                        <span class="theme-pill">twentytwentythree</span>
+                        <span class="theme-pill">twentytwentytwo</span>
+                        <span class="theme-pill">twentytwentyone</span>
+                        <span class="theme-pill">twentytwenty</span>
+                        <span class="theme-pill">twentynineteen</span>
+                        <span class="theme-pill">...and older defaults</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-card" style="animation-delay: 0.6s;">
+                <h2><span class="icon-wrapper">🔗</span> Other Installations</h2>
+                
+                <div class="site-group">
+                    <h3>clone-efficient-advertising-llc</h3>
+                    <div class="theme-list">
+                        <span class="theme-pill highlight">Efficient</span>
+                        <span class="theme-pill">twentytwentyfive</span>
+                        <span class="theme-pill">twentytwentythree</span>
+                    </div>
+                </div>
+
+                <div class="site-group" style="margin-top: 2rem;">
+                    <h3>eprintae</h3>
+                    <div class="theme-list">
+                        <span class="theme-pill" style="border-color: #8b5cf6; color: #a78bfa;">hello-biz</span>
+                        <span class="theme-pill" style="border-color: #8b5cf6; color: #a78bfa;">mprinthouse-ae</span>
+                        <span class="theme-pill">twentytwentyfive</span>
+                        <span class="theme-pill">twentytwentyfour</span>
+                        <span class="theme-pill">twentytwentythree</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

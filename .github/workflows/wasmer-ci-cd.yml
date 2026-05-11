@@ -1,0 +1,73 @@
+name: Wasmer CI/CD
+
+on:
+  pull_request:
+    branches:
+      - master
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+concurrency:
+  group: wasmer-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build-package:
+    name: Build Wasmer package
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Prepare staged app directory
+        run: |
+          chmod +x scripts/sync-wasmer-app.sh
+          ./scripts/sync-wasmer-app.sh
+
+      - name: Verify staged package layout
+        run: |
+          test -f app/index.php
+          test -f app/wp-config.php
+          test -d app/wp-admin
+          test -d app/wp-includes
+          test -d app/wp-content/themes
+          test -d app/wp-content/plugins
+
+  deploy:
+    name: Deploy to Wasmer
+    if: github.event_name != 'pull_request'
+    needs: build-package
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+
+    env:
+      WASMER_TOKEN: ${{ secrets.WASMER_TOKEN }}
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Ensure Wasmer token is configured
+        run: test -n "$WASMER_TOKEN"
+
+      - name: Install Wasmer CLI
+        run: |
+          curl -fsSL https://get.wasmer.io -o install-wasmer.sh
+          sh install-wasmer.sh
+          echo "$HOME/.wasmer/bin" >> "$GITHUB_PATH"
+
+      - name: Prepare staged app directory
+        run: |
+          chmod +x scripts/sync-wasmer-app.sh
+          ./scripts/sync-wasmer-app.sh
+
+      - name: Verify Wasmer authentication
+        run: wasmer whoami
+
+      - name: Deploy app
+        run: wasmer deploy --path app.yaml --non-interactive --publish-package --no-wait

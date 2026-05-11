@@ -1,0 +1,60 @@
+[08-Sep-2024 06:42:41 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wpcf7_include_module_file() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/constant-contact/constant-contact.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/constant-contact/constant-contact.php on line 8
+[08-Sep-2024 06:42:57 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_filter() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/constant-contact/contact-form-properties.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/constant-contact/contact-form-properties.php on line 3
+[08-Sep-2024 06:43:41 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/constant-contact/doi.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/constant-contact/doi.php on line 9
+[08-Sep-2024 21:08:51 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wpcf7_include_module_file() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/constant-contact/constant-contact.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/constant-contact/constant-contact.php on line 8
+[08-Sep-2024 21:08:53 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_filter() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/constant-contact/contact-form-properties.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/constant-contact/contact-form-properties.php on line 3
+[08-Sep-2024 21:09:02 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/constant-contact/doi.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/constant-contact/doi.php on line 9
+[17-Sep-2024 03:05:44 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wpcf7_include_module_file() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/constant-contact/constant-contact.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/constant-contact/constant-contact.php on line 8
+[17-Sep-2024 03:05:45 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_filter() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/constant-contact/contact-form-properties.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/constant-contact/contact-form-properties.php on line 3
+[17-Sep-2024 03:05:45 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/constant-contact/doi.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/constant-contact/doi.php on line 9
+[09-Feb-2025 10:09:41 Asia/Karachi] PHP Fatal error:  Uncaught Error: Call to undefined function wpcf7_include_module_file() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/constant-contact/constant-contact.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/constant-contact/constant-contact.php on line 8
+[09-Feb-2025 10:09:42 Asia/Karachi] PHP Fatal error:  Uncaught Error: Call to undefined function wpcf7_include_module_file() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/constant-contact/constant-contact.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/constant-contact/constant-contact.php on line 8
+[09-Feb-2025 10:09:47 Asia/Karachi] PHP Fatal error:  Uncaught Error: Call to undefined function add_filter() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/constant-contact/contact-form-properties.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/constant-contact/contact-form-properties.php on line 3
+[09-Feb-2025 10:09:51 Asia/Karachi] PHP Fatal error:  Uncaught Error: Call to undefined function add_filter() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/constant-contact/contact-form-properties.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/constant-contact/contact-form-properties.php on line 3
+[09-Feb-2025 10:09:59 Asia/Karachi] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/constant-contact/doi.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/constant-contact/doi.php on line 9
+[09-Feb-2025 10:10:00 Asia/Karachi] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/constant-contact/doi.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/constant-contact/doi.php on line 9

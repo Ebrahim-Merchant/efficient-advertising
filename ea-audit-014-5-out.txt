@@ -1,0 +1,162 @@
+
+Warning: PHP Startup: Unable to load dynamic library 'php_imagick.dll' (tried: C:/Users/pc/AppData/Roaming/Local/lightning-services/php-8.2.27+1/bin/win64/ext\php_imagick.dll (The specified module could not be found), C:/Users/pc/AppData/Roaming/Local/lightning-services/php-8.2.27+1/bin/win64/ext\php_php_imagick.dll.dll (The specified module could not be found)) in Unknown on line 0
+Excel rows loaded: 830
+DB products with SKU: 830
+Duplicate SKUs in DB: 0
+
+===== EA-PRODUCT-IMPACT-AUDIT-014.5 RESULTS =====
+
+--- 1. Excel Decision Summary ---
+Keep:    644
+Delete:  83
+Ignore:  103
+Blank:   0
+
+--- 2. SKU Match Summary ---
+Found:      830
+Missing:    0
+Duplicates: 0
+
+--- 3. Slug Impact Summary ---
+Rows where title change would alter slug: 727
+NOTE: Slugs will NOT be changed in execution (per rules)
+Slug mismatch details (first 10):
+  SKU:PS-001 current_slug:matt-lamination-350gsm proposed_slug:standard-business-cards
+  SKU:PS-002 current_slug:matt-lamination-400gsm proposed_slug:standard-business-cards
+  SKU:PS-003 current_slug:glossy-lamination-400gsm proposed_slug:standard-business-cards
+  SKU:PS-004 current_slug:spot-uv-matt-lamination-400gsm proposed_slug:standard-business-cards
+  SKU:PS-005 current_slug:gold-foil-matt-lamination-400gsm proposed_slug:standard-business-cards
+  SKU:PS-006 current_slug:gold-foil-spot-uv-matt-lamination-400gsm proposed_slug:standard-business-cards
+  SKU:PS-007 current_slug:art-paper-without-lamination-400gsm proposed_slug:standard-business-cards
+  SKU:PS-008 current_slug:business-card-box proposed_slug:standard-business-cards
+  SKU:PS-023 current_slug:rounded-corner-matt-lamination-400gsm proposed_slug:premium-business-cards
+  SKU:PS-024 current_slug:rounded-corner-glossy-lamination-400gsm proposed_slug:premium-business-cards
+
+--- 4. Image Safety Summary ---
+Featured images OK:      634
+Featured images MISSING: 196
+Gallery OK:              0
+Gallery MISSING/EMPTY:   830
+Total broken paths:      0
+
+--- 5. Delete Impact Summary ---
+Delete rows in Excel:    83
+Delete SKUs found in DB: 83
+Delete SKUs missing:     0
+Delete candidates (all):
+  SKU:PS-009 ID:4903 status:publish feat:0 img_MISSING gal:0
+  SKU:PS-010 ID:4904 status:publish feat:0 img_MISSING gal:0
+  SKU:PS-011 ID:4905 status:publish feat:0 img_MISSING gal:0
+  SKU:PS-012 ID:4906 status:publish feat:0 img_MISSING gal:0
+  SKU:PS-013 ID:4907 status:publish feat:0 img_MISSING gal:0
+  SKU:PS-014 ID:4908 status:publish feat:0 img_MISSING gal:0
+  SKU:PS-015 ID:4909 status:publish feat:0 img_MISSING gal:0
+  SKU:PS-016 ID:4910 status:publish feat:0 img_MISSING gal:0
+  SKU:PS-017 ID:4911 status:publish feat:0 img_MISSING gal:0
+  SKU:PS-018 ID:4912 status:publish feat:0 img_MISSING gal:0
+  SKU:PS-019 ID:4913 status:publish feat:0 img_MISSING gal:0
+  SKU:PS-020 ID:4914 status:publish feat:0 img_MISSING gal:0
+  SKU:PS-021 ID:4915 status:publish feat:0 img_MISSING gal:0
+  SKU:PS-022 ID:4916 status:publish feat:0 img_MISSING gal:0
+  SKU:PS-034 ID:4761 status:publish feat:0 img_MISSING gal:0
+  SKU:PS-048 ID:1100 status:publish feat:4519 img_ok gal:0
+  SKU:PS-049 ID:1101 status:publish feat:4520 img_ok gal:0
+  SKU:PS-050 ID:1102 status:publish feat:4521 img_ok gal:0
+  SKU:PS-051 ID:1103 status:publish feat:4522 img_ok gal:0
+  SKU:PS-052 ID:1104 status:publish feat:4523 img_ok gal:0
+  SKU:PS-053 ID:1105 status:publish feat:4524 img_ok gal:0
+  SKU:PS-054 ID:1106 status:publish feat:4525 img_ok gal:0
+  SKU:PS-055 ID:1107 status:publish feat:4526 img_ok gal:0
+  SKU:PS-065 ID:1117 status:publish feat:4536 img_ok gal:0
+  SKU:PS-066 ID:4921 status:publish feat:0 img_MISSING gal:0
+  SKU:PS-067 ID:4922 status:publish feat:0 img_MISSING gal:0
+  SKU:PS-068 ID:4923 status:publish feat:0 img_MISSING gal:0
+  SKU:PS-069 ID:4924 status:publish feat:0 img_MISSING gal:0
+  SKU:PS-079 ID:1131 status:publish feat:4550 img_ok gal:0
+  SKU:PS-080 ID:4776 status:publish feat:0 img_MISSING gal:0
+  SKU:PS-081 ID:4777 status:publish feat:0 img_MISSING gal:0
+  SKU:PS-082 ID:4778 status:publish feat:0 img_MISSING gal:0
+  SKU:PS-083 ID:4779 status:publish feat:0 img_MISSING gal:0
+  SKU:PS-084 ID:4780 status:publish feat:0 img_MISSING gal:0
+  SKU:PS-085 ID:4781 status:publish feat:0 img_MISSING gal:0
+  SKU:PS-086 ID:4782 status:publish feat:0 img_MISSING gal:0
+  SKU:PS-087 ID:1139 status:publish feat:4558 img_ok gal:0
+  SKU:PS-088 ID:4784 status:publish feat:0 img_MISSING gal:0
+  SKU:PS-089 ID:4785 status:publish feat:0 img_MISSING gal:0
+  SKU:PS-090 ID:4786 status:publish feat:0 img_MISSING gal:0
+  SKU:PS-091 ID:1143 status:publish feat:4562 img_ok gal:0
+  SKU:PS-092 ID:4788 status:publish feat:0 img_MISSING gal:0
+  SKU:PS-093 ID:4789 status:publish feat:0 img_MISSING gal:0
+  SKU:PS-094 ID:4790 status:publish feat:0 img_MISSING gal:0
+  SKU:PS-101 ID:4796 status:publish feat:0 img_MISSING gal:0
+  SKU:PS-102 ID:4797 status:publish feat:0 img_MISSING gal:0
+  SKU:PS-103 ID:4798 status:publish feat:0 img_MISSING gal:0
+  SKU:PS-104 ID:4799 status:publish feat:0 img_MISSING gal:0
+  SKU:PS-105 ID:4800 status:publish feat:0 img_MISSING gal:0
+  SKU:PS-106 ID:4801 status:publish feat:0 img_MISSING gal:0
+  SKU:PS-107 ID:4802 status:publish feat:0 img_MISSING gal:0
+  SKU:PS-108 ID:4803 status:publish feat:0 img_MISSING gal:0
+  SKU:PS-109 ID:4804 status:publish feat:0 img_MISSING gal:0
+  SKU:PS-110 ID:4805 status:publish feat:0 img_MISSING gal:0
+  SKU:PS-111 ID:4806 status:publish feat:0 img_MISSING gal:0
+  SKU:PS-112 ID:4807 status:publish feat:0 img_MISSING gal:0
+  SKU:PS-113 ID:4808 status:publish feat:0 img_MISSING gal:0
+  SKU:PS-114 ID:4809 status:publish feat:0 img_MISSING gal:0
+  SKU:PS-118 ID:4813 status:publish feat:0 img_MISSING gal:0
+  SKU:PS-119 ID:4814 status:publish feat:0 img_MISSING gal:0
+  SKU:PS-120 ID:4815 status:publish feat:0 img_MISSING gal:0
+  SKU:PS-123 ID:4818 status:publish feat:0 img_MISSING gal:0
+  SKU:PS-124 ID:4819 status:publish feat:0 img_MISSING gal:0
+  SKU:PS-125 ID:4820 status:publish feat:0 img_MISSING gal:0
+  SKU:PS-128 ID:4823 status:publish feat:0 img_MISSING gal:0
+  SKU:PS-131 ID:4826 status:publish feat:0 img_MISSING gal:0
+  SKU:PS-132 ID:4827 status:publish feat:0 img_MISSING gal:0
+  SKU:PS-133 ID:1185 status:publish feat:4057 img_ok gal:0
+  SKU:PS-134 ID:4927 status:publish feat:0 img_MISSING gal:0
+  SKU:PS-158 ID:4835 status:publish feat:0 img_MISSING gal:0
+  SKU:PS-159 ID:4836 status:publish feat:0 img_MISSING gal:0
+  SKU:PS-160 ID:4837 status:publish feat:0 img_MISSING gal:0
+  SKU:PS-176 ID:4847 status:publish feat:0 img_MISSING gal:0
+  SKU:PS-177 ID:4848 status:publish feat:0 img_MISSING gal:0
+  SKU:PS-258 ID:1310 status:publish feat:4115 img_ok gal:0
+  SKU:PS-259 ID:4890 status:publish feat:0 img_MISSING gal:0
+  SKU:PS-260 ID:4891 status:publish feat:0 img_MISSING gal:0
+  SKU:PS-271 ID:1323 status:publish feat:4128 img_ok gal:0
+  SKU:PS-272 ID:4893 status:publish feat:0 img_MISSING gal:0
+  SKU:PS-273 ID:1325 status:publish feat:4130 img_ok gal:0
+  SKU:PS-274 ID:4895 status:publish feat:0 img_MISSING gal:0
+  SKU:LF-036 ID:4954 status:publish feat:0 img_MISSING gal:0
+  SKU:LF-037 ID:4952 status:publish feat:0 img_MISSING gal:0
+
+--- 6. Variant Group Summary ---
+Total variant groups (product names with >=1 member): 280
+Groups with >1 variant:  198
+Groups with blank variant values: 0
+Groups with duplicate variant labels: 0
+
+--- 7. Duplicate Final Name Risk ---
+Final names shared by >1 SKU: 198
+  NAME:'Standard Business Cards' SKUs:PS-001, PS-002, PS-003, PS-004, PS-005, PS-006, PS-007, PS-008
+  NAME:'Premium Business Cards' SKUs:PS-023, PS-024, PS-025, PS-026, PS-027, PS-028, PS-029, PS-030, PS-031
+  NAME:'Folded Business Cards' SKUs:PS-032, PS-033
+  NAME:'Die Cut Business Cards' SKUs:PS-036, PS-037, PS-038
+  NAME:'Square Business Cards' SKUs:PS-039, PS-040, PS-041
+  NAME:'Metal Business Cards' SKUs:PS-042, PS-043
+  NAME:'NFC Smart Business Cards' SKUs:PS-044, PS-045
+  NAME:'Transparent & Clear Business Cards' SKUs:PS-046, PS-047
+  NAME:'Economy Flyers' SKUs:PS-056, PS-057, PS-058, PS-059
+  NAME:'Real Size Flyers' SKUs:PS-060, PS-061, PS-062, PS-063, PS-064
+  NAME:'DL Flyers & Leaflets' SKUs:PS-070, PS-071, PS-072, PS-073, PS-074
+  NAME:'B4/B5 Flyers' SKUs:PS-075, PS-076, PS-077, PS-078
+  NAME:'Postcards' SKUs:PS-096, PS-097, PS-098, PS-099, PS-100
+  NAME:'Bookmarks' SKUs:PS-115, PS-116, PS-117, PS-121, PS-122
+  NAME:'Letterheads' SKUs:PS-126, PS-127
+  NAME:'Envelopes' SKUs:PS-129, PS-130
+  NAME:'Notepads & Notebooks' SKUs:PS-135, PS-136
+  NAME:'NCR Forms & Invoice Books' SKUs:PS-137, PS-138
+  NAME:'Presentation Folders' SKUs:PS-139, PS-140, PS-141, PS-142, PS-143
+  NAME:'Memo Pads & Sticky Notes' SKUs:PS-145, PS-146
+
+--- Unmatched SKUs ---
+
+===== END OF AUDIT =====

@@ -1,0 +1,32 @@
+[08-Sep-2024 06:32:14 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/includes/block-editor/block-editor.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/includes/block-editor/block-editor.php on line 3
+[08-Sep-2024 06:32:25 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "WPCF7_VERSION" in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/includes/block-editor/index.asset.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/includes/block-editor/index.asset.php on line 14
+[08-Sep-2024 21:04:13 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/includes/block-editor/block-editor.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/includes/block-editor/block-editor.php on line 3
+[08-Sep-2024 21:04:16 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "WPCF7_VERSION" in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/includes/block-editor/index.asset.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/includes/block-editor/index.asset.php on line 14
+[17-Sep-2024 03:05:27 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/includes/block-editor/block-editor.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/includes/block-editor/block-editor.php on line 3
+[17-Sep-2024 03:05:27 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "WPCF7_VERSION" in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/includes/block-editor/index.asset.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/includes/block-editor/index.asset.php on line 14
+[09-Feb-2025 10:07:24 Asia/Karachi] PHP Fatal error:  Uncaught Error: Undefined constant "WPCF7_VERSION" in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/includes/block-editor/index.asset.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/includes/block-editor/index.asset.php on line 14
+[09-Feb-2025 10:07:26 Asia/Karachi] PHP Fatal error:  Uncaught Error: Undefined constant "WPCF7_VERSION" in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/includes/block-editor/index.asset.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/includes/block-editor/index.asset.php on line 14

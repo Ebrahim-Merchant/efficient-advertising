@@ -1,0 +1,264 @@
+/* EA-HOMEPAGE-SHELL-014 — homepage shell polish only */
+
+body.home .ea-hdr-brand .logo img,
+body.page-template-index .ea-hdr-brand .logo img,
+body.ea-dark-page .ea-hdr-brand .logo img {
+  filter: brightness(1.35) contrast(1.08) saturate(1.05);
+}
+
+body.home .ea-hdr-tagline,
+body.page-template-index .ea-hdr-tagline,
+body.ea-dark-page .ea-hdr-tagline {
+  color: rgba(255,255,255,0.96) !important;
+  text-shadow: 0 1px 0 rgba(0,0,0,0.18);
+}
+
+body.home .logtophead,
+body.page-template-index .logtophead {
+  min-height: 82px !important;
+}
+
+body.home .ea-hp-hero-inner,
+body.page-template-index .ea-hp-hero-inner {
+  padding-top: clamp(88px, 9.5vw, 118px) !important;
+}
+
+body.home .ea-hp-hero-label,
+body.page-template-index .ea-hp-hero-label {
+  font-size: 13px !important;
+  letter-spacing: 3.4px !important;
+}
+
+body.home .headerbottom,
+body.page-template-index .headerbottom {
+  overflow: hidden !important;
+}
+
+body.home .ea-mega-nav,
+body.page-template-index .ea-mega-nav {
+  width: 100% !important;
+}
+
+body.home .ea-mega-list,
+body.page-template-index .ea-mega-list {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  justify-content: space-between !important;
+  align-items: stretch !important;
+  gap: 4px !important;
+  width: 100% !important;
+}
+
+body.home .ea-mega-list > .ea-mega-item,
+body.page-template-index .ea-mega-list > .ea-mega-item {
+  flex: 0 1 auto !important;
+  min-width: 0 !important;
+}
+
+body.home .ea-mega-list > .ea-mega-item > .ea-mega-link,
+body.page-template-index .ea-mega-list > .ea-mega-item > .ea-mega-link {
+  font-size: 11.6px !important;
+  font-weight: 700 !important;
+  padding: 10px 7px !important;
+  letter-spacing: 0.002em !important;
+  white-space: nowrap !important;
+}
+
+body.home .ea-mega-panel,
+body.page-template-index .ea-mega-panel {
+  border-radius: 16px !important;
+}
+
+body.home .ea-mega-panel .ea-panel-sublist li a,
+body.page-template-index .ea-mega-panel .ea-panel-sublist li a {
+  font-size: 14px !important;
+  line-height: 1.45 !important;
+  white-space: normal !important;
+  display: block !important;
+}
+
+body.home .ea-mega-panel h4,
+body.home .ea-mega-panel h5,
+body.home .ea-mega-panel .ea-panel-title,
+body.home .ea-mega-panel .ea-panel-head,
+body.page-template-index .ea-mega-panel h4,
+body.page-template-index .ea-mega-panel h5,
+body.page-template-index .ea-mega-panel .ea-panel-title,
+body.page-template-index .ea-mega-panel .ea-panel-head {
+  font-size: 15px !important;
+  line-height: 1.35 !important;
+}
+
+body.home #ea-hp-hero,
+body.page-template-index #ea-hp-hero {
+  background:
+    radial-gradient(ellipse at 12% 24%, rgba(255,186,9,0.10) 0%, transparent 46%),
+    radial-gradient(ellipse at 88% 6%, rgba(255,186,9,0.05) 0%, transparent 40%),
+    linear-gradient(180deg, #0a0a14 0%, #101426 52%, #0c1020 100%) !important;
+}
+
+body.home #ea-hp-services,
+body.home #ea-hp-portfolio,
+body.home #ea-hp-cta,
+body.page-template-index #ea-hp-services,
+body.page-template-index #ea-hp-portfolio,
+body.page-template-index #ea-hp-cta {
+  background: #0d1020 !important;
+}
+
+body.home #ea-hp-products,
+body.home #ea-hp-reviews,
+body.home #ea-hp-why,
+body.home #ea-hp-faq,
+body.page-template-index #ea-hp-products,
+body.page-template-index #ea-hp-reviews,
+body.page-template-index #ea-hp-why,
+body.page-template-index #ea-hp-faq {
+  background: #111426 !important;
+}
+
+body.home .ea-hp-service-card,
+body.home .ea-product-card,
+body.home .ea-hp-review-card,
+body.home .ea-hp-video-card,
+body.home .ea-hp-why-card,
+body.page-template-index .ea-hp-service-card,
+body.page-template-index .ea-product-card,
+body.page-template-index .ea-hp-review-card,
+body.page-template-index .ea-hp-video-card,
+body.page-template-index .ea-hp-why-card {
+  background: rgba(255,255,255,0.045) !important;
+  box-shadow: 0 18px 46px rgba(0,0,0,0.22) !important;
+}
+
+body.home footer,
+body.home #footer,
+body.home .footer,
+body.page-template-index footer,
+body.page-template-index #footer,
+body.page-template-index .footer {
+  background: linear-gradient(180deg, #0a0a14 0%, #0d1020 100%) !important;
+  border-top: 1px solid rgba(255,186,9,0.28) !important;
+}
+
+body.home footer h2,
+body.home footer h3,
+body.home footer h4,
+body.home #footer h2,
+body.home #footer h3,
+body.home #footer h4,
+body.home .footer h2,
+body.home .footer h3,
+body.home .footer h4,
+body.page-template-index footer h2,
+body.page-template-index footer h3,
+body.page-template-index footer h4,
+body.page-template-index #footer h2,
+body.page-template-index #footer h3,
+body.page-template-index #footer h4,
+body.page-template-index .footer h2,
+body.page-template-index .footer h3,
+body.page-template-index .footer h4 {
+  color: #FFBA09 !important;
+  letter-spacing: 1.2px !important;
+}
+
+body.home footer p,
+body.home footer li,
+body.home footer a,
+body.home #footer p,
+body.home #footer li,
+body.home #footer a,
+body.home .footer p,
+body.home .footer li,
+body.home .footer a,
+body.page-template-index footer p,
+body.page-template-index footer li,
+body.page-template-index footer a,
+body.page-template-index #footer p,
+body.page-template-index #footer li,
+body.page-template-index #footer a,
+body.page-template-index .footer p,
+body.page-template-index .footer li,
+body.page-template-index .footer a {
+  color: rgba(255,255,255,0.82) !important;
+}
+
+body.home footer input,
+body.home footer select,
+body.home footer textarea,
+body.home #footer input,
+body.home #footer select,
+body.home #footer textarea,
+body.home .footer input,
+body.home .footer select,
+body.home .footer textarea,
+body.page-template-index footer input,
+body.page-template-index footer select,
+body.page-template-index footer textarea,
+body.page-template-index #footer input,
+body.page-template-index #footer select,
+body.page-template-index #footer textarea,
+body.page-template-index .footer input,
+body.page-template-index .footer select,
+body.page-template-index .footer textarea {
+  background: rgba(255,255,255,0.06) !important;
+  border: 1px solid rgba(255,255,255,0.10) !important;
+  color: #fff !important;
+  border-radius: 8px !important;
+  min-height: 44px !important;
+}
+
+body.home footer input::placeholder,
+body.home footer textarea::placeholder,
+body.home #footer input::placeholder,
+body.home #footer textarea::placeholder,
+body.home .footer input::placeholder,
+body.home .footer textarea::placeholder,
+body.page-template-index footer input::placeholder,
+body.page-template-index footer textarea::placeholder,
+body.page-template-index #footer input::placeholder,
+body.page-template-index #footer textarea::placeholder,
+body.page-template-index .footer input::placeholder,
+body.page-template-index .footer textarea::placeholder {
+  color: rgba(255,255,255,0.55) !important;
+}
+
+body.home footer button,
+body.home footer input[type=submit],
+body.home #footer button,
+body.home #footer input[type=submit],
+body.home .footer button,
+body.home .footer input[type=submit],
+body.page-template-index footer button,
+body.page-template-index footer input[type=submit],
+body.page-template-index #footer button,
+body.page-template-index #footer input[type=submit],
+body.page-template-index .footer button,
+body.page-template-index .footer input[type=submit] {
+  background: #FFBA09 !important;
+  color: #0A0A14 !important;
+  border: none !important;
+  border-radius: 8px !important;
+  min-height: 46px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.02em !important;
+}
+
+@media (max-width: 1440px) {
+  body.home .ea-mega-list > .ea-mega-item > .ea-mega-link,
+  body.page-template-index .ea-mega-list > .ea-mega-item > .ea-mega-link {
+    font-size: 11.2px !important;
+    padding-left: 6px !important;
+    padding-right: 6px !important;
+  }
+}
+
+@media (max-width: 1280px) {
+  body.home .ea-mega-list > .ea-mega-item > .ea-mega-link,
+  body.page-template-index .ea-mega-list > .ea-mega-item > .ea-mega-link {
+    font-size: 10.8px !important;
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+  }
+}

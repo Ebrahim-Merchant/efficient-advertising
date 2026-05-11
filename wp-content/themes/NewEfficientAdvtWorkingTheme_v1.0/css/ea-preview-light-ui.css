@@ -1,0 +1,659 @@
+/* ===========================================================
+   EA PREVIEW — LIGHT PREMIUM UI
+   File:    css/ea-preview-light-ui.css
+   Purpose: Non-destructive visual preview of light theme
+            for Homepage and Category pages only.
+   Loaded:  ONLY when ?ea_preview=light is in the URL,
+            via mu-plugins/ea-preview-loader.php
+   Remove:  Delete this file + ea-preview-loader.php to undo.
+   Reference aesthetic: Product page (light, clean, premium)
+   =========================================================== */
+
+/* ── 1. PALETTE TOKENS ─────────────────────────────────────
+   Override CSS custom properties used across templates.
+   Scoped to homepage + category pages only.
+   ────────────────────────────────────────────────────────── */
+body.home,
+body.tax-product_cat {
+  --preview-bg:         #FAFAF8;
+  --preview-bg-alt:     #F3F1EC;
+  --preview-bg-cta:     #F7F3E8;
+  --preview-white:      #FFFFFF;
+  --preview-border:     #E4E0D8;
+  --preview-shadow:     rgba(0, 0, 0, 0.07);
+  --preview-heading:    #1A1A1A;
+  --preview-body:       #4A4A4A;
+  --preview-muted:      #888888;
+  --preview-gold:       #C9A84C;
+  --preview-gold-light: #F5EDD8;
+  --preview-gold-dark:  #8B6914;
+  background-color: var(--preview-bg) !important;
+}
+
+/* ── 2. PAGE BODY ──────────────────────────────────────────*/
+body.home,
+body.tax-product_cat {
+  color: var(--preview-body) !important;
+}
+
+/* ── 3. HOMEPAGE HERO ─ #ea-hp-hero ───────────────────────*/
+body.home #ea-hp-hero {
+  background: linear-gradient(140deg, #F7F5EF 0%, #FFFFFF 55%, #F3EFE4 100%) !important;
+  border-bottom: 1px solid var(--preview-border) !important;
+}
+
+/* Remove dark glow orbs / pseudo-elements injected via CSS */
+body.home #ea-hp-hero::before,
+body.home #ea-hp-hero::after {
+  display: none !important;
+}
+
+/* Hero inner padding — keep existing layout, just recolour */
+body.home .ea-hp-hero-label {
+  color: var(--preview-gold) !important;
+  background: var(--preview-gold-light) !important;
+  border-color: rgba(201, 168, 76, 0.3) !important;
+}
+
+body.home .ea-hp-hero-content h1 {
+  color: var(--preview-heading) !important;
+  text-shadow: none !important;
+  -webkit-text-stroke: 0 !important;
+}
+
+body.home .ea-hp-hero-content p {
+  color: var(--preview-body) !important;
+  text-shadow: none !important;
+}
+
+body.home .ea-hp-hero-micro {
+  color: var(--preview-muted) !important;
+}
+body.home .ea-hp-hero-micro a {
+  color: var(--preview-gold-dark) !important;
+}
+
+/* Hero CTA buttons */
+body.home .ea-hp-btn--primary {
+  background: var(--preview-gold) !important;
+  color: #1A1A1A !important;
+  border: none !important;
+  box-shadow: 0 4px 18px rgba(201, 168, 76, 0.35) !important;
+}
+body.home .ea-hp-btn--primary:hover {
+  background: #b8943f !important;
+}
+
+body.home .ea-hp-btn--whatsapp {
+  background: #25D366 !important;
+  color: #FFFFFF !important;
+  border: none !important;
+}
+
+body.home .ea-hp-btn--outline {
+  background: transparent !important;
+  color: var(--preview-heading) !important;
+  border: 2px solid var(--preview-border) !important;
+}
+body.home .ea-hp-btn--outline:hover {
+  border-color: var(--preview-gold) !important;
+  color: var(--preview-gold-dark) !important;
+}
+
+/* Hero media: image panel — light frame */
+body.home .ea-hp-hero-media {
+  border-radius: 16px !important;
+  overflow: hidden !important;
+  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.12) !important;
+}
+
+/* ── 4. TRUST STRIP ─ #ea-hp-trust-strip ──────────────────*/
+body.home #ea-hp-trust-strip {
+  background: var(--preview-white) !important;
+  border-top: 1px solid var(--preview-border) !important;
+  border-bottom: 1px solid var(--preview-border) !important;
+}
+
+body.home .ea-hp-trust-item strong {
+  color: var(--preview-gold) !important;
+  text-shadow: none !important;
+}
+
+body.home .ea-hp-trust-item span {
+  color: var(--preview-muted) !important;
+}
+
+body.home .ea-hp-trust-item {
+  border-color: var(--preview-border) !important;
+}
+
+/* ── 5. SERVICES ─ #ea-hp-services ────────────────────────*/
+body.home #ea-hp-services {
+  background: var(--preview-bg-alt) !important;
+}
+
+body.home #ea-hp-services .ea-hp-label {
+  color: var(--preview-gold) !important;
+  background: var(--preview-gold-light) !important;
+}
+
+body.home #ea-hp-services h2 {
+  color: var(--preview-heading) !important;
+  text-shadow: none !important;
+}
+
+body.home #ea-hp-services .ea-hp-section-header p {
+  color: var(--preview-body) !important;
+}
+
+/* Service cards */
+body.home .ea-hp-service-card {
+  background: var(--preview-white) !important;
+  border: 1px solid var(--preview-border) !important;
+  box-shadow: 0 2px 16px var(--preview-shadow) !important;
+  color: var(--preview-body) !important;
+}
+
+body.home .ea-hp-service-card:hover {
+  border-color: var(--preview-gold) !important;
+  box-shadow: 0 8px 32px rgba(201, 168, 76, 0.15) !important;
+  transform: translateY(-3px) !important;
+}
+
+body.home .ea-hp-service-icon {
+  color: var(--preview-gold) !important;
+  background: var(--preview-gold-light) !important;
+  border: none !important;
+}
+
+body.home .ea-hp-service-card h3 {
+  color: var(--preview-heading) !important;
+}
+
+body.home .ea-hp-service-card p {
+  color: var(--preview-body) !important;
+}
+
+body.home .ea-hp-service-arrow {
+  color: var(--preview-gold) !important;
+}
+
+/* ── 6. PRODUCTS ─ #ea-hp-products ────────────────────────*/
+body.home #ea-hp-products {
+  background: var(--preview-white) !important;
+}
+
+body.home #ea-hp-products .ea-hp-label {
+  color: var(--preview-gold) !important;
+  background: var(--preview-gold-light) !important;
+}
+
+body.home #ea-hp-products h2 {
+  color: var(--preview-heading) !important;
+  text-shadow: none !important;
+}
+
+body.home #ea-hp-products .ea-hp-section-header p,
+body.home #ea-hp-products .ea-hp-section-header p a {
+  color: var(--preview-body) !important;
+}
+
+/* Product cards */
+body.home .ea-product-card {
+  background: var(--preview-white) !important;
+  border: 1px solid var(--preview-border) !important;
+  box-shadow: 0 2px 16px var(--preview-shadow) !important;
+}
+
+body.home .ea-product-card:hover {
+  border-color: var(--preview-gold) !important;
+  box-shadow: 0 8px 32px rgba(201, 168, 76, 0.15) !important;
+  transform: translateY(-3px) !important;
+}
+
+body.home .ea-product-card__cat {
+  background: var(--preview-gold-light) !important;
+  color: var(--preview-gold-dark) !important;
+}
+
+body.home .ea-product-card__body h4 {
+  color: var(--preview-heading) !important;
+}
+
+body.home .ea-product-card__body p {
+  color: var(--preview-body) !important;
+}
+
+body.home .ea-product-card__cta {
+  color: var(--preview-gold-dark) !important;
+}
+
+/* ── 7. PORTFOLIO ─ #ea-hp-portfolio ──────────────────────*/
+body.home #ea-hp-portfolio {
+  background: var(--preview-bg-alt) !important;
+}
+
+body.home #ea-hp-portfolio .ea-hp-label {
+  color: var(--preview-gold) !important;
+  background: var(--preview-gold-light) !important;
+}
+
+body.home #ea-hp-portfolio h2 {
+  color: var(--preview-heading) !important;
+  text-shadow: none !important;
+}
+
+body.home #ea-hp-portfolio .ea-hp-section-header p {
+  color: var(--preview-body) !important;
+}
+
+body.home .ea-hp-portfolio-item {
+  border-radius: 12px !important;
+  box-shadow: 0 4px 20px var(--preview-shadow) !important;
+  overflow: hidden !important;
+}
+
+body.home .ea-hp-portfolio-overlay {
+  background: linear-gradient(to top, rgba(0,0,0,0.55) 0%, transparent 100%) !important;
+}
+
+body.home #ea-hp-portfolio .ea-hp-btn--outline {
+  background: transparent !important;
+  color: var(--preview-heading) !important;
+  border: 2px solid var(--preview-border) !important;
+}
+
+/* ── 8. REVIEWS ─ #ea-hp-reviews ──────────────────────────*/
+body.home #ea-hp-reviews {
+  background: var(--preview-white) !important;
+}
+
+body.home #ea-hp-reviews .ea-hp-label {
+  color: var(--preview-gold) !important;
+  background: var(--preview-gold-light) !important;
+}
+
+body.home #ea-hp-reviews h2 {
+  color: var(--preview-heading) !important;
+  text-shadow: none !important;
+}
+
+body.home #ea-hp-reviews .ea-hp-section-header p {
+  color: var(--preview-body) !important;
+}
+
+body.home .ea-hp-review-card {
+  background: var(--preview-white) !important;
+  border: 1px solid var(--preview-border) !important;
+  box-shadow: 0 2px 16px var(--preview-shadow) !important;
+}
+
+body.home .ea-hp-review-stars {
+  color: var(--preview-gold) !important;
+}
+
+body.home .ea-hp-review-text {
+  color: var(--preview-body) !important;
+}
+
+body.home .ea-hp-review-meta strong {
+  color: var(--preview-heading) !important;
+}
+
+body.home .ea-hp-review-meta span {
+  color: var(--preview-muted) !important;
+}
+
+/* ── 9. VIDEOS ─ #ea-hp-videos ────────────────────────────*/
+body.home #ea-hp-videos {
+  background: var(--preview-bg-alt) !important;
+}
+
+body.home #ea-hp-videos .ea-hp-label {
+  color: var(--preview-gold) !important;
+  background: var(--preview-gold-light) !important;
+}
+
+body.home #ea-hp-videos h2 {
+  color: var(--preview-heading) !important;
+  text-shadow: none !important;
+}
+
+body.home #ea-hp-videos .ea-hp-section-header p {
+  color: var(--preview-body) !important;
+}
+
+body.home .ea-hp-video-card {
+  background: var(--preview-white) !important;
+  border: 1px solid var(--preview-border) !important;
+  box-shadow: 0 2px 16px var(--preview-shadow) !important;
+  border-radius: 16px !important;
+  overflow: hidden !important;
+}
+
+body.home .ea-hp-video-card h3 {
+  color: var(--preview-heading) !important;
+}
+
+body.home #ea-hp-videos .ea-hp-btn--outline {
+  color: var(--preview-heading) !important;
+  border: 2px solid var(--preview-border) !important;
+}
+
+/* ── 10. WHY CHOOSE US ─ #ea-hp-why ───────────────────────*/
+body.home #ea-hp-why {
+  background: var(--preview-white) !important;
+}
+
+body.home #ea-hp-why .ea-hp-label {
+  color: var(--preview-gold) !important;
+  background: var(--preview-gold-light) !important;
+}
+
+body.home #ea-hp-why h2 {
+  color: var(--preview-heading) !important;
+  text-shadow: none !important;
+}
+
+body.home .ea-hp-why-card {
+  background: var(--preview-bg-alt) !important;
+  border: 1px solid var(--preview-border) !important;
+  box-shadow: 0 2px 12px var(--preview-shadow) !important;
+}
+
+body.home .ea-hp-why-card:hover {
+  border-color: var(--preview-gold) !important;
+  box-shadow: 0 8px 28px rgba(201, 168, 76, 0.15) !important;
+}
+
+body.home .ea-hp-why-icon {
+  color: var(--preview-gold) !important;
+  background: var(--preview-gold-light) !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+body.home .ea-hp-why-card h3 {
+  color: var(--preview-heading) !important;
+}
+
+body.home .ea-hp-why-card p {
+  color: var(--preview-body) !important;
+}
+
+/* ── 11. CTA BAND ─ #ea-hp-cta ────────────────────────────*/
+body.home #ea-hp-cta {
+  background: linear-gradient(135deg, #FBF8F0 0%, var(--preview-gold-light) 100%) !important;
+  border-top: 1px solid rgba(201, 168, 76, 0.25) !important;
+  border-bottom: 1px solid rgba(201, 168, 76, 0.25) !important;
+}
+
+body.home #ea-hp-cta::before,
+body.home #ea-hp-cta::after {
+  display: none !important;
+}
+
+body.home .ea-hp-cta-inner h2 {
+  color: var(--preview-heading) !important;
+  text-shadow: none !important;
+}
+
+body.home .ea-hp-cta-inner p {
+  color: var(--preview-body) !important;
+}
+
+/* ── 12. FAQ ─ #ea-hp-faq ─────────────────────────────────*/
+body.home #ea-hp-faq {
+  background: var(--preview-bg) !important;
+}
+
+body.home #ea-hp-faq .ea-hp-label {
+  color: var(--preview-gold) !important;
+  background: var(--preview-gold-light) !important;
+}
+
+body.home #ea-hp-faq h2 {
+  color: var(--preview-heading) !important;
+  text-shadow: none !important;
+}
+
+body.home .ea-hp-faq-item {
+  background: var(--preview-white) !important;
+  border: 1px solid var(--preview-border) !important;
+  box-shadow: 0 1px 8px var(--preview-shadow) !important;
+}
+
+body.home .ea-hp-faq-item summary {
+  color: var(--preview-heading) !important;
+}
+
+body.home .ea-hp-faq-item summary:hover {
+  color: var(--preview-gold-dark) !important;
+}
+
+body.home .ea-hp-faq-icon {
+  color: var(--preview-gold) !important;
+}
+
+body.home .ea-hp-faq-answer p {
+  color: var(--preview-body) !important;
+}
+
+body.home .ea-hp-faq-answer {
+  border-top: 1px solid var(--preview-border) !important;
+  background: var(--preview-bg) !important;
+}
+
+/* ── 13. GLOBAL SECTION HEADER (homepage) ──────────────────*/
+body.home .ea-hp-section-header h2 {
+  color: var(--preview-heading) !important;
+  text-shadow: none !important;
+}
+
+/* Remove any ::before / ::after glows on section wrappers */
+body.home section::before,
+body.home section::after {
+  background: none !important;
+  box-shadow: none !important;
+  opacity: 0 !important;
+}
+
+/* Section divider lines: gold → subtle */
+body.home .ea-section-divider,
+body.home [class*="divider"] {
+  background: var(--preview-border) !important;
+  opacity: 1 !important;
+}
+
+/* ===========================================================
+   CATEGORY PAGE — body.tax-product_cat
+   =========================================================== */
+
+/* ── 14. CATEGORY HERO ─ .ea-cat-hero ─────────────────────*/
+body.tax-product_cat .ea-cat-hero {
+  background: linear-gradient(140deg, #F7F5EF 0%, #FFFFFF 55%, #F3EFE4 100%) !important;
+  border-bottom: 1px solid var(--preview-border) !important;
+  color: var(--preview-heading) !important;
+}
+
+body.tax-product_cat .ea-cat-hero::before,
+body.tax-product_cat .ea-cat-hero::after {
+  display: none !important;
+}
+
+/* Breadcrumb */
+body.tax-product_cat .ea-cat-breadcrumb a {
+  color: var(--preview-muted) !important;
+}
+body.tax-product_cat .ea-cat-breadcrumb a:hover {
+  color: var(--preview-gold-dark) !important;
+}
+body.tax-product_cat .ea-cat-breadcrumb .sep {
+  color: var(--preview-border) !important;
+}
+body.tax-product_cat .ea-cat-breadcrumb .current {
+  color: var(--preview-body) !important;
+}
+
+/* Hero text */
+body.tax-product_cat .ea-cat-hero h1 {
+  color: var(--preview-heading) !important;
+  text-shadow: none !important;
+}
+
+body.tax-product_cat .ea-cat-hero p {
+  color: var(--preview-body) !important;
+}
+
+/* Hero CTA buttons */
+body.tax-product_cat .ea-cat-hero .ea-hp-btn--primary {
+  background: var(--preview-gold) !important;
+  color: #1A1A1A !important;
+  border: none !important;
+  box-shadow: 0 4px 18px rgba(201, 168, 76, 0.35) !important;
+}
+
+body.tax-product_cat .ea-cat-hero .ea-hp-btn--whatsapp {
+  background: #25D366 !important;
+  color: #FFFFFF !important;
+  border: none !important;
+}
+
+/* ── 15. SUBCATEGORY PILLS ─ .ea-cat-subs ─────────────────*/
+body.tax-product_cat .ea-cat-subs {
+  background: var(--preview-bg-alt) !important;
+  border-top: 1px solid var(--preview-border) !important;
+  border-bottom: 1px solid var(--preview-border) !important;
+}
+
+body.tax-product_cat .ea-cat-sub-pill {
+  background: var(--preview-white) !important;
+  color: var(--preview-body) !important;
+  border: 1px solid var(--preview-border) !important;
+}
+
+body.tax-product_cat .ea-cat-sub-pill:hover {
+  background: var(--preview-gold) !important;
+  color: #1A1A1A !important;
+  border-color: var(--preview-gold) !important;
+}
+
+/* ── 16. PRODUCT GRID ─ .ea-cat-grid-section ──────────────*/
+body.tax-product_cat .ea-cat-grid-section {
+  background: var(--preview-bg) !important;
+}
+
+/* Toolbar / count */
+body.tax-product_cat .ea-cat-count {
+  color: var(--preview-muted) !important;
+}
+
+/* Product cards */
+body.tax-product_cat .ea-cat-card {
+  background: var(--preview-white) !important;
+  border: 1px solid var(--preview-border) !important;
+  box-shadow: 0 2px 16px var(--preview-shadow) !important;
+}
+
+body.tax-product_cat .ea-cat-card:hover {
+  border-color: var(--preview-gold) !important;
+  box-shadow: 0 8px 32px rgba(201, 168, 76, 0.15) !important;
+  transform: translateY(-3px) !important;
+}
+
+body.tax-product_cat .ea-cat-card__img {
+  background: var(--preview-bg-alt) !important;
+}
+
+body.tax-product_cat .ea-cat-card__body h3 {
+  color: var(--preview-heading) !important;
+}
+
+body.tax-product_cat .ea-cat-card__body p {
+  color: var(--preview-body) !important;
+}
+
+body.tax-product_cat .ea-cat-card__cta {
+  color: var(--preview-gold-dark) !important;
+}
+
+/* ── 17. PAGINATION ─ .ea-cat-pagination ──────────────────*/
+body.tax-product_cat .ea-cat-pagination .page-numbers {
+  background: var(--preview-white) !important;
+  color: var(--preview-body) !important;
+  border: 1px solid var(--preview-border) !important;
+}
+
+body.tax-product_cat .ea-cat-pagination .page-numbers:hover,
+body.tax-product_cat .ea-cat-pagination .page-numbers.current {
+  background: var(--preview-gold) !important;
+  color: #1A1A1A !important;
+  border-color: var(--preview-gold) !important;
+}
+
+/* ── 18. CATEGORY CTA ─ .ea-cat-cta ───────────────────────*/
+body.tax-product_cat .ea-cat-cta {
+  background: linear-gradient(135deg, #FBF8F0 0%, var(--preview-gold-light) 100%) !important;
+  border-top: 1px solid rgba(201, 168, 76, 0.25) !important;
+}
+
+body.tax-product_cat .ea-cat-cta h2 {
+  color: var(--preview-heading) !important;
+  text-shadow: none !important;
+}
+
+body.tax-product_cat .ea-cat-cta p {
+  color: var(--preview-body) !important;
+}
+
+body.tax-product_cat .ea-cat-cta .ea-hp-btn--primary {
+  background: var(--preview-gold) !important;
+  color: #1A1A1A !important;
+  border: none !important;
+  box-shadow: 0 4px 18px rgba(201, 168, 76, 0.35) !important;
+}
+
+body.tax-product_cat .ea-cat-cta .ea-hp-btn--whatsapp {
+  background: #25D366 !important;
+  color: #FFFFFF !important;
+  border: none !important;
+}
+
+/* ── 19. CATEGORY "WHY" STRIP ─ .ea-cat-why ───────────────*/
+body.tax-product_cat .ea-cat-why {
+  background: var(--preview-white) !important;
+}
+
+body.tax-product_cat .ea-cat-why h2 {
+  color: var(--preview-heading) !important;
+  text-shadow: none !important;
+}
+
+body.tax-product_cat .ea-cat-why p,
+body.tax-product_cat .ea-cat-why span,
+body.tax-product_cat .ea-cat-why li {
+  color: var(--preview-body) !important;
+}
+
+/* ── 20. EMPTY STATE ─ .ea-cat-empty ──────────────────────*/
+body.tax-product_cat .ea-cat-empty h2 {
+  color: var(--preview-heading) !important;
+}
+body.tax-product_cat .ea-cat-empty p {
+  color: var(--preview-body) !important;
+}
+body.tax-product_cat .ea-cat-empty i {
+  color: var(--preview-border) !important;
+}
+
+/* ===========================================================
+   SHARED — both pages
+   =========================================================== */
+
+/* Floating WhatsApp button stays green — always-on element */
+/* Sticky bar stays as-is — mobile UX element */
+
+/* Footer: not targeted by preview — stays dark as-is */
+/* Header: not targeted by preview — stays dark, matches product page ref */
+
+/* ── END OF PREVIEW STYLESHEET ── */

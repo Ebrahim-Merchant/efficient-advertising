@@ -1,0 +1,31 @@
+
+Warning: PHP Startup: Unable to load dynamic library 'php_imagick.dll' (tried: C:/Users/pc/AppData/Roaming/Local/lightning-services/php-8.2.27+1/bin/win64/ext\php_imagick.dll (The specified module could not be found), C:/Users/pc/AppData/Roaming/Local/lightning-services/php-8.2.27+1/bin/win64/ext\php_php_imagick.dll.dll (The specified module could not be found)) in Unknown on line 0
+Scanning wp_posts...
+  post_title: 12 rows, 12 instances
+  post_content: 215 rows, 538 instances
+  post_excerpt: 303 rows, 329 instances
+Scanning wp_postmeta...
+  meta_value: 240 rows, 258 instances
+Scanning wp_options...
+  option_value: 0 options, 0 instances
+Scanning wp_terms...
+  name: 0 rows
+  description: 0 rows
+Scanning wp_term_taxonomy...
+  description: 1 rows
+Scanning wp_comments...
+  comment_content: 0 rows
+  comment_author: 0 rows
+WP object cache flushed.
+SUMMARY wp_posts.post_title: 12 rows fixed
+SUMMARY wp_posts.post_content: 215 rows fixed
+SUMMARY wp_posts.post_excerpt: 303 rows fixed
+SUMMARY wp_postmeta: 240 rows fixed
+SUMMARY wp_options: 0 rows fixed
+SUMMARY wp_terms.name: 0 rows fixed
+SUMMARY wp_terms.description: 0 rows fixed
+SUMMARY wp_term_taxonomy: 1 rows fixed
+SUMMARY wp_comments.comment_content: 0 rows fixed
+SUMMARY wp_comments.comment_author: 0 rows fixed
+
+Report written: C:\Users\pc\Local Sites\newefficientadvertising09042026\app\public/website-cleanup-dump/logs/ea-016-encoding-report.txt

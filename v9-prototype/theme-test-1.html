@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Theme Option 1 — Light &amp; Bold | Efficient Advertising</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Unbounded:wght@400;500;600;700&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
+  <style>
+  /* ══════════════════════════════════════════
+     THEME OPTION 1 — LIGHT & BOLD
+     Almost all sections white/cream.
+     Only header nav, trust ticker, WCU, urgency CTA, footer stay dark.
+     Amber pops visually harder on white than on black.
+  ══════════════════════════════════════════ */
+  :root {
+    --amber:      #FFBA09;
+    --amber-dk:   #E5A800;
+    --amber-pale: #FFF8E1;
+    --amber-ring: rgba(255,186,9,0.40);
+    --navy:       #1A1A2E;
+    --navy2:      #0F0F1E;
+    --cream:      #F7F5F0;
+    --cream2:     #F4F2ED;
+    --white:      #FFFFFF;
+    --r-pill:     100px;
+    --r-sm:       10px;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; font-size: 16px; }
+  body { font-family: 'DM Sans', sans-serif; background: var(--cream); color: var(--navy); line-height: 1.65; overflow-x: hidden; }
+  img { max-width: 100%; height: auto; display: block; }
+  a { text-decoration: none; color: inherit; }
+  .container { width: 100% !important; max-width: none !important; padding-left: clamp(16px,4vw,80px) !important; padding-right: clamp(16px,4vw,80px) !important; box-sizing: border-box !important; }
+  .reveal { opacity: 0; transform: translateY(28px); transition: opacity .55s ease, transform .55s ease; }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
+
+  /* ── DEMO SWITCHER BAR ── */
+  .demo-bar {
+    background: var(--navy); color: rgba(255,255,255,0.70);
+    padding: 10px clamp(16px,4vw,80px); display: flex; align-items: center;
+    justify-content: space-between; font-family: 'DM Sans', sans-serif; font-size: 13px;
+    gap: 16px; flex-wrap: wrap;
+  }
+  .demo-bar strong { color: var(--amber); font-family: 'Unbounded', sans-serif; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; }
+  .demo-bar a { color: rgba(255,255,255,0.55); border: 1px solid rgba(255,255,255,0.18); border-radius: 4px; padding: 4px 12px; font-size: 12px; transition: color .2s, border-color .2s; }
+  .demo-bar a:hover { color: var(--amber); border-color: var(--amber); }
+  .demo-bar .demo-active { background: var(--amber); color: var(--navy); border-color: var(--amber); font-weight: 700; pointer-events: none; }
+
+  /* ── HEADER — stays dark (universal standard) ── */
+  #header { position: sticky; top: 0; z-index: 1000; }
+  #header .navbar { background: #0F0F1E !important; border: none; margin: 0; border-radius: 0; min-height: unset; padding: 0; }
+  #header .navbar > .container { padding: 0 clamp(16px,4vw,80px); }
+  .logtophead { display: flex; align-items: center; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.07); }
+  .ea-logo-badge { display: inline-flex; background: rgba(255,255,255,0.96); border-radius: 8px; padding: 6px 10px; }
+  .ea-logo-badge img { height: 46px; width: auto; }
+  h3.think { font-family: 'Syne', sans-serif; font-size: 16px; font-weight: 600; color: #fff; margin: 0 0 0 14px; border-left: 2px solid rgba(255,186,9,0.60); padding-left: 12px; }
+  .ea-toprow-left { display: flex; align-items: center; }
+  .ea-toprow-right { display: flex; align-items: center; gap: 0; }
+  .ea-toprow-phone { font-family: 'DM Sans', sans-serif; font-size: 15px; font-weight: 700; color: #4ade80; padding: 0 16px; text-decoration: none; white-space: nowrap; }
+  .ea-toprow-divider { width: 1px; height: 28px; background: rgba(255,255,255,0.10); flex-shrink: 0; }
+  .ea-btn-whatsapp { display: inline-flex; align-items: center; gap: 7px; font-family: 'DM Sans', sans-serif; font-size: 13px; font-weight: 700; padding: 9px 16px; border-radius: var(--r-pill); background: #25D366; color: #fff; border: none; text-decoration: none; white-space: nowrap; }
+  .headerbottom { background: #1A1A2E; }
+  .headerbottom .navbar-nav > li > a { font-family: 'DM Sans', sans-serif !important; font-size: 14px !important; font-weight: 500 !important; color: rgba(255,255,255,0.70) !important; padding: 15px 18px !important; white-space: nowrap; transition: color .2s, background .2s; }
+  .headerbottom .navbar-nav > li > a:hover,
+  .headerbottom .navbar-nav > li.active > a { color: var(--amber) !important; background: rgba(255,186,9,0.10) !important; }
+  #myNavbar { display: block; overflow: visible; }
+  #myNavbar .navbar-nav { display: flex !important; flex-direction: row !important; flex-wrap: wrap; align-items: center; float: none !important; list-style: none; margin: 0; padding: 0; }
+  #myNavbar .navbar-nav > li { float: none !important; }
+  @media (max-width: 860px) { .ea-toprow-phone { display: none !important; } }
+
+  /* ── HERO — LIGHT ── */
+  #ea-hero { background: var(--cream2); position: relative; overflow: hidden; z-index: 1; }
+  #ea-hero::before {
+    content: ''; position: absolute; inset: 0; pointer-events: none; z-index: 0;
+    background: radial-gradient(ellipse at 10% 50%, rgba(255,186,9,0.14) 0%, transparent 50%),
+                radial-gradient(ellipse at 90% 20%, rgba(255,186,9,0.07) 0%, transparent 45%);
+  }
+  .ea-slider-viewport { overflow: hidden; position: relative; z-index: 1; }
+  .ea-slider-track { display: flex; transition: transform 0.65s cubic-bezier(0.25,0.46,0.45,0.94); will-change: transform; }
+  .ea-slide { min-width: 100%; width: 100%; flex-shrink: 0; box-sizing: border-box; }
+  .ea-slide-wrap { display: grid; grid-template-columns: 1fr 1fr; align-items: stretch; min-height: 100vh; }
+  .ea-slide-txt { padding: 110px 60px; display: flex; flex-direction: column; justify-content: center; background: var(--cream2); }
+  .ea-slide-label { font-family: 'Unbounded', sans-serif; font-size: 10px; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; color: var(--amber); margin-bottom: 20px; opacity: 0; transform: translateY(12px); transition: opacity .45s ease, transform .45s ease; }
+  .ea-slide-label.lbl-in { opacity: 1; transform: translateY(0); }
+  .ea-slide-h1 { font-family: 'Syne', sans-serif; font-size: clamp(36px,5.2vw,100px); font-weight: 800; line-height: 1.10; letter-spacing: -1.5px; color: var(--navy); margin-bottom: 18px; }
+  .ea-slide-h1 em { color: var(--amber); font-style: normal; }
+  .ea-slide-sub { font-family: 'DM Sans', sans-serif; font-size: 15px; line-height: 1.75; color: rgba(26,26,46,0.62); margin-bottom: 32px; max-width: 380px; }
+  .ea-slide-cta { display: inline-flex; align-items: center; gap: 11px; background: var(--amber); color: #0A0A14; font-family: 'DM Sans', sans-serif; font-size: 14px; font-weight: 700; padding: 10px 24px 10px 10px; border-radius: var(--r-pill); transition: background .2s, transform .2s; align-self: flex-start; text-decoration: none; }
+  .ea-slide-cta .ico { width: 32px; height: 32px; background: #0A0A14; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .ea-slide-cta:hover { background: var(--amber-dk); transform: translateY(-2px); }
+  .ea-slide-img { position: relative; overflow: hidden; min-height: 100vh; }
+  .ea-slide-img-bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 30%; transition: transform 6s ease; filter: saturate(1.2); }
+  .ea-slide-img-bg.bg-zoom { transform: scale(1.08); }
+  /* Cream seam blending the product photo into the light panel */
+  .ea-slide-img::after { content: ''; position: absolute; inset: 0; z-index: 2; pointer-events: none; background: linear-gradient(to right, rgba(244,242,237,0.97) 0%, rgba(244,242,237,0.35) 5%, rgba(244,242,237,0.02) 10%, transparent 10%); }
+  /* Ambient amber glow — screen blend adds warmth without darkening */
+  .ea-slide-img-glow { position: absolute; top: -60px; right: -60px; z-index: 3; pointer-events: none; width: 340px; height: 340px; border-radius: 50%; background: radial-gradient(circle, rgba(255,186,9,0.28) 0%, transparent 68%); mix-blend-mode: multiply; }
+  .ea-slide-img .img-b { clip-path: inset(0 0 0 100%); }
+  .ea-dots { position: absolute; bottom: 20px; left: 40px; display: flex; gap: 6px; align-items: center; z-index: 10; }
+  .ea-dot { width: 8px; height: 8px; border-radius: 50%; background: rgba(26,26,46,0.20); border: none; cursor: pointer; padding: 0; transition: all .3s ease; }
+  .ea-dot.active { background: var(--amber); width: 24px; border-radius: 4px; }
+  .ea-ctrl { position: absolute; bottom: 14px; z-index: 10; width: 40px; height: 40px; border-radius: 50%; border: none; background: rgba(26,26,46,0.08); color: var(--navy); font-size: 20px; line-height: 1; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: background .2s; }
+  .ea-ctrl:hover { background: rgba(255,186,9,0.30); }
+  .ea-prev { right: 60px; } .ea-next { right: 14px; }
+  @media (max-width: 767px) { .ea-slide-wrap { grid-template-columns: 1fr; min-height: 100svh; } .ea-slide-img { display: none; } .ea-slide-txt { padding: 60px 20px 48px; } .ea-slide-h1 { font-size: clamp(30px,7vw,42px); } .ea-dots { left: 20px; } }
+
+  /* ── TRUST BAR — dark separator strip ── */
+  .tbar { background: #0F0F1E; overflow: hidden; position: relative; border-top: 1px solid rgba(255,186,9,0.18); border-bottom: 1px solid rgba(255,186,9,0.18); }
+  .tbar-fade { position: absolute; top: 0; bottom: 0; width: 80px; z-index: 2; pointer-events: none; }
+  .tbar-fade-l { left: 0; background: linear-gradient(to right, #0F0F1E, transparent); }
+  .tbar-fade-r { right: 0; background: linear-gradient(to left, #0F0F1E, transparent); }
+  .tbar-track { display: flex; align-items: center; white-space: nowrap; width: max-content; animation: tscroll 34s linear infinite; padding: 14px 0; }
+  @keyframes tscroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+  .titem { font-family: 'DM Sans', sans-serif; font-size: 13px; font-weight: 500; color: rgba(255,255,255,0.65); display: inline-flex; align-items: center; gap: 8px; padding: 0 4px; }
+  .tdot { width: 6px; height: 6px; background: var(--amber); border-radius: 50%; flex-shrink: 0; }
+  .tsep { color: rgba(255,255,255,0.18); padding: 0 10px; font-size: 16px; }
+
+  /* ── PRODUCTS — cream bg, white cards ── */
+  #ea-products { background: var(--cream); padding: clamp(60px,7vw,130px) clamp(16px,3vw,56px); }
+  .sec-hd { text-align: center; margin-bottom: 48px; }
+  .sec-eyebrow { font-family: 'DM Sans', sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: var(--amber); margin: 0 0 12px; }
+  .sec-title { font-family: 'Syne', sans-serif; font-size: clamp(24px,2.8vw,56px); font-weight: 700; color: var(--navy); margin: 0 0 10px; line-height: 1.15; }
+  .sec-sub { font-family: 'DM Sans', sans-serif; font-size: 14px; color: rgba(26,26,46,0.55); margin: 0; }
+  .sec-accent { width: 48px; height: 3px; background: var(--amber); border-radius: 2px; margin: 16px auto 0; }
+  .ea-pg-wrap { display: flex; gap: clamp(14px,2vw,30px); align-items: flex-start; padding: clamp(12px,1.6vw,28px); background: rgba(26,26,46,0.04); border-radius: 16px; }
+  .ea-pg-col { flex: 1; display: flex; flex-direction: column; gap: clamp(14px,2vw,30px); }
+  .ea-pg-col--offset { padding-top: 60px; }
+  .ea-pg-card { display: block; position: relative; height: 240px; border-radius: 12px; overflow: hidden; text-decoration: none; background: #fff; border: 1.5px solid rgba(26,26,46,0.08); transition: border-color .30s, box-shadow .30s, transform .25s; }
+  .ea-pg-card:hover { border-color: var(--amber); box-shadow: 0 10px 44px rgba(255,186,9,0.22); transform: translateY(-3px); }
+  .ea-pg-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; filter: brightness(0.92); z-index: 1; transition: opacity .45s ease, transform .55s ease; }
+  .ea-pg-img--hover { opacity: 0; z-index: 2; filter: brightness(0.88); transform: scale(1.03); transition: opacity .45s ease, transform .55s ease; }
+  .ea-pg-card:hover .ea-pg-img:not(.ea-pg-img--hover) { opacity: 0; transform: scale(1.04); }
+  .ea-pg-card:hover .ea-pg-img--hover { opacity: 1; transform: scale(1.06); }
+  /* Label bar: white glass with amber top border */
+  .ea-pg-label { position: absolute; bottom: 0; left: 0; right: 0; z-index: 3; background: rgba(255,255,255,0.94); padding: 8px 12px 9px; display: flex; justify-content: space-between; align-items: center; border-top: 2px solid var(--amber); }
+  .ea-pg-name { font-family: 'Syne', sans-serif; font-size: 10px; font-weight: 700; color: var(--navy); text-transform: uppercase; letter-spacing: 1px; line-height: 1.3; }
+  .ea-pg-tag { font-family: 'Syne', sans-serif; font-size: 10px; font-weight: 800; color: var(--amber); text-transform: uppercase; letter-spacing: 1px; white-space: nowrap; }
+  .ea-pg-cta { position: absolute; top: 50%; left: 50%; transform: translate(-50%,calc(-50% + 8px)); z-index: 4; background: var(--amber); color: #0A0A14; font-family: 'DM Sans', sans-serif; font-size: 12px; font-weight: 700; padding: 9px 18px; border-radius: 6px; white-space: nowrap; opacity: 0; pointer-events: none; transition: opacity .25s, transform .25s; }
+  .ea-pg-card:hover .ea-pg-cta { opacity: 1; pointer-events: auto; transform: translate(-50%,-50%); }
+  @media (max-width: 991px) { .ea-pg-wrap { flex-wrap: wrap; } .ea-pg-col { flex: 0 0 calc(50% - 5px); } .ea-pg-col:nth-child(3), .ea-pg-col:nth-child(4) { display: none; } .ea-pg-card { height: 200px; } }
+  @media (max-width: 575px) { .ea-pg-col { flex: 0 0 100%; } .ea-pg-col--offset { padding-top: 0; } .ea-pg-col:nth-child(3), .ea-pg-col:nth-child(4) { display: flex; } }
+
+  /* ── STATS — amber bg, dark text ── */
+  #ea-stats { background: var(--amber); padding: clamp(36px,4vw,72px) 0; border-top: 2px solid rgba(26,26,46,0.08); border-bottom: 2px solid rgba(26,26,46,0.08); }
+  .ea-stats-row { display: flex; align-items: center; justify-content: center; flex-wrap: nowrap; gap: 0; }
+  .ea-stat { display: flex; flex-direction: column; align-items: center; padding: 10px clamp(12px,2vw,32px); text-align: center; flex: 1; min-width: 0; }
+  .ea-stat-num { font-family: 'Unbounded', sans-serif; font-size: clamp(18px,2.2vw,44px); font-weight: 800; color: var(--navy); line-height: 1; letter-spacing: -0.5px; display: block; }
+  .ea-stat-lbl { font-family: 'DM Sans', sans-serif; font-size: clamp(9px,.8vw,11px); font-weight: 600; color: rgba(26,26,46,0.62); text-transform: uppercase; letter-spacing: .6px; margin-top: 6px; display: block; }
+  .ea-stat-div { width: 1px; height: 40px; background: rgba(26,26,46,0.15); flex-shrink: 0; align-self: center; }
+  @media (max-width: 600px) { .ea-stats-row { flex-wrap: wrap; } .ea-stat { flex: 0 0 48%; padding: 14px 8px; } .ea-stat-div { display: none; } }
+
+  /* ── WCU — stays dark (the one drama section) ── */
+  #ea-wcu { background: #1A1A2E; padding: clamp(60px,7vw,130px) 0; position: relative; overflow: hidden; }
+  #ea-wcu::before { content: ''; position: absolute; top: -300px; left: -300px; width: 700px; height: 700px; background: rgba(255,186,9,0.05); border-radius: 50%; pointer-events: none; }
+  #ea-wcu .sec-eyebrow { color: rgba(255,255,255,0.42); }
+  #ea-wcu .sec-title { color: #fff; }
+  #ea-wcu .sec-sub { color: rgba(255,255,255,0.62); }
+  .ea-wcu-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 22px; }
+  @media (max-width: 991px) { .ea-wcu-grid { grid-template-columns: repeat(2,1fr); } }
+  @media (max-width: 575px) { .ea-wcu-grid { grid-template-columns: 1fr; gap: 16px; } }
+  .ea-wcu-card { background: rgba(255,255,255,0.04); border-radius: 16px; padding: 30px 26px 24px; border: 1px solid rgba(255,186,9,0.12); transition: transform .3s, border-color .3s; }
+  .ea-wcu-card:hover { transform: translateY(-5px); border-color: rgba(255,186,9,0.40); }
+  .ea-wcu-icon { font-size: 40px; margin-bottom: 16px; line-height: 1; }
+  .ea-wcu-title { font-family: 'Syne', sans-serif; font-size: 20px; font-weight: 700; color: #fff; margin: 0 0 12px; line-height: 1.3; }
+  .ea-wcu-text { font-family: 'DM Sans', sans-serif; font-size: 14px; color: rgba(247,245,240,0.65); line-height: 1.75; margin: 0; }
+
+  /* ── HOW IT WORKS — light ── */
+  #ea-hiw { background: #fff; padding: clamp(60px,7vw,130px) 0; }
+  #ea-hiw .sec-title { color: var(--navy); }
+  #ea-hiw .sec-sub { color: rgba(26,26,46,0.58); }
+  .ea-hiw-row { display: flex; align-items: flex-start; justify-content: center; flex-wrap: wrap; gap: 0; }
+  .ea-hiw-step { flex: 1; min-width: 160px; max-width: 220px; text-align: center; padding: 32px 20px; background: var(--cream); border: 1.5px solid rgba(26,26,46,0.08); border-radius: 16px; transition: border-color .3s, transform .3s; }
+  .ea-hiw-step:hover { border-color: var(--amber); transform: translateY(-4px); box-shadow: 0 8px 32px rgba(255,186,9,0.12); }
+  .ea-hiw-num { font-family: 'Unbounded', sans-serif; font-size: 10px; font-weight: 800; letter-spacing: 2px; color: var(--amber); margin-bottom: 12px; display: block; }
+  .ea-hiw-ico { font-size: 36px; line-height: 1; margin-bottom: 16px; display: block; }
+  .ea-hiw-step-title { font-family: 'Syne', sans-serif; font-size: 16px; font-weight: 700; color: var(--navy); margin: 0 0 10px; }
+  .ea-hiw-step-desc { font-family: 'DM Sans', sans-serif; font-size: 13px; color: rgba(26,26,46,0.58); line-height: 1.7; margin: 0; }
+  .ea-hiw-conn { width: 44px; height: 2px; flex-shrink: 0; background: linear-gradient(90deg, var(--amber), rgba(255,186,9,0.15)); align-self: center; margin-top: -18px; }
+  .ea-hiw-cta { text-align: center; margin-top: 44px; }
+  .ea-hiw-btn { display: inline-block; background: var(--amber); color: #0A0A14; padding: 14px 36px; border-radius: 6px; font-family: 'DM Sans', sans-serif; font-size: 15px; font-weight: 800; text-decoration: none; transition: background .25s, box-shadow .25s; box-shadow: 0 4px 24px rgba(255,186,9,0.25); }
+  .ea-hiw-btn:hover { background: var(--amber-dk); box-shadow: 0 8px 32px rgba(255,186,9,0.38); }
+  @media (max-width: 767px) { .ea-hiw-row { flex-direction: column; align-items: center; gap: 16px; } .ea-hiw-step { max-width: 100%; width: 100%; } .ea-hiw-conn { display: none; } }
+
+  /* ── REVIEWS — white bg, white cards with shadow ── */
+  #ea-reviews { background: var(--cream); padding: clamp(60px,7vw,130px) 0; }
+  .ea-rev-stars { display: flex; align-items: center; justify-content: center; gap: 4px; margin-bottom: 6px; }
+  .ea-rev-star { color: #fbbc04; font-size: 22px; }
+  .ea-rev-score { font-family: 'Unbounded', sans-serif; font-size: 14px; font-weight: 700; color: var(--navy); margin-left: 6px; }
+  .ea-rev-count { font-family: 'DM Sans', sans-serif; font-size: 13px; color: rgba(26,26,46,0.50); }
+  .ea-rev-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; }
+  @media (max-width: 991px) { .ea-rev-grid { grid-template-columns: repeat(2,1fr); } }
+  @media (max-width: 600px) { .ea-rev-grid { grid-template-columns: 1fr; gap: 14px; } }
+  .ea-rev-card { background: #fff; border: 1.5px solid rgba(26,26,46,0.07); border-radius: 14px; padding: 22px 20px; transition: border-color .2s, box-shadow .2s; display: flex; flex-direction: column; box-shadow: 0 2px 16px rgba(26,26,46,0.06); }
+  .ea-rev-card:hover { border-color: rgba(255,186,9,0.50); box-shadow: 0 8px 36px rgba(255,186,9,0.12); }
+  .ea-rev-card-top { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px; }
+  .ea-rev-card-stars { display: flex; gap: 3px; }
+  .ea-rev-card-star { color: #fbbc04; font-size: 15px; }
+  .ea-rev-google-mark { display: flex; align-items: center; gap: 4px; font-family: 'DM Sans', sans-serif; font-size: 10px; color: rgba(26,26,46,0.38); letter-spacing: .3px; }
+  .ea-rev-text { font-family: 'DM Sans', sans-serif; font-size: 13.5px; color: rgba(26,26,46,0.70); line-height: 1.75; margin: 0 0 16px; font-style: italic; flex: 1; }
+  .ea-rev-meta { display: flex; align-items: center; gap: 10px; margin-top: auto; }
+  .ea-rev-avatar { width: 36px; height: 36px; border-radius: 50%; background: var(--amber-pale); border: 1.5px solid rgba(255,186,9,0.40); display: flex; align-items: center; justify-content: center; font-family: 'Syne', sans-serif; font-size: 14px; font-weight: 700; color: #6b4c00; flex-shrink: 0; }
+  .ea-rev-name { font-family: 'DM Sans', sans-serif; font-size: 13px; font-weight: 700; color: rgba(26,26,46,0.85); display: block; }
+  .ea-rev-date { font-family: 'DM Sans', sans-serif; font-size: 11px; color: rgba(26,26,46,0.42); }
+
+  /* ── URGENCY CTA — stays dark for contrast ── */
+  #ea-urgency { background: #1A1A2E; padding: clamp(52px,6vw,110px) 0; position: relative; overflow: hidden; }
+  #ea-urgency::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--amber), #ff6b35, var(--amber)); }
+  .ea-urgency-inner { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 28px; }
+  .ea-urgency-badge { font-family: 'DM Sans', sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: var(--amber); margin: 0 0 10px; display: block; }
+  .ea-urgency-title { font-family: 'Syne', sans-serif; font-size: clamp(22px,2.5vw,52px); font-weight: 700; color: #fff; margin: 0 0 10px; line-height: 1.2; }
+  .ea-urgency-desc { font-family: 'DM Sans', sans-serif; font-size: 15px; color: rgba(247,245,240,0.72); margin: 0; max-width: 520px; line-height: 1.75; }
+  .ea-urgency-ctas { display: flex; flex-direction: column; gap: 12px; flex-shrink: 0; }
+  .ea-urg-wa { display: inline-flex; align-items: center; gap: 10px; background: #16a34a; color: #fff; padding: 13px 28px; border-radius: 6px; font-family: 'DM Sans', sans-serif; font-size: 14px; font-weight: 700; text-decoration: none; transition: background .2s; }
+  .ea-urg-wa:hover { background: #15803d; color: #fff; }
+  .ea-urg-call { display: inline-flex; align-items: center; justify-content: center; gap: 8px; background: transparent; color: #fff; padding: 12px 28px; border-radius: 6px; font-family: 'DM Sans', sans-serif; font-size: 14px; font-weight: 700; text-decoration: none; border: 1.5px solid rgba(255,255,255,0.25); transition: background .2s; }
+  .ea-urg-call:hover { background: rgba(255,255,255,0.06); color: #fff; }
+  @media (max-width: 767px) { .ea-urgency-ctas { width: 100%; } .ea-urg-wa, .ea-urg-call { justify-content: center; } }
+
+  /* ── FOOTER — stays dark ── */
+  #ea-footer { background: #0A0A14; padding: clamp(48px,5.5vw,100px) 0 0; border-top: 1px solid rgba(255,186,9,0.14); }
+  .ea-foot-col-title { font-family: 'Syne', sans-serif; font-size: clamp(13px,1.1vw,17px); font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase; color: var(--amber); margin: 0 0 22px; padding-bottom: 10px; border-bottom: 1px solid rgba(255,186,9,0.18); }
+  .ea-foot-about p { font-family: 'DM Sans', sans-serif; font-size: clamp(14px,1.1vw,17px); color: rgba(247,245,240,0.68); line-height: 1.9; margin: 0 0 16px; }
+  .ea-foot-logo-wrap { display: inline-flex; background: rgba(255,255,255,0.92); border-radius: 8px; padding: 6px 10px; margin-bottom: 18px; }
+  .ea-foot-logo-wrap img { height: 38px; width: auto; display: block; }
+  .ea-foot-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 48px; }
+  @media (max-width: 767px) { .ea-foot-grid { grid-template-columns: 1fr; gap: 28px; } }
+  .ea-foot-contact { list-style: none; padding: 0; margin: 0; }
+  .ea-foot-contact li { font-family: 'DM Sans', sans-serif; font-size: clamp(14px,1.1vw,17px); color: rgba(247,245,240,0.72); margin-bottom: 14px; line-height: 1.7; }
+  .ea-foot-contact li a { color: rgba(247,245,240,0.72); text-decoration: none; transition: color .2s; }
+  .ea-foot-contact li a:hover { color: var(--amber); }
+  .ea-foot-label { font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: 1.5px; color: var(--amber); opacity: .70; display: block; margin-bottom: 4px; }
+  .ea-foot-links { list-style: none; padding: 0; margin: 0; }
+  .ea-foot-links li { margin-bottom: 12px; }
+  .ea-foot-links a { font-family: 'DM Sans', sans-serif; font-size: clamp(14px,1.1vw,17px); color: rgba(247,245,240,0.65); text-decoration: none; display: inline-flex; align-items: center; gap: 6px; transition: color .2s; }
+  .ea-foot-links a::before { content: '→'; color: var(--amber); font-size: 11px; }
+  .ea-foot-links a:hover { color: #fff; }
+  .ea-foot-bottom { margin-top: 48px; padding: 18px 0; border-top: 1px solid rgba(255,255,255,0.06); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
+  .ea-foot-copy { font-family: 'DM Sans', sans-serif; font-size: clamp(12px,.85vw,14px); color: rgba(247,245,240,0.40); }
+  .ea-foot-bottom-links a { font-family: 'DM Sans', sans-serif; font-size: clamp(12px,.85vw,14px); color: rgba(247,245,240,0.40); text-decoration: none; margin-left: 20px; }
+  .ea-foot-bottom-links a:hover { color: var(--amber); }
+  </style>
+</head>
+<body>
+
+<!-- DEMO SWITCHER -->
+<div class="demo-bar">
+  <div><strong>Theme Test</strong> &nbsp;— Choose a theme to preview:</div>
+  <div style="display:flex;gap:8px;flex-wrap:wrap;">
+    <a class="demo-active" href="theme-test-1.html">Option 1 — Light &amp; Bold</a>
+    <a href="theme-test-2.html">Option 2 — Alternating Rhythm</a>
+    <a href="index.html">← Back to V9 (Dark)</a>
+  </div>
+</div>
+
+<!-- ═══════════════ HEADER ═══════════════ -->
+<div id="header">
+  <nav class="navbar navbar-inverse">
+    <div class="container">
+      <div class="logtophead">
+        <div class="ea-toprow-left">
+          <a href="#" class="ea-logo-badge"><img src="/wp-content/uploads/2024/11/efficient-logo-1-1.png" alt="Efficient Advertising"></a>
+          <h3 class="think">You think it, We print it</h3>
+        </div>
+        <div class="ea-toprow-right">
+          <div class="ea-toprow-divider"></div>
+          <a href="tel:+971527966265" class="ea-toprow-phone">+971 52 796 6265</a>
+          <div class="ea-toprow-divider"></div>
+          <a href="https://wa.me/971527966265" target="_blank" rel="noopener" class="ea-btn-whatsapp">
+            <svg width="17" height="17" viewBox="0 0 32 32" fill="currentColor"><path d="M16 0C7.164 0 0 7.163 0 16c0 2.822.736 5.463 2.018 7.761L0 32l8.533-2.236A15.93 15.93 0 0 0 16 32c8.836 0 16-7.163 16-16S24.836 0 16 0zm8.293 22.293c-.343.963-1.998 1.84-2.733 1.957-.698.11-1.58.157-2.547-.16-.587-.193-1.34-.45-2.297-.882-4.047-1.748-6.688-5.818-6.888-6.087-.197-.27-1.613-2.145-1.613-4.09 0-1.944 1.02-2.9 1.38-3.297.343-.38.748-.476 1-.476.25 0 .499.003.717.013.23.01.54-.088.844.644.314.75 1.066 2.598 1.16 2.786.094.19.156.41.03.66-.125.25-.188.406-.375.625-.188.22-.395.49-.563.658-.188.188-.383.39-.165.766.22.375.977 1.613 2.098 2.61 1.44 1.285 2.656 1.685 3.031 1.875.375.188.594.157.813-.094.22-.25.938-1.094 1.188-1.469.25-.375.5-.312.844-.187.344.125 2.188 1.031 2.563 1.219.375.188.625.281.719.438.094.156.094.906-.25 1.87z"/></svg>
+            WhatsApp
+          </a>
+        </div>
+      </div>
+      <div class="headerbottom">
+        <div id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Backdrops &amp; Displays</a></li>
+            <li><a href="#">Banner Printing</a></li>
+            <li><a href="#">Flags</a></li>
+            <li><a href="#">Signage</a></li>
+            <li><a href="#">Exhibition &amp; Event</a></li>
+            <li><a href="#">Vehicle Branding</a></li>
+            <li><a href="#">Others</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<!-- ═══════════════ HERO — LIGHT ═══════════════ -->
+<section id="ea-hero">
+  <div class="ea-slider-viewport" id="ea-viewport">
+    <div class="ea-slider-track" id="ea-track">
+
+      <div class="ea-slide">
+        <div class="ea-slide-wrap">
+          <div class="ea-slide-txt">
+            <div class="ea-slide-label lbl-in">BACKDROPS &amp; DISPLAYS</div>
+            <h1 class="ea-slide-h1">Custom <em>Backdrops</em><br>&amp; Pop-Up Displays</h1>
+            <p class="ea-slide-sub">Fabric, vinyl &amp; tension fabric displays for events, exhibitions and retail. Delivered across all UAE.</p>
+            <a href="https://wa.me/971527966265" target="_blank" rel="noopener" class="ea-slide-cta">
+              <span class="ico"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></span>
+              Contact Us
+            </a>
+          </div>
+          <div class="ea-slide-img">
+            <div class="ea-slide-img-glow"></div>
+            <img class="ea-slide-img-bg img-a" src="/wp-content/uploads/2022/03/Step-Repeat-Backdrop-2.jpg" alt="Backdrops &amp; Displays">
+          </div>
+        </div>
+      </div>
+
+      <div class="ea-slide">
+        <div class="ea-slide-wrap">
+          <div class="ea-slide-txt">
+            <div class="ea-slide-label">EXHIBITION STANDS</div>
+            <h2 class="ea-slide-h1">Custom <em>Exhibition</em><br>Stand Design &amp; Build</h2>
+            <p class="ea-slide-sub">Modular, custom-built and portable exhibition stands. Full design, fabrication and on-site installation.</p>
+            <a href="https://wa.me/971527966265" target="_blank" rel="noopener" class="ea-slide-cta">
+              <span class="ico"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></span>
+              Contact Us
+            </a>
+          </div>
+          <div class="ea-slide-img">
+            <div class="ea-slide-img-glow"></div>
+            <img class="ea-slide-img-bg img-a" src="/wp-content/uploads/2026/03/exhibition-stand-dubai.jpg" alt="Exhibition Stands Dubai">
+          </div>
+        </div>
+      </div>
+
+      <div class="ea-slide">
+        <div class="ea-slide-wrap">
+          <div class="ea-slide-txt">
+            <div class="ea-slide-label">VEHICLE BRANDING</div>
+            <h2 class="ea-slide-h1">Fleet &amp; Vehicle<br><em>Vinyl Wrapping</em></h2>
+            <p class="ea-slide-sub">Full wraps, partial wraps &amp; magnetic signs. Corporate fleets to single vehicles &mdash; all UAE.</p>
+            <a href="https://wa.me/971527966265" target="_blank" rel="noopener" class="ea-slide-cta">
+              <span class="ico"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></span>
+              Contact Us
+            </a>
+          </div>
+          <div class="ea-slide-img">
+            <div class="ea-slide-img-glow"></div>
+            <img class="ea-slide-img-bg img-a" src="/wp-content/uploads/2026/03/vinyl-wrap-car-door.jpg" alt="Vehicle Branding Dubai">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="ea-dots" id="ea-dots">
+    <button class="ea-dot active" data-idx="0" aria-label="Slide 1"></button>
+    <button class="ea-dot" data-idx="1" aria-label="Slide 2"></button>
+    <button class="ea-dot" data-idx="2" aria-label="Slide 3"></button>
+  </div>
+  <button class="ea-ctrl ea-prev" id="ea-prev" aria-label="Prev">&#8249;</button>
+  <button class="ea-ctrl ea-next" id="ea-next" aria-label="Next">&#8250;</button>
+</section>
+
+<!-- ═══════════════ TRUST BAR ═══════════════ -->
+<div class="tbar">
+  <div class="tbar-fade tbar-fade-l"></div>
+  <div class="tbar-fade tbar-fade-r"></div>
+  <div class="tbar-track">
+    <span class="titem"><span class="tdot"></span>100% In-House Printing Facility</span><span class="tsep">&mdash;</span>
+    <span class="titem"><span class="tdot"></span>Same-Day Printing Available</span><span class="tsep">&mdash;</span>
+    <span class="titem"><span class="tdot"></span>UAE-Wide Delivery &amp; Installation</span><span class="tsep">&mdash;</span>
+    <span class="titem"><span class="tdot"></span>Free Design Support Included</span><span class="tsep">&mdash;</span>
+    <span class="titem"><span class="tdot"></span>Rated 4.8&#9733; on Google</span><span class="tsep">&mdash;</span>
+    <span class="titem"><span class="tdot"></span>18+ Years Industry Experience</span><span class="tsep">&mdash;</span>
+    <span class="titem"><span class="tdot"></span>Bulk Order Discounts Available</span><span class="tsep">&mdash;</span>
+    <span class="titem"><span class="tdot"></span>100% In-House Printing Facility</span><span class="tsep">&mdash;</span>
+    <span class="titem"><span class="tdot"></span>Same-Day Printing Available</span><span class="tsep">&mdash;</span>
+    <span class="titem"><span class="tdot"></span>UAE-Wide Delivery &amp; Installation</span><span class="tsep">&mdash;</span>
+    <span class="titem"><span class="tdot"></span>Free Design Support Included</span><span class="tsep">&mdash;</span>
+    <span class="titem"><span class="tdot"></span>Rated 4.8&#9733; on Google</span><span class="tsep">&mdash;</span>
+    <span class="titem"><span class="tdot"></span>18+ Years Industry Experience</span><span class="tsep">&mdash;</span>
+    <span class="titem"><span class="tdot"></span>Bulk Order Discounts Available</span><span class="tsep">&mdash;</span>
+  </div>
+</div>
+
+<!-- ═══════════════ PRODUCTS ═══════════════ -->
+<section id="ea-products">
+  <div class="container">
+    <div class="sec-hd">
+      <p class="sec-eyebrow">Our Services</p>
+      <h2 class="sec-title">Printing &amp; Branding Services in Dubai</h2>
+      <p class="sec-sub">12 product categories &middot; 18 years experience &middot; Same-day printing available</p>
+      <div class="sec-accent"></div>
+    </div>
+    <div class="ea-pg-wrap">
+      <div class="ea-pg-col">
+        <a class="ea-pg-card" href="#"><img class="ea-pg-img" src="/wp-content/uploads/2022/03/Step-Repeat-Backdrop-2.jpg" alt="Backdrops" loading="lazy"><img class="ea-pg-img ea-pg-img--hover" src="/wp-content/uploads/cfdb7_uploads/1669025793-uploadfile-backdrop.png" alt="Backdrop" loading="lazy"><div class="ea-pg-label"><span class="ea-pg-name">Backdrops &amp; Displays</span><span class="ea-pg-tag">Display</span></div><span class="ea-pg-cta">View Products &rarr;</span></a>
+        <a class="ea-pg-card" href="#"><img class="ea-pg-img" src="/wp-content/uploads/2022/03/custom-teardrop-flag.jpg" alt="Flags" loading="lazy"><img class="ea-pg-img ea-pg-img--hover" src="/wp-content/uploads/2022/03/Hoisting-Flags.jpg" alt="Flags" loading="lazy"><div class="ea-pg-label"><span class="ea-pg-name">Flags &amp; Feather Flags</span><span class="ea-pg-tag">Flags</span></div><span class="ea-pg-cta">View Products &rarr;</span></a>
+        <a class="ea-pg-card" href="#"><img class="ea-pg-img" src="/wp-content/uploads/2026/03/car-wrap-vehicle-branding.jpg" alt="Vehicle" loading="lazy"><img class="ea-pg-img ea-pg-img--hover" src="/wp-content/uploads/2026/03/vinyl-wrap-car-door.jpg" alt="Vehicle" loading="lazy"><div class="ea-pg-label"><span class="ea-pg-name">Vehicle Branding</span><span class="ea-pg-tag">Branding</span></div><span class="ea-pg-cta">View Products &rarr;</span></a>
+      </div>
+      <div class="ea-pg-col ea-pg-col--offset">
+        <a class="ea-pg-card" href="#"><img class="ea-pg-img" src="/wp-content/uploads/2026/01/banners.webp" alt="Banners" loading="lazy"><div class="ea-pg-label"><span class="ea-pg-name">Banner Printing</span><span class="ea-pg-tag">Print</span></div><span class="ea-pg-cta">View Products &rarr;</span></a>
+        <a class="ea-pg-card" href="#"><img class="ea-pg-img" src="/wp-content/uploads/2026/03/exhibition-stand-dubai.jpg" alt="Exhibition" loading="lazy"><img class="ea-pg-img ea-pg-img--hover" src="/wp-content/uploads/2022/03/Exhibition-Stands-1.jpg" alt="Exhibition" loading="lazy"><div class="ea-pg-label"><span class="ea-pg-name">Exhibition Stands</span><span class="ea-pg-tag">Event</span></div><span class="ea-pg-cta">View Products &rarr;</span></a>
+        <a class="ea-pg-card" href="#"><img class="ea-pg-img" src="/wp-content/uploads/2022/03/Wall-Sticker.jpg" alt="Sticker" loading="lazy"><img class="ea-pg-img ea-pg-img--hover" src="/wp-content/uploads/2022/03/Glass-Sticker-2.jpg" alt="Sticker" loading="lazy"><div class="ea-pg-label"><span class="ea-pg-name">Wall Stickers &amp; Vinyl</span><span class="ea-pg-tag">Vinyl</span></div><span class="ea-pg-cta">View Products &rarr;</span></a>
+      </div>
+      <div class="ea-pg-col">
+        <a class="ea-pg-card" href="#"><img class="ea-pg-img" src="/wp-content/uploads/2026/03/business-signage-storefront.jpg" alt="Signage" loading="lazy"><img class="ea-pg-img ea-pg-img--hover" src="/wp-content/uploads/2022/03/3D-Aluminum-Signage-2.jpg" alt="Signage" loading="lazy"><div class="ea-pg-label"><span class="ea-pg-name">Signage &amp; 3D Letters</span><span class="ea-pg-tag">Signage</span></div><span class="ea-pg-cta">View Products &rarr;</span></a>
+        <a class="ea-pg-card" href="#"><img class="ea-pg-img" src="/wp-content/uploads/2026/03/event-backdrop-corporate.jpg" alt="Event" loading="lazy"><img class="ea-pg-img ea-pg-img--hover" src="/wp-content/uploads/2022/03/Events-Branding-2-1.jpg" alt="Event" loading="lazy"><div class="ea-pg-label"><span class="ea-pg-name">Event &amp; Corporate</span><span class="ea-pg-tag">Event</span></div><span class="ea-pg-cta">View Products &rarr;</span></a>
+        <a class="ea-pg-card" href="#"><img class="ea-pg-img" src="/wp-content/uploads/2022/03/pop-up-stand.jpg" alt="Pop-Up" loading="lazy"><img class="ea-pg-img ea-pg-img--hover" src="/wp-content/uploads/2022/03/Fabric-Pop-ups.png" alt="Pop-Up" loading="lazy"><div class="ea-pg-label"><span class="ea-pg-name">Pop-Up &amp; Fabric</span><span class="ea-pg-tag">Display</span></div><span class="ea-pg-cta">View Products &rarr;</span></a>
+      </div>
+      <div class="ea-pg-col ea-pg-col--offset">
+        <a class="ea-pg-card" href="#"><img class="ea-pg-img" src="/wp-content/uploads/2022/03/Glass-Sticker-2.jpg" alt="Glass" loading="lazy"><div class="ea-pg-label"><span class="ea-pg-name">Glass Stickers</span><span class="ea-pg-tag">Glass</span></div><span class="ea-pg-cta">View Products &rarr;</span></a>
+        <a class="ea-pg-card" href="#"><img class="ea-pg-img" src="/wp-content/uploads/2022/03/3D-Aluminum-Signage-2.jpg" alt="3D" loading="lazy"><div class="ea-pg-label"><span class="ea-pg-name">3D Aluminium Signage</span><span class="ea-pg-tag">Metal</span></div><span class="ea-pg-cta">View Products &rarr;</span></a>
+        <a class="ea-pg-card" href="#"><img class="ea-pg-img" src="/wp-content/uploads/2022/03/Fabric-Pop-ups.png" alt="Fabric" loading="lazy"><div class="ea-pg-label"><span class="ea-pg-name">Fabric Pop-Up Displays</span><span class="ea-pg-tag">Fabric</span></div><span class="ea-pg-cta">View Products &rarr;</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ STATS ═══════════════ -->
+<section id="ea-stats">
+  <div class="container">
+    <div class="ea-stats-row">
+      <div class="ea-stat"><span class="ea-stat-num">500K+</span><span class="ea-stat-lbl">Sq.ft Printed (18 Yrs)</span></div>
+      <div class="ea-stat-div"></div>
+      <div class="ea-stat"><span class="ea-stat-num">20,000+</span><span class="ea-stat-lbl">Orders Delivered</span></div>
+      <div class="ea-stat-div"></div>
+      <div class="ea-stat"><span class="ea-stat-num">18+</span><span class="ea-stat-lbl">Years Experience</span></div>
+      <div class="ea-stat-div"></div>
+      <div class="ea-stat"><span class="ea-stat-num">500+</span><span class="ea-stat-lbl">UAE Companies Served</span></div>
+      <div class="ea-stat-div"></div>
+      <div class="ea-stat"><span class="ea-stat-num">4.8★</span><span class="ea-stat-lbl">Google Rating</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ WHY CHOOSE US ═══════════════ -->
+<section id="ea-wcu">
+  <div class="container">
+    <div class="sec-hd">
+      <p class="sec-eyebrow">Our Difference</p>
+      <h2 class="sec-title">Why Dubai Businesses Choose Efficient Advertising</h2>
+      <p class="sec-sub">Since 2008, we have built our name across Dubai and the UAE — delivering print and branding with genuine care for every client.</p>
+    </div>
+    <div class="ea-wcu-grid">
+      <div class="ea-wcu-card reveal"><div class="ea-wcu-icon">🏅</div><h3 class="ea-wcu-title">18 Years in Dubai — Since 2008</h3><p class="ea-wcu-text">18 years of media, print, and branding work across the UAE — reputation built job by job.</p></div>
+      <div class="ea-wcu-card reveal"><div class="ea-wcu-icon">⚡</div><h3 class="ea-wcu-title">Fast Turnaround, Zero Compromise</h3><p class="ea-wcu-text">Same-day and express printing options so your materials are ready exactly when you need them.</p></div>
+      <div class="ea-wcu-card reveal"><div class="ea-wcu-icon">🎯</div><h3 class="ea-wcu-title">End-to-End Service</h3><p class="ea-wcu-text">Design, production, delivery, and on-site installation — one vendor, complete accountability.</p></div>
+      <div class="ea-wcu-card reveal"><div class="ea-wcu-icon">💰</div><h3 class="ea-wcu-title">Competitive Pricing</h3><p class="ea-wcu-text">Premium quality at fair prices — scalable solutions for startups, SMEs, and enterprises.</p></div>
+      <div class="ea-wcu-card reveal"><div class="ea-wcu-icon">🚚</div><h3 class="ea-wcu-title">UAE-Wide Delivery</h3><p class="ea-wcu-text">Delivering across Dubai, Sharjah, Abu Dhabi, Ajman, and all UAE emirates.</p></div>
+      <div class="ea-wcu-card reveal"><div class="ea-wcu-icon">✦</div><h3 class="ea-wcu-title">Google-Rated Excellent</h3><p class="ea-wcu-text">Rated Excellent across 34+ verified Google reviews for quality and professionalism.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ HOW IT WORKS ═══════════════ -->
+<section id="ea-hiw">
+  <div class="container">
+    <div class="sec-hd">
+      <p class="sec-eyebrow">Simple &amp; Fast</p>
+      <h2 class="sec-title">How It Works</h2>
+      <p class="sec-sub">From your first message to final installation — we make it effortless.</p>
+    </div>
+    <div class="ea-hiw-row">
+      <div class="ea-hiw-step reveal"><span class="ea-hiw-num">01</span><span class="ea-hiw-ico">💬</span><h3 class="ea-hiw-step-title">Request a Quote</h3><p class="ea-hiw-step-desc">Tell us your requirements via WhatsApp, call, or our contact form. We respond within hours.</p></div>
+      <div class="ea-hiw-conn"></div>
+      <div class="ea-hiw-step reveal"><span class="ea-hiw-num">02</span><span class="ea-hiw-ico">🎨</span><h3 class="ea-hiw-step-title">Design Approval</h3><p class="ea-hiw-step-desc">Our in-house design team creates or finalises your artwork. You approve before we print.</p></div>
+      <div class="ea-hiw-conn"></div>
+      <div class="ea-hiw-step reveal"><span class="ea-hiw-num">03</span><span class="ea-hiw-ico">🖨</span><h3 class="ea-hiw-step-title">Production</h3><p class="ea-hiw-step-desc">Printed in-house at our Ras Al Khor facility using advanced large-format printing technology.</p></div>
+      <div class="ea-hiw-conn"></div>
+      <div class="ea-hiw-step reveal"><span class="ea-hiw-num">04</span><span class="ea-hiw-ico">🚚</span><h3 class="ea-hiw-step-title">Delivery &amp; Install</h3><p class="ea-hiw-step-desc">We deliver to all UAE emirates and offer professional on-site installation for signage and exhibitions.</p></div>
+    </div>
+    <div class="ea-hiw-cta"><a href="https://wa.me/971527966265" target="_blank" rel="noopener" class="ea-hiw-btn">Start Your Order &rarr;</a></div>
+  </div>
+</section>
+
+<!-- ═══════════════ REVIEWS ═══════════════ -->
+<section id="ea-reviews">
+  <div class="container">
+    <div class="sec-hd">
+      <p class="sec-eyebrow">What Our Clients Say</p>
+      <h2 class="sec-title">Rated Excellent on Google</h2>
+      <div class="ea-rev-stars"><span class="ea-rev-star">★</span><span class="ea-rev-star">★</span><span class="ea-rev-star">★</span><span class="ea-rev-star">★</span><span class="ea-rev-star">★</span><span class="ea-rev-score">4.8 / 5</span></div>
+      <span class="ea-rev-count">Based on 34+ verified Google reviews</span>
+    </div>
+    <div class="ea-rev-grid">
+      <div class="ea-rev-card reveal">
+        <div class="ea-rev-card-top"><div class="ea-rev-card-stars"><span class="ea-rev-card-star">★</span><span class="ea-rev-card-star">★</span><span class="ea-rev-card-star">★</span><span class="ea-rev-card-star">★</span><span class="ea-rev-card-star">★</span></div><div class="ea-rev-google-mark"><svg width="12" height="12" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>Google</div></div>
+        <p class="ea-rev-text">&ldquo;Very good and kind staff. Professional work &mdash; specially Azher is a humble man, hardworker and professional sticker applicator.&rdquo;</p>
+        <div class="ea-rev-meta"><div class="ea-rev-avatar">N</div><div><span class="ea-rev-name">Naqqash Hassan</span><span class="ea-rev-date">November 2024</span></div></div>
+      </div>
+      <div class="ea-rev-card reveal">
+        <div class="ea-rev-card-top"><div class="ea-rev-card-stars"><span class="ea-rev-card-star">★</span><span class="ea-rev-card-star">★</span><span class="ea-rev-card-star">★</span><span class="ea-rev-card-star">★</span><span class="ea-rev-card-star">★</span></div><div class="ea-rev-google-mark"><svg width="12" height="12" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>Google</div></div>
+        <p class="ea-rev-text">&ldquo;Really they are very professional and trustable.&rdquo;</p>
+        <div class="ea-rev-meta"><div class="ea-rev-avatar">D</div><div><span class="ea-rev-name">Deepa Jacob</span><span class="ea-rev-date">November 2024</span></div></div>
+      </div>
+      <div class="ea-rev-card reveal">
+        <div class="ea-rev-card-top"><div class="ea-rev-card-stars"><span class="ea-rev-card-star">★</span><span class="ea-rev-card-star">★</span><span class="ea-rev-card-star">★</span><span class="ea-rev-card-star">★</span><span class="ea-rev-card-star">★</span></div><div class="ea-rev-google-mark"><svg width="12" height="12" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>Google</div></div>
+        <p class="ea-rev-text">&ldquo;Did foam board printing &mdash; quality, quick and cheap service.&rdquo;</p>
+        <div class="ea-rev-meta"><div class="ea-rev-avatar">A</div><div><span class="ea-rev-name">Aisha Merchant</span><span class="ea-rev-date">November 2024</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ URGENCY CTA ═══════════════ -->
+<section id="ea-urgency">
+  <div class="container">
+    <div class="ea-urgency-inner">
+      <div>
+        <span class="ea-urgency-badge">⚡ Same-Day Printing Available in Dubai</span>
+        <h2 class="ea-urgency-title">Need Urgent Printing in Dubai?</h2>
+        <p class="ea-urgency-desc">Tight deadline? We offer express and same-day turnaround on banners, signage, and large-format printing across Dubai &mdash; all printed in-house at Ras Al Khor.</p>
+      </div>
+      <div class="ea-urgency-ctas">
+        <a href="https://wa.me/971527966265" target="_blank" rel="noopener" class="ea-urg-wa">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="#fff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          WhatsApp for Urgent Order
+        </a>
+        <a href="tel:+971527966265" class="ea-urg-call">📞 Call: +971 52 796 6265</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ FOOTER ═══════════════ -->
+<footer id="ea-footer">
+  <div class="container">
+    <div class="ea-foot-grid">
+      <div class="ea-foot-about">
+        <div class="ea-foot-logo-wrap"><img src="/wp-content/uploads/2024/11/efficient-logo-1-1.png" alt="Efficient Advertising Dubai"></div>
+        <p>Efficient Advertising L.L.C is Dubai's full-service printing and advertising company since 2008. Specialising in digital printing, custom signage, vehicle branding, and exhibition stands across the UAE.</p>
+        <p>Since 2008, we have built our reputation on exceptional quality, fast turnaround, and outstanding service.</p>
+      </div>
+      <div>
+        <h3 class="ea-foot-col-title">Get In Touch</h3>
+        <ul class="ea-foot-contact">
+          <li><span class="ea-foot-label">Address</span><a href="#">Warehouse 11, 10C Street, Ras Al Khor Industrial Area 1, Dubai, UAE</a></li>
+          <li><span class="ea-foot-label">Email</span><a href="mailto:info@efficientadvt.com">info@efficientadvt.com</a></li>
+          <li><span class="ea-foot-label">Phone</span><a href="tel:+971527966265">+971 52 796 6265</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="ea-foot-col-title">Useful Links</h3>
+        <ul class="ea-foot-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Banner Printing</a></li>
+          <li><a href="#">Signage</a></li>
+          <li><a href="#">Exhibition Stands</a></li>
+          <li><a href="#">Vehicle Branding</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="ea-foot-bottom">
+      <span class="ea-foot-copy">&copy; 2026 Efficient Advertising L.L.C. All rights reserved. Dubai, UAE.</span>
+      <div class="ea-foot-bottom-links"><a href="#">Privacy Policy</a><a href="#">Contact</a><a href="#">Sitemap</a></div>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var track = document.getElementById('ea-track');
+  var dotsEl = document.querySelectorAll('.ea-dot');
+  var total = 3, curDom = 1, busy = false, timer;
+  var realSlides = track.querySelectorAll('.ea-slide');
+  var cloneFirst = realSlides[0].cloneNode(true);
+  var cloneLast  = realSlides[total-1].cloneNode(true);
+  track.appendChild(cloneFirst);
+  track.insertBefore(cloneLast, realSlides[0]);
+  var allSlides = track.querySelectorAll('.ea-slide');
+  function domToReal(p){ if(p===0) return total-1; if(p===total+1) return 0; return p-1; }
+  function moveTo(p,a){ track.style.transition=a?'':'none'; track.style.transform='translateX(-'+(p*100)+'%)'; }
+  function updateDots(r){ dotsEl.forEach(function(d,i){d.classList.toggle('active',i===r);}); }
+  function kenBurns(p){ track.querySelectorAll('.ea-slide-img-bg').forEach(function(b){b.classList.remove('bg-zoom');}); var bg=allSlides[p].querySelector('.ea-slide-img-bg'); if(bg) setTimeout(function(){bg.classList.add('bg-zoom');},50); }
+  function goNext(){ if(busy)return; busy=true; curDom++; moveTo(curDom,true); updateDots(domToReal(curDom)); kenBurns(curDom); resetTimer(); }
+  function goPrev(){ if(busy)return; busy=true; curDom--; moveTo(curDom,true); updateDots(domToReal(curDom)); kenBurns(curDom); resetTimer(); }
+  track.addEventListener('transitionend',function(e){ if(e.propertyName!=='transform') return; busy=false; if(curDom===0){curDom=total;moveTo(curDom,false);}else if(curDom===total+1){curDom=1;moveTo(curDom,false);} });
+  function resetTimer(){ clearInterval(timer); timer=setInterval(goNext,6000); }
+  document.getElementById('ea-prev').addEventListener('click',goPrev);
+  document.getElementById('ea-next').addEventListener('click',goNext);
+  dotsEl.forEach(function(d){ d.addEventListener('click',function(){ if(busy)return; busy=true; curDom=parseInt(d.getAttribute('data-idx'))+1; moveTo(curDom,true); updateDots(parseInt(d.getAttribute('data-idx'))); kenBurns(curDom); resetTimer(); }); });
+  moveTo(1,false); updateDots(0); kenBurns(1); resetTimer();
+  var lbl = allSlides[1] && allSlides[1].querySelector('.ea-slide-label');
+  if(lbl) setTimeout(function(){ lbl.classList.add('lbl-in'); }, 300);
+})();
+(function(){
+  var io = new IntersectionObserver(function(entries){ entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('visible'); io.unobserve(e.target); } }); }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+})();
+</script>
+</body>
+</html>

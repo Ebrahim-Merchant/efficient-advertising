@@ -1,0 +1,617 @@
+/**
+ * EA-MOBILE-012: Mobile Experience Enhancements
+ * 
+ * This file contains mobile-specific CSS enhancements for screens
+ * 360px - 414px (common mobile device widths).
+ * 
+ * Fixes:
+ * - Horizontal scroll prevention
+ * - Text readability improvements
+ * - CTA button sizing and spacing
+ * - Hero text optimization
+ * - Product gallery touch usability
+ * - Category card layout
+ * - Footer form usability
+ * - Mobile menu improvements
+ */
+
+/* =====================================================================
+   GLOBAL MOBILE RESETS
+   ===================================================================== */
+
+/* Prevent horizontal scroll on all mobile devices */
+@media (max-width: 414px) {
+  html, body {
+    overflow-x: hidden !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* Ensure all containers respect viewport width */
+  .container,
+  .ea-hp-container,
+  .ea-cat-hero-inner,
+  .ea-hp-section-inner {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Ensure images don't overflow */
+  img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+}
+
+/* =====================================================================
+   HOMEPAGE MOBILE ENHANCEMENTS
+   ===================================================================== */
+
+@media (max-width: 390px) {
+  /* Hero section */
+  .ea-hp-hero-inner {
+    padding-top: 64px !important;
+    padding-bottom: 36px !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  .ea-hp-hero-content h1 {
+    font-size: 1.75rem !important;
+    line-height: 1.2 !important;
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+  }
+
+  .ea-hp-hero-content > p {
+    font-size: 0.9rem !important;
+    line-height: 1.5 !important;
+  }
+
+  .ea-hp-hero-media {
+    min-height: 180px !important;
+    max-width: 100% !important;
+  }
+
+  /* CTA buttons - full width, stacked */
+  .ea-hp-hero-ctas {
+    flex-direction: column !important;
+    width: 100% !important;
+    gap: 12px !important;
+  }
+
+  .ea-hp-btn {
+    width: 100% !important;
+    padding: 14px 20px !important;
+    font-size: 14px !important;
+    text-align: center !important;
+    white-space: normal !important;
+  }
+
+  /* Trust section */
+  .ea-hp-trust-grid {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 12px !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  .ea-hp-trust-card {
+    padding: 16px 12px !important;
+  }
+
+  /* Services grid */
+  .ea-hp-services-grid {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  /* Products grid */
+  .ea-hp-products-grid {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  /* Why section */
+  .ea-hp-why-grid {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  .ea-hp-why-card {
+    padding: 20px 16px !important;
+  }
+}
+
+/* 360px specific - smallest common mobile */
+@media (max-width: 360px) {
+  .ea-hp-hero-content h1 {
+    font-size: 1.5rem !important;
+    line-height: 1.25 !important;
+  }
+
+  .ea-hp-hero-content > p {
+    font-size: 0.85rem !important;
+  }
+
+  .ea-hp-btn {
+    padding: 12px 16px !important;
+    font-size: 13px !important;
+  }
+}
+
+/* =====================================================================
+   CATEGORY PAGE MOBILE ENHANCEMENTS
+   ===================================================================== */
+
+@media (max-width: 390px) {
+  .ea-cat-hero {
+    padding-top: 100px !important;
+    padding-bottom: 36px !important;
+  }
+
+  .ea-cat-hero-inner {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  .ea-cat-hero h1 {
+    font-size: 1.5rem !important;
+    line-height: 1.25 !important;
+  }
+
+  .ea-cat-hero p {
+    font-size: 0.9rem !important;
+    line-height: 1.5 !important;
+  }
+
+  /* Hero CTAs stacked */
+  .ea-cat-hero-ctas {
+    flex-direction: column !important;
+    width: 100% !important;
+    gap: 10px !important;
+  }
+
+  .ea-cat-hero-ctas .ea-hp-btn {
+    width: 100% !important;
+    padding: 12px 16px !important;
+    font-size: 13px !important;
+    text-align: center !important;
+  }
+
+  /* Subcategory pills */
+  .ea-cat-subs-inner {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    gap: 8px !important;
+  }
+
+  .ea-cat-sub-pill {
+    font-size: 12px !important;
+    padding: 6px 14px !important;
+    white-space: nowrap !important;
+  }
+
+  /* Product grid */
+  .ea-cat-products-grid {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  .ea-cat-card {
+    max-width: 100% !important;
+  }
+
+  .ea-cat-card__img {
+    height: 180px !important;
+  }
+
+  .ea-cat-card__body h3 {
+    font-size: 0.95rem !important;
+  }
+
+  .ea-cat-card__body p {
+    font-size: 0.8rem !important;
+  }
+
+  /* Pagination */
+  .ea-cat-pagination {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    gap: 6px !important;
+  }
+
+  .ea-cat-pagination .page-numbers {
+    min-width: 36px !important;
+    height: 36px !important;
+    font-size: 13px !important;
+    padding: 0 10px !important;
+  }
+
+  /* Toolbar */
+  .ea-cat-toolbar {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  .ea-cat-count {
+    font-size: 13px !important;
+  }
+}
+
+/* =====================================================================
+   PRODUCT PAGE MOBILE ENHANCEMENTS
+   ===================================================================== */
+
+@media (max-width: 390px) {
+  .ea-pp-hero {
+    padding-top: 80px !important;
+    padding-bottom: 24px !important;
+  }
+
+  .ea-pp-hero-inner {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  /* Gallery */
+  .ea-pp-gallery-main {
+    max-width: 100% !important;
+    margin: 0 auto !important;
+  }
+
+  .ea-pp-gallery-main img {
+    max-height: 300px !important;
+    object-fit: contain !important;
+  }
+
+  .ea-pp-gallery-thumbs {
+    gap: 8px !important;
+    padding: 0 !important;
+  }
+
+  .ea-pp-gallery-thumbs img {
+    width: 50px !important;
+    height: 50px !important;
+  }
+
+  /* Product info */
+  .ea-pp-info h1 {
+    font-size: 1.4rem !important;
+    line-height: 1.3 !important;
+    word-wrap: break-word !important;
+  }
+
+  .ea-pp-summary {
+    font-size: 0.9rem !important;
+    line-height: 1.5 !important;
+  }
+
+  /* CTA buttons */
+  .ea-pp-hero-ctas {
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+
+  .ea-pp-hero-ctas .btn-green-solid,
+  .ea-pp-hero-ctas .btn-outline-amber {
+    width: 100% !important;
+    padding: 14px 16px !important;
+    font-size: 14px !important;
+    text-align: center !important;
+    white-space: normal !important;
+  }
+
+  /* Specs tabs */
+  .ea-pp-tabs {
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    gap: 8px !important;
+  }
+
+  .ea-pp-tab {
+    font-size: 13px !important;
+    padding: 10px 16px !important;
+    white-space: nowrap !important;
+    min-height: 44px !important; /* Touch target size */
+  }
+
+  /* FAQ accordion */
+  .ea-pp-acc-trigger {
+    font-size: 0.9rem !important;
+    padding: 14px 16px !important;
+    min-height: 48px !important; /* Touch target size */
+  }
+
+  .ea-pp-acc-content {
+    padding: 14px 16px !important;
+    font-size: 0.85rem !important;
+    line-height: 1.6 !important;
+  }
+
+  /* Sticky mobile bar */
+  .ea-pp-sticky-bar {
+    padding: 8px 12px !important;
+  }
+
+  .ea-pp-sticky-btn {
+    font-size: 10px !important;
+    padding: 8px 4px !important;
+    min-height: 52px !important;
+  }
+
+  .ea-pp-sticky-btn svg {
+    width: 18px !important;
+    height: 18px !important;
+  }
+}
+
+/* =====================================================================
+   FOOTER / CONTACT MOBILE ENHANCEMENTS
+   ===================================================================== */
+
+@media (max-width: 390px) {
+  footer {
+    padding: 0 !important;
+  }
+
+  .container .row > div {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    margin-bottom: 24px !important;
+  }
+
+  /* Form inputs - full width, comfortable size */
+  #ea-fcf7 input[type="text"],
+  #ea-fcf7 input[type="email"],
+  #ea-fcf7 input[type="tel"],
+  #ea-fcf7 input[type="number"],
+  #ea-fcf7 textarea {
+    width: 100% !important;
+    font-size: 14px !important;
+    padding: 12px 14px !important;
+    min-height: 44px !important; /* Touch target size */
+  }
+
+  #ea-fcf7 textarea {
+    min-height: 100px !important;
+  }
+
+  #ea-fcf7 input[type="submit"] {
+    width: 100% !important;
+    font-size: 14px !important;
+    padding: 14px 20px !important;
+    min-height: 48px !important; /* Touch target size */
+  }
+
+  /* Contact info */
+  footer a[href^="tel:"],
+  footer a[href^="mailto:"] {
+    font-size: 13px !important;
+    min-height: 44px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+  }
+
+  /* Social icons */
+  footer .ea-social-icons a {
+    width: 40px !important;
+    height: 40px !important;
+    min-height: 40px !important;
+  }
+
+  /* WhatsApp button in footer */
+  footer a[href*="whatsapp"] {
+    font-size: 12px !important;
+    padding: 10px 14px !important;
+    min-height: 44px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+}
+
+/* =====================================================================
+   MOBILE MENU ENHANCEMENTS
+   ===================================================================== */
+
+@media (max-width: 767px) {
+  /* Ensure mobile menu is readable */
+  .navbar-toggle {
+    min-width: 44px !important;
+    min-height: 44px !important;
+    padding: 10px !important;
+    margin-right: 8px !important;
+  }
+
+  .navbar-toggle .icon-bar {
+    width: 24px !important;
+    height: 2px !important;
+  }
+
+  /* Mobile dropdown menu */
+  .navbar-collapse {
+    max-height: 80vh !important;
+    overflow-y: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+  }
+
+  .navbar-nav .open .dropdown-menu > li > a {
+    font-size: 15px !important;
+    padding: 12px 16px !important;
+    min-height: 44px !important;
+    display: flex !important;
+    align-items: center !important;
+  }
+
+  .navbar-nav > li > a {
+    font-size: 15px !important;
+    padding: 12px 16px !important;
+    min-height: 44px !important;
+    display: flex !important;
+    align-items: center !important;
+  }
+
+  /* Prevent menu overflow */
+  .navbar-header {
+    display: flex !important;
+    align-items: center !important;
+  }
+
+  /* Logo sizing on mobile */
+  .navbar-brand img {
+    max-height: 36px !important;
+    width: auto !important;
+  }
+}
+
+/* 360px specific menu fixes */
+@media (max-width: 360px) {
+  .navbar-nav > li > a,
+  .navbar-nav .open .dropdown-menu > li > a {
+    font-size: 14px !important;
+    padding: 10px 14px !important;
+  }
+
+  .navbar-brand {
+    font-size: 14px !important;
+    padding: 8px 12px !important;
+  }
+}
+
+/* =====================================================================
+   FLOATING ELEMENTS - MOBILE OPTIMIZATION
+   ===================================================================== */
+
+@media (max-width: 767px) {
+  /* WhatsApp floating icon - position above sticky bar */
+  .ea-wa-float-fixed {
+    left: 10px !important;
+    bottom: calc(62px + env(safe-area-inset-bottom, 0px) + 10px) !important;
+    width: 44px !important;
+    height: 44px !important;
+    z-index: 10001 !important;
+  }
+
+  /* Ensure sticky bar doesn't overlap content */
+  body {
+    padding-bottom: 62px !important;
+  }
+
+  /* Hide any duplicate chat widgets */
+  .joinchat,
+  .joinchat--left,
+  .joinchat--right,
+  .floating-wpp,
+  .whatsapp_float,
+  .chaty-widget,
+  .chaty-widget-button,
+  .chaty-whatsapp,
+  .wpb-whatsapp-chat,
+  #qlwapp,
+  [class*="joinchat"],
+  [class*="floating-wpp"],
+  [class*="chaty"] {
+    display: none !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+  }
+}
+
+/* =====================================================================
+   TOUCH TARGET SIZE ENFORCEMENT
+   ===================================================================== */
+
+@media (max-width: 767px) {
+  /* All interactive elements must be at least 44x44px */
+  a, button, input, select, textarea,
+  [role="button"], [role="link"],
+  .ea-hp-btn, .ea-cat-card, .ea-pp-tab,
+  .page-numbers, .ea-pp-sticky-btn {
+    min-height: 44px !important;
+    min-width: 44px !important;
+  }
+
+  /* Ensure clickable areas are large enough */
+  .ea-cat-card {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .ea-cat-card__body {
+    flex: 1 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    min-height: 120px !important;
+  }
+}
+
+/* =====================================================================
+   TEXT READABILITY ENHANCEMENTS
+   ===================================================================== */
+
+@media (max-width: 414px) {
+  /* Ensure text is readable */
+  body {
+    font-size: 15px !important;
+    line-height: 1.6 !important;
+  }
+
+  h1 {
+    font-size: clamp(1.5rem, 5vw, 1.8rem) !important;
+    line-height: 1.25 !important;
+  }
+
+  h2 {
+    font-size: clamp(1.3rem, 4vw, 1.5rem) !important;
+    line-height: 1.3 !important;
+  }
+
+  h3 {
+    font-size: clamp(1.1rem, 3.5vw, 1.3rem) !important;
+    line-height: 1.4 !important;
+  }
+
+  p {
+    font-size: 0.9rem !important;
+    line-height: 1.6 !important;
+  }
+
+  /* Prevent text overflow */
+  * {
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+  }
+}
+
+/* 360px specific text sizing */
+@media (max-width: 360px) {
+  body {
+    font-size: 14px !important;
+  }
+
+  h1 {
+    font-size: 1.4rem !important;
+  }
+
+  h2 {
+    font-size: 1.2rem !important;
+  }
+
+  h3 {
+    font-size: 1.05rem !important;
+  }
+}

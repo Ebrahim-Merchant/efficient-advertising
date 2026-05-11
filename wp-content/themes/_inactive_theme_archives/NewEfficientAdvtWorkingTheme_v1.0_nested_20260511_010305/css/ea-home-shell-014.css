@@ -1,0 +1,528 @@
+/* EA-HOMEPAGE-SHELL-014 — homepage shell polish only */
+
+body.home .ea-hdr-brand .logo img,
+body.page-template-index .ea-hdr-brand .logo img,
+body.ea-dark-page .ea-hdr-brand .logo img {
+  filter: brightness(1.35) contrast(1.08) saturate(1.05);
+}
+
+body.home .ea-hdr-tagline,
+body.page-template-index .ea-hdr-tagline,
+body.ea-dark-page .ea-hdr-tagline {
+  color: rgba(255,255,255,0.96) !important;
+  text-shadow: 0 1px 0 rgba(0,0,0,0.18);
+}
+
+body.home .logtophead,
+body.page-template-index .logtophead {
+  min-height: 82px !important;
+}
+
+body.home .ea-hp-hero-inner,
+body.page-template-index .ea-hp-hero-inner {
+  padding-top: clamp(88px, 9.5vw, 118px) !important;
+}
+
+body.home .ea-hp-hero-label,
+body.page-template-index .ea-hp-hero-label {
+  font-size: 13px !important;
+  letter-spacing: 3.4px !important;
+}
+
+body.home .headerbottom,
+body.page-template-index .headerbottom {
+  overflow: visible !important;
+}
+
+body.home .ea-mega-nav,
+body.page-template-index .ea-mega-nav {
+  width: 100% !important;
+}
+
+body.home .ea-mega-list,
+body.page-template-index .ea-mega-list {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  justify-content: space-between !important;
+  align-items: stretch !important;
+  gap: 4px !important;
+  width: 100% !important;
+}
+
+body.home .ea-mega-list > .ea-mega-item,
+body.page-template-index .ea-mega-list > .ea-mega-item {
+  flex: 0 1 auto !important;
+  min-width: 0 !important;
+}
+
+body.home .ea-mega-list > .ea-mega-item > .ea-mega-link,
+body.page-template-index .ea-mega-list > .ea-mega-item > .ea-mega-link {
+  font-size: 11.6px !important;
+  font-weight: 700 !important;
+  padding: 10px 7px !important;
+  letter-spacing: 0.002em !important;
+  white-space: nowrap !important;
+}
+
+body.home .ea-mega-panel,
+body.page-template-index .ea-mega-panel {
+  border-radius: 16px !important;
+}
+
+body.home .ea-mega-panel .ea-panel-sublist li a,
+body.page-template-index .ea-mega-panel .ea-panel-sublist li a {
+  font-size: 14px !important;
+  line-height: 1.45 !important;
+  white-space: normal !important;
+  display: block !important;
+}
+
+body.home .ea-mega-panel h4,
+body.home .ea-mega-panel h5,
+body.home .ea-mega-panel .ea-panel-title,
+body.home .ea-mega-panel .ea-panel-head,
+body.page-template-index .ea-mega-panel h4,
+body.page-template-index .ea-mega-panel h5,
+body.page-template-index .ea-mega-panel .ea-panel-title,
+body.page-template-index .ea-mega-panel .ea-panel-head {
+  font-size: 15px !important;
+  line-height: 1.35 !important;
+}
+
+body.home #ea-hp-hero,
+body.page-template-index #ea-hp-hero {
+  background:
+    radial-gradient(ellipse at 12% 24%, rgba(212,167,58,0.12) 0%, transparent 46%),
+    radial-gradient(ellipse at 88% 6%, rgba(212,167,58,0.06) 0%, transparent 40%),
+    linear-gradient(180deg, #0B1F38 0%, #14365C 52%, #1B435E 100%) !important;
+}
+
+body.home #ea-hp-services,
+body.home #ea-hp-portfolio,
+body.home #ea-hp-cta,
+body.page-template-index #ea-hp-services,
+body.page-template-index #ea-hp-portfolio,
+body.page-template-index #ea-hp-cta {
+  background: #14365C !important;
+}
+
+body.home #ea-hp-products,
+body.home #ea-hp-reviews,
+body.home #ea-hp-why,
+body.home #ea-hp-faq,
+body.page-template-index #ea-hp-products,
+body.page-template-index #ea-hp-reviews,
+body.page-template-index #ea-hp-why,
+body.page-template-index #ea-hp-faq {
+  background: #1B435E !important;
+}
+
+body.home .ea-hp-service-card,
+body.home .ea-product-card,
+body.home .ea-hp-review-card,
+body.home .ea-hp-video-card,
+body.home .ea-hp-why-card,
+body.page-template-index .ea-hp-service-card,
+body.page-template-index .ea-product-card,
+body.page-template-index .ea-hp-review-card,
+body.page-template-index .ea-hp-video-card,
+body.page-template-index .ea-hp-why-card {
+  background: #102B49 !important;
+  border: 1px solid rgba(255,255,255,0.06) !important;
+  box-shadow: 0 18px 46px rgba(0,0,0,0.26) !important;
+}
+
+body.home footer,
+body.home #footer,
+body.home .footer,
+body.page-template-index footer,
+body.page-template-index #footer,
+body.page-template-index .footer {
+  background: linear-gradient(180deg, #0B1F38 0%, #0B1F38 100%) !important;
+  border-top: 1px solid rgba(212,167,58,0.28) !important;
+}
+
+body.home footer h2,
+body.home footer h3,
+body.home footer h4,
+body.home #footer h2,
+body.home #footer h3,
+body.home #footer h4,
+body.home .footer h2,
+body.home .footer h3,
+body.home .footer h4,
+body.page-template-index footer h2,
+body.page-template-index footer h3,
+body.page-template-index footer h4,
+body.page-template-index #footer h2,
+body.page-template-index #footer h3,
+body.page-template-index #footer h4,
+body.page-template-index .footer h2,
+body.page-template-index .footer h3,
+body.page-template-index .footer h4 {
+  color: #D4A73A !important;
+  letter-spacing: 1.2px !important;
+}
+
+body.home footer p,
+body.home footer li,
+body.home footer a,
+body.home #footer p,
+body.home #footer li,
+body.home #footer a,
+body.home .footer p,
+body.home .footer li,
+body.home .footer a,
+body.page-template-index footer p,
+body.page-template-index footer li,
+body.page-template-index footer a,
+body.page-template-index #footer p,
+body.page-template-index #footer li,
+body.page-template-index #footer a,
+body.page-template-index .footer p,
+body.page-template-index .footer li,
+body.page-template-index .footer a {
+  color: #B8C2CC !important;
+}
+
+body.home footer input,
+body.home footer select,
+body.home footer textarea,
+body.home #footer input,
+body.home #footer select,
+body.home #footer textarea,
+body.home .footer input,
+body.home .footer select,
+body.home .footer textarea,
+body.page-template-index footer input,
+body.page-template-index footer select,
+body.page-template-index footer textarea,
+body.page-template-index #footer input,
+body.page-template-index #footer select,
+body.page-template-index #footer textarea,
+body.page-template-index .footer input,
+body.page-template-index .footer select,
+body.page-template-index .footer textarea {
+  background: #102B49 !important;
+  border: 1px solid rgba(143,163,183,0.28) !important;
+  color: #F5F7FA !important;
+  border-radius: 8px !important;
+  min-height: 44px !important;
+}
+
+body.home footer input::placeholder,
+body.home footer textarea::placeholder,
+body.home #footer input::placeholder,
+body.home #footer textarea::placeholder,
+body.home .footer input::placeholder,
+body.home .footer textarea::placeholder,
+body.page-template-index footer input::placeholder,
+body.page-template-index footer textarea::placeholder,
+body.page-template-index #footer input::placeholder,
+body.page-template-index #footer textarea::placeholder,
+body.page-template-index .footer input::placeholder,
+body.page-template-index .footer textarea::placeholder {
+  color: #8FA3B7 !important;
+}
+
+body.home footer button,
+body.home footer input[type=submit],
+body.home #footer button,
+body.home #footer input[type=submit],
+body.home .footer button,
+body.home .footer input[type=submit],
+body.page-template-index footer button,
+body.page-template-index footer input[type=submit],
+body.page-template-index #footer button,
+body.page-template-index #footer input[type=submit],
+body.page-template-index .footer button,
+body.page-template-index .footer input[type=submit] {
+  background: #D4A73A !important;
+  color: #0B1F38 !important;
+  border: none !important;
+  border-radius: 8px !important;
+  min-height: 46px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.02em !important;
+}
+
+@media (max-width: 1440px) {
+  body.home .ea-mega-list > .ea-mega-item > .ea-mega-link,
+  body.page-template-index .ea-mega-list > .ea-mega-item > .ea-mega-link {
+    font-size: 11.2px !important;
+    padding-left: 6px !important;
+    padding-right: 6px !important;
+  }
+}
+
+@media (max-width: 1280px) {
+  body.home .ea-mega-list > .ea-mega-item > .ea-mega-link,
+  body.page-template-index .ea-mega-list > .ea-mega-item > .ea-mega-link {
+    font-size: 10.8px !important;
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+  }
+}
+
+/* Unified mobile header/content spacing system */
+@media (max-width: 767px) {
+  :root {
+    --ea-mobile-header-row: 56px;
+    --ea-mobile-logo-height: 44px;
+    --ea-mobile-section-offset: 132px;
+    --ea-mobile-home-gap: 135px;
+  }
+
+  body.home .logtophead,
+  body.page-template-index .logtophead,
+  body.ea-dark-page .logtophead {
+    min-height: var(--ea-mobile-header-row) !important;
+  }
+
+  body.home .ea-hdr-brand,
+  body.page-template-index .ea-hdr-brand,
+  body.ea-dark-page .ea-hdr-brand {
+    padding: 6px 0 !important;
+  }
+
+  body.home .ea-hdr-brand .logo img,
+  body.page-template-index .ea-hdr-brand .logo img,
+  body.ea-dark-page .ea-hdr-brand .logo img {
+    height: var(--ea-mobile-logo-height) !important;
+  }
+
+  .homebaner,
+  #ea-hero {
+    margin-top: var(--ea-mobile-header-row) !important;
+  }
+
+  .ea-cat-hero,
+  .cat-hero,
+  .sp-hero,
+  .ea-seo-hero,
+  .ea-bdhero {
+    padding-top: var(--ea-mobile-section-offset) !important;
+  }
+
+  body.home .ea-hp-hero-inner,
+  body.page-template-index .ea-hp-hero-inner {
+    padding-top: var(--ea-mobile-home-gap) !important;
+  }
+}
+
+/* ================================================
+   EA-SPACING-SYSTEM-v1 — Homepage Rhythm Alignment
+   spacing-only refinements (padding / margin / gap)
+   ================================================ */
+body.home #ea-hp-trust-strip,
+body.page-template-index #ea-hp-trust-strip {
+  padding-top: clamp(56px, 6vw, 72px) !important;
+  padding-bottom: clamp(56px, 6vw, 72px) !important;
+}
+
+body.home #ea-hp-services,
+body.home #ea-hp-products,
+body.home #ea-hp-portfolio,
+body.home #ea-hp-reviews,
+body.home #ea-hp-videos,
+body.home #ea-hp-why,
+body.home #ea-hp-faq,
+body.home #ea-hp-cta,
+body.page-template-index #ea-hp-services,
+body.page-template-index #ea-hp-products,
+body.page-template-index #ea-hp-portfolio,
+body.page-template-index #ea-hp-reviews,
+body.page-template-index #ea-hp-videos,
+body.page-template-index #ea-hp-why,
+body.page-template-index #ea-hp-faq,
+body.page-template-index #ea-hp-cta {
+  padding-top: clamp(72px, 7.5vw, 96px) !important;
+  padding-bottom: clamp(72px, 7.5vw, 96px) !important;
+}
+
+body.home .ea-hp-section-header,
+body.page-template-index .ea-hp-section-header {
+  margin-bottom: clamp(36px, 4.2vw, 48px) !important;
+}
+
+body.home .ea-hp-services-grid,
+body.home .ea-hp-products-grid,
+body.home .ea-hp-portfolio-grid,
+body.home .ea-hp-reviews-grid,
+body.home .ea-hp-videos-grid,
+body.home .ea-hp-why-grid,
+body.page-template-index .ea-hp-services-grid,
+body.page-template-index .ea-hp-products-grid,
+body.page-template-index .ea-hp-portfolio-grid,
+body.page-template-index .ea-hp-reviews-grid,
+body.page-template-index .ea-hp-videos-grid,
+body.page-template-index .ea-hp-why-grid {
+  gap: clamp(24px, 2.8vw, 36px) !important;
+}
+
+@media (max-width: 767px) {
+  body.home #ea-hp-trust-strip,
+  body.home #ea-hp-services,
+  body.home #ea-hp-products,
+  body.home #ea-hp-portfolio,
+  body.home #ea-hp-reviews,
+  body.home #ea-hp-videos,
+  body.home #ea-hp-why,
+  body.home #ea-hp-faq,
+  body.home #ea-hp-cta,
+  body.page-template-index #ea-hp-trust-strip,
+  body.page-template-index #ea-hp-services,
+  body.page-template-index #ea-hp-products,
+  body.page-template-index #ea-hp-portfolio,
+  body.page-template-index #ea-hp-reviews,
+  body.page-template-index #ea-hp-videos,
+  body.page-template-index #ea-hp-why,
+  body.page-template-index #ea-hp-faq,
+  body.page-template-index #ea-hp-cta {
+    padding-top: 56px !important;
+    padding-bottom: 56px !important;
+  }
+}
+
+/* ================================================
+   EA-TEXT-002 — Homepage Section-Level Text System
+   ================================================ */
+body.home #ea-hp-hero,
+body.home #ea-hp-services,
+body.home #ea-hp-products,
+body.home #ea-hp-portfolio,
+body.home #ea-hp-reviews,
+body.home #ea-hp-why,
+body.home #ea-hp-faq,
+body.home #ea-hp-cta,
+body.page-template-index #ea-hp-hero,
+body.page-template-index #ea-hp-services,
+body.page-template-index #ea-hp-products,
+body.page-template-index #ea-hp-portfolio,
+body.page-template-index #ea-hp-reviews,
+body.page-template-index #ea-hp-why,
+body.page-template-index #ea-hp-faq,
+body.page-template-index #ea-hp-cta {
+  color: #B8C2CC !important;
+}
+
+body.home #ea-hp-hero h1,
+body.home #ea-hp-hero h2,
+body.home #ea-hp-hero h3,
+body.home #ea-hp-services h1,
+body.home #ea-hp-services h2,
+body.home #ea-hp-services h3,
+body.home #ea-hp-products h1,
+body.home #ea-hp-products h2,
+body.home #ea-hp-products h3,
+body.home #ea-hp-portfolio h1,
+body.home #ea-hp-portfolio h2,
+body.home #ea-hp-portfolio h3,
+body.home #ea-hp-reviews h1,
+body.home #ea-hp-reviews h2,
+body.home #ea-hp-reviews h3,
+body.home #ea-hp-why h1,
+body.home #ea-hp-why h2,
+body.home #ea-hp-why h3,
+body.home #ea-hp-faq h1,
+body.home #ea-hp-faq h2,
+body.home #ea-hp-faq h3,
+body.home #ea-hp-cta h1,
+body.home #ea-hp-cta h2,
+body.home #ea-hp-cta h3,
+body.page-template-index #ea-hp-hero h1,
+body.page-template-index #ea-hp-hero h2,
+body.page-template-index #ea-hp-hero h3,
+body.page-template-index #ea-hp-services h1,
+body.page-template-index #ea-hp-services h2,
+body.page-template-index #ea-hp-services h3,
+body.page-template-index #ea-hp-products h1,
+body.page-template-index #ea-hp-products h2,
+body.page-template-index #ea-hp-products h3,
+body.page-template-index #ea-hp-portfolio h1,
+body.page-template-index #ea-hp-portfolio h2,
+body.page-template-index #ea-hp-portfolio h3,
+body.page-template-index #ea-hp-reviews h1,
+body.page-template-index #ea-hp-reviews h2,
+body.page-template-index #ea-hp-reviews h3,
+body.page-template-index #ea-hp-why h1,
+body.page-template-index #ea-hp-why h2,
+body.page-template-index #ea-hp-why h3,
+body.page-template-index #ea-hp-faq h1,
+body.page-template-index #ea-hp-faq h2,
+body.page-template-index #ea-hp-faq h3,
+body.page-template-index #ea-hp-cta h1,
+body.page-template-index #ea-hp-cta h2,
+body.page-template-index #ea-hp-cta h3 {
+  color: #F5F7FA !important;
+}
+
+body.home #ea-hp-hero small,
+body.home #ea-hp-services small,
+body.home #ea-hp-products small,
+body.home #ea-hp-portfolio small,
+body.home #ea-hp-reviews small,
+body.home #ea-hp-why small,
+body.home #ea-hp-faq small,
+body.home #ea-hp-cta small,
+body.home #ea-hp-hero .meta,
+body.home #ea-hp-services .meta,
+body.home #ea-hp-products .meta,
+body.home #ea-hp-portfolio .meta,
+body.home #ea-hp-reviews .meta,
+body.home #ea-hp-why .meta,
+body.home #ea-hp-faq .meta,
+body.home #ea-hp-cta .meta,
+body.home #ea-hp-hero .muted,
+body.home #ea-hp-services .muted,
+body.home #ea-hp-products .muted,
+body.home #ea-hp-portfolio .muted,
+body.home #ea-hp-reviews .muted,
+body.home #ea-hp-why .muted,
+body.home #ea-hp-faq .muted,
+body.home #ea-hp-cta .muted,
+body.page-template-index #ea-hp-hero small,
+body.page-template-index #ea-hp-services small,
+body.page-template-index #ea-hp-products small,
+body.page-template-index #ea-hp-portfolio small,
+body.page-template-index #ea-hp-reviews small,
+body.page-template-index #ea-hp-why small,
+body.page-template-index #ea-hp-faq small,
+body.page-template-index #ea-hp-cta small,
+body.page-template-index #ea-hp-hero .meta,
+body.page-template-index #ea-hp-services .meta,
+body.page-template-index #ea-hp-products .meta,
+body.page-template-index #ea-hp-portfolio .meta,
+body.page-template-index #ea-hp-reviews .meta,
+body.page-template-index #ea-hp-why .meta,
+body.page-template-index #ea-hp-faq .meta,
+body.page-template-index #ea-hp-cta .meta,
+body.page-template-index #ea-hp-hero .muted,
+body.page-template-index #ea-hp-services .muted,
+body.page-template-index #ea-hp-products .muted,
+body.page-template-index #ea-hp-portfolio .muted,
+body.page-template-index #ea-hp-reviews .muted,
+body.page-template-index #ea-hp-why .muted,
+body.page-template-index #ea-hp-faq .muted,
+body.page-template-index #ea-hp-cta .muted {
+  color: #8FA3B7 !important;
+}
+
+body.home #ea-hp-hero .ea-hp-label,
+body.home #ea-hp-services .ea-hp-label,
+body.home #ea-hp-products .ea-hp-label,
+body.home #ea-hp-portfolio .ea-hp-label,
+body.home #ea-hp-reviews .ea-hp-label,
+body.home #ea-hp-why .ea-hp-label,
+body.home #ea-hp-faq .ea-hp-label,
+body.home #ea-hp-cta .ea-hp-label,
+body.page-template-index #ea-hp-hero .ea-hp-label,
+body.page-template-index #ea-hp-services .ea-hp-label,
+body.page-template-index #ea-hp-products .ea-hp-label,
+body.page-template-index #ea-hp-portfolio .ea-hp-label,
+body.page-template-index #ea-hp-reviews .ea-hp-label,
+body.page-template-index #ea-hp-why .ea-hp-label,
+body.page-template-index #ea-hp-faq .ea-hp-label,
+body.page-template-index #ea-hp-cta .ea-hp-label {
+  color: #D4A73A !important;
+}

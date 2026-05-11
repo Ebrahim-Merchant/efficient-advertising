@@ -1,0 +1,56 @@
+{
+    "csv_path": "C:\\Users\\merch\\Local Sites\\newefficientadvertising09042026\\app\\public/woo_products_import.csv",
+    "image_root": "G:/My Drive/Website Images",
+    "ignore_list_path": "C:\\Users\\merch\\Local Sites\\newefficientadvertising09042026\\app\\public\\wp-content\\themes\\NewEfficientAdvtWorkingTheme_v1.0/sku-ignore-list.txt",
+    "ignored_sku_count": 2,
+    "ignored_skus": [
+        "PS-171",
+        "PS-174"
+    ],
+    "total_csv_skus": 727,
+    "total_image_basenames": 735,
+    "prefix_sku_counts": {
+        "CG": 100,
+        "EE": 62,
+        "FL": 45,
+        "LF": 55,
+        "OB": 57,
+        "PL": 50,
+        "PS": 274,
+        "SG": 69,
+        "VB": 15
+    },
+    "prefix_image_counts": {
+        "CG": 100,
+        "EE": 62,
+        "FL": 45,
+        "LF": 55,
+        "OB": 57,
+        "PL": 50,
+        "PS": 272,
+        "SG": 69,
+        "VB": 15
+    },
+    "missing_image_count": 0,
+    "missing_images": [],
+    "ignored_missing_image_count": 2,
+    "ignored_missing_images": [
+        "PS-171",
+        "PS-174"
+    ],
+    "extra_image_count": 0,
+    "extra_images": [],
+    "unmatched_image_name_count": 10,
+    "unmatched_image_names_sample": [
+        "OB-048 (1).webp",
+        "OB-049 (1).webp",
+        "OB-050 (1).webp",
+        "OB-051 (1).webp",
+        "OB-052 (1).webp",
+        "OB-053 (1).webp",
+        "OB-054 (1).webp",
+        "OB-055 (1).webp",
+        "OB-056 (1).webp",
+        "OB-057 (1).webp"
+    ]
+}

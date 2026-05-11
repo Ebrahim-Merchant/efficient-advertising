@@ -1,0 +1,282 @@
+/**
+ * EA Preview 03 — Warm Background + Light Components
+ * =====================================================================
+ * PREVIEW MODE ONLY — activated via ?ea_preview=light-comp
+ * URL: http://newefficientadvertising09042026.local/?ea_preview=light-comp
+ * Category: http://newefficientadvertising09042026.local/product-category/signage/?ea_preview=light-comp
+ *
+ * Objective:
+ *   Keep the warm premium page background from Preview 02 (warm-bg),
+ *   and ALSO lighten interior card/component blocks so they read as
+ *   clean white/ivory rather than dark navy — a more editorial luxury feel.
+ *
+ * NO live changes. NO layout, spacing, or structural changes.
+ * Header and footer remain dark and untouched.
+ * =====================================================================
+ */
+
+/* ═══════════════════════════════════════════════════════════════════ */
+/* PART 1 — WARM BASE BACKGROUND (carried from preview-02 warm-bg)   */
+/* ═══════════════════════════════════════════════════════════════════ */
+
+/* ─── 1. BASE PAGE BACKGROUND ─────────────────────────────────────── */
+html,
+body {
+    background-color: #F5F2EC !important;
+}
+
+/* ─── 2. SECTION TRANSPARENCY ─────────────────────────────────────── */
+body.home section,
+body.home .section,
+body.tax-product_cat section,
+body.tax-product_cat .section,
+body.page-template-index section,
+body.page-template-index .section {
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+}
+
+/* ─── 3. DARK CLASS OVERRIDES ─────────────────────────────────────── */
+body [class*="dark-section"],
+body [class*="bg-dark"],
+body [class*="section-dark"],
+body [class*="bg-black"] {
+    background-color: #F5F2EC !important;
+    background-image: none !important;
+}
+
+/* ─── 4. HOMEPAGE SECTION BACKGROUNDS ────────────────────────────── */
+body.home #ea-hp-hero,
+body.home #ea-hp-trust-strip,
+body.home #ea-hp-products,
+body.home #ea-hp-reviews,
+body.home #ea-hp-why,
+body.page-template-index #ea-hp-hero,
+body.page-template-index #ea-hp-trust-strip,
+body.page-template-index #ea-hp-products,
+body.page-template-index #ea-hp-reviews,
+body.page-template-index #ea-hp-why {
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+}
+
+body.home #ea-hp-services,
+body.home #ea-hp-portfolio,
+body.home #ea-hp-videos,
+body.home #ea-hp-faq,
+body.page-template-index #ea-hp-services,
+body.page-template-index #ea-hp-portfolio,
+body.page-template-index #ea-hp-videos,
+body.page-template-index #ea-hp-faq {
+    background-color: #FAF8F4 !important;
+    background-image: none !important;
+}
+
+body.home #ea-hp-cta,
+body.page-template-index #ea-hp-cta,
+body.home .ea-hp-cta-inner,
+body.page-template-index .ea-hp-cta-inner {
+    background-color: #F7F3E8 !important;
+    background-image: none !important;
+}
+
+/* ─── 5. CATEGORY SECTION BACKGROUNDS ───────────────────────────── */
+body.tax-product_cat .ea-cat-hero {
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+}
+
+body.tax-product_cat .ea-cat-grid-section,
+body.tax-product_cat .ea-cat-products-grid {
+    background-color: #FAF8F4 !important;
+    background-image: none !important;
+}
+
+body.tax-product_cat .ea-cat-cta,
+body.tax-product_cat .ea-cat-why {
+    background-color: #F7F3E8 !important;
+    background-image: none !important;
+}
+
+/* ─── 6. HOMEPAGE TYPOGRAPHY ─────────────────────────────────────── */
+.ea-hp-section-header h2 { color: #1a1a1a !important; }
+.ea-hp-hero-content h1   { color: #1a1a1a !important; }
+.ea-hp-cta-inner h2      { color: #1a1a1a !important; }
+
+.ea-hp-section-header p  { color: #555555 !important; }
+.ea-hp-hero-content > p  { color: #555555 !important; }
+.ea-hp-hero-micro        { color: #555555 !important; }
+.ea-hp-cta-inner p       { color: #555555 !important; }
+.ea-hp-faq-answer p      { color: #555555 !important; }
+.ea-hp-review-text       { color: #555555 !important; }
+
+.ea-hp-trust-item span   { color: #666666 !important; }
+.ea-hp-review-meta span  { color: #777777 !important; }
+.ea-hp-review-meta strong { color: #1a1a1a; }
+.ea-hp-faq-item summary  { color: #1a1a1a; }
+
+/* ─── 7. CATEGORY TYPOGRAPHY (light-bg sections only) ───────────── */
+body.tax-product_cat .ea-cat-breadcrumb a,
+body.tax-product_cat .ea-cat-breadcrumb .sep,
+body.tax-product_cat .ea-cat-breadcrumb .current { color: #666666 !important; }
+
+body.tax-product_cat .ea-cat-hero-inner h1,
+body.tax-product_cat .ea-cat-hero h1              { color: #1a1a1a !important; }
+
+body.tax-product_cat .ea-cat-hero-inner p,
+body.tax-product_cat .ea-cat-hero p               { color: #555555 !important; }
+
+body.tax-product_cat .ea-cat-count                { color: #555555 !important; }
+
+body.tax-product_cat .ea-cat-pagination .page-numbers { color: #555555 !important; }
+
+body.tax-product_cat .ea-hp-container h2,
+body.tax-product_cat .ea-cat-cta h2               { color: #1a1a1a !important; }
+
+body.tax-product_cat .ea-hp-container > p,
+body.tax-product_cat .ea-cat-cta p                { color: #555555 !important; }
+
+
+/* ═══════════════════════════════════════════════════════════════════ */
+/* PART 2 — LIGHT COMPONENT LAYER (new in Preview 03)                */
+/* ═══════════════════════════════════════════════════════════════════ */
+
+/* ─── 8. HOMEPAGE CARDS → CLEAN WHITE ────────────────────────────── */
+/*
+ * Original rule (specificity 0,2,0 with !important in ea-home-shell-014.css):
+ *   body.home .ea-hp-service-card, body.home .ea-product-card,
+ *   body.home .ea-hp-review-card, body.home .ea-hp-video-card,
+ *   body.home .ea-hp-why-card { background: rgba(255,255,255,0.043) }
+ *
+ * We match with same specificity (0,2,0) + !important loaded later → wins.
+ */
+body.home .ea-hp-service-card,
+body.home .ea-product-card,
+body.home .ea-hp-review-card,
+body.home .ea-hp-video-card,
+body.home .ea-hp-why-card,
+body.page-template-index .ea-hp-service-card,
+body.page-template-index .ea-product-card,
+body.page-template-index .ea-hp-review-card,
+body.page-template-index .ea-hp-video-card,
+body.page-template-index .ea-hp-why-card,
+body.tax-product_cat .ea-hp-why-card {
+    background: #FFFFFF !important;
+    background-image: none !important;
+    border: 1px solid rgba(212, 175, 55, 0.18) !important;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.06) !important;
+}
+
+/* ─── 9. HOMEPAGE CARD TEXT → DARK CHARCOAL ──────────────────────── */
+/* Service cards */
+body.home .ea-hp-service-card h3,
+body.page-template-index .ea-hp-service-card h3 {
+    color: #1a1a1a !important;
+}
+body.home .ea-hp-service-card p,
+body.page-template-index .ea-hp-service-card p {
+    color: #555555 !important;
+}
+
+/* Product cards (homepage) */
+body.home #ea-hp-products .ea-product-card__body h4,
+body.page-template-index #ea-hp-products .ea-product-card__body h4 {
+    color: #1a1a1a !important;
+}
+body.home #ea-hp-products .ea-product-card__body p,
+body.page-template-index #ea-hp-products .ea-product-card__body p {
+    color: #555555 !important;
+}
+
+/* Video cards */
+body.home .ea-hp-video-card h3,
+body.page-template-index .ea-hp-video-card h3 {
+    color: #1a1a1a !important;
+}
+
+/* Why Choose Us cards — re-enabled (white cards need dark text) */
+body.home .ea-hp-why-card h3,
+body.page-template-index .ea-hp-why-card h3,
+body.tax-product_cat .ea-hp-why-card h3 {
+    color: #1a1a1a !important;
+}
+body.home .ea-hp-why-card p,
+body.page-template-index .ea-hp-why-card p,
+body.tax-product_cat .ea-hp-why-card p {
+    color: #555555 !important;
+}
+
+/* Review cards */
+body.home .ea-hp-review-card .ea-hp-review-text,
+body.page-template-index .ea-hp-review-card .ea-hp-review-text {
+    color: #555555 !important;
+}
+body.home .ea-hp-review-card .ea-hp-review-meta strong,
+body.page-template-index .ea-hp-review-card .ea-hp-review-meta strong {
+    color: #1a1a1a !important;
+}
+body.home .ea-hp-review-card .ea-hp-review-meta span,
+body.page-template-index .ea-hp-review-card .ea-hp-review-meta span {
+    color: #777777 !important;
+}
+
+/* ─── 10. HOMEPAGE FAQ ITEMS → LIGHT CARDS ───────────────────────── */
+body.home .ea-hp-faq-item,
+body.page-template-index .ea-hp-faq-item {
+    background: #FFFFFF !important;
+    border: 1px solid rgba(212, 175, 55, 0.18) !important;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.05) !important;
+}
+body.home .ea-hp-faq-item summary,
+body.page-template-index .ea-hp-faq-item summary {
+    color: #1a1a1a !important;
+}
+
+/* ─── 11. CATEGORY PRODUCT CARDS → CLEAN WHITE ───────────────────── */
+/*
+ * Original rule in taxonomy-product_cat.php inline <style>:
+ *   .ea-cat-card { background: rgb(20, 20, 42) }
+ * We use body.tax-product_cat prefix to ensure specificity win.
+ */
+body.tax-product_cat .ea-cat-card {
+    background: #FFFFFF !important;
+    background-image: none !important;
+    border: 1px solid rgba(212, 175, 55, 0.18) !important;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.07) !important;
+}
+
+/* Category card text → dark charcoal */
+body.tax-product_cat .ea-cat-card__body h3,
+body.tax-product_cat .ea-cat-card h3 {
+    color: #1a1a1a !important;
+}
+body.tax-product_cat .ea-cat-card__body p,
+body.tax-product_cat .ea-cat-card p {
+    color: #555555 !important;
+}
+
+/* ─── 12. CATEGORY SUB-PILLS → LIGHT IVORY STYLE ─────────────────── */
+/*
+ * Original: .ea-cat-sub-pill { background: rgb(20,20,42); color: rgba(255,255,255,0.7) }
+ */
+body.tax-product_cat .ea-cat-sub-pill {
+    background: #FFFFFF !important;
+    background-image: none !important;
+    border: 1px solid rgba(212, 175, 55, 0.30) !important;
+    color: #3a3a3a !important;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05) !important;
+}
+body.tax-product_cat .ea-cat-sub-pill:hover {
+    background: #F7F3E8 !important;
+    border-color: rgba(212, 175, 55, 0.60) !important;
+    color: #1a1a1a !important;
+}
+
+/* ─── 13. HEADER & FOOTER — INTENTIONALLY UNCHANGED ──────────────── */
+/*
+ * No rules targeting header, footer, .site-header, .site-footer,
+ * .sticky-bar, or .whatsapp-float. These remain dark.
+ */

@@ -1,0 +1,324 @@
+[08-Sep-2024 06:41:21 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/acceptance.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/acceptance.php on line 8
+[08-Sep-2024 06:42:19 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/checkbox.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/checkbox.php on line 8
+[08-Sep-2024 06:44:02 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/count.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/count.php on line 8
+[08-Sep-2024 06:44:13 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/date.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/date.php on line 9
+[08-Sep-2024 06:44:22 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_filter() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/disallowed-list.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/disallowed-list.php on line 3
+[08-Sep-2024 06:44:34 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/doi-helper.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/doi-helper.php on line 9
+[08-Sep-2024 06:45:25 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/file.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/file.php on line 8
+[08-Sep-2024 21:08:01 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/acceptance.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/acceptance.php on line 8
+[08-Sep-2024 21:08:32 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/checkbox.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/checkbox.php on line 8
+[08-Sep-2024 21:09:10 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/count.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/count.php on line 8
+[08-Sep-2024 21:09:13 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/date.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/date.php on line 9
+[08-Sep-2024 21:09:18 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_filter() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/disallowed-list.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/disallowed-list.php on line 3
+[08-Sep-2024 21:09:22 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/doi-helper.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/doi-helper.php on line 9
+[08-Sep-2024 21:09:26 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/file.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/file.php on line 8
+[08-Sep-2024 21:09:28 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/flamingo.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/flamingo.php on line 7
+[08-Sep-2024 21:09:31 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/hidden.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/hidden.php on line 3
+[08-Sep-2024 21:09:34 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_filter() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/listo.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/listo.php on line 7
+[08-Sep-2024 21:09:36 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/number.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/number.php on line 10
+[08-Sep-2024 21:09:40 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/quiz.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/quiz.php on line 8
+[08-Sep-2024 21:09:43 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/really-simple-captcha.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/really-simple-captcha.php on line 8
+[08-Sep-2024 21:10:12 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/reflection.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/reflection.php on line 9
+[08-Sep-2024 21:10:16 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/response.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/response.php on line 8
+[08-Sep-2024 21:10:21 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/select.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/select.php on line 8
+[08-Sep-2024 21:11:12 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/submit.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/submit.php on line 8
+[08-Sep-2024 21:11:14 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/text.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/text.php on line 12
+[08-Sep-2024 21:11:16 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/textarea.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/textarea.php on line 8
+[17-Sep-2024 03:05:42 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/acceptance.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/acceptance.php on line 8
+[17-Sep-2024 03:05:44 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/checkbox.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/checkbox.php on line 8
+[17-Sep-2024 03:05:46 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/count.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/count.php on line 8
+[17-Sep-2024 03:05:46 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/date.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/date.php on line 9
+[17-Sep-2024 03:05:47 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_filter() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/disallowed-list.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/disallowed-list.php on line 3
+[17-Sep-2024 03:05:47 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/doi-helper.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/doi-helper.php on line 9
+[17-Sep-2024 03:05:47 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/file.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/file.php on line 8
+[17-Sep-2024 03:05:47 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/flamingo.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/flamingo.php on line 7
+[17-Sep-2024 03:05:48 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/hidden.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/hidden.php on line 3
+[17-Sep-2024 03:05:48 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_filter() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/listo.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/listo.php on line 7
+[17-Sep-2024 03:05:48 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/number.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/number.php on line 10
+[17-Sep-2024 03:05:48 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/quiz.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/quiz.php on line 8
+[17-Sep-2024 03:05:49 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/really-simple-captcha.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/really-simple-captcha.php on line 8
+[17-Sep-2024 03:05:51 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/reflection.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/reflection.php on line 9
+[17-Sep-2024 03:05:51 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/response.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/response.php on line 8
+[17-Sep-2024 03:05:51 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/select.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/select.php on line 8
+[17-Sep-2024 03:05:56 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/submit.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/submit.php on line 8
+[17-Sep-2024 03:05:56 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/text.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/text.php on line 12
+[17-Sep-2024 03:05:57 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/textarea.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/textarea.php on line 8
+[09-Feb-2025 10:09:04 Asia/Karachi] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/acceptance.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/acceptance.php on line 8
+[09-Feb-2025 10:09:06 Asia/Karachi] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/acceptance.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/acceptance.php on line 8
+[09-Feb-2025 10:09:33 Asia/Karachi] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/checkbox.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/checkbox.php on line 8
+[09-Feb-2025 10:09:36 Asia/Karachi] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/checkbox.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/checkbox.php on line 8
+[09-Feb-2025 10:10:10 Asia/Karachi] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/count.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/count.php on line 8
+[09-Feb-2025 10:10:11 Asia/Karachi] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/count.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/count.php on line 8
+[09-Feb-2025 10:10:15 Asia/Karachi] PHP Fatal error:  Uncaught Error: Call to undefined function add_filter() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/disallowed-list.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/disallowed-list.php on line 3
+[09-Feb-2025 10:10:16 Asia/Karachi] PHP Fatal error:  Uncaught Error: Call to undefined function add_filter() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/disallowed-list.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/disallowed-list.php on line 3
+[09-Feb-2025 10:10:21 Asia/Karachi] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/doi-helper.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/doi-helper.php on line 9
+[09-Feb-2025 10:10:22 Asia/Karachi] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/doi-helper.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/doi-helper.php on line 9
+[09-Feb-2025 10:10:25 Asia/Karachi] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/file.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/file.php on line 8
+[09-Feb-2025 10:10:25 Asia/Karachi] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/file.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/file.php on line 8
+[09-Feb-2025 10:10:30 Asia/Karachi] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/flamingo.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/flamingo.php on line 7
+[09-Feb-2025 10:10:30 Asia/Karachi] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/flamingo.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/flamingo.php on line 7
+[09-Feb-2025 10:10:34 Asia/Karachi] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/hidden.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/hidden.php on line 3
+[09-Feb-2025 10:10:35 Asia/Karachi] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/hidden.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/hidden.php on line 3
+[09-Feb-2025 10:10:38 Asia/Karachi] PHP Fatal error:  Uncaught Error: Call to undefined function add_filter() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/listo.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/listo.php on line 7
+[09-Feb-2025 10:10:39 Asia/Karachi] PHP Fatal error:  Uncaught Error: Call to undefined function add_filter() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/listo.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/listo.php on line 7
+[09-Feb-2025 10:10:43 Asia/Karachi] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/number.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/number.php on line 10
+[09-Feb-2025 10:10:44 Asia/Karachi] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/number.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/number.php on line 10
+[09-Feb-2025 10:10:46 Asia/Karachi] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/quiz.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/quiz.php on line 8
+[09-Feb-2025 10:10:49 Asia/Karachi] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/quiz.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/quiz.php on line 8
+[09-Feb-2025 10:10:54 Asia/Karachi] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/really-simple-captcha.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/really-simple-captcha.php on line 8
+[09-Feb-2025 10:10:54 Asia/Karachi] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/really-simple-captcha.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/really-simple-captcha.php on line 8
+[09-Feb-2025 10:11:10 Asia/Karachi] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/reflection.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/reflection.php on line 9
+[09-Feb-2025 10:11:13 Asia/Karachi] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/reflection.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/reflection.php on line 9
+[09-Feb-2025 10:11:16 Asia/Karachi] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/response.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/response.php on line 8
+[09-Feb-2025 10:11:19 Asia/Karachi] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/response.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/response.php on line 8
+[09-Feb-2025 10:11:22 Asia/Karachi] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/select.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/select.php on line 8
+[09-Feb-2025 10:11:23 Asia/Karachi] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/select.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/select.php on line 8
+[09-Feb-2025 10:12:19 Asia/Karachi] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/submit.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/submit.php on line 8
+[09-Feb-2025 10:12:21 Asia/Karachi] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/submit.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/submit.php on line 8
+[09-Feb-2025 10:12:24 Asia/Karachi] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/text.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/text.php on line 12
+[09-Feb-2025 10:12:26 Asia/Karachi] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/text.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/text.php on line 12
+[09-Feb-2025 10:12:30 Asia/Karachi] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/textarea.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/textarea.php on line 8
+[09-Feb-2025 10:12:32 Asia/Karachi] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/textarea.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/modules/textarea.php on line 8

@@ -1,0 +1,32 @@
+[08-Sep-2024 06:39:21 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/includes/swv/script-loader.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/includes/swv/script-loader.php on line 3
+[08-Sep-2024 06:39:28 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "WPCF7_PLUGIN_DIR" in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/includes/swv/swv.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/includes/swv/swv.php on line 6
+[08-Sep-2024 21:07:10 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/includes/swv/script-loader.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/includes/swv/script-loader.php on line 3
+[08-Sep-2024 21:07:15 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "WPCF7_PLUGIN_DIR" in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/includes/swv/swv.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/includes/swv/swv.php on line 6
+[17-Sep-2024 03:05:39 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/includes/swv/script-loader.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/includes/swv/script-loader.php on line 3
+[17-Sep-2024 03:05:39 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "WPCF7_PLUGIN_DIR" in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/includes/swv/swv.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/includes/swv/swv.php on line 6
+[09-Feb-2025 10:08:43 Asia/Karachi] PHP Fatal error:  Uncaught Error: Undefined constant "WPCF7_PLUGIN_DIR" in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/includes/swv/swv.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/includes/swv/swv.php on line 6
+[09-Feb-2025 10:08:45 Asia/Karachi] PHP Fatal error:  Uncaught Error: Undefined constant "WPCF7_PLUGIN_DIR" in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/includes/swv/swv.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/efficientadvtcom060/public_html/wp-content/plugins/contact-form-7/includes/swv/swv.php on line 6

@@ -1,0 +1,736 @@
+/* ═══════════════════════════════════════════════════════════════════
+   EA-HOMEPAGE-PREMIUM-V2-GLOBAL
+   Status: PTR-005 Premium Typography Active
+   Fonts: Manrope (Headings), Inter (Body)
+   ═══════════════════════════════════════════════════════════════════ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@700;800&display=swap');
+
+:root {
+  --ea-font-heading: 'Manrope', sans-serif;
+  --ea-font-body: 'Inter', sans-serif;
+}
+
+/* Global Typography Apply - Forced Universal */
+body.ea-preview-active-v2,
+body.ea-preview-active-v2 p,
+body.ea-preview-active-v2 span,
+body.ea-preview-active-v2 div,
+body.ea-preview-active-v2 li,
+body.ea-preview-active-v2 a,
+body.ea-preview-active-v2 td,
+body.ea-preview-active-v2 input,
+body.ea-preview-active-v2 textarea,
+body.ea-preview-active-v2 button {
+  font-family: var(--ea-font-body) !important;
+}
+
+body.ea-preview-active-v2 h1,
+body.ea-preview-active-v2 h2,
+body.ea-preview-active-v2 h3,
+body.ea-preview-active-v2 h4,
+body.ea-preview-active-v2 h5,
+body.ea-preview-active-v2 h6,
+body.ea-preview-active-v2 .ea-hp-label,
+body.ea-preview-active-v2 .ea-hp-hero-label,
+body.ea-preview-active-v2 .navbar-nav a,
+body.ea-preview-active-v2 .ea-premium-heading {
+  font-family: var(--ea-font-heading) !important;
+}
+
+/* ── PTR-004: AGENCY GLOW (HERO) OVERRIDDEN FOR V2 BRIGHT GLASSMORPHIC CAROUSEL ── */
+
+/* Main Hero Section - Multi-Option Layout Canvas backing */
+body.ea-preview-active-v2 #ea-hp-hero {
+  position: relative !important;
+  width: 100% !important;
+  min-height: 740px !important;
+  background: linear-gradient(135deg, #F0F4F8 0%, #FFFFFF 100%) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 160px 0 80px 0 !important;
+  margin: 0 !important;
+  overflow: hidden !important;
+}
+
+/* Slider Background layer styles (Universal) */
+body.ea-preview-active-v2 .ea-hp-hero-bg-carousel {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  z-index: 1 !important;
+}
+
+body.ea-preview-active-v2 .ea-hp-hero-bg-slide {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  background-size: cover !important;
+  background-position: center !important;
+  opacity: 0 !important;
+  transition: opacity 2.2s ease-in-out !important; /* Luxurious, slow cross-fade */
+  z-index: 1 !important;
+}
+
+body.ea-preview-active-v2 .ea-hp-hero-bg-slide.is-active {
+  opacity: 1 !important;
+  z-index: 2 !important;
+}
+
+/* ────────────────────────────────────────────────────────
+   🟢 LAYOUT OPTION 1: APPLE-STYLE CINEMATIC SPLIT
+   ──────────────────────────────────────────────────────── */
+.layout-option1 .ea-hp-hero-split-container {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  width: 100% !important;
+  max-width: 1320px !important;
+  margin: 0 auto !important;
+  padding: 0 40px !important;
+  gap: 50px !important;
+  z-index: 5 !important;
+  position: relative !important;
+}
+
+.layout-option1 .ea-hp-hero-split-text {
+  flex: 1.1 !important;
+  max-width: 620px !important;
+  text-align: left !important;
+}
+
+.layout-option1 .ea-hp-hero-split-gallery {
+  flex: 0.9 !important;
+  max-width: 580px !important;
+  width: 100% !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.layout-option1 .ea-hp-hero-gallery-frame {
+  width: 100% !important;
+  height: 500px !important;
+  border-radius: 28px !important;
+  overflow: hidden !important;
+  position: relative !important;
+  background: #FFFFFF !important;
+  box-shadow: 0 25px 65px rgba(20, 54, 92, 0.12) !important;
+  border: 4px solid #FFFFFF !important;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.6s ease !important;
+}
+
+.layout-option1 .ea-hp-hero-gallery-frame:hover {
+  transform: scale(1.02) translateY(-4px) !important;
+  box-shadow: 0 35px 85px rgba(20, 54, 92, 0.2) !important;
+}
+
+.layout-option1 h1 {
+  color: #14365C !important;
+  font-size: 3.4rem !important;
+  line-height: 1.15 !important;
+  font-weight: 900 !important;
+  margin-top: 15px !important;
+  margin-bottom: 24px !important;
+  text-align: left !important;
+  text-shadow: none !important;
+}
+
+.layout-option1 .ea-hp-hero-split-text > p {
+  color: #14365C !important;
+  font-size: 1.15rem !important;
+  line-height: 1.62 !important;
+  font-weight: 500 !important;
+  margin: 0 0 32px 0 !important;
+  text-align: left !important;
+  max-width: 100% !important;
+  text-shadow: none !important;
+}
+
+.layout-option1 .ea-hp-hero-ctas {
+  justify-content: flex-start !important;
+  gap: 16px !important;
+  display: flex !important;
+}
+
+.layout-option1 .ea-hp-hero-micro {
+  text-align: left !important;
+  color: rgba(20, 54, 92, 0.75) !important;
+  margin-top: 24px !important;
+  font-size: 14.5px !important;
+  font-weight: 500 !important;
+  text-shadow: none !important;
+}
+
+.layout-option1 .ea-hp-hero-micro a {
+  color: #E65100 !important;
+  font-weight: 600 !important;
+  text-decoration: none !important;
+}
+
+/* ── Option 1 Pill Navigation Overrides ── */
+.layout-option1 .ea-hp-hero-pills {
+  margin: 28px 0 36px 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 12px !important;
+  max-width: 100% !important;
+  align-items: flex-start !important;
+}
+
+.layout-option1 .ea-hp-hero-pills-title {
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.06em !important;
+  color: rgba(20, 54, 92, 0.6) !important;
+}
+
+.layout-option1 .ea-hp-pills-list {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 8px !important;
+  justify-content: flex-start !important;
+}
+
+/* ────────────────────────────────────────────────────────
+   🔵 LAYOUT OPTION 2: STRIPE-STYLE BENTO GRID
+   ──────────────────────────────────────────────────────── */
+.layout-option2 .ea-bento-container {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  width: 100% !important;
+  max-width: 1320px !important;
+  margin: 0 auto !important;
+  padding: 0 40px !important;
+  gap: 24px !important;
+  z-index: 5 !important;
+  position: relative !important;
+}
+
+.layout-option2 .ea-bento-card-main {
+  flex: 1.2 1 600px !important;
+  background: rgba(255, 255, 255, 0.8) !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+  border-radius: 24px !important;
+  border: 1px solid rgba(20, 54, 92, 0.08) !important;
+  padding: 45px !important;
+  box-shadow: 0 20px 45px rgba(20, 54, 92, 0.05) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  text-align: left !important;
+}
+
+.layout-option2 .ea-bento-card-gallery {
+  flex: 0.8 1 400px !important;
+  height: 420px !important;
+  border-radius: 24px !important;
+  overflow: hidden !important;
+  position: relative !important;
+  border: 4px solid #FFFFFF !important;
+  box-shadow: 0 20px 45px rgba(20, 54, 92, 0.1) !important;
+  background: #FFFFFF !important;
+}
+
+.layout-option2 .ea-bento-subgrid {
+  display: flex !important;
+  width: 100% !important;
+  gap: 24px !important;
+  flex-wrap: wrap !important;
+}
+
+.layout-option2 .ea-bento-card-sub {
+  flex: 1 1 280px !important;
+  height: 180px !important;
+  border-radius: 20px !important;
+  overflow: hidden !important;
+  position: relative !important;
+  border: 3px solid #FFFFFF !important;
+  box-shadow: 0 10px 25px rgba(20, 54, 92, 0.06) !important;
+  background-size: cover !important;
+  background-position: center !important;
+  transition: transform 0.4s ease, box-shadow 0.4s ease !important;
+}
+
+.layout-option2 .ea-bento-card-sub:hover {
+  transform: scale(1.03) translateY(-3px) !important;
+  box-shadow: 0 15px 35px rgba(20, 54, 92, 0.14) !important;
+}
+
+.layout-option2 .ea-bento-card-sub .ea-hp-hero-collage-label {
+  position: absolute !important;
+  bottom: 16px !important;
+  left: 16px !important;
+  background: rgba(20, 54, 92, 0.9) !important;
+  padding: 6px 14px !important;
+  border-radius: 20px !important;
+  color: #FFFFFF !important;
+  font-size: 12.5px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.02em !important;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1) !important;
+}
+
+.layout-option2 h1 {
+  color: #14365C !important;
+  font-size: 2.8rem !important;
+  line-height: 1.18 !important;
+  font-weight: 900 !important;
+  margin-top: 10px !important;
+  margin-bottom: 20px !important;
+}
+
+.layout-option2 .ea-bento-card-main > p {
+  color: #14365C !important;
+  font-size: 1.1rem !important;
+  line-height: 1.6 !important;
+  font-weight: 500 !important;
+  margin: 0 0 28px 0 !important;
+}
+
+.layout-option2 .ea-hp-hero-ctas {
+  justify-content: flex-start !important;
+  gap: 16px !important;
+  display: flex !important;
+}
+
+/* ────────────────────────────────────────────────────────
+   🔴 LAYOUT OPTION 3: PORSCHE-STYLE FULL-BLEED CINEMATIC
+   ──────────────────────────────────────────────────────── */
+.layout-option3 {
+  background: #0A182A !important; /* Luxury deep dark backing */
+}
+
+.layout-option3 .ea-hp-hero-full-carousel {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  z-index: 1 !important;
+}
+
+.layout-option3 .ea-hp-hero-bg-overlay-dark {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  background: linear-gradient(180deg, rgba(14, 34, 61, 0.45) 0%, rgba(10, 24, 42, 0.85) 100%) !important;
+  z-index: 2 !important;
+}
+
+.layout-option3 .ea-hp-hero-inner-center {
+  position: relative !important;
+  z-index: 4 !important;
+  width: 100% !important;
+  max-width: 900px !important;
+  margin: 0 auto !important;
+  padding: 0 24px !important;
+  text-align: center !important;
+}
+
+.layout-option3 h1 {
+  color: #FFFFFF !important; /* Perfect white contrast for dark background */
+  font-size: 3.8rem !important;
+  line-height: 1.18 !important;
+  font-weight: 900 !important;
+  text-align: center !important;
+  text-shadow: 0 4px 18px rgba(0, 0, 0, 0.5) !important;
+  margin-top: 15px !important;
+  margin-bottom: 24px !important;
+}
+
+.layout-option3 .ea-hp-hero-inner-center > p {
+  color: #FFFFFF !important;
+  font-size: 1.25rem !important;
+  line-height: 1.62 !important;
+  font-weight: 500 !important;
+  text-align: center !important;
+  max-width: 800px !important;
+  margin: 0 auto 32px auto !important;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5) !important;
+}
+
+.layout-option3 .ea-hp-hero-ctas {
+  justify-content: center !important;
+  gap: 16px !important;
+  display: flex !important;
+}
+
+.layout-option3 .ea-hp-hero-micro {
+  text-align: center !important;
+  color: rgba(255, 255, 255, 0.8) !important;
+  margin-top: 24px !important;
+  font-size: 14.5px !important;
+  font-weight: 500 !important;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4) !important;
+}
+
+.layout-option3 .ea-hp-hero-micro a {
+  color: #FF9100 !important;
+  font-weight: 700 !important;
+  text-decoration: none !important;
+}
+
+/* ────────────────────────────────────────────────────────
+   🎨 PREVIEW SWITCHER CONTROL PANEL STYLE
+   ──────────────────────────────────────────────────────── */
+.ea-preview-switcher-panel {
+  position: fixed !important;
+  bottom: 25px !important;
+  left: 25px !important; /* Placed left so it does not conflict with right side widget markers */
+  background: rgba(20, 54, 92, 0.95) !important;
+  border: 1px solid rgba(255, 255, 255, 0.25) !important;
+  padding: 18px !important;
+  border-radius: 20px !important;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.35) !important;
+  z-index: 999999 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 10px !important;
+  width: 290px !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+}
+
+.ea-preview-switcher-panel .ea-switcher-title {
+  color: #FFFFFF !important;
+  font-size: 12.5px !important;
+  font-weight: 800 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.08em !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15) !important;
+  padding-bottom: 8px !important;
+  text-align: left !important;
+}
+
+.ea-preview-switcher-panel .ea-switcher-buttons {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 8px !important;
+}
+
+.ea-preview-switcher-panel .ea-switcher-btn {
+  display: block !important;
+  text-align: left !important;
+  padding: 10px 14px !important;
+  background: rgba(255, 255, 255, 0.08) !important;
+  border-radius: 10px !important;
+  color: #FFFFFF !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  text-decoration: none !important;
+  transition: all 0.3s ease !important;
+  border: 1px solid transparent !important;
+}
+
+.ea-preview-switcher-panel .ea-switcher-btn:hover {
+  background: rgba(255, 255, 255, 0.18) !important;
+  transform: translateX(3px) !important;
+}
+
+.ea-preview-switcher-panel .ea-switcher-btn.is-active {
+  background: #E65100 !important; /* Dynamic standout orange indicator */
+  border-color: #E65100 !important;
+  font-weight: 700 !important;
+  box-shadow: 0 4px 12px rgba(230, 81, 0, 0.35) !important;
+}
+
+/* Universal Label Styles for all categories */
+body.ea-preview-active-v2 #ea-hp-hero .ea-hp-hero-label {
+  display: inline-block !important;
+  color: #FFFFFF !important;
+  background: #14365C !important;
+  padding: 8px 24px !important;
+  border-radius: 50px !important;
+  font-size: 13px !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.1em !important;
+  text-transform: uppercase !important;
+  margin-bottom: 24px !important;
+  box-shadow: 0 4px 15px rgba(20, 54, 92, 0.2) !important;
+  border: none !important;
+  text-shadow: none !important;
+}
+
+/* ── RESPONSIVE MOBILE OVERRIDES ── */
+@media (max-width: 1024px) {
+  body.ea-preview-active-v2 #ea-hp-hero {
+    padding: 60px 0 !important;
+    min-height: auto !important;
+  }
+  
+  /* Option 1 split response */
+  .layout-option1 .ea-hp-hero-split-container {
+    flex-direction: column !important;
+    text-align: center !important;
+    padding: 0 24px !important;
+    gap: 40px !important;
+  }
+  .layout-option1 .ea-hp-hero-split-text,
+  .layout-option1 .ea-hp-hero-split-gallery {
+    width: 100% !important;
+    max-width: 100% !important;
+    text-align: center !important;
+  }
+  .layout-option1 h1 {
+    font-size: 2.5rem !important;
+    text-align: center !important;
+  }
+  .layout-option1 .ea-hp-hero-split-text > p {
+    font-size: 1.1rem !important;
+    text-align: center !important;
+    margin: 0 auto 28px auto !important;
+  }
+  .layout-option1 .ea-hp-hero-ctas {
+    justify-content: center !important;
+  }
+  .layout-option1 .ea-hp-hero-micro {
+    text-align: center !important;
+  }
+  .layout-option1 .ea-hp-hero-pills {
+    align-items: center !important;
+    margin: 24px auto !important;
+  }
+  .layout-option1 .ea-hp-pills-list {
+    justify-content: center !important;
+  }
+  .layout-option1 .ea-hp-hero-gallery-frame {
+    height: 380px !important;
+  }
+
+  /* Option 2 bento response */
+  .layout-option2 .ea-bento-container {
+    flex-direction: column !important;
+    padding: 0 20px !important;
+    gap: 20px !important;
+  }
+  .layout-option2 .ea-bento-card-main {
+    flex: 1 1 auto !important;
+    padding: 30px 24px !important;
+    text-align: center !important;
+  }
+  .layout-option2 h1 {
+    font-size: 2.2rem !important;
+    text-align: center !important;
+  }
+  .layout-option2 .ea-bento-card-main > p {
+    text-align: center !important;
+  }
+  .layout-option2 .ea-hp-hero-ctas {
+    justify-content: center !important;
+  }
+  .layout-option2 .ea-bento-card-gallery {
+    flex: 1 1 auto !important;
+    height: 320px !important;
+  }
+  .layout-option2 .ea-bento-subgrid {
+    flex-direction: column !important;
+  }
+  .layout-option2 .ea-bento-card-sub {
+    height: 140px !important;
+  }
+
+  /* Option 3 center response */
+  .layout-option3 h1 {
+    font-size: 2.6rem !important;
+  }
+  .layout-option3 .ea-hp-hero-inner-center > p {
+    font-size: 1.1rem !important;
+  }
+
+  /* Shift control panel slightly up on mobile so it doesn't cover elements */
+  .ea-preview-switcher-panel {
+    width: calc(100% - 40px) !important;
+    left: 20px !important;
+    bottom: 20px !important;
+  }
+}
+
+
+/* V2 GLOBAL INDICATOR (Bottom Right) */
+body.ea-preview-active-v2::after {
+  content: "V2 MIRROR ACTIVE";
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #FFC107;
+  color: #000;
+  padding: 4px 8px;
+  font-size: 10px;
+  font-weight: 900;
+  border-radius: 4px;
+  z-index: 999999;
+  pointer-events: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* ── PTR-005: CINEMATIC SCROLL ANIMATIONS ── */
+.ea-reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+.ea-reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── PTR-006: CUSTOM "VIEW" CURSOR DISABLED FOR NORMAL EXPERIENCE ── */
+body.ea-preview-active-v2,
+body.ea-preview-active-v2 a,
+body.ea-preview-active-v2 button,
+body.ea-preview-active-v2 .service-card,
+body.ea-preview-active-v2 .portfolio-item,
+body.ea-preview-active-v2 .wp-block-image {
+  cursor: auto !important;
+}
+
+#ea-v2-cursor {
+  display: none !important;
+}
+
+/* ── PTR-007: ELITE BUTTON & LINK INTERACTIONS ── */
+body.ea-preview-active-v2 .wp-block-button__link,
+body.ea-preview-active-v2 .btn,
+body.ea-preview-active-v2 a.button {
+  position: relative;
+  overflow: hidden;
+  transition: color 0.4s ease, border-color 0.4s ease, transform 0.3s ease;
+  z-index: 1;
+}
+
+body.ea-preview-active-v2 .wp-block-button__link::before,
+body.ea-preview-active-v2 .btn::before,
+body.ea-preview-active-v2 a.button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,0.15); /* Liquid fill color */
+  transition: left 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  z-index: -1;
+}
+
+body.ea-preview-active-v2 .wp-block-button__link:hover,
+body.ea-preview-active-v2 .btn:hover,
+body.ea-preview-active-v2 a.button:hover {
+  transform: translateY(-3px); /* Floating effect */
+}
+
+body.ea-preview-active-v2 .wp-block-button__link:hover::before,
+body.ea-preview-active-v2 .btn:hover::before,
+body.ea-preview-active-v2 a.button:hover::before {
+  left: 0;
+}
+
+/* ── PTR-008: INTERACTIVE GLASSMORPHISM CARDS ── */
+body.ea-preview-active-v2 .wp-block-column,
+body.ea-preview-active-v2 .service-card,
+body.ea-preview-active-v2 .portfolio-item {
+  background: rgba(255, 255, 255, 0.03) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 24px;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease, background 0.4s ease;
+}
+
+body.ea-preview-active-v2 .wp-block-column:hover,
+body.ea-preview-active-v2 .service-card:hover,
+body.ea-preview-active-v2 .portfolio-item:hover {
+  transform: translateY(-10px);
+  background: rgba(255, 255, 255, 0.06) !important;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* ── ELITE 3-COLUMN INTERACTIVE COLLAGE SLIDER ── */
+.ea-hp-hero-collage-wrapper {
+  display: flex !important;
+  flex-direction: row !important; /* Force side-by-side columns horizontal alignment */
+  width: 100% !important;
+  height: 100% !important;
+  gap: 0 !important;
+}
+
+.ea-hp-hero-collage-column {
+  flex: 1 !important;
+  height: 100% !important;
+  background-size: cover !important;
+  background-position: center !important;
+  position: relative !important;
+  transition: flex 0.6s cubic-bezier(0.25, 1, 0.5, 1) !important;
+  overflow: hidden !important;
+}
+
+/* Elite column hover zoom and width expansions */
+.ea-hp-hero-collage-column:hover {
+  flex: 1.35 !important;
+}
+
+.ea-hp-hero-collage-column::before {
+  content: "" !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 40%, rgba(20, 54, 92, 0.45) 100%) !important; /* Soft bottom gradient for perfect label separation */
+  z-index: 1 !important;
+  transition: opacity 0.4s ease !important;
+}
+
+.ea-hp-hero-collage-column:hover::before {
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 30%, rgba(20, 54, 92, 0.6) 100%) !important;
+}
+
+/* Division line between columns */
+.ea-hp-hero-collage-column:not(:last-child) {
+  border-right: 2px solid rgba(255, 255, 255, 0.25) !important;
+}
+
+/* Individual Category labels overlaid inside columns */
+.ea-hp-hero-collage-label {
+  position: absolute !important;
+  bottom: 40px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  background: rgba(20, 54, 92, 0.95) !important; /* Brand Royal Blue label plate */
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+  border-radius: 50px !important;
+  padding: 8px 22px !important;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25) !important;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  z-index: 2 !important;
+}
+
+.ea-hp-hero-collage-column:hover .ea-hp-hero-collage-label {
+  background: #E65100 !important; /* Rich Orange/Gold high-contrast active highlights */
+  transform: translateX(-50%) translateY(-5px) !important;
+  box-shadow: 0 10px 25px rgba(230, 81, 0, 0.45) !important;
+  border-color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.ea-hp-hero-collage-label span {
+  color: #FFFFFF !important;
+  font-size: 0.85rem !important;
+  font-weight: 800 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.08em !important;
+  white-space: nowrap !important;
+}
+

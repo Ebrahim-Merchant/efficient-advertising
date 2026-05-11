@@ -1,0 +1,4 @@
+
+Warning: PHP Startup: Unable to load dynamic library 'php_imagick.dll' (tried: C:/Users/pc/AppData/Roaming/Local/lightning-services/php-8.2.27+1/bin/win64/ext\php_imagick.dll (The specified module could not be found), C:/Users/pc/AppData/Roaming/Local/lightning-services/php-8.2.27+1/bin/win64/ext\php_php_imagick.dll.dll (The specified module could not be found)) in Unknown on line 0
+Affected meta rows found: 191
+Done. Meta rows updated: 0

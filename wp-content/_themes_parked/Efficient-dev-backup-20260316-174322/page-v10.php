@@ -1,0 +1,3379 @@
+<?php
+/**
+ * Template Name: V10 Homepage (GSAP Custom)
+ */
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<?php wp_head(); ?>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Banner Printing, Signage &amp; Branding Company in Dubai | Efficient Advertising — V10 Prototype</title>
+  <meta name="description" content="Dubai's leading printing &amp; branding company since 2008. Banner printing, signage, exhibition stands, vehicle branding &amp; same-day printing. In-house production, UAE-wide delivery.">
+  <link rel="canonical" href="https://www.efficientadvt.com/">
+
+  <!-- Google / Bing / Yandex verification -->
+  <meta name="google-site-verification" content="_djK7vBsYyq2Wne4Jlus8Zi8aTFCC7GeBnTyJWnLyzA">
+  <meta name="msvalidate.01" content="755B1D6A81FE8809A2B4253470B71405">
+  <meta name="yandex-verification" content="c450ba366e9ebd28">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.efficientadvt.com/">
+  <meta property="og:site_name" content="Efficient Advertising Dubai">
+  <meta property="og:title" content="Banner Printing, Signage &amp; Branding Company in Dubai | Efficient Advertising">
+  <meta property="og:description" content="Dubai's leading printing &amp; branding company since 2008. Banner printing, signage, exhibition stands, vehicle branding &amp; same-day printing. In-house production at Ras Al Khor, UAE-wide delivery.">
+  <meta property="og:image" content="https://www.efficientadvt.com/wp-content/uploads/2026/01/banners.webp">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="en_AE">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Banner Printing, Signage &amp; Branding Company in Dubai | Efficient Advertising">
+  <meta name="twitter:description" content="Dubai's leading printing &amp; branding company since 2008. Banner printing, signage, exhibition stands, vehicle branding &amp; same-day printing.">
+  <meta name="twitter:image" content="https://www.efficientadvt.com/wp-content/uploads/2026/01/banners.webp">
+
+  <!-- Hero image preload (improves LCP) -->
+  <link rel="preload" as="image" href="/wp-content/uploads/2022/03/Step-Repeat-Backdrop-2.jpg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;800&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- GSAP & Lenis Smooth Scroll -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/@studio-freight/lenis@1.0.33/dist/lenis.min.js"></script>
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "@id": "https://www.efficientadvt.com/#business",
+    "name": "Efficient Advertising L.L.C",
+    "description": "Dubai's premier printing and large-format advertising company since 2008. Banner printing, signage, exhibition stands, vehicle branding and more.",
+    "url": "https://www.efficientadvt.com/",
+    "telephone": "+971527966265",
+    "email": "info@efficientadvt.com",
+    "foundingDate": "2008",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Warehouse 11, 10C Street, Ras Al Khor Industrial Area 1",
+      "addressLocality": "Dubai",
+      "addressCountry": "AE"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 25.1855,
+      "longitude": 55.3644
+    },
+    "image": "https://www.efficientadvt.com/wp-content/uploads/2024/11/efficient-logo-1-1.png",
+    "logo": "https://www.efficientadvt.com/wp-content/uploads/2024/11/efficient-logo-1-1.png",
+    "priceRange": "$$",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "34",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "sameAs": [
+      "https://www.instagram.com/efficientadvertising/",
+      "https://www.linkedin.com/company/efficientadvertisingdubai",
+      "https://www.facebook.com/efficientadvertising"
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Printing & Branding Services",
+      "itemListElement": [
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Banner Printing Dubai"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Signage Dubai"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Exhibition Stand Dubai"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Vehicle Branding Dubai"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Backdrop Printing Dubai"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Same Day Printing Dubai"}}
+      ]
+    }
+  }
+  </script>
+
+  <!-- FAQ Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What types of printing services do you offer in Dubai?",
+        "acceptedAnswer": {"@type": "Answer", "text": "We offer a full range of large-format and commercial printing services including flex banner printing, roll-up banners, backdrops & displays, flags, signage, vehicle branding, exhibition & event materials, and custom corporate branding — all produced in-house at our Ras Al Khor facility in Dubai."}
+      },
+      {
+        "@type": "Question",
+        "name": "Do you offer same-day or express printing in Dubai?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Yes. We offer same-day and express printing for selected products. Contact us via WhatsApp or call +971 52 796 6265 with your order details and we'll confirm the earliest possible turnaround."}
+      },
+      {
+        "@type": "Question",
+        "name": "Do you deliver printing across all UAE emirates?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Yes, we deliver and install across all emirates including Dubai, Abu Dhabi, Sharjah, Ajman, Ras Al Khaimah, Fujairah, and Umm Al Quwain. We also handle on-site installation for exhibitions, retail fit-outs, and outdoor signage."}
+      },
+      {
+        "@type": "Question",
+        "name": "Can you print custom sizes for banners and signage?",
+        "acceptedAnswer": {"@type": "Answer", "text": "All our banners, signage, and display products are available in custom sizes. With over 500,000 sq.ft of printing delivered across 18+ years, we can accommodate any dimension requirement for outdoor hoardings, mall branding, or event backdrops."}
+      },
+      {
+        "@type": "Question",
+        "name": "Do you offer free design support?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Yes, our in-house design team provides free design support for all orders. We can create artwork from scratch, modify your existing files, or advise on print-ready file specifications."}
+      },
+      {
+        "@type": "Question",
+        "name": "What is the minimum order quantity?",
+        "acceptedAnswer": {"@type": "Answer", "text": "We accept orders of all sizes — from a single banner to bulk runs of thousands of units. We offer significant bulk order discounts for corporate clients, events companies, and government entities."}
+      },
+      {
+        "@type": "Question",
+        "name": "How do I get a quote for my printing project?",
+        "acceptedAnswer": {"@type": "Answer", "text": "You can get an instant quote via WhatsApp on +971 52 796 6265, by calling us, or by using the contact form on our website. Share your product type, size, quantity, and deadline for the fastest response."}
+      },
+      {
+        "@type": "Question",
+        "name": "What materials are used for outdoor banners in the UAE?",
+        "acceptedAnswer": {"@type": "Answer", "text": "We use UV-resistant, weatherproof materials specifically suited to the UAE climate — including PVC flex, mesh banners for windload areas, vinyl, and aluminium composite panels. All outdoor prints are UV-laminated for extended longevity in direct sunlight and heat."}
+      },
+      {
+        "@type": "Question",
+        "name": "Do you handle vehicle branding and fleet wrapping?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Yes. We specialise in vehicle branding for cars, vans, trucks, and full fleet wraps. We use premium cast vinyl with professional installation. Our team handles everything from design approval to final application at our Dubai facility."}
+      },
+      {
+        "@type": "Question",
+        "name": "Are you a direct printer or a broker?",
+        "acceptedAnswer": {"@type": "Answer", "text": "We are a 100% in-house printing facility with 18+ years of experience. We own and operate our own advanced printing equipment — no middlemen. This means better quality control, faster turnaround, and more competitive pricing for every order."}
+      }
+    ]
+  }
+  </script>
+
+  <!-- Bootstrap 3.4.1 + jQuery (same as live site) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <style>
+  /* ─────────────────────────────────────────────
+     DESIGN TOKENS — V9 Lando Norris Aesthetic
+  ───────────────────────────────────────────── */
+  :root {
+    --c-dark:     #101400;       /* Base Lando Dark Green */
+    --c-darker:   #080a00;     /* Deeper contrast */
+    --c-lime:     #ccff00;       /* Primary Neon Lime */
+    --c-lime-off: #b3e600;
+    --c-white:    #ffffff;
+    --c-gray:     #8a8f7c;
+    --border:     rgba(204, 255, 0, 0.15);
+    
+    --f-heading: 'Syne', sans-serif;
+    --f-body: 'DM Sans', sans-serif;
+    
+    --bg-dark1: var(--c-darker);
+    --amber: var(--c-lime);
+    --amber-dk: var(--c-lime-off);
+    --amber-ring: rgba(204, 255, 0, 0.40);
+    --tx: var(--c-white);
+    
+    --shadow-sm:  0 2px 14px rgba(0,0,0,0.5);
+    --r-pill: 100px;
+    --r-sm: 10px;
+  }
+
+  /* ─── RESET ─── */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  .sr-only {
+    position: absolute !important; width: 1px !important; height: 1px !important;
+    padding: 0 !important; margin: -1px !important; overflow: hidden !important;
+    clip: rect(0,0,0,0) !important; white-space: nowrap !important; border: 0 !important;
+  }
+  html  { font-size: 16px; scroll-behavior: auto; /* disabled for Lenis */ scrollbar-width: thin; scrollbar-color: var(--c-lime) var(--c-darker); }
+  body  {
+    font-family: var(--f-body);
+    background: var(--c-dark);
+    color: var(--c-white);
+    line-height: 1.65;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+  ::selection { background: var(--c-lime); color: var(--c-dark); }
+  
+  img  { max-width: 100%; height: auto; display: block; }
+  a    { text-decoration: none; color: inherit; }
+
+  /* Override Bootstrap container */
+  .container {
+    width: 100% !important; max-width: none !important; margin: 0 auto !important;
+    padding-left: clamp(20px, 5vw, 80px) !important; padding-right: clamp(20px, 5vw, 80px) !important;
+  }
+
+  /* ─── SECTION LABEL — amber pill chip above h2 ─── */
+  /* ─── CUSTOM CURSOR ─── */
+  .v9-cursor-dot, .v9-cursor-ring {
+    position: fixed; top: 0; left: 0; pointer-events: none; z-index: 9999;
+    border-radius: 50%; transform: translate(-50%, -50%);
+  }
+  .v9-cursor-dot { width: 8px; height: 8px; background: var(--c-lime); }
+  .v9-cursor-ring { width: 40px; height: 40px; border: 1px solid var(--c-lime); transition: width 0.3s, height 0.3s; }
+
+  /* ─── NOISE & SECTION LABEL ─── */
+  .v9-noise {
+    position: fixed; inset: -50%; width: 200%; height: 200%; pointer-events: none; z-index: 100;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+    opacity: 0.03; animation: noiseAnim 8s steps(10) infinite;
+  }
+  @keyframes noiseAnim { 0% { transform: translate(0, 0); } 20% { transform: translate(-4%, 2%); } 40% { transform: translate(-2%, 4%); } 60% { transform: translate(-4%, -4%); } 80% { transform: translate(-2%, -2%); } 100% { transform: translate(0, 0); } }
+
+  .sec-label {
+    font-family: var(--f-heading);
+    font-size: 11px; font-weight: 800;
+    letter-spacing: 3px; text-transform: uppercase;
+    color: var(--c-lime);
+    background: rgba(204, 255, 0, 0.05);
+    border: 1px solid var(--border);
+    padding: 7px 18px; border-radius: var(--r-pill);
+    display: inline-block; margin-bottom: 22px;
+  }
+
+  /* ─── BUTTON SYSTEM (Lando Dark/Lime) ─── */
+  .btn-primary-ea {
+    display: inline-flex; align-items: center; gap: 12px;
+    background: transparent; color: var(--c-white); border: 1px solid var(--c-lime);
+    font-family: var(--f-body); font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px;
+    padding: 9px 24px 9px 9px; border-radius: var(--r-pill);
+    transition: all .3s; white-space: nowrap;
+  }
+  .btn-primary-ea .ico {
+    width: 36px; height: 36px; background: var(--c-lime); color: var(--c-dark); border-radius: 50%;
+    display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+  }
+  .btn-primary-ea:hover { background: var(--c-lime); color: var(--c-dark); transform: translateY(-2px); }
+
+  .btn-amber {
+    display: inline-flex; align-items: center; gap: 12px;
+    background: var(--c-lime); color: var(--c-dark); border: 1px solid var(--c-lime);
+    font-family: var(--f-body); font-size: 13px; font-weight: 800; text-transform: uppercase; letter-spacing: 1px;
+    padding: 9px 24px 9px 9px; border-radius: var(--r-pill);
+    transition: all .3s; white-space: nowrap;
+  }
+  .btn-amber .ico {
+    width: 36px; height: 36px; background: var(--c-dark); color: var(--c-lime); border-radius: 50%;
+    display: flex; align-items: center; justify-content: center; flex-shrink: 0; border: 1px solid rgba(204,255,0,0.3);
+  }
+  .btn-amber:hover { background: transparent; color: var(--c-lime); transform: translateY(-2px); }
+
+  /* ─── SCROLL REVEAL ─── */
+  .reveal { opacity: 0; transform: translateY(28px); transition: opacity .6s ease, transform .6s ease; }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
+
+  </style>
+</head>
+<body>
+<div class="v9-cursor-dot"></div><div class="v9-cursor-ring"></div>
+<div class="v9-noise"></div>
+<main id="lenis-wrapper">
+
+
+<!-- ═══════════════════════════════════════════
+     PRELOADER
+═══════════════════════════════════════════ -->
+<div id="v10-pre">
+  <div class="pre-inner">
+    <div class="pre-ring"></div>
+    <span class="pre-name">Efficient Advertising</span>
+  </div>
+</div>
+<style>
+#v10-pre {
+  position: fixed; inset: 0; z-index: 10000;
+  background: var(--c-dark);
+  display: flex; align-items: center; justify-content: center;
+  transition: opacity .6s cubic-bezier(.22, 1, .36, 1), visibility .6s;
+}
+#v10-pre.gone { opacity: 0; visibility: hidden; pointer-events: none; }
+.pre-inner { text-align: center; }
+.pre-ring {
+  width: 44px; height: 44px; border-radius: 50%;
+  border: 2px solid rgba(204,255,0,0.1);
+  border-top-color: var(--c-lime);
+  animation: spin .7s linear infinite;
+  margin: 0 auto 18px;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+.pre-name {
+  font-family: var(--f-heading);
+  font-size: 12px; font-weight: 800; letter-spacing: 4px;
+  color: var(--c-white); opacity: 0.5; text-transform: uppercase;
+}
+</style>
+<script>
+window.addEventListener('load', function(){
+  var p = document.getElementById('v10-pre');
+  if (p) setTimeout(function(){ p.classList.add('gone'); }, 200);
+});
+</script>
+
+
+<!-- ═══════════════════════════════════════════
+     HEADER — 2-Row Efficient Layout (Tsukanov Aesthetic)
+═══════════════════════════════════════════ -->
+<style>
+/* ══ HEADER ══ */
+#header { position: sticky; top: 0; z-index: 1000; mix-blend-mode: difference; }
+#header .navbar {
+  background: transparent !important; border: none;
+  margin: 0; border-radius: 0; min-height: unset; padding: 0;
+}
+#header .navbar > .container { padding: 0 20px; }
+
+/* ── ROW 1 ── */
+.logtophead {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.ea-toprow-left { display: flex; align-items: center; gap: 14px; }
+.ea-logo-badge {
+  display: flex; align-items: center; flex-shrink: 0;
+  text-decoration: none;
+  background: rgba(255,255,255,0.96);
+  border-radius: 8px;
+  padding: 6px 10px;
+  transition: opacity .2s;
+}
+.ea-logo-badge img { height: 38px; width: auto; display: block; filter: brightness(0) invert(1); }
+.ea-logo-badge:hover { opacity: 0.85; }
+h3.think {
+  font-family: var(--f-heading); font-size: 14px; font-weight: 800; text-transform: uppercase;
+  color: var(--c-lime); letter-spacing: 1px; margin: 0;
+  border-left: 2px solid var(--border); padding-left: 14px;
+}
+.ea-toprow-right {
+  display: flex; align-items: center; gap: 0; flex-wrap: nowrap;
+}
+.ea-toprow-flag-loc {
+  display: flex; align-items: center; gap: 7px; padding: 0 14px;
+}
+.ea-toprow-flag-loc img { border-radius: 2px; flex-shrink: 0; }
+.ea-toprow-location {
+  font-family: 'DM Sans', sans-serif; font-size: 12px; line-height: 1.45;
+  color: rgba(255,255,255,0.58); text-decoration: none; cursor: pointer;
+  transition: color .2s;
+}
+.ea-toprow-location:hover { color: var(--amber); text-decoration: none; }
+.ea-toprow-divider {
+  width: 1px; height: 28px; background: rgba(255,255,255,0.10); flex-shrink: 0;
+}
+.ea-toprow-phone {
+  font-family: 'DM Sans', sans-serif; font-size: 15px; font-weight: 700;
+  color: #4ade80; padding: 0 16px; white-space: nowrap; text-decoration: none; transition: color .2s;
+}
+.ea-toprow-phone:hover { color: #86efac; text-decoration: none; }
+.ea-toprow-search {
+  display: flex; align-items: center;
+  background: rgba(255,255,255,0.06); border-radius: var(--r-pill);
+  padding: 5px 6px 5px 14px; gap: 6px; margin: 0 14px;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+.ea-search-inp {
+  background: none; border: none; outline: none;
+  font-family: 'DM Sans', sans-serif; font-size: 13px;
+  color: rgba(255,255,255,0.82); width: 130px;
+}
+.ea-search-inp::placeholder { color: rgba(255,255,255,0.32); }
+.ea-search-btn {
+  width: 28px; height: 28px; background: var(--amber); border: none;
+  border-radius: 50%; display: flex; align-items: center; justify-content: center;
+  cursor: pointer; flex-shrink: 0; transition: background .2s;
+}
+.ea-search-btn:hover { background: var(--amber-dk); }
+.ea-btn-whatsapp {
+  display: inline-flex; align-items: center; gap: 7px;
+  font-family: 'DM Sans', sans-serif; font-size: 13px; font-weight: 700;
+  padding: 9px 16px; border-radius: var(--r-pill); white-space: nowrap;
+  background: #25D366; color: #fff; border: none;
+  text-decoration: none; letter-spacing: 0.3px; transition: background .2s;
+}
+.ea-btn-whatsapp:hover { background: #1ebe5a; text-decoration: none; color: #fff; }
+.ea-btn-whatsapp svg { flex-shrink: 0; }
+
+/* ── ROW 2 ── */
+.headerbottom { background: transparent; }
+.headerbottom .navbar-nav > li > a {
+  font-family: var(--f-body) !important; text-transform: uppercase; letter-spacing: 0.5px;
+  font-size: 12px !important; font-weight: 700 !important;
+  color: rgba(255,255,255,0.60) !important; padding: 18px 22px !important;
+  white-space: nowrap; transition: color .2s, background .2s;
+}
+.headerbottom .navbar-nav > li > a:hover,
+.headerbottom .navbar-nav > li.active > a {
+  color: var(--c-lime) !important; background: transparent !important;
+}
+.headerbottom .navbar-nav > li.nav-cart > a {
+  color: var(--c-dark) !important; background: var(--c-lime) !important;
+  font-weight: 800 !important; margin: 7px 4px;
+  border-radius: var(--r-pill) !important; padding: 10px 24px !important;
+}
+.headerbottom .navbar-nav > li.nav-cart > a:hover { background: var(--c-white) !important; }
+.headerbottom .navbar-toggle { border-color: rgba(255,255,255,0.18); margin: 14px 0; }
+.headerbottom .navbar-toggle .icon-bar { background: rgba(255,255,255,0.70); }
+
+@media (max-width: 1280px) { .ea-toprow-flag-loc { display: none !important; } }
+@media (max-width: 1100px) { .ea-toprow-search  { display: none !important; } }
+@media (max-width:  860px) { .ea-toprow-phone   { display: none !important; } }
+@media (max-width:  600px) { .ea-btn-whatsapp span { display: none; } }
+
+/* ── Navbar: always horizontal on desktop, custom collapse on mobile ── */
+#myNavbar {
+  display: block;        /* always visible on desktop */
+  overflow: visible;
+}
+#myNavbar .navbar-nav {
+  display: flex !important; flex-direction: row !important;
+  flex-wrap: wrap; align-items: center; float: none !important;
+  list-style: none; margin: 0; padding: 0;
+}
+#myNavbar .navbar-nav > li { float: none !important; }
+.headerbottom .navbar-toggle {
+  display: none;   /* hide hamburger on desktop */
+}
+@media (max-width: 767px) {
+  .headerbottom .navbar-toggle { display: block !important; }
+  #myNavbar { display: none; padding: 8px 0; }
+  #myNavbar.ea-open { display: block !important; }
+  #myNavbar .navbar-nav { flex-direction: column !important; }
+  #myNavbar .navbar-nav > li > a { padding: 12px 16px !important; }
+}
+</style>
+
+<div id="header">
+  <nav class="navbar navbar-inverse">
+    <div class="container">
+
+      <!-- ── ROW 1: Logo / Tagline / Info Strip ── -->
+      <div class="logtophead">
+        <div class="ea-toprow-left">
+          <a href="/" class="ea-logo-badge">
+            <img src="/wp-content/uploads/2024/11/efficient-logo-1-1.png" alt="Efficient Advertising">
+          </a>
+          <h3 class="think">You think it, We print it</h3>
+        </div>
+        <div class="ea-toprow-right">
+          <div class="ea-toprow-flag-loc">
+            <img src="https://flagcdn.com/ae.svg" width="32" height="21" alt="UAE Flag">
+            <a href="https://maps.google.com/?q=Ras+Al+Khor+Industrial+Area+1,+Dubai,+UAE"
+               target="_blank" rel="noopener" class="ea-toprow-location">Ras Al Khor Ind.<br>Area 1, Dubai</a>
+          </div>
+          <div class="ea-toprow-divider"></div>
+          <a href="tel:+971527966265" class="ea-toprow-phone">+971 52 796 6265</a>
+          <div class="ea-toprow-divider"></div>
+          <form class="ea-toprow-search" role="search" action="/search" method="get">
+            <input type="text" name="s" class="ea-search-inp" placeholder="Search products&hellip;">
+            <button type="submit" class="ea-search-btn" aria-label="Search">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#1A1A2E" stroke-width="2.5">
+                <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+              </svg>
+            </button>
+          </form>
+          <a href="https://wa.me/971527966265" target="_blank" rel="noopener" class="ea-btn-whatsapp">
+            <svg width="17" height="17" viewBox="0 0 32 32" fill="currentColor">
+              <path d="M16 0C7.164 0 0 7.163 0 16c0 2.822.736 5.463 2.018 7.761L0 32l8.533-2.236A15.93 15.93 0 0 0 16 32c8.836 0 16-7.163 16-16S24.836 0 16 0zm8.293 22.293c-.343.963-1.998 1.84-2.733 1.957-.698.11-1.58.157-2.547-.16-.587-.193-1.34-.45-2.297-.882-4.047-1.748-6.688-5.818-6.888-6.087-.197-.27-1.613-2.145-1.613-4.09 0-1.944 1.02-2.9 1.38-3.297.343-.38.748-.476 1-.476.25 0 .499.003.717.013.23.01.54-.088.844.644.314.75 1.066 2.598 1.16 2.786.094.19.156.41.03.66-.125.25-.188.406-.375.625-.188.22-.395.49-.563.658-.188.188-.383.39-.165.766.22.375.977 1.613 2.098 2.61 1.44 1.285 2.656 1.685 3.031 1.875.375.188.594.157.813-.094.22-.25.938-1.094 1.188-1.469.25-.375.5-.312.844-.187.344.125 2.188 1.031 2.563 1.219.375.188.625.281.719.438.094.156.094.906-.25 1.87z"/>
+            </svg>
+            WhatsApp
+          </a>
+        </div>
+      </div><!-- /.logtophead -->
+
+      <!-- ── ROW 2: Category Navbar ── -->
+      <div class="headerbottom">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" id="ea-nav-toggle" aria-expanded="false" aria-controls="myNavbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="/">Home</a></li>
+            <li><a href="/product-category/backdrop-display-dubai/">Backdrops &amp; Displays</a></li>
+            <li><a href="/product-category/banner-printing-dubai/">Flex Banner Printing</a></li>
+            <li><a href="/product-category/flags-printing-dubai/">Flags Printing</a></li>
+            <li><a href="/product-category/signage-fabrication-dubai/">Signage</a></li>
+            <li><a href="/product-category/exhibition-stand-dubai/">Exhibition &amp; Event</a></li>
+            <li><a href="/product-category/vehicle-branding-dubai/">Vehicle Branding</a></li>
+            <li><a href="/product-category/others/">Others</a></li>
+          </ul>
+        </div>
+      </div><!-- /.headerbottom -->
+
+    </div><!-- /.container -->
+  </nav>
+</div><!-- /#header -->
+<script>
+(function(){
+  var toggle = document.getElementById('ea-nav-toggle');
+  var nav    = document.getElementById('myNavbar');
+  if (!toggle || !nav) return;
+  toggle.addEventListener('click', function(){
+    var open = nav.classList.toggle('ea-open');
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  /* Close when a link is tapped on mobile */
+  nav.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){ nav.classList.remove('ea-open'); toggle.setAttribute('aria-expanded','false'); });
+  });
+})();
+</script>
+
+
+<!-- ═══════════════════════════════════════════
+     HERO — Custom Flex Slider (no Bootstrap carousel)
+═══════════════════════════════════════════ -->
+<style>
+/* ══ HERO SLIDER ══ */
+#ea-hero {
+  background: var(--c-dark); position: relative; overflow: hidden; z-index: 1;
+}
+#ea-hero::before {
+  content: ''; position: absolute; inset: 0; pointer-events: none; z-index: 0;
+  background: radial-gradient(ellipse at 15% 50%, rgba(204,255,0,0.05) 0%, transparent 55%),
+              radial-gradient(ellipse at 85% 20%, rgba(204,255,0,0.03) 0%, transparent 45%);
+}
+
+/* The viewport that clips slides */
+.ea-slider-viewport {
+  overflow: hidden; position: relative; z-index: 1;
+}
+
+/* The moving track — all slides laid side by side */
+.ea-slider-track {
+  display: flex;
+  transition: transform 0.65s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  will-change: transform;
+}
+
+/* Each slide is exactly one viewport wide */
+.ea-slide {
+  min-width: 100%; width: 100%; flex-shrink: 0;
+  box-sizing: border-box;
+}
+
+/* 2-col grid inside each slide */
+.ea-slide-wrap {
+  display: grid; grid-template-columns: 1fr 1fr;
+  align-items: stretch; min-height: 100vh;
+  width: 100%;
+}
+
+/* LEFT: text */
+.ea-slide-txt {
+  padding: 110px 60px;
+  display: flex; flex-direction: column; justify-content: center;
+}
+.ea-slide-label {
+  font-family: var(--f-heading);
+  font-size: 11px; font-weight: 800; letter-spacing: 4px; text-transform: uppercase;
+  color: var(--c-lime); margin-bottom: 20px;
+  opacity: 0; transform: translateY(12px);
+  transition: opacity .45s ease, transform .45s ease;
+}
+.ea-slide-label.lbl-in { opacity: 1; transform: translateY(0); }
+
+.ea-slide-h1 {
+  font-family: var(--f-heading);
+  font-size: clamp(48px, 6vw, 120px);
+  font-weight: 800; line-height: 0.95; letter-spacing: -2px; text-transform: uppercase;
+  color: var(--c-white); margin-bottom: 24px;
+}
+.ea-slide-h1 em { color: var(--c-lime); font-style: normal; }
+.ea-slide-sub {
+  font-family: var(--f-body); font-size: 16px; line-height: 1.6;
+  color: rgba(255,255,255,0.6); margin-bottom: 40px; max-width: 420px;
+}
+
+/* Slide CTA */
+.ea-slide-cta {
+  display: inline-flex; align-items: center; gap: 11px;
+  background: var(--c-lime); color: var(--c-dark);
+  font-family: var(--f-body); font-size: 14px; font-weight: 800; text-transform: uppercase; letter-spacing: 1px;
+  padding: 10px 24px 10px 10px; border-radius: var(--r-pill);
+  transition: all .3s; align-self: flex-start;
+}
+.ea-slide-cta .ico {
+  width: 32px; height: 32px; background: var(--c-dark); color: var(--c-lime); border-radius: 50%;
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0; border: 1px solid rgba(204,255,0,0.3);
+}
+.ea-slide-cta:hover { background: transparent; color: var(--c-lime); border: 1px solid var(--c-lime); transform: translateY(-2px); text-decoration: none; }
+.ea-slide-cta:hover .ico { background: var(--c-lime); color: var(--c-dark); }
+
+/* RIGHT: image panel */
+.ea-slide-img {
+  position: relative; overflow: hidden; min-height: 100vh;
+  background: #F4F2ED;
+}
+/* Image: full vivid — NO dimming, just a saturation boost */
+.ea-slide-img-bg {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover; object-position: center 30%;
+  transition: transform 6s ease, clip-path 0.7s cubic-bezier(0.4,0,0.2,1);
+  filter: saturate(1.2);
+}
+.ea-slide-img-bg.bg-zoom { transform: scale(1.08); }
+
+/* Layer 1 — barely-there cream tint */
+.ea-slide-img::before {
+  content: ''; position: absolute; inset: 0; z-index: 1; pointer-events: none;
+  background: rgba(244, 242, 237, 0.28);
+}
+
+/* Layer 2 — 10% left-edge cream seam only */
+.ea-slide-img::after {
+  content: ''; position: absolute; inset: 0; z-index: 2; pointer-events: none;
+  background: linear-gradient(to right,
+    rgba(244,242,237,0.97)  0%,
+    rgba(244,242,237,0.40)  5%,
+    rgba(244,242,237,0.03)  10%,
+    transparent            10%);
+}
+
+/* Layer 3 — amber light source (screen blend = adds light, never darkens)
+   top-right corner glows amber, tying image to brand palette */
+.ea-slide-img-glow {
+  position: absolute; top: -60px; right: -60px; z-index: 3; pointer-events: none;
+  width: 340px; height: 340px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(255,186,9,0.30) 0%, transparent 68%);
+  mix-blend-mode: multiply;
+}
+.ea-slide-emoji { display: none; }
+
+/* ── 2-image right-to-left wipe: img-b fully clipped on right until JS reveals it ── */
+.ea-slide-img .img-a { }
+.ea-slide-img .img-b { clip-path: inset(0 0 0 100%); }
+
+/* Dots */
+.ea-dots {
+  position: absolute; bottom: 20px; left: 40px;
+  display: flex; gap: 6px; align-items: center; z-index: 10;
+}
+.ea-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: rgba(26,26,46,0.22); border: none; cursor: pointer; padding: 0;
+  transition: all .3s ease; flex-shrink: 0;
+}
+.ea-dot.active { background: var(--amber); width: 24px; border-radius: 4px; }
+
+/* Prev/Next buttons */
+.ea-ctrl {
+  position: absolute; bottom: 14px; z-index: 10;
+  width: 40px; height: 40px; border-radius: 50%; border: none;
+  background: rgba(26,26,46,0.10); color: #1A1A2E;
+  font-size: 20px; line-height: 1; cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  transition: background .2s;
+}
+.ea-ctrl:hover { background: rgba(255,186,9,0.28); }
+.ea-prev { right: 60px; }
+.ea-next { right: 14px; }
+
+@media (max-width: 991px) {
+  .ea-slide-wrap { min-height: 70vh; }
+  .ea-slide-txt  { padding: clamp(48px,7vw,80px) clamp(16px,4vw,40px); }
+}
+@media (max-width: 767px) {
+  .ea-slide-wrap { grid-template-columns: 1fr; min-height: 100svh; }
+  .ea-slide-img  { display: none; }
+  .ea-slide-txt  { padding: 60px 20px 48px; }
+  .ea-slide-h1   { font-size: clamp(30px, 7vw, 42px); }
+  .ea-dots { left: 20px; }
+}
+</style>
+
+<section id="ea-hero">
+
+  <div class="ea-slider-viewport" id="ea-viewport">
+
+    <div class="ea-slider-track" id="ea-track">
+
+      <!-- SLIDE 1 — Backdrops & Displays -->
+      <div class="ea-slide">
+        <div class="ea-slide-wrap">
+          <div class="ea-slide-txt">
+            <div class="ea-slide-label">BACKDROPS &amp; DISPLAYS</div>
+            <h1 class="ea-slide-h1">Custom <em>Backdrops</em><br>&amp; Pop-Up Displays</h1>
+            <p class="ea-slide-sub">Fabric, vinyl &amp; tension fabric displays for events, exhibitions and retail. Delivered across all UAE.</p>
+            <a href="https://api.whatsapp.com/send?phone=971527966265&amp;text=Hello%2C%20I%20need%20a%20quote%20for%20backdrops"
+               target="_blank" rel="noopener" class="ea-slide-cta">
+              <span class="ico"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></span>
+              Contact Us
+            </a>
+          </div>
+          <div class="ea-slide-img">
+            <div class="ea-slide-img-glow"></div>
+            <img class="ea-slide-img-bg img-a" src="/wp-content/uploads/2022/03/Step-Repeat-Backdrop-2.jpg" alt="Backdrops &amp; Displays">
+            <img class="ea-slide-img-bg img-b" src="/wp-content/uploads/cfdb7_uploads/1669025793-uploadfile-backdrop.png" alt="Backdrop Display">
+          </div>
+        </div>
+      </div>
+
+      <!-- SLIDE 2 — Banner Printing -->
+      <div class="ea-slide">
+        <div class="ea-slide-wrap">
+          <div class="ea-slide-txt">
+            <div class="ea-slide-label">BANNER PRINTING</div>
+            <h2 class="ea-slide-h1">Large-Format <em>Banner</em><br>Printing Dubai</h2>
+            <p class="ea-slide-sub">Flex, mesh, roll-up &amp; retractable banners. Indoor &amp; outdoor. Same-day printing available.</p>
+            <a href="https://api.whatsapp.com/send?phone=971527966265&amp;text=Hello%2C%20I%20need%20a%20quote%20for%20banners"
+               target="_blank" rel="noopener" class="ea-slide-cta">
+              <span class="ico"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></span>
+              Contact Us
+            </a>
+          </div>
+          <div class="ea-slide-img">
+            <div class="ea-slide-img-glow"></div>
+            <img class="ea-slide-img-bg img-a" src="/wp-content/uploads/2026/01/banners.webp" alt="Banner Printing Dubai">
+            <img class="ea-slide-img-bg img-b" src="/wp-content/uploads/2022/03/pop-up-stand.jpg" alt="Pop-Up Banner Stand">
+          </div>
+        </div>
+      </div>
+
+      <!-- SLIDE 3 — Signage & 3D Letters -->
+      <div class="ea-slide">
+        <div class="ea-slide-wrap">
+          <div class="ea-slide-txt">
+            <div class="ea-slide-label">SIGNAGE &amp; 3D LETTERS</div>
+            <h2 class="ea-slide-h1">Acrylic, LED &amp;<br><em>3D Signage</em> Fabrication</h2>
+            <p class="ea-slide-sub">Shop fronts, office signs, wayfinding, illuminated 3D letters &amp; acrylic boards. Designed &amp; built in-house.</p>
+            <a href="https://api.whatsapp.com/send?phone=971527966265&amp;text=Hello%2C%20I%20need%20a%20quote%20for%20signage"
+               target="_blank" rel="noopener" class="ea-slide-cta">
+              <span class="ico"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></span>
+              Contact Us
+            </a>
+          </div>
+          <div class="ea-slide-img">
+            <div class="ea-slide-img-glow"></div>
+            <img class="ea-slide-img-bg img-a" src="/wp-content/uploads/2026/03/business-signage-storefront.jpg" alt="Signage &amp; 3D Letters">
+            <img class="ea-slide-img-bg img-b" src="/wp-content/uploads/2022/03/Wall-Sticker.jpg" alt="Wall Sticker Signage">
+          </div>
+        </div>
+      </div>
+
+      <!-- SLIDE 4 — Exhibition Stands -->
+      <div class="ea-slide">
+        <div class="ea-slide-wrap">
+          <div class="ea-slide-txt">
+            <div class="ea-slide-label">EXHIBITION STANDS</div>
+            <h2 class="ea-slide-h1">Custom <em>Exhibition</em><br>Stand Design &amp; Build</h2>
+            <p class="ea-slide-sub">Modular, custom-built and portable exhibition stands. Full design, fabrication and on-site installation.</p>
+            <a href="https://api.whatsapp.com/send?phone=971527966265&amp;text=Hello%2C%20I%20need%20a%20quote%20for%20exhibition%20stands"
+               target="_blank" rel="noopener" class="ea-slide-cta">
+              <span class="ico"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></span>
+              Contact Us
+            </a>
+          </div>
+          <div class="ea-slide-img">
+            <div class="ea-slide-img-glow"></div>
+            <img class="ea-slide-img-bg img-a" src="/wp-content/uploads/2026/03/exhibition-stand-dubai.jpg" alt="Exhibition Stands Dubai">
+            <img class="ea-slide-img-bg img-b" src="/wp-content/uploads/2022/03/Exhibition-Stands-1.jpg" alt="Exhibition Stand Design">
+          </div>
+        </div>
+      </div>
+
+      <!-- SLIDE 5 — Vehicle Branding -->
+      <div class="ea-slide">
+        <div class="ea-slide-wrap">
+          <div class="ea-slide-txt">
+            <div class="ea-slide-label">VEHICLE BRANDING</div>
+            <h2 class="ea-slide-h1">Fleet &amp; Vehicle<br><em>Vinyl Wrapping</em></h2>
+            <p class="ea-slide-sub">Full wraps, partial wraps &amp; magnetic signs. Corporate fleets to single vehicles &mdash; all UAE.</p>
+            <a href="https://api.whatsapp.com/send?phone=971527966265&amp;text=Hello%2C%20I%20need%20a%20quote%20for%20vehicle%20branding"
+               target="_blank" rel="noopener" class="ea-slide-cta">
+              <span class="ico"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></span>
+              Contact Us
+            </a>
+          </div>
+          <div class="ea-slide-img">
+            <div class="ea-slide-img-glow"></div>
+            <img class="ea-slide-img-bg img-a" src="/wp-content/uploads/2026/03/vinyl-wrap-car-door.jpg" alt="Vehicle Branding Dubai">
+            <img class="ea-slide-img-bg img-b" src="/wp-content/uploads/2022/03/Vehicle-branding.png" alt="Fleet Vehicle Wrap">
+          </div>
+        </div>
+      </div>
+
+      <!-- SLIDE 6 — Events & Corporate -->
+      <div class="ea-slide">
+        <div class="ea-slide-wrap">
+          <div class="ea-slide-txt">
+            <div class="ea-slide-label">EVENTS &amp; CORPORATE</div>
+            <h2 class="ea-slide-h1">Events, Stage &amp;<br><em>Corporate Branding</em></h2>
+            <p class="ea-slide-sub">End-to-end event branding: stage sets, flags, banners, uniforms and full event setup.</p>
+            <a href="https://api.whatsapp.com/send?phone=971527966265&amp;text=Hello%2C%20I%20need%20a%20quote%20for%20events"
+               target="_blank" rel="noopener" class="ea-slide-cta">
+              <span class="ico"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></span>
+              Contact Us
+            </a>
+          </div>
+          <div class="ea-slide-img">
+            <div class="ea-slide-img-glow"></div>
+            <img class="ea-slide-img-bg img-a" src="/wp-content/uploads/2022/03/Events-Branding-2-1.jpg" alt="Events &amp; Corporate Branding">
+            <img class="ea-slide-img-bg img-b" src="/wp-content/uploads/cfdb7_uploads/1715591438-uploadfile-dior-backdrop-.png" alt="Event Backdrop">
+          </div>
+        </div>
+      </div>
+
+      <!-- SLIDE 7 — Flags & Poles -->
+      <div class="ea-slide">
+        <div class="ea-slide-wrap">
+          <div class="ea-slide-txt">
+            <div class="ea-slide-label">FLAGS &amp; POLES</div>
+            <h2 class="ea-slide-h1">Custom <em>Flags</em>,<br>Teardrop &amp; Feather</h2>
+            <p class="ea-slide-sub">Teardrop flags, feather flags, national &amp; custom flags. Single units or bulk orders. Fast UAE delivery.</p>
+            <a href="https://api.whatsapp.com/send?phone=971527966265&amp;text=Hello%2C%20I%20need%20a%20quote%20for%20flags"
+               target="_blank" rel="noopener" class="ea-slide-cta">
+              <span class="ico"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></span>
+              Contact Us
+            </a>
+          </div>
+          <div class="ea-slide-img">
+            <div class="ea-slide-img-glow"></div>
+            <img class="ea-slide-img-bg img-a" src="/wp-content/uploads/2022/03/custom-teardrop-flag.jpg" alt="Custom Flags &amp; Poles">
+            <img class="ea-slide-img-bg img-b" src="/wp-content/uploads/2022/03/Hoisting-Flags.jpg" alt="Hoisting Flags">
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /.ea-slider-track -->
+  </div><!-- /.ea-slider-viewport -->
+
+  <!-- Dots -->
+  <div class="ea-dots" id="ea-dots">
+    <button class="ea-dot active" data-idx="0" aria-label="Slide 1"></button>
+    <button class="ea-dot" data-idx="1" aria-label="Slide 2"></button>
+    <button class="ea-dot" data-idx="2" aria-label="Slide 3"></button>
+    <button class="ea-dot" data-idx="3" aria-label="Slide 4"></button>
+    <button class="ea-dot" data-idx="4" aria-label="Slide 5"></button>
+    <button class="ea-dot" data-idx="5" aria-label="Slide 6"></button>
+    <button class="ea-dot" data-idx="6" aria-label="Slide 7"></button>
+  </div>
+
+  <!-- Controls -->
+  <button class="ea-ctrl ea-prev" id="ea-prev" aria-label="Previous slide">&#8249;</button>
+  <button class="ea-ctrl ea-next" id="ea-next" aria-label="Next slide">&#8250;</button>
+
+</section>
+
+<!-- Topographic contour line background CSS -->
+<style>
+@keyframes ea-topo-a {
+  0%   { transform: translate(0,0)       rotate(0deg);   }
+  50%  { transform: translate(-70px,45px) rotate(4deg);  }
+  100% { transform: translate(40px,-55px) rotate(-2deg); }
+}
+@keyframes ea-topo-b {
+  0%   { transform: translate(0,0)       rotate(0deg);   }
+  50%  { transform: translate(65px,-40px) rotate(-3deg); }
+  100% { transform: translate(-45px,60px) rotate(2deg);  }
+}
+@keyframes ea-topo-c {
+  0%   { transform: translate(0,0)        rotate(0deg);   }
+  50%  { transform: translate(-30px,-60px) rotate(2deg);  }
+  100% { transform: translate(55px, 35px)  rotate(-3deg); }
+}
+</style>
+
+<script>
+(function(){
+  var track  = document.getElementById('ea-track');
+  var dotsEl = document.querySelectorAll('.ea-dot');
+  var total  = 7;     /* real slides */
+  var curDom = 1;     /* DOM index: 0=clone-last, 1..total=real, total+1=clone-first */
+  var busy   = false;
+  var timer;
+
+  /* ── Clone first & last slides ── */
+  var realSlides = track.querySelectorAll('.ea-slide');
+  var cloneFirst = realSlides[0].cloneNode(true);
+  var cloneLast  = realSlides[total - 1].cloneNode(true);
+  track.appendChild(cloneFirst);                  /* DOM pos total+1 */
+  track.insertBefore(cloneLast, realSlides[0]);   /* DOM pos 0       */
+  var allSlides = track.querySelectorAll('.ea-slide');
+
+  /* Convert DOM position to real index */
+  function domToReal(p) {
+    if (p === 0)         return total - 1;
+    if (p === total + 1) return 0;
+    return p - 1;
+  }
+
+  function moveTo(p, animated) {
+    track.style.transition = animated ? '' : 'none';
+    track.style.transform  = 'translateX(-' + (p * 100) + '%)';
+  }
+
+  function updateDots(realIdx) {
+    dotsEl.forEach(function(d, i){ d.classList.toggle('active', i === realIdx); });
+  }
+
+  function animLabel(domPos) {
+    var lbl = allSlides[domPos].querySelector('.ea-slide-label');
+    if (!lbl) return;
+    lbl.classList.remove('lbl-in');
+    lbl.style.transition = 'none';
+    lbl.style.opacity = '0';
+    lbl.style.transform = 'translateY(12px)';
+    requestAnimationFrame(function(){
+      requestAnimationFrame(function(){
+        lbl.style.transition = '';
+        lbl.classList.add('lbl-in');
+      });
+    });
+  }
+
+  function kenBurns(domPos) {
+    track.querySelectorAll('.ea-slide-img-bg').forEach(function(bg){ bg.classList.remove('bg-zoom'); });
+    var bg = allSlides[domPos].querySelector('.ea-slide-img-bg');
+    if (bg) setTimeout(function(){ bg.classList.add('bg-zoom'); }, 50);
+  }
+
+  /* ── Hide all img-b BEFORE the track starts moving ──────────────────────────
+     Calling this at the start of every navigation ensures no img-b is ever
+     visible during a track transition, which was causing the flash glitch.  ── */
+  var imgTimer = null;
+  function hideAllImgB() {
+    clearTimeout(imgTimer);
+    track.querySelectorAll('.img-b').forEach(function(el){
+      el.style.transition = 'none';
+      el.style.clipPath    = 'inset(0 0 0 100%)';
+      el.classList.remove('bg-zoom');
+    });
+  }
+
+  /* ── Go next: always increment curDom (may land on clone-first) ── */
+  function goNext() {
+    if (busy) return;
+    busy = true;
+    hideAllImgB();
+    curDom++;
+    moveTo(curDom, true);
+    updateDots(domToReal(curDom));
+    animLabel(curDom);
+    kenBurns(curDom);
+    resetTimer();
+  }
+
+  /* ── Go prev: always decrement curDom (may land on clone-last) ── */
+  function goPrev() {
+    if (busy) return;
+    busy = true;
+    hideAllImgB();
+    curDom--;
+    moveTo(curDom, true);
+    updateDots(domToReal(curDom));
+    animLabel(curDom);
+    kenBurns(curDom);
+    resetTimer();
+  }
+
+  /* ── Dot click: jump to a real slide by index ── */
+  function goToReal(realIdx) {
+    if (busy) return;
+    busy = true;
+    hideAllImgB();
+    curDom = realIdx + 1;
+    moveTo(curDom, true);
+    updateDots(realIdx);
+    animLabel(curDom);
+    kenBurns(curDom);
+    resetTimer();
+  }
+
+  /* ── After transition: silently jump from clone back to real counterpart,
+     then re-enable img-b transitions (safe now that track has settled) ── */
+  track.addEventListener('transitionend', function(e){
+    if (e.propertyName !== 'transform') return;
+    busy = false;
+    if (curDom === 0) {
+      curDom = total;
+      moveTo(curDom, false);
+    } else if (curDom === total + 1) {
+      curDom = 1;
+      moveTo(curDom, false);
+    }
+    /* Restore transitions on img-b elements now that the track is at rest */
+    requestAnimationFrame(function(){
+      track.querySelectorAll('.img-b').forEach(function(el){
+        el.style.transition = '';
+      });
+    });
+    activateSlideImages(curDom);
+  });
+
+  function resetTimer() {
+    clearInterval(timer);
+    timer = setInterval(goNext, 6000);
+  }
+
+  /* ── Wipe img-b in after 2.4s ──────────────────────────────────────────────
+     Interval = 6000ms, slide transition ≈ 600ms → dwell = 5400ms.
+     Delay 2400ms: img-a shows ~2400ms clean, img-b wipes in over 700ms
+     and shows ~2300ms clean. Both get equal visible time.               ── */
+  function activateSlideImages(domPos) {
+    clearTimeout(imgTimer);
+    var slide = allSlides[domPos];
+    if (!slide) return;
+    var imgB = slide.querySelector('.img-b');
+    if (!imgB) return;
+    imgTimer = setTimeout(function(){
+      imgB.style.clipPath = 'inset(0 0 0 0%)';
+      imgB.classList.add('bg-zoom');
+    }, 2400);
+  }
+
+  document.getElementById('ea-prev').addEventListener('click', goPrev);
+  document.getElementById('ea-next').addEventListener('click', goNext);
+  dotsEl.forEach(function(d){
+    d.addEventListener('click', function(){
+      goToReal(parseInt(d.getAttribute('data-idx'), 10));
+    });
+  });
+
+  /* Initialise at DOM position 1 (real slide 0), no animation */
+  moveTo(1, false);
+  updateDots(0);
+  kenBurns(1);
+  var lbl0 = allSlides[1].querySelector('.ea-slide-label');
+  if (lbl0) { setTimeout(function(){ lbl0.classList.add('lbl-in'); }, 300); }
+  activateSlideImages(1);
+  resetTimer();
+})();
+</script>
+
+
+<!-- ═══════════════════════════════════════════
+     SECTION 2 — TRUST BAR
+═══════════════════════════════════════════ -->
+<style>
+/* ══ V9 MARQUEE (TRUST BAR) ══ */
+.tbar {
+  background: var(--c-lime); overflow: hidden; position: relative;
+  padding: 24px 0; transform: rotate(-2deg) scale(1.05);
+  margin: 60px 0; border: 2px solid var(--c-dark); box-shadow: 0 10px 40px rgba(204,255,0,0.15);
+  z-index: 10;
+}
+.tbar-track {
+  display: flex; align-items: center; white-space: nowrap;
+  width: max-content; animation: tscroll 20s linear infinite;
+}
+@keyframes tscroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+.titem {
+  font-family: var(--f-heading); font-size: 24px; font-weight: 800; text-transform: uppercase; letter-spacing: 2px;
+  color: var(--c-dark); display: inline-flex; align-items: center; gap: 16px; padding: 0 24px;
+}
+.tdot { width: 12px; height: 12px; background: var(--c-dark); border-radius: 50%; flex-shrink: 0; }
+</style>
+
+<div class="tbar">
+  <div class="tbar-track">
+    <span class="titem"><span class="tdot"></span>100% IN-HOUSE PRINTING FACILITY</span>
+    <span class="titem"><span class="tdot"></span>ADVANCED LARGE-FORMAT TECHNOLOGY</span>
+    <span class="titem"><span class="tdot"></span>SAME-DAY PRINTING AVAILABLE</span>
+    <span class="titem"><span class="tdot"></span>UAE-WIDE DELIVERY &amp; INSTALLATION</span>
+    <span class="titem"><span class="tdot"></span>FREE DESIGN SUPPORT INCLUDED</span>
+    <span class="titem"><span class="tdot"></span>RATED 4.8&#9733; ON GOOGLE</span>
+    <span class="titem"><span class="tdot"></span>18+ YEARS INDUSTRY EXPERIENCE</span>
+    <!-- Duplicate for seamless loop -->
+    <span class="titem"><span class="tdot"></span>100% IN-HOUSE PRINTING FACILITY</span>
+    <span class="titem"><span class="tdot"></span>ADVANCED LARGE-FORMAT TECHNOLOGY</span>
+    <span class="titem"><span class="tdot"></span>SAME-DAY PRINTING AVAILABLE</span>
+    <span class="titem"><span class="tdot"></span>UAE-WIDE DELIVERY &amp; INSTALLATION</span>
+    <span class="titem"><span class="tdot"></span>FREE DESIGN SUPPORT INCLUDED</span>
+    <span class="titem"><span class="tdot"></span>RATED 4.8&#9733; ON GOOGLE</span>
+    <span class="titem"><span class="tdot"></span>18+ YEARS INDUSTRY EXPERIENCE</span>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════
+     SECTION 3 — PRODUCTS / CATEGORIES GRID
+═══════════════════════════════════════════ -->
+<!-- ═══════════════════════════════════════════
+     SECTION 2B — BD HERO BANNER
+═══════════════════════════════════════════ -->
+<style>
+#ea-bd-hero { background: var(--c-dark); padding: clamp(100px, 12vw, 180px) 0; overflow: hidden; position: relative; z-index: 5; }
+#ea-bd-hero::before {
+  content: ''; position: absolute; top: 0; right: 0; bottom: 0; width: 65%;
+  background: linear-gradient(135deg, rgba(204,255,0,0.08) 0%, transparent 80%);
+  pointer-events: none;
+}
+.ea-bdhero-row { display: flex; align-items: center; gap: 64px; flex-wrap: wrap; }
+.ea-bdhero-content { flex: 1; min-width: 280px; z-index: 1; }
+.ea-bdhero-badge {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: rgba(204,255,0,0.05); border: 1px solid var(--border);
+  border-radius: 100px; padding: 8px 20px; margin-bottom: 32px;
+  font-family: var(--f-heading); font-size: 11px; font-weight: 800;
+  color: var(--c-lime); text-transform: uppercase; letter-spacing: 2px;
+}
+.ea-bdhero-title {
+  font-family: var(--f-heading); font-size: clamp(36px, 5.5vw, 84px); font-weight: 800; text-transform: uppercase;
+  color: var(--c-white); line-height: 0.95; letter-spacing: -2px; margin-bottom: 24px;
+}
+.ea-bdhero-title span { color: var(--c-lime); }
+.ea-bdhero-desc {
+  font-family: var(--f-body); font-size: 16px;
+  color: rgba(255,255,255,0.6); line-height: 1.6; margin-bottom: 40px; max-width: 480px;
+}
+.ea-bdhero-ctas { display: flex; flex-wrap: wrap; gap: 20px; align-items: center; }
+.ea-bdwa {
+  display: inline-flex; align-items: center; gap: 10px;
+  background: var(--c-lime); color: var(--c-dark); padding: 14px 32px; border-radius: 100px;
+  font-family: var(--f-body); font-size: 14px; font-weight: 800; text-transform: uppercase; letter-spacing: 1px;
+  text-decoration: none; transition: background 0.3s; border: 1px solid var(--c-lime);
+}
+.ea-bdwa:hover { background: transparent; color: var(--c-lime); text-decoration: none; }
+.ea-bdlink {
+  color: var(--c-white); font-family: var(--f-body);
+  font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; text-decoration: none;
+  border-bottom: 1px solid rgba(255,255,255,0.2); padding-bottom: 4px;
+  transition: color 0.3s, border-color 0.3s;
+}
+.ea-bdlink:hover { color: var(--c-lime); border-color: var(--c-lime); text-decoration: none; }
+.ea-bdhero-img { flex: 0 0 46%; min-width: 260px; position: relative; z-index: 1; }
+.ea-bdhero-img > img { width: 100%; border-radius: 0; filter: saturate(1.2); box-shadow: 0 24px 80px rgba(0,0,0,0.8); display: block; }
+.ea-bdhero-card {
+  position: absolute; bottom: -30px; left: -30px; background: var(--c-lime); color: var(--c-dark);
+  border-radius: 0; padding: 24px 32px; display: flex; align-items: center; gap: 16px;
+  box-shadow: 0 10px 40px rgba(204,255,0,0.2);
+}
+.ea-bdhero-card-num { font-family: var(--f-heading); font-size: 40px; font-weight: 800; line-height: 1; letter-spacing: -1px; }
+.ea-bdhero-card-lbl { font-family: var(--f-body); font-size: 13px; font-weight: 800; line-height: 1.3; text-transform: uppercase; letter-spacing: 1px; }
+@media (max-width: 767px) {
+  .ea-bdhero-title { font-size: 28px; }
+  .ea-bdhero-img { min-width: 100%; }
+  .ea-bdhero-card { left: 8px; bottom: 8px; padding: 10px 14px; }
+}
+</style>
+
+<section id="ea-bd-hero">
+  <div class="container">
+    <div class="ea-bdhero-row">
+      <div class="ea-bdhero-content reveal">
+        <div class="ea-bdhero-badge"><svg width="8" height="8" viewBox="0 0 8 8" fill="var(--c-lime)"><circle cx="4" cy="4" r="4"/></svg> Dubai's Premier Printing Company</div>
+        <h2 class="ea-bdhero-title">From Concept to<br><span>Print&#8209;Ready</span><br>in Hours</h2>
+        <p class="ea-bdhero-desc">Our in-house facility at Ras Al Khor means no middlemen &mdash; direct pricing, faster turnaround, and tighter quality control on every job we take.</p>
+        <div class="ea-bdhero-ctas">
+          <a href="https://api.whatsapp.com/send?phone=971527966265&amp;text=Hi%2C+I%27d+like+a+quote" target="_blank" rel="noopener" class="ea-bdwa">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="#fff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            WhatsApp for a Quote
+          </a>
+          <a href="/about-us/" class="ea-bdlink">View Our Work &rarr;</a>
+        </div>
+      </div>
+      <div class="ea-bdhero-img reveal">
+        <img src="/wp-content/uploads/2026/03/exhibition-stand-dubai.jpg" alt="Exhibition Stand Dubai" loading="lazy">
+        <div class="ea-bdhero-card">
+          <span class="ea-bdhero-card-num">18+</span>
+          <span class="ea-bdhero-card-lbl">Years<br>Experience</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<style>
+/* ══════════════════════════════════════════
+   PRODUCTS SECTION (V9 HORIZONTAL SCROLL TRACK)
+══════════════════════════════════════════ */
+#ea-products {
+  background: var(--c-dark); padding: 0; position: relative;
+  /* We remove vertical padding because the pinning container handles layout */
+  overflow: hidden; 
+}
+.ea-products-pin-wrap {
+  position: relative; width: 100vw; height: 100vh;
+  display: flex; align-items: center; justify-content: flex-start;
+  background: var(--c-dark); padding: 0 clamp(20px, 5vw, 80px);
+}
+
+.ea-products-hd {
+  flex-shrink: 0; width: 35vw; padding-right: 60px; z-index: 10;
+}
+.ea-products-label {
+  font-family: var(--f-heading); font-size: 11px; font-weight: 800;
+  letter-spacing: 4px; text-transform: uppercase; color: var(--c-lime); margin: 0 0 16px;
+}
+.ea-products-heading {
+  font-family: var(--f-heading); font-size: clamp(36px, 4vw, 64px); font-weight: 800; text-transform: uppercase;
+  color: var(--c-white); margin: 0 0 16px; line-height: 1; letter-spacing: -1px;
+}
+.ea-products-heading em { color: var(--c-lime); font-style: normal; }
+.ea-products-sub {
+  font-family: var(--f-body); font-size: 16px; line-height: 1.6;
+  color: rgba(255,255,255,0.6); margin: 0;
+}
+
+/* ── The Horizontal Track ── */
+.ea-pg-wrap {
+  display: flex; gap: 40px; align-items: center;
+  padding: 0 40px 0 0;
+}
+
+/* ── Individual Cards ── */
+.ea-pg-card {
+  display: block; position: relative; width: 400px; height: 500px;
+  border-radius: 0; overflow: hidden; text-decoration: none;
+  background: #000; border: 1px solid rgba(255,255,255,0.1);
+  flex-shrink: 0; transition: border-color 0.3s ease;
+}
+.ea-pg-card:hover { border-color: var(--c-lime); }
+
+/* ── Photos fill the card — crossfade on hover ── */
+.ea-pg-img {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  object-fit: cover; object-position: center; display: block;
+  filter: grayscale(1) brightness(0.6); opacity: 1; z-index: 1;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.ea-pg-card:hover .ea-pg-img {
+  filter: grayscale(0) brightness(0.9); transform: scale(1.05);
+}
+
+/* ── Label bar at the bottom ── */
+.ea-pg-label {
+  position: absolute; bottom: 0; left: 0; right: 0; z-index: 3;
+  background: rgba(16, 20, 0, 0.95); backdrop-filter: blur(10px);
+  padding: 24px; display: flex; flex-direction: column; gap: 8px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  transform: translateY(100%); transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.ea-pg-card:hover .ea-pg-label { transform: translateY(0); border-top-color: var(--c-lime); }
+
+.ea-pg-name {
+  font-family: var(--f-heading); font-size: 20px; font-weight: 800; text-transform: uppercase;
+  color: var(--c-white); letter-spacing: 1px; line-height: 1.1;
+}
+.ea-pg-tag {
+  font-family: var(--f-body); font-size: 13px; font-weight: 700; text-transform: uppercase;
+  color: var(--c-lime); letter-spacing: 1px;
+}
+
+@media (max-width: 991px) {
+  .ea-products-pin-wrap { flex-direction: column; align-items: flex-start; justify-content: center; height: auto; min-height: 100vh; overflow: hidden; gap: 60px; padding: 100px 20px; }
+  .ea-products-hd { width: 100%; padding-right: 0; }
+  .ea-pg-wrap { width: 100%; overflow-x: auto; padding-bottom: 40px; scroll-snap-type: x mandatory; }
+  .ea-pg-card { width: 80vw; max-width: 320px; height: 420px; scroll-snap-align: center; }
+  .ea-pg-label { transform: translateY(0); } /* Always show labels on mobile */
+}
+</style>
+
+<section id="ea-products">
+  <div class="ea-products-pin-wrap" id="ea-products-pin">
+    <div class="ea-products-hd">
+      <p class="ea-products-label">Our Capabilities</p>
+      <h2 class="ea-products-heading">Printing &amp;<br><em>Branding</em></h2>
+      <p class="ea-products-sub">12 product categories &middot; 18 years experience &middot; Same-day printing available in Dubai.</p>
+    </div>
+
+    <!-- The scrolling track containing V10's 12 products reformatted as V9 horizontal cards -->
+    <div class="ea-pg-wrap" id="ea-products-track">
+      <a class="ea-pg-card" href="/product-category/backdrop-display-dubai/">
+        <img class="ea-pg-img" src="/wp-content/uploads/2022/03/Step-Repeat-Backdrop-2.jpg" alt="Backdrops &amp; Displays" loading="lazy">
+        <div class="ea-pg-label"><span class="ea-pg-name">Backdrops <br>&amp; Displays</span><span class="ea-pg-tag">Event</span></div>
+      </a>
+      <a class="ea-pg-card" href="/product-category/flag-printing-dubai/">
+        <img class="ea-pg-img" src="/wp-content/uploads/2022/03/custom-teardrop-flag.jpg" alt="Flags &amp; Feather Flags" loading="lazy">
+        <div class="ea-pg-label"><span class="ea-pg-name">Custom <br>Flags</span><span class="ea-pg-tag">Outdoor</span></div>
+      </a>
+      <a class="ea-pg-card" href="/product-category/vehicle-branding-dubai/">
+        <img class="ea-pg-img" src="/wp-content/uploads/2026/03/car-wrap-vehicle-branding.jpg" alt="Vehicle Branding" loading="lazy">
+        <div class="ea-pg-label"><span class="ea-pg-name">Vehicle <br>Branding</span><span class="ea-pg-tag">Fleet</span></div>
+      </a>
+      <a class="ea-pg-card" href="/product-category/banner-printing-dubai/">
+        <img class="ea-pg-img" src="/wp-content/uploads/2026/01/banners.webp" alt="Banner Printing" loading="lazy">
+        <div class="ea-pg-label"><span class="ea-pg-name">Banner <br>Printing</span><span class="ea-pg-tag">Print</span></div>
+      </a>
+      <a class="ea-pg-card" href="/product-category/exhibition-stands-dubai/">
+        <img class="ea-pg-img" src="/wp-content/uploads/2026/03/exhibition-stand-dubai.jpg" alt="Exhibition Stands" loading="lazy">
+        <div class="ea-pg-label"><span class="ea-pg-name">Exhibition <br>Stands</span><span class="ea-pg-tag">Event</span></div>
+      </a>
+      <a class="ea-pg-card" href="/product-category/sticker-printing-dubai/">
+        <img class="ea-pg-img" src="/wp-content/uploads/2022/03/Wall-Sticker.jpg" alt="Wall Stickers &amp; Vinyl" loading="lazy">
+        <div class="ea-pg-label"><span class="ea-pg-name">Wall <br>Stickers</span><span class="ea-pg-tag">Vinyl</span></div>
+      </a>
+      <a class="ea-pg-card" href="/product-category/signage-dubai/">
+        <img class="ea-pg-img" src="/wp-content/uploads/2026/03/business-signage-storefront.jpg" alt="Signage &amp; 3D Letters" loading="lazy">
+        <div class="ea-pg-label"><span class="ea-pg-name">3D <br>Signage</span><span class="ea-pg-tag">Metal</span></div>
+      </a>
+      <a class="ea-pg-card" href="/product-category/event-branding-dubai/">
+        <img class="ea-pg-img" src="/wp-content/uploads/2026/03/event-backdrop-corporate.jpg" alt="Event &amp; Corporate Branding" loading="lazy">
+        <div class="ea-pg-label"><span class="ea-pg-name">Event <br>Branding</span><span class="ea-pg-tag">Corporate</span></div>
+      </a>
+      <a class="ea-pg-card" href="/product-category/banner-printing-dubai/">
+        <img class="ea-pg-img" src="/wp-content/uploads/2022/03/pop-up-stand.jpg" alt="Pop-Up &amp; Fabric Displays" loading="lazy">
+        <div class="ea-pg-label"><span class="ea-pg-name">Pop-up <br>Displays</span><span class="ea-pg-tag">Indoor</span></div>
+      </a>
+    </div>
+  </div>
+</section>
+<script>
+/* V9 Horizontal Scroll GSAP Initialization injected at end of body in the final implementation file */
+</script>
+
+
+<!-- ═══════════════════════════════════════════
+     SECTION 4 — STATS BAR
+═══════════════════════════════════════════ -->
+<style>
+#ea-stats {
+  background: #0A0A14;
+  padding: clamp(36px, 4vw, 72px) 0;
+  border-top: 1px solid rgba(255,186,9,0.14);
+  border-bottom: 1px solid rgba(255,186,9,0.14);
+  position: relative; overflow: hidden;
+}
+#ea-stats::before {
+  content: ''; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
+  width: 600px; height: 200px;
+  background: radial-gradient(ellipse at center, rgba(255,186,9,0.07) 0%, transparent 70%);
+  pointer-events: none;
+}
+.ea-stats-row {
+  display: flex; align-items: center; justify-content: center;
+  flex-wrap: nowrap; gap: 0;
+}
+.ea-stat {
+  display: flex; flex-direction: column; align-items: center;
+  padding: 10px clamp(12px, 2vw, 32px); text-align: center; flex: 1; min-width: 0;
+}
+.ea-stat-ico { width: 40px; height: 40px; margin: 0 auto 16px; display: block; opacity: 1; color: var(--c-lime); }
+.ea-stat-num {
+  font-family: var(--f-heading); font-size: clamp(32px, 4.5vw, 64px); font-weight: 800;
+  color: var(--c-white); line-height: 1; letter-spacing: -1px; display: block;
+}
+.ea-stat-lbl {
+  font-family: var(--f-body); font-size: clamp(10px, 1vw, 13px); font-weight: 700;
+  color: var(--c-lime); text-transform: uppercase; letter-spacing: 1px;
+  margin-top: 12px; display: block;
+}
+.ea-stat-div {
+  width: 1px; height: 80px; background: rgba(255,255,255,0.1); flex-shrink: 0;
+  align-self: center;
+}
+@media (max-width: 991px) {
+  .ea-stat { padding: 10px clamp(8px, 1.5vw, 18px); }
+  .ea-stat-num { font-size: clamp(16px, 2.5vw, 28px); }
+  .ea-stat-lbl { font-size: 9px; letter-spacing: 0.4px; }
+  .ea-stat-ico { width: 24px; height: 24px; }
+  .ea-stat-div { height: 32px; }
+}
+@media (max-width: 600px) {
+  .ea-stats-row { flex-wrap: wrap; }
+  .ea-stat { flex: 0 0 48%; padding: 14px 8px; }
+  .ea-stat-div { display: none; }
+  .ea-stat-num { font-size: 22px; }
+  .ea-stat-lbl { font-size: 10px; }
+}
+</style>
+
+<section id="ea-stats">
+  <div class="container">
+    <div class="ea-stats-row">
+      <div class="ea-stat reveal">
+        <svg class="ea-stat-ico" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="4" y="14" width="24" height="4" rx="2" fill="currentColor"/><rect x="4" y="6" width="24" height="4" rx="2" fill="rgba(204,255,0,0.4)"/><rect x="4" y="22" width="24" height="4" rx="2" fill="rgba(204,255,0,0.4)"/></svg>
+        <span class="ea-stat-num" data-count="500000" data-suffix="K+">500K+</span>
+        <span class="ea-stat-lbl">Sq.ft Printed</span>
+      </div>
+      <div class="ea-stat-div"></div>
+      <div class="ea-stat reveal">
+        <svg class="ea-stat-ico" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 10h20v14a2 2 0 01-2 2H8a2 2 0 01-2-2V10z" stroke="currentColor" stroke-width="2" fill="none"/><path d="M4 10h24M12 10V7a4 4 0 018 0v3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <span class="ea-stat-num">20K+</span>
+        <span class="ea-stat-lbl">Orders Delivered</span>
+      </div>
+      <div class="ea-stat-div"></div>
+      <div class="ea-stat reveal">
+        <svg class="ea-stat-ico" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 4l3 6.5 7 1-5 4.9 1.2 7L16 20l-6.2 3.4L11 16.4 6 11.5l7-1L16 4z" stroke="currentColor" stroke-width="2" stroke-linejoin="round" fill="rgba(204,255,0,0.15)"/></svg>
+        <span class="ea-stat-num">18+</span>
+        <span class="ea-stat-lbl">Years Experience</span>
+      </div>
+      <div class="ea-stat-div"></div>
+      <div class="ea-stat reveal">
+        <svg class="ea-stat-ico" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="4" y="10" width="24" height="18" rx="2" stroke="currentColor" stroke-width="2" fill="none"/><path d="M10 10V7a6 6 0 0112 0v3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="16" cy="19" r="2.5" fill="currentColor"/></svg>
+        <span class="ea-stat-num">500+</span>
+        <span class="ea-stat-lbl">Clients Trusted</span>
+      </div>
+      <div class="ea-stat-div"></div>
+      <div class="ea-stat reveal">
+        <svg class="ea-stat-ico" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 4l3 6.5 7 1-5 4.9 1.2 7L16 20l-6.2 3.4L11 16.4 6 11.5l7-1L16 4z" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+        <span class="ea-stat-num">4.8★</span>
+        <span class="ea-stat-lbl">Google Rating</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════
+     SECTION 5 — TRUSTED CLIENTS CAROUSEL
+═══════════════════════════════════════════ -->
+<style>
+#ea-clients {
+  background: var(--c-dark);
+  padding: 80px 0;
+  border-top: 1px solid rgba(255,255,255,0.05);
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  overflow: hidden;
+}
+#ea-clients .ea-cli-eyebrow {
+  text-align: center; margin-bottom: 40px;
+  font-family: var(--f-heading); font-size: 11px; font-weight: 800;
+  letter-spacing: 4px; text-transform: uppercase; color: rgba(255,255,255,0.5);
+}
+.ea-cli-vp {
+  overflow: hidden; position: relative; width: 100%;
+}
+.ea-cli-vp::before, .ea-cli-vp::after {
+  content: ''; position: absolute; top: 0; bottom: 0; width: 150px; z-index: 2; pointer-events: none;
+}
+.ea-cli-vp::before { left: 0;  background: linear-gradient(to right, #080a00, transparent); }
+.ea-cli-vp::after  { right: 0; background: linear-gradient(to left,  #080a00, transparent); }
+.ea-cli-track {
+  display: flex; align-items: center; will-change: transform;
+}
+.ea-cli-pill {
+  flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center; width: 220px; height: 100px;
+  margin-right: 24px;
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255,255,255,0.05);
+  border-radius: 0;
+  cursor: default;
+  transition: background 0.3s, border-color 0.3s;
+}
+.ea-cli-pill:hover {
+  background: rgba(255,186,9,0.08);
+  border-color: rgba(255,186,9,0.35);
+}
+.ea-cli-dot {
+  width: 7px; height: 7px; border-radius: 50%;
+  background: rgba(255,186,9,0.50); flex-shrink: 0;
+}
+.ea-cli-pill-name {
+  font-family: 'DM Sans', sans-serif; font-size: 13px; font-weight: 600;
+  color: rgba(255,255,255,0.60); letter-spacing: 0.3px;
+}
+.ea-cli-pill:hover .ea-cli-pill-name { color: rgba(255,255,255,0.90); }
+</style>
+
+<section id="ea-clients">
+  <p class="ea-cli-eyebrow">TRUSTED BY 500+ UAE BUSINESSES ACROSS ALL INDUSTRIES</p>
+  <div class="ea-cli-vp">
+    <div class="ea-cli-track" id="eaCliTrack">
+      <div class="ea-cli-pill"><span class="ea-cli-dot"></span><span class="ea-cli-pill-name">Real Estate</span></div>
+      <div class="ea-cli-pill"><span class="ea-cli-dot"></span><span class="ea-cli-pill-name">Government &amp; Public Sector</span></div>
+      <div class="ea-cli-pill"><span class="ea-cli-dot"></span><span class="ea-cli-pill-name">Retail &amp; FMCG</span></div>
+      <div class="ea-cli-pill"><span class="ea-cli-dot"></span><span class="ea-cli-pill-name">Hospitality &amp; Tourism</span></div>
+      <div class="ea-cli-pill"><span class="ea-cli-dot"></span><span class="ea-cli-pill-name">Events &amp; Exhibitions</span></div>
+      <div class="ea-cli-pill"><span class="ea-cli-dot"></span><span class="ea-cli-pill-name">Healthcare &amp; Pharma</span></div>
+      <div class="ea-cli-pill"><span class="ea-cli-dot"></span><span class="ea-cli-pill-name">Banking &amp; Finance</span></div>
+      <div class="ea-cli-pill"><span class="ea-cli-dot"></span><span class="ea-cli-pill-name">Automotive</span></div>
+      <div class="ea-cli-pill"><span class="ea-cli-dot"></span><span class="ea-cli-pill-name">Food &amp; Beverage</span></div>
+      <div class="ea-cli-pill"><span class="ea-cli-dot"></span><span class="ea-cli-pill-name">Education &amp; Training</span></div>
+      <div class="ea-cli-pill"><span class="ea-cli-dot"></span><span class="ea-cli-pill-name">Technology &amp; Telecom</span></div>
+      <div class="ea-cli-pill"><span class="ea-cli-dot"></span><span class="ea-cli-pill-name">Media &amp; Entertainment</span></div>
+    </div>
+  </div>
+</section>
+<script>
+(function(){
+  var track = document.getElementById('eaCliTrack');
+  if (!track) return;
+  var orig = Array.from(track.children);
+  orig.forEach(function(el){ track.appendChild(el.cloneNode(true)); });
+  var pos = 0, paused = false;
+  function loopW(){
+    var w = 0, half = Math.floor(track.children.length / 2);
+    for(var i = 0; i < half; i++){
+      var s = getComputedStyle(track.children[i]);
+      w += track.children[i].offsetWidth + parseFloat(s.marginRight || 0);
+    }
+    return w;
+  }
+  var lw = 0;
+  function start(){
+    lw = loopW();
+    (function tick(){
+      if(!paused){ pos += 0.4; if(pos >= lw) pos -= lw; track.style.transform = 'translateX(-'+pos+'px)'; }
+      requestAnimationFrame(tick);
+    })();
+  }
+  track.closest('#ea-clients').querySelector('.ea-cli-vp').addEventListener('mouseenter', function(){ paused = true; });
+  track.closest('#ea-clients').querySelector('.ea-cli-vp').addEventListener('mouseleave', function(){ paused = false; });
+  if(document.readyState === 'complete') start(); else window.addEventListener('load', start);
+})();
+</script>
+
+
+<!-- ═══════════════════════════════════════════
+     SECTION 6 — WHY CHOOSE US
+═══════════════════════════════════════════ -->
+<style>
+#ea-wcu {
+  background: var(--c-dark);
+  padding: clamp(80px, 10vw, 150px) 0;
+  position: relative; overflow: hidden;
+}
+/* Decorative circles */
+#ea-wcu::before {
+  content: ''; position: absolute; top: -300px; left: -300px;
+  width: 700px; height: 700px; background: rgba(204,255,0,0.02);
+  border-radius: 50%; pointer-events: none;
+}
+#ea-wcu::after {
+  content: ''; position: absolute; bottom: -200px; right: -200px;
+  width: 500px; height: 500px; background: rgba(204,255,0,0.01);
+  border-radius: 50%; pointer-events: none;
+}
+.ea-wcu-inner { position: relative; z-index: 1; }
+.ea-wcu-hd { text-align: center; margin-bottom: 64px; }
+.ea-wcu-eyebrow {
+  font-family: var(--f-heading); font-size: 11px; font-weight: 800;
+  letter-spacing: 4px; text-transform: uppercase;
+  color: var(--c-lime); margin: 0 0 16px;
+}
+.ea-wcu-title {
+  font-family: var(--f-heading); font-size: clamp(32px, 4vw, 64px); font-weight: 800; text-transform: uppercase;
+  color: var(--c-white); margin: 0 0 20px; line-height: 0.95; letter-spacing: -1px;
+}
+.ea-wcu-sub {
+  font-family: var(--f-body); font-size: 16px;
+  color: rgba(255,255,255,0.6); margin: 0 auto; max-width: 600px; line-height: 1.6;
+}
+.ea-wcu-grid {
+  display: grid; grid-template-columns: repeat(3,1fr); gap: 24px;
+}
+@media (max-width: 991px) { .ea-wcu-grid { grid-template-columns: repeat(2,1fr); } }
+@media (max-width: 575px)  { .ea-wcu-grid { grid-template-columns: 1fr; gap: 16px; } }
+.ea-wcu-card {
+  background: rgba(255,255,255,0.01); border-radius: 0;
+  padding: 48px 36px;
+  display: flex; flex-direction: column;
+  border: 1px solid rgba(255,255,255,0.03);
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.ea-wcu-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--c-lime);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.6), 0 0 0 1px var(--c-lime);
+}
+.ea-wcu-card-icon { font-size: 48px; margin-bottom: 24px; line-height: 1; color: var(--c-lime); }
+.ea-wcu-card-title {
+  font-family: var(--f-heading); font-size: 24px; font-weight: 800; text-transform: uppercase;
+  color: var(--c-white); margin: 0 0 16px; line-height: 1.1; letter-spacing: 1px; flex: 0;
+}
+.ea-wcu-card-text {
+  font-family: var(--f-body); font-size: 15px;
+  color: rgba(255,255,255,0.6); line-height: 1.6; flex: 1; margin: 0 0 24px;
+}
+.ea-wcu-card-link {
+  width: 48px; height: 48px; border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.2);
+  display: flex; align-items: center; justify-content: center;
+  align-self: flex-start; flex-shrink: 0; text-decoration: none;
+  transition: all 0.3s;
+}
+.ea-wcu-card:hover .ea-wcu-card-link {
+  border-color: var(--c-lime); background: var(--c-lime); color: var(--c-dark);
+}
+.ea-wcu-cta-row {
+  display: flex; justify-content: flex-end; margin-top: 40px;
+}
+.ea-wcu-btn {
+  display: inline-flex; align-items: center; gap: 12px;
+  background: var(--c-lime); color: var(--c-dark);
+  padding: 16px 40px; border-radius: 100px;
+  font-family: var(--f-body); font-size: 14px; font-weight: 800; text-transform: uppercase; letter-spacing: 1px;
+  text-decoration: none; border: 1px solid var(--c-lime);
+  transition: all 0.3s;
+}
+.ea-wcu-btn:hover { background: transparent; color: var(--c-lime); text-decoration: none; }
+</style>
+
+<section id="ea-wcu">
+  <div class="container ea-wcu-inner">
+    <div class="ea-wcu-hd">
+      <p class="ea-wcu-eyebrow">Our Difference</p>
+      <h2 class="ea-wcu-title">Why Dubai Businesses Choose Efficient Advertising</h2>
+      <p class="ea-wcu-sub">Since 2008, we have built our name across Dubai and the UAE — delivering media, print, and branding with genuine care for every client.</p>
+    </div>
+    <div class="ea-wcu-grid">
+
+      <div class="ea-wcu-card reveal">
+        <div class="ea-wcu-card-icon">🏅</div>
+        <h3 class="ea-wcu-card-title">18 Years in Dubai<br>— Since 2008</h3>
+        <p class="ea-wcu-card-text">We opened in 2008 and haven't stopped. 18 years of media, print, and branding work across the UAE — reputation built job by job.</p>
+        <a href="/contact-us/" class="ea-wcu-card-link" aria-label="Contact us">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+        </a>
+      </div>
+
+      <div class="ea-wcu-card reveal">
+        <div class="ea-wcu-card-icon">⚡</div>
+        <h3 class="ea-wcu-card-title">Fast Turnaround,<br>Zero Compromise</h3>
+        <p class="ea-wcu-card-text">Same-day and express printing options so your materials are ready exactly when you need them.</p>
+        <a href="/contact-us/" class="ea-wcu-card-link" aria-label="Contact us">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+        </a>
+      </div>
+
+      <div class="ea-wcu-card reveal">
+        <div class="ea-wcu-card-icon">🎯</div>
+        <h3 class="ea-wcu-card-title">End-to-End<br>Service</h3>
+        <p class="ea-wcu-card-text">Design, production, delivery, and on-site installation — one vendor, complete accountability.</p>
+        <a href="/contact-us/" class="ea-wcu-card-link" aria-label="Contact us">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+        </a>
+      </div>
+
+      <div class="ea-wcu-card reveal">
+        <div class="ea-wcu-card-icon">💰</div>
+        <h3 class="ea-wcu-card-title">Competitive<br>Pricing</h3>
+        <p class="ea-wcu-card-text">Premium quality at fair prices — scalable solutions for startups, SMEs, and enterprises.</p>
+        <a href="/contact-us/" class="ea-wcu-card-link" aria-label="Contact us">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+        </a>
+      </div>
+
+      <div class="ea-wcu-card reveal">
+        <div class="ea-wcu-card-icon">🚚</div>
+        <h3 class="ea-wcu-card-title">UAE-Wide<br>Delivery</h3>
+        <p class="ea-wcu-card-text">Delivering across Dubai, Sharjah, Abu Dhabi, Ajman, and all UAE emirates.</p>
+        <a href="/contact-us/" class="ea-wcu-card-link" aria-label="Contact us">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+        </a>
+      </div>
+
+      <div class="ea-wcu-card reveal">
+        <div class="ea-wcu-card-icon">✦</div>
+        <h3 class="ea-wcu-card-title">Google-Rated<br>Excellent</h3>
+        <p class="ea-wcu-card-text">Rated Excellent across 34+ verified Google reviews for quality and professionalism.</p>
+        <a href="/contact-us/" class="ea-wcu-card-link" aria-label="Contact us">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+        </a>
+      </div>
+
+    </div>
+
+    <div class="ea-wcu-cta-row">
+      <a href="https://api.whatsapp.com/send?phone=971527966265&text=Hi%2C+I%27d+like+to+get+a+quote+for+printing+services."
+         target="_blank" rel="noopener" class="ea-wcu-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="#fff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        WhatsApp Us
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════
+     SECTION 7 — HOW IT WORKS
+═══════════════════════════════════════════ -->
+<style>
+#ea-hiw {
+  background: var(--c-dark);
+  padding: clamp(80px, 10vw, 150px) 0;
+  position: relative; overflow: hidden;
+  border-top: 1px solid rgba(255,255,255,0.05);
+}
+.ea-hiw-hd { text-align: center; margin-bottom: 80px; }
+.ea-hiw-eyebrow {
+  font-family: var(--f-heading); font-size: 11px; font-weight: 800;
+  letter-spacing: 4px; text-transform: uppercase; color: var(--c-lime); margin: 0 0 16px;
+}
+.ea-hiw-title {
+  font-family: 'Syne', sans-serif; font-size: clamp(22px, 2.6vw, 54px); font-weight: 700;
+  color: var(--navy); margin: 0 0 12px;
+  position: relative; display: inline-block; padding-bottom: 18px;
+}
+.ea-hiw-title::after {
+  content: ''; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%);
+  width: 52px; height: 3px; background: var(--amber); border-radius: 2px;
+}
+.ea-hiw-sub {
+  font-family: 'DM Sans', sans-serif; font-size: 15px;
+  color: rgba(26,26,46,0.58); max-width: 520px; margin: 0 auto;
+}
+.ea-hiw-row {
+  display: flex; align-items: flex-start; justify-content: center;
+  flex-wrap: wrap; gap: 0;
+}
+.ea-hiw-step {
+  flex: 1; min-width: 160px; max-width: 220px; text-align: center;
+  padding: 32px 20px;
+  background: rgba(26,26,46,0.03);
+  border: 1px solid rgba(26,26,46,0.08);
+  border-radius: 16px;
+  transition: border-color 0.3s ease, background 0.3s ease, transform 0.3s ease;
+}
+.ea-hiw-step:hover {
+  border-color: rgba(255,186,9,0.35);
+  background: rgba(255,186,9,0.04);
+  transform: translateY(-4px);
+}
+.ea-hiw-num {
+  font-family: 'Unbounded', sans-serif; font-size: 11px; font-weight: 800;
+  letter-spacing: 2px; color: var(--amber); margin-bottom: 12px; display: block;
+}
+.ea-hiw-ico { font-size: 36px; line-height: 1; margin-bottom: 16px; display: block; }
+.ea-hiw-step-title {
+  font-family: 'Syne', sans-serif; font-size: 16px; font-weight: 700;
+  color: var(--navy); margin: 0 0 10px;
+}
+.ea-hiw-step-desc {
+  font-family: 'DM Sans', sans-serif; font-size: 13px;
+  color: rgba(26,26,46,0.60); line-height: 1.7; margin: 0;
+}
+.ea-hiw-conn {
+  width: 44px; height: 2px; flex-shrink: 0;
+  background: linear-gradient(90deg, var(--amber), rgba(255,186,9,0.2));
+  align-self: center; margin-top: -18px;
+}
+.ea-hiw-cta { text-align: center; margin-top: 44px; }
+.ea-hiw-btn {
+  display: inline-block;
+  background: var(--amber); color: #0A0A14;
+  padding: 14px 36px; border-radius: 6px;
+  font-family: 'DM Sans', sans-serif; font-size: 15px; font-weight: 800;
+  text-decoration: none; letter-spacing: 0.3px;
+  transition: background 0.25s, box-shadow 0.25s;
+  box-shadow: 0 4px 24px rgba(255,186,9,0.28);
+}
+.ea-hiw-btn:hover { background: #f0b000; color: #0A0A14; text-decoration: none; box-shadow: 0 8px 32px rgba(255,186,9,0.40); }
+@media (max-width: 767px) {
+  .ea-hiw-row { flex-direction: column; align-items: center; gap: 16px; }
+  .ea-hiw-step { max-width: 100%; width: 100%; }
+  .ea-hiw-conn { display: none; }
+}
+</style>
+
+<section id="ea-hiw">
+  <div class="container">
+    <div class="ea-hiw-hd">
+      <p class="ea-hiw-eyebrow">Simple &amp; Fast</p>
+      <h2 class="ea-hiw-title">How It Works</h2>
+      <p class="ea-hiw-sub">From your first message to final installation — we make it effortless.</p>
+    </div>
+    <div class="ea-hiw-row">
+
+      <div class="ea-hiw-step reveal">
+        <span class="ea-hiw-num">01</span>
+        <span class="ea-hiw-ico">💬</span>
+        <h3 class="ea-hiw-step-title">Request a Quote</h3>
+        <p class="ea-hiw-step-desc">Tell us your requirements via WhatsApp, call, or our contact form. We respond within hours.</p>
+      </div>
+      <div class="ea-hiw-conn"></div>
+
+      <div class="ea-hiw-step reveal">
+        <span class="ea-hiw-num">02</span>
+        <span class="ea-hiw-ico">🎨</span>
+        <h3 class="ea-hiw-step-title">Design Approval</h3>
+        <p class="ea-hiw-step-desc">Our in-house design team creates or finalises your artwork. You approve before we print.</p>
+      </div>
+      <div class="ea-hiw-conn"></div>
+
+      <div class="ea-hiw-step reveal">
+        <span class="ea-hiw-num">03</span>
+        <span class="ea-hiw-ico">🖨</span>
+        <h3 class="ea-hiw-step-title">Production</h3>
+        <p class="ea-hiw-step-desc">Printed in-house at our Ras Al Khor facility using advanced large-format printing technology.</p>
+      </div>
+      <div class="ea-hiw-conn"></div>
+
+      <div class="ea-hiw-step reveal">
+        <span class="ea-hiw-num">04</span>
+        <span class="ea-hiw-ico">🚚</span>
+        <h3 class="ea-hiw-step-title">Delivery &amp; Install</h3>
+        <p class="ea-hiw-step-desc">We deliver to all UAE emirates and offer professional on-site installation for signage and exhibitions.</p>
+      </div>
+
+    </div>
+    <div class="ea-hiw-cta">
+      <a href="https://api.whatsapp.com/send?phone=971527966265&text=Hi%2C+I%27d+like+to+start+a+print+order"
+         target="_blank" rel="noopener" class="ea-hiw-btn">Start Your Order &rarr;</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════
+     SECTION 9 — YOUTUBE VIDEOS
+═══════════════════════════════════════════ -->
+/* ═══════════════════════════════════════════
+     SECTION 9 — YOUTUBE VIDEOS
+═══════════════════════════════════════════ */
+<style>
+#ea-yt {
+  background: var(--c-dark);
+  padding: clamp(80px, 10vw, 150px) 0;
+  position: relative; overflow: hidden;
+  border-top: 1px solid rgba(255,255,255,0.05);
+}
+#ea-yt::before {
+  content: ''; position: absolute; inset: 0; pointer-events: none; z-index: 0;
+  background: radial-gradient(ellipse at 15% 50%, rgba(204,255,0,0.02) 0%, transparent 55%),
+              radial-gradient(ellipse at 85% 20%, rgba(204,255,0,0.01) 0%, transparent 45%);
+}
+#ea-yt .container { position: relative; z-index: 1; }
+.ea-yt-hd { text-align: center; margin-bottom: 64px; }
+.ea-yt-eyebrow { font-family: var(--f-heading); font-size: 11px; font-weight: 800; letter-spacing: 4px; text-transform: uppercase; color: var(--c-lime); margin: 0 0 16px; }
+.ea-yt-title { font-family: var(--f-heading); font-size: clamp(32px, 4vw, 64px); font-weight: 800; text-transform: uppercase; color: var(--c-white); margin: 0 0 20px; line-height: 0.95; letter-spacing: -1px; }
+.ea-yt-sub { font-family: var(--f-body); font-size: 16px; color: rgba(255,255,255,0.6); margin: 0 auto; max-width: 520px; line-height: 1.6; }
+.ea-yt-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 24px; }
+@media (max-width: 991px) { .ea-yt-grid { grid-template-columns: repeat(2,1fr); gap: 16px; } }
+.ea-yt-card { position: relative; border-radius: 0; overflow: hidden; background: #000; aspect-ratio: 9/16; cursor: pointer; border: 1px solid rgba(255,255,255,0.05); transition: border-color 0.3s; }
+.ea-yt-card:hover { border-color: var(--c-lime); }
+.ea-yt-info { position: absolute; bottom: 0; left: 0; right: 0; z-index: 2; padding: 24px 20px; background: linear-gradient(to top, rgba(0,0,0,0.95), transparent); pointer-events: none; }
+.ea-yt-label { font-family: var(--f-heading); font-size: 14px; font-weight: 800; text-transform: uppercase; color: var(--c-white); display: block; letter-spacing: 1px; line-height: 1.3; }
+.ea-yt-iframe-wrap { position: absolute; inset: 0; transition: transform 0.3s; }
+.ea-yt-card:hover .ea-yt-iframe-wrap { transform: scale(1.05); }
+.ea-yt-iframe-wrap iframe { width: 100%; height: 100%; border: none; display: block; }
+</style>
+
+<section id="ea-yt">
+  <div class="container">
+    <div class="ea-yt-hd">
+      <p class="ea-yt-eyebrow">Watch Our Work</p>
+      <h2 class="ea-yt-title">See Efficient Advertising in Action</h2>
+      <p class="ea-yt-sub">Behind the scenes of our production, installations, and client setups across Dubai and the UAE.</p>
+    </div>
+    <div class="ea-yt-grid">
+
+      <!-- Video 1 — Branding -->
+      <div class="ea-yt-card reveal">
+        <div class="ea-yt-iframe-wrap">
+          <iframe src="https://www.youtube.com/embed/lsu0EGYvGKw?enablejsapi=1&mute=1&rel=0&modestbranding=1"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope"
+            allowfullscreen loading="lazy" title="Printing &amp; Branding Dubai UAE"></iframe>
+        </div>
+        <div class="ea-yt-info"><span class="ea-yt-label">Printing &amp; Branding — Dubai UAE</span></div>
+      </div>
+
+      <!-- Video 2 — Exhibitions -->
+      <div class="ea-yt-card reveal">
+        <div class="ea-yt-iframe-wrap">
+          <iframe src="https://www.youtube.com/embed/SdWYXXcJqaI?enablejsapi=1&mute=1&rel=0&modestbranding=1"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope"
+            allowfullscreen loading="lazy" title="Exhibition Stands &amp; Events Dubai"></iframe>
+        </div>
+        <div class="ea-yt-info"><span class="ea-yt-label">Exhibition Stands &amp; Events</span></div>
+      </div>
+
+      <!-- Video 3 — Signage -->
+      <div class="ea-yt-card reveal">
+        <div class="ea-yt-iframe-wrap">
+          <iframe src="https://www.youtube.com/embed/QMz0sqOM8JA?enablejsapi=1&mute=1&rel=0&modestbranding=1"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope"
+            allowfullscreen loading="lazy" title="Signage &amp; Visual Branding UAE"></iframe>
+        </div>
+        <div class="ea-yt-info"><span class="ea-yt-label">Signage &amp; Visual Branding</span></div>
+      </div>
+
+      <!-- Video 4 — Vehicle Branding -->
+      <div class="ea-yt-card reveal">
+        <div class="ea-yt-iframe-wrap">
+          <iframe src="https://www.youtube.com/embed/l33hizcCOZo?enablejsapi=1&mute=1&rel=0&modestbranding=1"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope"
+            allowfullscreen loading="lazy" title="Vehicle Wraps &amp; Fleet Branding Dubai"></iframe>
+        </div>
+        <div class="ea-yt-info"><span class="ea-yt-label">Vehicle Wraps &amp; Fleet Branding</span></div>
+      </div>
+
+    </div><!-- /.ea-yt-grid -->
+
+    <!-- CTA row -->
+    <div style="text-align:center; margin-top:64px;">
+      <a href="https://www.youtube.com/@efficientuae" target="_blank" rel="noopener"
+         style="display:inline-flex; align-items:center; gap:12px; background:transparent; color:var(--c-white);
+                padding:16px 40px; border-radius:100px; font-family:var(--f-body); border: 1px solid rgba(255,255,255,0.2);
+                font-size:14px; font-weight:800; text-transform:uppercase; letter-spacing:1px; text-decoration:none;
+                transition: all 0.3s;">
+        <svg width="20" height="14" viewBox="0 0 20 14" fill="currentColor" style="color:currentColor;"><path d="M19.58 2.19A2.51 2.51 0 0017.82.43C16.26 0 10 0 10 0S3.74 0 2.18.43A2.51 2.51 0 00.42 2.19 26.34 26.34 0 000 7a26.34 26.34 0 00.42 4.81A2.51 2.51 0 002.18 13.57C3.74 14 10 14 10 14s6.26 0 7.82-.43a2.51 2.51 0 001.76-1.76A26.34 26.34 0 0020 7a26.34 26.34 0 00-.42-4.81zM8 10V4l5.2 3L8 10z"/></svg>
+        Subscribe on YouTube
+      </a>
+    </div>
+
+    <!-- Script to add hover state for button inline style -->
+    <style>#ea-yt a[target="_blank"]:hover { border-color: var(--c-lime) !important; color: var(--c-lime) !important; background: rgba(204,255,0,0.05) !important; }</style>
+
+  </div>
+</section>
+<script>
+(function(){
+  /* Hover = play (muted), leave = pause — using YouTube iframe API postMessage */
+  document.querySelectorAll('.ea-yt-card').forEach(function(card){
+    var iframe = card.querySelector('iframe');
+    if (!iframe) return;
+    card.addEventListener('mouseenter', function(){
+      iframe.contentWindow.postMessage(
+        '{"event":"command","func":"playVideo","args":""}', '*');
+    });
+    card.addEventListener('mouseleave', function(){
+      iframe.contentWindow.postMessage(
+        '{"event":"command","func":"pauseVideo","args":""}', '*');
+    });
+  });
+})();
+</script>
+
+
+<!-- ═══════════════════════════════════════════
+     SECTION 8 — URGENCY CTA BANNER
+═══════════════════════════════════════════ -->
+<style>
+#ea-urgency {
+  background: var(--c-lime);
+  padding: clamp(60px, 8vw, 120px) 0; position: relative; overflow: hidden;
+}
+.ea-urgency-inner {
+  display: flex; flex-wrap: wrap; align-items: center;
+  justify-content: space-between; gap: 40px;
+}
+.ea-urgency-badge {
+  font-family: var(--f-heading); font-size: 11px; font-weight: 800;
+  letter-spacing: 4px; text-transform: uppercase; color: rgba(0,0,0,0.6);
+  margin: 0 0 16px; display: block;
+}
+.ea-urgency-title {
+  font-family: var(--f-heading); font-size: clamp(32px, 4vw, 64px); font-weight: 800; text-transform: uppercase;
+  color: var(--c-dark); margin: 0 0 16px; line-height: 0.95; letter-spacing: -1px;
+}
+.ea-urgency-desc {
+  font-family: var(--f-body); font-size: 16px;
+  color: rgba(0,0,0,0.8); margin: 0; max-width: 520px; line-height: 1.6; font-weight: 500;
+}
+.ea-urgency-ctas {
+  display: flex; flex-direction: column; gap: 16px; flex-shrink: 0;
+}
+.ea-urg-wa {
+  display: inline-flex; align-items: center; gap: 12px;
+  background: var(--c-dark); color: var(--c-lime); padding: 16px 40px; border-radius: 100px;
+  font-family: var(--f-body); font-size: 14px; font-weight: 800; text-transform: uppercase; letter-spacing: 1px;
+  text-decoration: none; white-space: nowrap; border: 1px solid var(--c-dark);
+  transition: all 0.3s;
+}
+.ea-urg-wa:hover { background: transparent; color: var(--c-dark); text-decoration: none; }
+.ea-urg-call {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  background: transparent; color: var(--c-dark); padding: 16px 40px; border-radius: 100px;
+  font-family: var(--f-body); font-size: 14px; font-weight: 800; text-transform: uppercase; letter-spacing: 1px;
+  text-decoration: none; white-space: nowrap;
+  border: 1px solid rgba(0,0,0,0.2);
+  transition: all 0.3s;
+}
+.ea-urg-call:hover { background: rgba(0,0,0,0.05); border-color: var(--c-dark); color: var(--c-dark); text-decoration: none; }
+@media (max-width: 991px) {
+  .ea-urgency-ctas { width: 100%; flex-direction: row; flex-wrap: wrap; }
+}
+@media (max-width: 575px) {
+  .ea-urgency-ctas { flex-direction: column; }
+  .ea-urg-wa, .ea-urg-call { justify-content: center; width: 100%; }
+}
+</style>
+
+<section id="ea-urgency">
+  <div class="container">
+    <div class="ea-urgency-inner">
+      <div>
+        <span class="ea-urgency-badge">⚡ Same-Day Printing Available in Dubai</span>
+        <h2 class="ea-urgency-title">Need Urgent Printing in Dubai?</h2>
+        <p class="ea-urgency-desc">Tight deadline? We offer express and same-day turnaround on banners, signage, and large-format printing across Dubai &mdash; all printed in-house at Ras Al Khor.</p>
+      </div>
+      <div class="ea-urgency-ctas">
+        <a href="https://api.whatsapp.com/send?phone=971527966265&text=Hi%2C+I+need+urgent+printing.+Can+you+help%3F"
+           target="_blank" rel="noopener" class="ea-urg-wa">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+          Urgent Order
+        </a>
+        <a href="tel:+971527966265" class="ea-urg-call">📞 Call: +971 52 796 6265</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════
+     SECTION 9 — QUICK QUOTE FORM
+═══════════════════════════════════════════ -->
+/* ═══════════════════════════════════════════
+     SECTION 9 — QUICK QUOTE FORM
+═══════════════════════════════════════════ */
+<style>
+#ea-quote {
+  background: var(--c-dark);
+  padding: clamp(80px, 10vw, 150px) 0;
+  position: relative; overflow: hidden;
+  border-top: 1px solid rgba(255,255,255,0.05);
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+#ea-quote::before {
+  content: ''; position: absolute; top: -280px; right: -280px;
+  width: 600px; height: 600px; background: rgba(204,255,0,0.02);
+  border-radius: 50%; pointer-events: none;
+}
+#ea-quote::after {
+  content: ''; position: absolute; bottom: -180px; left: -180px;
+  width: 440px; height: 440px; background: rgba(204,255,0,0.015);
+  border-radius: 50%; pointer-events: none;
+}
+.ea-qq-eyebrow {
+  font-family: var(--f-heading); font-size: 11px; font-weight: 800;
+  letter-spacing: 4px; text-transform: uppercase; color: var(--c-lime); margin: 0 0 16px;
+}
+.ea-qq-title {
+  font-family: var(--f-heading); font-size: clamp(32px, 4vw, 64px); font-weight: 800; text-transform: uppercase;
+  color: var(--c-white); margin: 0 0 20px; line-height: 0.95; letter-spacing: -1px;
+}
+.ea-qq-desc {
+  font-family: var(--f-body); font-size: 16px;
+  color: rgba(255,255,255,0.6); line-height: 1.6; margin-bottom: 32px;
+}
+.ea-qq-list { list-style: none; padding: 0; margin: 0; }
+.ea-qq-list li {
+  display: flex; align-items: flex-start; gap: 12px;
+  font-family: var(--f-body); font-size: 15px; font-weight: 500;
+  color: rgba(255,255,255,0.8); margin-bottom: 16px; line-height: 1.5;
+}
+.ea-qq-check {
+  width: 24px; height: 24px; background: rgba(204,255,0,0.1);
+  border: 1px solid rgba(204,255,0,0.3); border-radius: 50%;
+  display: inline-flex; align-items: center; justify-content: center;
+  font-size: 12px; flex-shrink: 0; color: var(--c-lime); font-weight: 800;
+}
+/* Form card */
+.ea-qq-card {
+  background: rgba(255,255,255,0.01);
+  border: 1px solid rgba(255,255,255,0.05);
+  border-radius: 0; padding: 48px 40px;
+}
+.ea-qq-card label {
+  display: block; font-family: var(--f-heading);
+  font-size: 11px; font-weight: 800; color: rgba(255,255,255,0.5);
+  margin-bottom: 8px; text-transform: uppercase; letter-spacing: 1px;
+}
+.ea-qq-inp, .ea-qq-sel, .ea-qq-txt {
+  width: 100%; padding: 16px 20px;
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 0;
+  font-family: var(--f-body); font-size: 15px;
+  color: var(--c-white); outline: none; box-sizing: border-box;
+  transition: all 0.3s;
+}
+.ea-qq-sel { color: rgba(255,255,255,0.8); }
+.ea-qq-sel option { background: var(--c-dark); color: var(--c-white); }
+.ea-qq-inp:focus, .ea-qq-sel:focus, .ea-qq-txt:focus {
+  border-color: var(--c-lime); background: rgba(255,255,255,0.05);
+}
+.ea-qq-inp::placeholder, .ea-qq-txt::placeholder { color: rgba(255,255,255,0.2); }
+.ea-qq-txt { resize: vertical; font-family: inherit; min-height: 120px; }
+.ea-qq-2col { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 24px; }
+@media (max-width: 575px) { .ea-qq-2col { grid-template-columns: 1fr; gap: 16px; } }
+.ea-qq-submit {
+  width: 100%; background: var(--c-lime); color: var(--c-dark);
+  padding: 18px; border: 1px solid var(--c-lime); border-radius: 100px;
+  font-family: var(--f-body); font-size: 15px; font-weight: 800; text-transform: uppercase; letter-spacing: 1px;
+  cursor: pointer; display: flex; align-items: center; justify-content: center;
+  gap: 12px; transition: all 0.3s; margin-top: 12px;
+}
+.ea-qq-submit:hover { background: transparent; color: var(--c-lime); }
+.ea-qq-err {
+  display: none; color: #ff4b4b;
+  font-family: var(--f-body); font-size: 13px;
+  margin-top: 16px; text-align: center;
+}
+/* Flexbox 2-col layout */
+.ea-qq-layout {
+  display: flex; flex-wrap: wrap; gap: 64px; align-items: flex-start; position: relative; z-index: 1;
+}
+.ea-qq-info { flex: 0 0 400px; min-width: 320px; max-width: 100%; }
+.ea-qq-form-wrap { flex: 1; min-width: 320px; }
+@media (max-width: 991px) {
+  .ea-qq-layout { gap: 40px; }
+  .ea-qq-info { flex: 1 1 100%; }
+}
+</style>
+
+<section id="ea-quote">
+  <div class="container">
+    <div class="ea-qq-layout">
+      <div class="ea-qq-info">
+        <p class="ea-qq-eyebrow">Free &amp; Fast</p>
+        <h2 class="ea-qq-title">Get a Free<br>Printing Quote</h2>
+        <p class="ea-qq-desc">Fill in the form and we'll respond via WhatsApp within minutes. No commitment required.</p>
+        <ul class="ea-qq-list">
+          <li><span class="ea-qq-check">✓</span>In-house production &mdash; direct pricing</li>
+          <li><span class="ea-qq-check">✓</span>Same-day printing available</li>
+          <li><span class="ea-qq-check">✓</span>Free design support included</li>
+          <li><span class="ea-qq-check">✓</span>Delivery across all UAE emirates</li>
+        </ul>
+      </div>
+      <div class="ea-qq-form-wrap">
+        <div class="ea-qq-card">
+          <form id="ea-quote-form" onsubmit="eaSubmitQuote(event)" novalidate>
+            <div class="ea-qq-2col">
+              <div>
+                <label for="eq-name">Your Name *</label>
+                <input type="text" id="eq-name" class="ea-qq-inp" placeholder="e.g. Ahmed Hassan" required>
+              </div>
+              <div>
+                <label for="eq-phone">Phone / WhatsApp *</label>
+                <input type="tel" id="eq-phone" class="ea-qq-inp" placeholder="+971 5X XXX XXXX" required>
+              </div>
+            </div>
+            <div style="margin-bottom:16px;">
+              <label for="eq-service">Service Required *</label>
+              <select id="eq-service" class="ea-qq-sel" required>
+                <option value="">Select a service...</option>
+                <option>Banner Printing</option>
+                <option>Roll-Up / Pop-Up Banners</option>
+                <option>Backdrop Printing</option>
+                <option>Flag Printing</option>
+                <option>Signage &amp; 3D Letters</option>
+                <option>Exhibition Stand</option>
+                <option>Vehicle Branding</option>
+                <option>Event Branding</option>
+                <option>Sticker Printing</option>
+                <option>Other / Multiple Services</option>
+              </select>
+            </div>
+            <div style="margin-bottom:20px;">
+              <label for="eq-details">Size / Quantity / Deadline</label>
+              <textarea id="eq-details" class="ea-qq-txt" placeholder="e.g. 2m x 1m banner, qty 50, needed by Friday..."></textarea>
+            </div>
+            <button type="submit" class="ea-qq-submit">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="#fff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              Send Quote Request via WhatsApp
+            </button>
+          </form>
+          <p id="ea-quote-err" class="ea-qq-err"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+function eaSubmitQuote(e) {
+  e.preventDefault();
+  var name    = document.getElementById('eq-name').value.trim();
+  var phone   = document.getElementById('eq-phone').value.trim();
+  var service = document.getElementById('eq-service').value;
+  var details = document.getElementById('eq-details').value.trim();
+  var err     = document.getElementById('ea-quote-err');
+  if (!name || !phone || !service) {
+    err.style.display = 'block';
+    err.textContent   = 'Please fill in your name, phone, and service required.';
+    return;
+  }
+  if (phone.replace(/\D/g,'').length < 8) {
+    err.style.display = 'block';
+    err.textContent   = 'Please enter a valid phone/WhatsApp number.';
+    return;
+  }
+  err.style.display = 'none';
+  var msg = 'Hi Efficient Advertising,\n\n'
+    + 'I would like to request a quote:\n\n'
+    + '\u2022 Name: ' + name + '\n'
+    + '\u2022 Phone: ' + phone + '\n'
+    + '\u2022 Service: ' + service + '\n'
+    + (details ? '\u2022 Details: ' + details + '\n' : '')
+    + '\nThank you!';
+  window.open(
+    'https://api.whatsapp.com/send?phone=971527966265&text=' + encodeURIComponent(msg),
+    '_blank', 'noopener,noreferrer'
+  );
+}
+</script>
+
+
+<!-- ═══════════════════════════════════════════
+     SECTION 12 — BEST SELLING PRODUCTS
+═══════════════════════════════════════════ -->
+<style>
+#ea-bestsell { background: var(--c-dark); padding: clamp(80px, 10vw, 150px) 0; position: relative; overflow: hidden; border-top: 1px solid rgba(255,255,255,0.05); }
+.ea-bs-hd { text-align: center; margin-bottom: 64px; }
+.ea-bs-eyebrow { font-family: var(--f-heading); font-size: 11px; font-weight: 800; letter-spacing: 4px; text-transform: uppercase; color: rgba(255,255,255,0.5); margin: 0 0 16px; }
+.ea-bs-title { font-family: var(--f-heading); font-size: clamp(32px, 4vw, 64px); font-weight: 800; text-transform: uppercase; color: var(--c-white); margin: 0 0 20px; line-height: 0.95; letter-spacing: -1px; }
+.ea-bs-sub { font-family: var(--f-body); font-size: 16px; color: rgba(255,255,255,0.6); margin: 0 auto; line-height: 1.6; max-width: 600px; }
+.ea-bs-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; }
+@media (max-width: 991px) { .ea-bs-grid { grid-template-columns: 1fr 1fr; gap: 16px; } }
+@media (max-width: 575px) { .ea-bs-grid { grid-template-columns: 1fr; } }
+.ea-bs-card {
+  background: rgba(255,255,255,0.01); border-radius: 0; overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.05);
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease; text-decoration: none; display: block;
+}
+.ea-bs-card:hover { transform: translateY(-8px); border-color: var(--c-lime); box-shadow: 0 20px 60px rgba(0,0,0,0.6), 0 0 0 1px var(--c-lime); }
+.ea-bs-img { width: 100%; aspect-ratio: 4/3; overflow: hidden; position: relative; }
+.ea-bs-img::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, transparent 100%); opacity: 0.5; transition: opacity 0.3s; }
+.ea-bs-card:hover .ea-bs-img::after { opacity: 0.8; }
+.ea-bs-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1); filter: brightness(0.8) contrast(1.1); }
+.ea-bs-card:hover .ea-bs-img img { transform: scale(1.05); filter: brightness(1) contrast(1.1); }
+.ea-bs-body { padding: 32px 24px; position: relative; }
+.ea-bs-tag { font-family: var(--f-body); font-size: 10px; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; color: var(--c-dark); background: var(--c-lime); border-radius: 100px; padding: 4px 12px; display: inline-block; margin-bottom: 16px; }
+.ea-bs-name { font-family: var(--f-heading); font-size: 20px; font-weight: 800; text-transform: uppercase; color: var(--c-white); margin: 0 0 12px; line-height: 1.1; letter-spacing: 0.5px; }
+.ea-bs-desc { font-family: var(--f-body); font-size: 14px; color: rgba(255,255,255,0.6); line-height: 1.6; margin: 0 0 24px; }
+.ea-bs-btn { font-family: var(--f-body); font-size: 12px; font-weight: 800; color: var(--c-lime); text-transform: uppercase; letter-spacing: 1px; display: inline-flex; align-items: center; gap: 8px; transition: gap 0.3s; }
+.ea-bs-card:hover .ea-bs-btn { gap: 12px; }
+.ea-bs-cta { text-align: center; margin-top: 64px; }
+.ea-bs-all { display: inline-flex; align-items: center; justify-content: center; gap: 12px; background: transparent; color: var(--c-white); padding: 16px 40px; border-radius: 100px; font-family: var(--f-body); font-size: 14px; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; text-decoration: none; border: 1px solid rgba(255,255,255,0.2); transition: all 0.3s; }
+.ea-bs-all:hover { background: rgba(204,255,0,0.05); border-color: var(--c-lime); color: var(--c-lime); }
+</style>
+
+<section id="ea-bestsell">
+  <div class="container">
+    <div class="ea-bs-hd">
+      <p class="ea-bs-eyebrow">Most Ordered</p>
+      <h2 class="ea-bs-title">Best-Selling Printing Products</h2>
+      <p class="ea-bs-sub">Our most popular products ordered by businesses across Dubai and the UAE</p>
+    </div>
+    <div class="ea-bs-grid">
+      <a href="/product-category/backdrop-display-dubai/" class="ea-bs-card reveal">
+        <div class="ea-bs-img"><img src="/wp-content/uploads/2022/03/Step-Repeat-Backdrop-2.jpg" alt="Step & Repeat Backdrop" loading="lazy"></div>
+        <div class="ea-bs-body"><span class="ea-bs-tag">Popular</span><h3 class="ea-bs-name">Step &amp; Repeat Backdrops</h3><p class="ea-bs-desc">Custom printed backdrops for events, photoshoots, and press conferences.</p><span class="ea-bs-btn">Order Now &rarr;</span></div>
+      </a>
+      <a href="/product-category/banner-printing-dubai/" class="ea-bs-card reveal">
+        <div class="ea-bs-img"><img src="/wp-content/uploads/2026/01/banners.webp" alt="Banner Printing" loading="lazy"></div>
+        <div class="ea-bs-body"><span class="ea-bs-tag">Best Seller</span><h3 class="ea-bs-name">Flex Banner Printing</h3><p class="ea-bs-desc">Outdoor and indoor banners in any size. UV-resistant, weatherproof, same-day available.</p><span class="ea-bs-btn">Order Now &rarr;</span></div>
+      </a>
+      <a href="/product-category/exhibition-stands-dubai/" class="ea-bs-card reveal">
+        <div class="ea-bs-img"><img src="/wp-content/uploads/2026/03/exhibition-stand-dubai.jpg" alt="Exhibition Stand" loading="lazy"></div>
+        <div class="ea-bs-body"><span class="ea-bs-tag">Premium</span><h3 class="ea-bs-name">Exhibition Stands</h3><p class="ea-bs-desc">Modular and custom stands for GITEX, big5, and all UAE exhibitions.</p><span class="ea-bs-btn">Order Now &rarr;</span></div>
+      </a>
+      <a href="/product-category/vehicle-branding-dubai/" class="ea-bs-card reveal">
+        <div class="ea-bs-img"><img src="/wp-content/uploads/2026/03/car-wrap-vehicle-branding.jpg" alt="Vehicle Branding" loading="lazy"></div>
+        <div class="ea-bs-body"><span class="ea-bs-tag">Trending</span><h3 class="ea-bs-name">Vehicle Branding &amp; Wraps</h3><p class="ea-bs-desc">Full and partial wraps for cars, vans, and fleets with professional installation.</p><span class="ea-bs-btn">Order Now &rarr;</span></div>
+      </a>
+      <a href="/product-category/signage-dubai/" class="ea-bs-card reveal">
+        <div class="ea-bs-img"><img src="/wp-content/uploads/2022/03/3D-Aluminum-Signage-2.jpg" alt="3D Signage" loading="lazy"></div>
+        <div class="ea-bs-body"><span class="ea-bs-tag">Premium</span><h3 class="ea-bs-name">3D Aluminium Signage</h3><p class="ea-bs-desc">Illuminated and non-illuminated 3D letters for retail, offices, and showrooms.</p><span class="ea-bs-btn">Order Now &rarr;</span></div>
+      </a>
+      <a href="/product-category/sticker-printing-dubai/" class="ea-bs-card reveal">
+        <div class="ea-bs-img"><img src="/wp-content/uploads/2022/03/Wall-Sticker.jpg" alt="Wall Sticker" loading="lazy"></div>
+        <div class="ea-bs-body"><span class="ea-bs-tag">Popular</span><h3 class="ea-bs-name">Wall Stickers &amp; Vinyl</h3><p class="ea-bs-desc">Custom wall graphics, floor stickers, window vinyl, and full wall murals.</p><span class="ea-bs-btn">Order Now &rarr;</span></div>
+      </a>
+    </div>
+    <div class="ea-bs-cta"><a href="/shop/" class="ea-bs-all">View All Products</a></div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════
+     SECTION 13 — GOOGLE REVIEWS
+═══════════════════════════════════════════ -->
+<style>
+#ea-reviews { background: #fff; padding: clamp(60px, 7vw, 130px) 0; position: relative; overflow: hidden; }
+.ea-rev-hd { text-align: center; margin-bottom: 48px; }
+.ea-rev-eyebrow { font-family: 'DM Sans', sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: var(--amber); margin: 0 0 10px; }
+.ea-rev-title { font-family: 'Syne', sans-serif; font-size: clamp(22px, 2.6vw, 54px); font-weight: 700; color: #1A1A2E; margin: 0 0 8px; }
+.ea-rev-stars { display: flex; align-items: center; justify-content: center; gap: 4px; margin-bottom: 6px; }
+.ea-rev-star { color: #fbbc04; font-size: 22px; }
+.ea-rev-score { font-family: 'Unbounded', sans-serif; font-size: 14px; font-weight: 700; color: #1A1A2E; margin-left: 6px; }
+.ea-rev-count { font-family: 'DM Sans', sans-serif; font-size: 13px; color: rgba(26,26,46,0.55); }
+.ea-rev-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; }
+@media (max-width: 991px) { .ea-rev-grid { grid-template-columns: repeat(2,1fr); } }
+@media (max-width: 600px) { .ea-rev-grid { grid-template-columns: 1fr; gap: 14px; } }
+.ea-rev-card { background: #F7F5F0; border: 1px solid rgba(26,26,46,0.08); border-radius: 14px; padding: 22px 20px; transition: border-color 0.2s; display: flex; flex-direction: column; }
+.ea-rev-card:hover { border-color: var(--amber); }
+.ea-rev-card-top { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px; }
+.ea-rev-card-stars { display: flex; gap: 3px; }
+.ea-rev-card-star { color: #fbbc04; font-size: 15px; }
+.ea-rev-google-mark { display: flex; align-items: center; gap: 4px; font-family: 'DM Sans', sans-serif; font-size: 10px; color: rgba(26,26,46,0.40); letter-spacing: 0.3px; }
+.ea-rev-google-mark svg { flex-shrink: 0; }
+.ea-rev-text { font-family: 'DM Sans', sans-serif; font-size: 13.5px; color: rgba(26,26,46,0.75); line-height: 1.75; margin: 0 0 16px; font-style: italic; flex: 1; }
+.ea-rev-meta { display: flex; align-items: center; gap: 10px; margin-top: auto; }
+.ea-rev-avatar { width: 36px; height: 36px; border-radius: 50%; background: rgba(255,186,9,0.20); display: flex; align-items: center; justify-content: center; font-family: 'Syne', sans-serif; font-size: 14px; font-weight: 700; color: var(--amber); flex-shrink: 0; }
+.ea-rev-name { font-family: 'DM Sans', sans-serif; font-size: 13px; font-weight: 700; color: rgba(26,26,46,0.85); display: block; }
+.ea-rev-date { font-family: 'DM Sans', sans-serif; font-size: 11px; color: rgba(26,26,46,0.45); }
+.ea-rev-cta { text-align: center; margin-top: 36px; }
+.ea-rev-gbtn { display: inline-flex; align-items: center; gap: 8px; background: #1A1A2E; color: #fff; padding: 12px 24px; border-radius: 8px; font-family: 'DM Sans', sans-serif; font-size: 14px; font-weight: 700; text-decoration: none; transition: background 0.2s; }
+.ea-rev-gbtn:hover { background: #111128; color: #fff; }
+</style>
+
+<section id="ea-reviews">
+  <div class="container">
+    <div class="ea-rev-hd">
+      <p class="ea-rev-eyebrow">What Our Clients Say</p>
+      <h2 class="ea-rev-title">Rated Excellent on Google</h2>
+      <div class="ea-rev-stars"><span class="ea-rev-star">★</span><span class="ea-rev-star">★</span><span class="ea-rev-star">★</span><span class="ea-rev-star">★</span><span class="ea-rev-star">★</span><span class="ea-rev-score">4.8 / 5</span></div>
+      <span class="ea-rev-count">Based on 34+ verified Google reviews</span>
+    </div>
+    <div class="ea-rev-grid">
+
+      <!-- Review 1 — Naqqash Hassan, Nov 2024 -->
+      <div class="ea-rev-card reveal">
+        <div class="ea-rev-card-top">
+          <div class="ea-rev-card-stars"><span class="ea-rev-card-star">★</span><span class="ea-rev-card-star">★</span><span class="ea-rev-card-star">★</span><span class="ea-rev-card-star">★</span><span class="ea-rev-card-star">★</span></div>
+          <div class="ea-rev-google-mark"><svg width="12" height="12" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>Google</div>
+        </div>
+        <p class="ea-rev-text">&ldquo;Very good and kind staff. Professional work &mdash; specially Azher is a humble man, hardworker and professional sticker applicator.&rdquo;</p>
+        <div class="ea-rev-meta"><div class="ea-rev-avatar">N</div><div><span class="ea-rev-name">Naqqash Hassan</span><span class="ea-rev-date">November 2024</span></div></div>
+      </div>
+
+      <!-- Review 2 — Deepa Jacob, Nov 2024 -->
+      <div class="ea-rev-card reveal">
+        <div class="ea-rev-card-top">
+          <div class="ea-rev-card-stars"><span class="ea-rev-card-star">★</span><span class="ea-rev-card-star">★</span><span class="ea-rev-card-star">★</span><span class="ea-rev-card-star">★</span><span class="ea-rev-card-star">★</span></div>
+          <div class="ea-rev-google-mark"><svg width="12" height="12" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>Google</div>
+        </div>
+        <p class="ea-rev-text">&ldquo;Really they are very professional and trustable.&rdquo;</p>
+        <div class="ea-rev-meta"><div class="ea-rev-avatar">D</div><div><span class="ea-rev-name">Deepa Jacob</span><span class="ea-rev-date">November 2024</span></div></div>
+      </div>
+
+      <!-- Review 3 — Aisha Merchant, Nov 2024 -->
+      <div class="ea-rev-card reveal">
+        <div class="ea-rev-card-top">
+          <div class="ea-rev-card-stars"><span class="ea-rev-card-star">★</span><span class="ea-rev-card-star">★</span><span class="ea-rev-card-star">★</span><span class="ea-rev-card-star">★</span><span class="ea-rev-card-star">★</span></div>
+          <div class="ea-rev-google-mark"><svg width="12" height="12" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>Google</div>
+        </div>
+        <p class="ea-rev-text">&ldquo;Did foam board printing &mdash; quality, quick and cheap service.&rdquo;</p>
+        <div class="ea-rev-meta"><div class="ea-rev-avatar">A</div><div><span class="ea-rev-name">Aisha Merchant</span><span class="ea-rev-date">November 2024</span></div></div>
+      </div>
+
+
+    </div>
+    <div class="ea-rev-cta">
+      <a href="https://g.page/r/EfficientAdvertising/review" target="_blank" rel="noopener" class="ea-rev-gbtn">
+        <svg width="18" height="18" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+        Leave a Google Review
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════
+     SECTION 14 — INSTAGRAM
+═══════════════════════════════════════════ -->
+/* ═══════════════════════════════════════════
+     SECTION 14 — INSTAGRAM
+═══════════════════════════════════════════ */
+<style>
+#ea-insta { background: var(--c-dark); padding: clamp(40px, 5vw, 80px) 0; overflow: hidden; border-top: 1px solid rgba(255,255,255,0.05); border-bottom: 1px solid rgba(255,255,255,0.05); }
+.ea-insta-hd { text-align: center; margin-bottom: 40px; }
+.ea-insta-eyebrow { font-family: var(--f-heading); font-size: 11px; font-weight: 800; letter-spacing: 4px; text-transform: uppercase; color: rgba(255,255,255,0.3); margin: 0 0 12px; }
+.ea-insta-title { font-family: var(--f-heading); font-size: clamp(24px, 3vw, 48px); font-weight: 800; text-transform: uppercase; color: var(--c-white); margin: 0 0 12px; line-height: 1; letter-spacing: -1px; }
+.ea-insta-handle { font-family: var(--f-body); font-size: 15px; color: rgba(255,255,255,0.5); font-weight: 500; }
+.ea-insta-handle a { color: var(--c-lime) !important; text-decoration: none; transition: color 0.3s; }
+.ea-insta-handle a:hover { color: #fff !important; }
+/* Carousel */
+.ea-insta-track-wrap { width: 100%; overflow: hidden; position: relative; }
+.ea-insta-track-wrap::before, .ea-insta-track-wrap::after { content: ''; position: absolute; top: 0; bottom: 0; width: 100px; z-index: 2; pointer-events: none; }
+.ea-insta-track-wrap::before { left: 0; background: linear-gradient(to right, var(--c-dark), transparent); }
+.ea-insta-track-wrap::after { right: 0; background: linear-gradient(to left, var(--c-dark), transparent); }
+.ea-insta-track { display: flex; will-change: transform; align-items: center; }
+.ea-insta-item { flex: 0 0 280px; height: 280px; border-radius: 0; overflow: hidden; position: relative; cursor: pointer; margin-right: 16px; border: 1px solid rgba(255,255,255,0.05); transition: border-color 0.3s, transform 0.3s; }
+.ea-insta-item:hover { border-color: var(--c-lime); transform: scale(0.98); }
+.ea-insta-bg { position: absolute; inset: 0; background-size: cover; background-position: center; background-repeat: no-repeat; transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1); filter: grayscale(0.5) brightness(0.8); }
+.ea-insta-item:hover .ea-insta-bg { transform: scale(1.08); filter: grayscale(0) brightness(1); }
+.ea-insta-ov { position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.4) 50%, transparent 100%); display: flex; flex-direction: column; justify-content: flex-end; padding: 24px; opacity: 0; transition: opacity 0.3s ease; box-sizing: border-box; }
+.ea-insta-item:hover .ea-insta-ov { opacity: 1; }
+.ea-insta-cap { color: var(--c-white); font-family: var(--f-body); font-size: 13px; line-height: 1.5; margin: 0 0 12px; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; }
+.ea-insta-meta { display: flex; gap: 16px; align-items: center; }
+.ea-insta-likes { color: var(--c-lime); font-family: var(--f-heading); font-size: 12px; font-weight: 800; display: flex; align-items: center; gap: 4px; }
+.ea-insta-date { color: rgba(255,255,255,0.4); font-family: var(--f-body); font-size: 11px; text-transform: uppercase; letter-spacing: 1px; }
+@media (max-width: 600px) { .ea-insta-item { flex: 0 0 220px; height: 220px; margin-right: 12px; } }
+</style>
+
+<section id="ea-insta">
+  <div class="container">
+    <div class="ea-insta-hd">
+      <p class="ea-insta-eyebrow">Social Media</p>
+      <h2 class="ea-insta-title">Follow Us on Instagram</h2>
+      <p class="ea-insta-handle"><a href="https://www.instagram.com/efficientuae" target="_blank" rel="noopener" style="color:#e1306c;text-decoration:none;">@efficientuae</a> &middot; See our latest work</p>
+    </div>
+  </div>
+  <div class="ea-insta-track-wrap" id="eaInstWrap">
+    <div class="ea-insta-track" id="eaInstTrack">
+
+      <a href="https://www.instagram.com/p/DVeHZlzCDaw/" target="_blank" rel="noopener" class="ea-insta-item">
+        <div class="ea-insta-bg" style="background-image:url('https://cdn.trustindex.io/feed/Instagram/7c/a8/7ca8fafe9d681b9954e374f4e97869eb420c2bf3/0m.webp')"></div>
+        <div class="ea-insta-ov"><p class="ea-insta-cap">Boost your brand visibility instantly with a custom sail flag — lightweight, durable, and perfect for events, storefronts &amp; outdoor promotions.</p><div class="ea-insta-meta"><span class="ea-insta-likes">&#9829; 1</span><span class="ea-insta-date">4 Mar 2026</span></div></div>
+      </a>
+      <a href="https://www.instagram.com/p/DVeHOZxCFj9/" target="_blank" rel="noopener" class="ea-insta-item">
+        <div class="ea-insta-bg" style="background-image:url('https://cdn.trustindex.io/feed/Instagram/1e/0f/1e0f170188be7bf7419f3b9ad35403df24b57f85/0m.webp')"></div>
+        <div class="ea-insta-ov"><p class="ea-insta-cap">Make your brand stand out with a premium pop up fabric banner — designed for exhibitions, events &amp; in-store promotions.</p><div class="ea-insta-meta"><span class="ea-insta-likes">&#9829; 3</span><span class="ea-insta-date">4 Mar 2026</span></div></div>
+      </a>
+      <a href="https://www.instagram.com/p/DVU82ZUiMGX/" target="_blank" rel="noopener" class="ea-insta-item">
+        <div class="ea-insta-bg" style="background-image:url('https://cdn.trustindex.io/feed/Instagram/b9/51/b951cfbffac70511e76b51260788d186b36f6c71/0m.webp')"></div>
+        <div class="ea-insta-ov"><p class="ea-insta-cap">Create a magical atmosphere this Ramadan with our stunning Ramadan Theme Promo Setup — perfect for malls, stores &amp; events.</p><div class="ea-insta-meta"><span class="ea-insta-likes">&#9829; 2</span><span class="ea-insta-date">1 Mar 2026</span></div></div>
+      </a>
+      <a href="https://www.instagram.com/p/DVU8sZXCKl6/" target="_blank" rel="noopener" class="ea-insta-item">
+        <div class="ea-insta-bg" style="background-image:url('https://cdn.trustindex.io/feed/Instagram/49/86/4986fc9e368da0e778ed71b882511f9fa90aff19/0m.webp')"></div>
+        <div class="ea-insta-ov"><p class="ea-insta-cap">Elevate your brand this holy month with our elegant Ramadan Theme Promo Setup — perfect for retail stores, malls &amp; corporate events.</p><div class="ea-insta-meta"><span class="ea-insta-likes">&#9829; 1</span><span class="ea-insta-date">1 Mar 2026</span></div></div>
+      </a>
+      <a href="https://www.instagram.com/p/DVTyhZIiHOh/" target="_blank" rel="noopener" class="ea-insta-item">
+        <div class="ea-insta-bg" style="background-image:url('https://cdn.trustindex.io/feed/Instagram/6b/cd/6bcdc7cf98713a1937d19a85c0a46c28b0043599/0m.webp')"></div>
+        <div class="ea-insta-ov"><p class="ea-insta-cap">Book your customized Ramadan décor setup and make your promotion shine this holy month!</p><div class="ea-insta-meta"><span class="ea-insta-likes">&#9829; 3</span><span class="ea-insta-date">28 Feb 2026</span></div></div>
+      </a>
+      <a href="https://www.instagram.com/p/DVTx8MJiCal/" target="_blank" rel="noopener" class="ea-insta-item">
+        <div class="ea-insta-bg" style="background-image:url('https://cdn.trustindex.io/feed/Instagram/86/d8/86d8c603a6c1e0b7948d4d0b4945834eca77009c/0m.webp')"></div>
+        <div class="ea-insta-ov"><p class="ea-insta-cap">Brighten your brand with our premium LED Light Box Display — eye-catching, energy-efficient, perfect for shops, offices &amp; exhibitions.</p><div class="ea-insta-meta"><span class="ea-insta-likes">&#9829; 2</span><span class="ea-insta-date">28 Feb 2026</span></div></div>
+      </a>
+      <a href="https://www.instagram.com/p/DVHM8i5ANkD/" target="_blank" rel="noopener" class="ea-insta-item">
+        <div class="ea-insta-bg" style="background-image:url('https://cdn.trustindex.io/feed/Instagram/0e/77/0e77d6bfb0bc392ed14534407dc2251c8787bfc2/0m.webp')"></div>
+        <div class="ea-insta-ov"><p class="ea-insta-cap">Create a lasting first impression with a custom welcome stand — designed for corporate events, weddings, exhibitions &amp; branded entrances.</p><div class="ea-insta-meta"><span class="ea-insta-likes">&#9829; 3</span><span class="ea-insta-date">23 Feb 2026</span></div></div>
+      </a>
+      <a href="https://www.instagram.com/p/DU8jD9vCEnq/" target="_blank" rel="noopener" class="ea-insta-item">
+        <div class="ea-insta-bg" style="background-image:url('https://cdn.trustindex.io/feed/Instagram/03/cf/03cf26f7125bae7e1aa41294a042b0a612d72723/0m.webp')"></div>
+        <div class="ea-insta-ov"><p class="ea-insta-cap">Drive massive attention with a high-impact car giveaway activation booth designed for brand promotions, mall activations, and experiential marketing campaigns.</p><div class="ea-insta-meta"><span class="ea-insta-likes">&#9829; 4</span><span class="ea-insta-date">19 Feb 2026</span></div></div>
+      </a>
+      <a href="https://www.instagram.com/p/DU8iyh3iFqk/" target="_blank" rel="noopener" class="ea-insta-item">
+        <div class="ea-insta-bg" style="background-image:url('https://cdn.trustindex.io/feed/Instagram/5a/45/5a454a16fc7370a2dffc0baea5fc0d1ae037d836/0m.webp')"></div>
+        <div class="ea-insta-ov"><p class="ea-insta-cap">Create a powerful event experience with a professionally designed event stage setup built for conferences, corporate events, and brand launches.</p><div class="ea-insta-meta"><span class="ea-insta-likes">&#9829; 2</span><span class="ea-insta-date">19 Feb 2026</span></div></div>
+      </a>
+      <a href="https://www.instagram.com/p/DU8ibsBiFcy/" target="_blank" rel="noopener" class="ea-insta-item">
+        <div class="ea-insta-bg" style="background-image:url('https://cdn.trustindex.io/feed/Instagram/93/69/936904959da8430075f9bc1ad55e30c5bd1d4735/0m.webp')"></div>
+        <div class="ea-insta-ov"><p class="ea-insta-cap">Upgrade your office first impression with professional reception branding solutions including acrylic signage, 3D lettering, and corporate identity displays.</p><div class="ea-insta-meta"><span class="ea-insta-likes">&#9829; 5</span><span class="ea-insta-date">19 Feb 2026</span></div></div>
+      </a>
+      <a href="https://www.instagram.com/p/DU0jaVeCJ2j/" target="_blank" rel="noopener" class="ea-insta-item">
+        <div class="ea-insta-bg" style="background-image:url('https://cdn.trustindex.io/feed/Instagram/a5/d3/a5d3fd76fcd1a151bd75bb6efc237c7d4449aa45/0m.webp')"></div>
+        <div class="ea-insta-ov"><p class="ea-insta-cap">Turn your venue into a powerful brand experience with a professionally designed event stage setup built for corporate events, conferences, and live productions.</p><div class="ea-insta-meta"><span class="ea-insta-likes">&#9829; 3</span><span class="ea-insta-date">16 Feb 2026</span></div></div>
+      </a>
+
+
+
+    </div>
+  </div>
+</section>
+<script>
+(function(){
+  var wrap = document.getElementById('eaInstWrap');
+  var track = document.getElementById('eaInstTrack');
+  if (!wrap || !track) return;
+
+  // Clone the 12 original items so the track has 24; loop resets when 12 are scrolled past
+  var origItems = Array.from(track.children);
+  origItems.forEach(function(item){ track.appendChild(item.cloneNode(true)); });
+
+  var pos = 0;
+  var paused = false;
+  var loopWidth = 0; // pixel width of one set of 12 items
+
+  function measureLoop(){
+    var w = 0;
+    var all = track.querySelectorAll('.ea-insta-item');
+    var half = Math.floor(all.length / 2);
+    for(var i = 0; i < half; i++){
+      var s = getComputedStyle(all[i]);
+      w += all[i].offsetWidth + parseFloat(s.marginRight || 0);
+    }
+    return w;
+  }
+
+  function start(){
+    loopWidth = measureLoop();
+    (function tick(){
+      if(!paused){
+        pos += 0.5;
+        if(pos >= loopWidth) pos -= loopWidth;
+        track.style.transform = 'translateX(-' + pos + 'px)';
+      }
+      requestAnimationFrame(tick);
+    })();
+  }
+
+  if(document.readyState === 'complete'){
+    start();
+  } else {
+    window.addEventListener('load', start);
+  }
+
+  wrap.addEventListener('mouseenter', function(){ paused = true; });
+  wrap.addEventListener('mouseleave', function(){ paused = false; });
+})();
+</script>
+
+
+<!-- ═══════════════════════════════════════════
+     SECTION 10 — FAQ ACCORDION
+═══════════════════════════════════════════ -->
+<style>
+#ea-faq {
+  background: var(--c-dark);
+  padding: clamp(80px, 10vw, 150px) 0;
+  position: relative; overflow: hidden;
+  border-top: 1px solid rgba(255,255,255,0.05);
+}
+#ea-faq::before {
+  content: ''; position: absolute; top: -300px; left: -300px;
+  width: 700px; height: 700px; background: rgba(204,255,0,0.02);
+  border-radius: 50%; pointer-events: none;
+}
+#ea-faq::after {
+  content: ''; position: absolute; bottom: -200px; right: -200px;
+  width: 500px; height: 500px; background: rgba(204,255,0,0.015);
+  border-radius: 50%; pointer-events: none;
+}
+.ea-faq-eyebrow {
+  font-family: var(--f-heading); font-size: 11px; font-weight: 800;
+  letter-spacing: 4px; text-transform: uppercase; color: var(--c-lime); margin: 0 0 16px;
+}
+.ea-faq-title {
+  font-family: var(--f-heading); font-size: clamp(32px, 4vw, 64px); font-weight: 800; text-transform: uppercase;
+  color: var(--c-white); margin: 0 0 20px; line-height: 0.95; letter-spacing: -1px;
+}
+.ea-faq-sub {
+  font-family: var(--f-body); font-size: 16px;
+  color: rgba(255,255,255,0.6); max-width: 560px; margin: 0 auto; line-height: 1.6;
+}
+.ea-faq-item {
+  border: 1px solid rgba(255,255,255,0.05);
+  border-radius: 0; margin-bottom: 12px;
+  background: rgba(255,255,255,0.01);
+  overflow: hidden;
+  transition: border-color 0.3s, background 0.3s;
+  position: relative; z-index: 1;
+}
+.ea-faq-item:hover { border-color: var(--c-lime); background: rgba(204,255,0,0.02); }
+.ea-faq-q {
+  width: 100%; background: none; border: none; cursor: pointer;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 24px 32px; gap: 20px;
+  text-align: left;
+  font-family: var(--f-heading); font-size: 16px; font-weight: 800; text-transform: uppercase; letter-spacing: 1px;
+  color: var(--c-white); line-height: 1.4;
+  transition: color 0.3s;
+}
+.ea-faq-q:hover { color: var(--c-lime); }
+.ea-faq-q[aria-expanded="true"] { color: var(--c-lime); }
+.ea-faq-icon {
+  font-size: 24px; font-weight: 300; color: rgba(255,255,255,0.3);
+  flex-shrink: 0; transition: transform 0.3s ease, color 0.3s;
+  line-height: 1; display: flex; align-items: center; justify-content: center;
+  width: 32px; height: 32px; border: 1px solid rgba(255,255,255,0.1); border-radius: 50%;
+}
+.ea-faq-q[aria-expanded="true"] .ea-faq-icon {
+  transform: rotate(45deg); color: var(--c-lime); border-color: var(--c-lime);
+}
+.ea-faq-a {
+  max-height: 0; overflow: hidden;
+  transition: max-height 0.4s cubic-bezier(0.4,0,0.2,1);
+}
+.ea-faq-a.open { max-height: 400px; }
+.ea-faq-a p {
+  font-family: var(--f-body); font-size: 15px;
+  color: rgba(255,255,255,0.6); line-height: 1.8; margin: 0;
+  padding: 0 32px 32px;
+}
+.ea-faq-a p a { color: var(--c-lime); text-decoration: none; border-bottom: 1px solid rgba(204,255,0,0.3); transition: border-color 0.3s; }
+.ea-faq-a p a:hover { border-color: var(--c-lime); }
+</style>
+
+<section id="ea-faq">
+  <div class="container">
+    <div class="text-center" style="margin-bottom:48px;">
+      <p class="ea-faq-eyebrow">Got Questions?</p>
+      <h2 class="ea-faq-title">Frequently Asked Questions</h2>
+      <p class="ea-faq-sub" style="margin-top:14px;">Everything you need to know about our printing &amp; branding services in Dubai.</p>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+
+        <div class="ea-faq-item">
+          <button class="ea-faq-q" aria-expanded="false">What types of printing services do you offer in Dubai?<span class="ea-faq-icon">+</span></button>
+          <div class="ea-faq-a"><p>We offer a full range of large-format and commercial printing services including flex banner printing, roll-up banners, backdrops &amp; displays, flags, signage, vehicle branding, exhibition &amp; event materials, and custom corporate branding — all produced in-house at our Ras Al Khor facility in Dubai.</p></div>
+        </div>
+
+        <div class="ea-faq-item">
+          <button class="ea-faq-q" aria-expanded="false">Do you offer same-day or express printing in Dubai?<span class="ea-faq-icon">+</span></button>
+          <div class="ea-faq-a"><p>Yes. We offer same-day and express printing for selected products. Contact us via WhatsApp or call <a href="tel:+971527966265">+971 52 796 6265</a> with your order details and we'll confirm the earliest possible turnaround.</p></div>
+        </div>
+
+        <div class="ea-faq-item">
+          <button class="ea-faq-q" aria-expanded="false">Do you deliver printing across all UAE emirates?<span class="ea-faq-icon">+</span></button>
+          <div class="ea-faq-a"><p>Yes, we deliver and install across all emirates including Dubai, Abu Dhabi, Sharjah, Ajman, Ras Al Khaimah, Fujairah, and Umm Al Quwain. We also handle on-site installation for exhibitions, retail fit-outs, and outdoor signage.</p></div>
+        </div>
+
+        <div class="ea-faq-item">
+          <button class="ea-faq-q" aria-expanded="false">Can you print custom sizes for banners and signage?<span class="ea-faq-icon">+</span></button>
+          <div class="ea-faq-a"><p>Absolutely. All our banners, signage, and display products are available in custom sizes. With over 500,000 sq.ft of printing delivered across 18+ years, we can accommodate any dimension requirement for outdoor hoardings, mall branding, or event backdrops.</p></div>
+        </div>
+
+        <div class="ea-faq-item">
+          <button class="ea-faq-q" aria-expanded="false">Do you offer free design support?<span class="ea-faq-icon">+</span></button>
+          <div class="ea-faq-a"><p>Yes, our in-house design team provides free design support for all orders. We can create artwork from scratch, modify your existing files, or advise on print-ready file specifications. Just share your brand guidelines and we'll take it from there.</p></div>
+        </div>
+
+      </div>
+      <div class="col-md-6">
+
+        <div class="ea-faq-item">
+          <button class="ea-faq-q" aria-expanded="false">What is the minimum order quantity?<span class="ea-faq-icon">+</span></button>
+          <div class="ea-faq-a"><p>We accept orders of all sizes — from a single banner to bulk runs of thousands of units. We offer significant bulk order discounts for corporate clients, events companies, and government entities.</p></div>
+        </div>
+
+        <div class="ea-faq-item">
+          <button class="ea-faq-q" aria-expanded="false">How do I get a quote for my printing project?<span class="ea-faq-icon">+</span></button>
+          <div class="ea-faq-a"><p>You can get an instant quote via WhatsApp on <a href="https://wa.me/971527966265" target="_blank" rel="noopener">+971 52 796 6265</a>, by calling us, or by using the contact form above. Share your product type, size, quantity, and deadline for the fastest response.</p></div>
+        </div>
+
+        <div class="ea-faq-item">
+          <button class="ea-faq-q" aria-expanded="false">What materials are used for outdoor banners in the UAE?<span class="ea-faq-icon">+</span></button>
+          <div class="ea-faq-a"><p>We use UV-resistant, weatherproof materials specifically suited to the UAE climate — including PVC flex, mesh banners for windload areas, vinyl, and aluminium composite panels. All outdoor prints are UV-laminated for extended longevity in direct sunlight and heat.</p></div>
+        </div>
+
+        <div class="ea-faq-item">
+          <button class="ea-faq-q" aria-expanded="false">Do you handle vehicle branding and fleet wrapping?<span class="ea-faq-icon">+</span></button>
+          <div class="ea-faq-a"><p>Yes. We specialise in vehicle branding for cars, vans, trucks, and full fleet wraps. We use premium cast vinyl with professional installation. Our team handles everything from design approval to final application at our Dubai facility.</p></div>
+        </div>
+
+        <div class="ea-faq-item">
+          <button class="ea-faq-q" aria-expanded="false">Are you a direct printer or a broker?<span class="ea-faq-icon">+</span></button>
+          <div class="ea-faq-a"><p>We are a 100% in-house printing facility with 18+ years of experience. We own and operate our own advanced printing equipment — no middlemen. This means better quality control, faster turnaround, and more competitive pricing for every order.</p></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+(function(){
+  document.querySelectorAll('.ea-faq-q').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var answer = this.nextElementSibling;
+      var isOpen = this.getAttribute('aria-expanded') === 'true';
+      document.querySelectorAll('.ea-faq-q').forEach(function(b){
+        b.setAttribute('aria-expanded','false');
+        b.nextElementSibling.classList.remove('open');
+      });
+      if (!isOpen) {
+        this.setAttribute('aria-expanded','true');
+        answer.classList.add('open');
+      }
+    });
+  });
+})();
+</script>
+
+
+<!-- ═══════════════════════════════════════════
+     SECTION 16 — SEO CONTENT BLOCK
+═══════════════════════════════════════════ -->
+<style>
+#ea-seo {
+  background: #F7F5F0;
+  padding: clamp(60px, 7vw, 130px) 0;
+  border-top: 1px solid rgba(26,26,46,0.08);
+}
+.ea-seo-inner { max-width: 100%; }
+.ea-seo-tag {
+  font-family: 'DM Sans', sans-serif; font-size: 11px; font-weight: 800;
+  letter-spacing: 3px; text-transform: uppercase; color: var(--amber);
+  margin: 0 0 18px; display: block;
+}
+.ea-seo h2 {
+  font-family: 'Syne', sans-serif; font-size: clamp(32px, 3.8vw, 64px);
+  font-weight: 700; color: #1A1A2E; margin: 0 0 28px; line-height: 1.2;
+}
+.ea-seo h3 {
+  font-family: 'Syne', sans-serif; font-size: clamp(20px, 2vw, 30px);
+  font-weight: 700; color: #1A1A2E; margin: 40px 0 18px;
+  border-top: 1px solid rgba(26,26,46,0.12); padding-top: 32px;
+}
+.ea-seo p {
+  font-family: 'DM Sans', sans-serif; font-size: clamp(16px, 1.2vw, 20px);
+  color: rgba(26,26,46,0.72); line-height: 1.9; margin: 0 0 20px;
+  max-width: 100%;
+}
+.ea-seo-list {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 16px 48px;
+  list-style: none; padding: 0; margin: 0 0 28px;
+}
+.ea-seo-list li {
+  font-family: 'DM Sans', sans-serif; font-size: clamp(15px, 1.1vw, 18px);
+  color: rgba(26,26,46,0.72); display: flex; align-items: flex-start;
+  gap: 12px; line-height: 1.6;
+}
+.ea-seo-list li::before { content: '\2192'; color: var(--amber); font-weight: 700; flex-shrink: 0; margin-top: 2px; }
+@media (max-width: 767px) { .ea-seo h2 { font-size: clamp(28px, 6vw, 42px); } }
+@media (max-width: 575px) { .ea-seo-list { grid-template-columns: 1fr; } }
+</style>
+
+<section id="ea-seo">
+  <div class="container">
+    <div class="ea-seo-inner ea-seo">
+      <span class="ea-seo-tag">About Efficient Advertising L.L.C</span>
+      <h2>Printing Services in Dubai &mdash; Your One-Stop Printing &amp; Branding Partner</h2>
+      <p>Efficient Advertising L.L.C has been Dubai's premier printing and large-format advertising company since 2008. Operating our own in-house production facility at Ras Al Khor Industrial Area, we provide end-to-end solutions for businesses across the UAE &mdash; from concept and design to production, delivery, and professional installation.</p>
+      <p>With 18+ years of experience, 500,000+ square feet of printing delivered, and a 4.8-star Google rating, we are the trusted choice for startups, SMEs, and enterprise clients looking for reliable high-quality print and branding solutions in the UAE.</p>
+      <h3>Our Core Printing &amp; Advertising Services</h3>
+      <ul class="ea-seo-list">
+        <li>Large Format &amp; Flex Banner Printing</li>
+        <li>Exhibition Stand Design &amp; Build</li>
+        <li>3D Signage &amp; Illuminated Letters</li>
+        <li>Vehicle Branding &amp; Fleet Wraps</li>
+        <li>Pop-Up &amp; Retractable Banners</li>
+        <li>Backdrops &amp; Step-Repeat Displays</li>
+        <li>Window &amp; Wall Vinyl Graphics</li>
+        <li>Event &amp; Corporate Branding</li>
+        <li>Building Hoarding Printing</li>
+        <li>Custom Flag &amp; Feather Flag Printing</li>
+        <li>Fabric &amp; Textile Displays</li>
+        <li>Acrylic &amp; Glass Signage</li>
+      </ul>
+      <p>All products are produced in-house at our Dubai facility using the latest wide-format printing technology, ensuring unmatched quality control and the fastest turnaround times in the UAE market. We serve clients across Dubai, Abu Dhabi, Sharjah, Ajman, and all UAE emirates.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════
+     SECTION 17 — BLOG TEASER
+═══════════════════════════════════════════ -->
+<style>
+#ea-blog { background: #F7F5F0; padding: clamp(60px, 7vw, 130px) 0; position: relative; overflow: hidden; }
+.ea-blog-hd { text-align: center; margin-bottom: 48px; }
+.ea-blog-eyebrow { font-family: var(--f-heading); font-size: 11px; font-weight: 800; letter-spacing: 4px; text-transform: uppercase; color: rgba(255,255,255,0.5); margin: 0 0 16px; }
+.ea-blog-title { font-family: var(--f-heading); font-size: clamp(32px, 4vw, 64px); font-weight: 800; text-transform: uppercase; color: var(--c-white); margin: 0; line-height: 0.95; letter-spacing: -1px; }
+.ea-blog-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; }
+@media (max-width: 991px) { .ea-blog-grid { grid-template-columns: repeat(2,1fr); gap: 16px; } }
+@media (max-width: 767px) { .ea-blog-grid { grid-template-columns: 1fr; } }
+.ea-blog-card { background: rgba(255,255,255,0.01); border: 1px solid rgba(255,255,255,0.05); border-radius: 0; overflow: hidden; text-decoration: none; display: flex; flex-direction: column; transition: border-color 0.3s, transform 0.3s, background 0.3s; }
+.ea-blog-card:hover { border-color: var(--c-lime); transform: translateY(-8px); background: rgba(204,255,0,0.02); box-shadow: 0 20px 60px rgba(0,0,0,0.6); }
+.ea-blog-img { width: 100%; aspect-ratio: 16/9; overflow: hidden; position: relative; }
+.ea-blog-img::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.8), transparent 50%); opacity: 0.6; transition: opacity 0.3s; pointer-events: none; }
+.ea-blog-card:hover .ea-blog-img::after { opacity: 0.2; }
+.ea-blog-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1); filter: grayscale(0.5); }
+.ea-blog-card:hover .ea-blog-img img { transform: scale(1.05); filter: grayscale(0); }
+.ea-blog-body { padding: 32px 24px; display: flex; flex-direction: column; flex: 1; }
+.ea-blog-cat { font-family: var(--f-heading); font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: 2px; color: var(--c-lime); margin-bottom: 16px; display: block; }
+.ea-blog-name { font-family: var(--f-heading); font-size: 20px; font-weight: 800; text-transform: uppercase; color: var(--c-white); margin: 0 0 16px; line-height: 1.2; letter-spacing: 0.5px; }
+.ea-blog-excerpt { font-family: var(--f-body); font-size: 15px; color: rgba(255,255,255,0.6); line-height: 1.6; margin: 0 0 24px; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; flex: 1; }
+.ea-blog-meta { display: flex; align-items: center; justify-content: space-between; font-family: var(--f-body); font-size: 12px; color: rgba(255,255,255,0.4); text-transform: uppercase; letter-spacing: 1px; }
+.ea-blog-read { color: var(--c-lime); font-weight: 800; font-size: 12px; display: flex; align-items: center; gap: 8px; transition: gap 0.3s; }
+.ea-blog-card:hover .ea-blog-read { gap: 12px; }
+.ea-blog-cta { text-align: center; margin-top: 64px; }
+.ea-blog-all { display: inline-flex; align-items: center; justify-content: center; gap: 12px; background: transparent; color: var(--c-white); padding: 16px 40px; border-radius: 100px; font-family: var(--f-body); font-size: 14px; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; text-decoration: none; border: 1px solid rgba(255,255,255,0.2); transition: all 0.3s; }
+.ea-blog-all:hover { background: rgba(204,255,0,0.05); border-color: var(--c-lime); color: var(--c-lime); }
+</style>
+#ea-footer::before {
+  content: ''; position: absolute; top: -200px; left: -200px;
+  width: 600px; height: 600px; background: rgba(204,255,0,0.02);
+  border-radius: 50%; pointer-events: none; z-index: 0;
+}
+#ea-footer .container { position: relative; z-index: 1; }
+.ea-foot-col-title {
+  font-family: var(--f-heading); font-size: 14px; font-weight: 800;
+  letter-spacing: 2px; text-transform: uppercase; color: var(--c-lime);
+  margin: 0 0 32px; padding-bottom: 0; border: none;
+}
+.ea-foot-about p {
+  font-family: var(--f-body); font-size: 15px;
+  color: rgba(255,255,255,0.6); line-height: 1.8; margin: 0 0 20px;
+}
+.ea-foot-logo-wrap {
+  display: inline-flex; margin-bottom: 32px;
+}
+.ea-foot-logo-wrap img { height: 40px; width: auto; display: block; filter: brightness(0) invert(1); } /* Ensure logo is white in dark mode */
+/* Footer flex grid */
+.ea-foot-row {
+  display: flex; flex-wrap: wrap; gap: 48px 0; margin: 0 -20px;
+}
+.ea-foot-row > .ea-fc { padding: 0 20px; box-sizing: border-box; }
+.ea-fc-1 { flex: 0 0 35%; max-width: 35%; }
+.ea-fc-2 { flex: 0 0 20%; max-width: 20%; }
+.ea-fc-3 { flex: 0 0 15%; max-width: 15%; }
+.ea-fc-4 { flex: 0 0 30%; max-width: 30%; }
+@media (max-width: 1199px) {
+  .ea-fc-1 { flex: 0 0 100%; max-width: 100%; margin-bottom: 24px; }
+  .ea-fc-2 { flex: 0 0 33.333%; max-width: 33.333%; }
+  .ea-fc-3 { flex: 0 0 25%; max-width: 25%; }
+  .ea-fc-4 { flex: 0 0 41.666%; max-width: 41.666%; }
+}
+@media (max-width: 767px) {
+  .ea-fc-2 { flex: 0 0 50%; max-width: 50%; }
+  .ea-fc-3 { flex: 0 0 50%; max-width: 50%; }
+  .ea-fc-4 { flex: 0 0 100%; max-width: 100%; margin-top: 24px; }
+}
+@media (max-width: 575px) {
+  .ea-fc-2, .ea-fc-3 { flex: 0 0 100%; max-width: 100%; margin-bottom: 24px; }
+  .ea-fc-4 { margin-top: 0; }
+}
+.ea-foot-contact { list-style: none; padding: 0; margin: 0; }
+.ea-foot-contact li {
+  font-family: var(--f-body); font-size: 15px;
+  color: rgba(255,255,255,0.8); margin-bottom: 24px; line-height: 1.6;
+}
+.ea-foot-contact li a {
+  color: rgba(255,255,255,0.8); text-decoration: none;
+  transition: color 0.3s; display: inline-block;
+}
+.ea-foot-contact li a:hover { color: var(--c-lime); }
+.ea-foot-contact .ea-foot-label {
+  font-family: var(--f-heading); font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: 1px;
+  color: var(--c-lime); display: block; margin-bottom: 8px;
+}
+/* Nav links */
+.ea-foot-links { list-style: none; padding: 0; margin: 0; }
+.ea-foot-links li { margin-bottom: 16px; }
+.ea-foot-links a {
+  font-family: var(--f-body); font-size: 15px; font-weight: 500;
+  color: rgba(255,255,255,0.6); text-decoration: none;
+  display: inline-flex; align-items: center; gap: 8px;
+  transition: color 0.3s, gap 0.3s;
+}
+.ea-foot-links a::before { content: ''; display: inline-block; width: 0; height: 1px; background: var(--c-lime); transition: width 0.3s; }
+.ea-foot-links a:hover { color: var(--c-white); gap: 12px; }
+.ea-foot-links a:hover::before { width: 12px; }
+/* Newsletter form */
+.ea-foot-nl { }
+.ea-foot-nl input[type="email"],
+.ea-foot-nl input[type="text"],
+.ea-foot-nl input[type="tel"] {
+  width: 100%; padding: 16px 20px;
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255,255,255,0.1); border-radius: 0;
+  font-family: var(--f-body); font-size: 15px; color: var(--c-white);
+  outline: none; box-sizing: border-box; margin-bottom: 16px;
+  transition: all 0.3s;
+}
+.ea-foot-nl input:focus, .ea-foot-nl textarea:focus { border-color: var(--c-lime) !important; background: rgba(255,255,255,0.05) !important; }
+.ea-foot-nl input::placeholder, .ea-foot-nl textarea::placeholder { color: rgba(255,255,255,0.3); }
+.ea-foot-nl button {
+  width: 100%; background: var(--c-lime); color: var(--c-dark);
+  padding: 16px; border: 1px solid var(--c-lime); border-radius: 100px;
+  font-family: var(--f-body); font-size: 14px; font-weight: 800; text-transform: uppercase; letter-spacing: 1px;
+  cursor: pointer; transition: all 0.3s; display: flex; align-items: center; justify-content: center; gap: 8px;
+}
+.ea-foot-nl button:hover { background: transparent; color: var(--c-lime); }
+/* Math captcha */
+.ea-captcha-row {
+  display: flex; align-items: center; gap: 16px; margin-bottom: 16px;
+}
+.ea-captcha-label {
+  font-family: var(--f-heading); font-size: 14px; font-weight: 800;
+  color: var(--c-lime); white-space: nowrap; flex-shrink: 0;
+  background: rgba(204,255,0,0.05); border: 1px solid rgba(204,255,0,0.2);
+  border-radius: 0; padding: 12px 16px; text-transform: uppercase; letter-spacing: 1px;
+}
+.ea-captcha-input {
+  width: 100%; padding: 16px 20px;
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255,255,255,0.1); border-radius: 0;
+  font-family: var(--f-body); font-size: 15px; color: var(--c-white);
+  outline: none; box-sizing: border-box;
+  transition: all 0.3s;
+  -moz-appearance: textfield;
+}
+.ea-captcha-input::-webkit-outer-spin-button,
+.ea-captcha-input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+.ea-captcha-input:focus { border-color: var(--c-lime); background: rgba(255,255,255,0.05); }
+.ea-captcha-input::placeholder { color: rgba(255,255,255,0.3); }
+.ea-captcha-error {
+  display: none; font-family: var(--f-body); font-size: 13px;
+  color: #ff4b4b; margin-bottom: 16px; text-align: center;
+}
+/* Verification code button */
+.ea-verify-btn {
+  width: 100%; background: transparent; color: var(--c-white);
+  padding: 16px; border: 1px solid rgba(255,255,255,0.2); border-radius: 100px;
+  font-family: var(--f-body); font-size: 13px; font-weight: 800; text-transform: uppercase; letter-spacing: 1px;
+  cursor: pointer; transition: all 0.3s; margin-bottom: 8px;
+}
+.ea-verify-btn:hover { background: rgba(204,255,0,0.05); border-color: var(--c-lime); color: var(--c-lime); }
+.ea-verify-btn:disabled { opacity: 0.5; cursor: not-allowed; border-color: rgba(255,255,255,0.1); color: rgba(255,255,255,0.4); background: transparent; }
+.ea-verify-note {
+  font-family: var(--f-body); font-size: 12px;
+  color: rgba(255,255,255,0.4); margin-bottom: 16px; text-align: center; min-height: 18px;
+}
+/* Social */
+.ea-foot-social { display: flex; gap: 16px; margin-top: 32px; }
+.ea-foot-social a {
+  width: 48px; height: 48px; border-radius: 50%;
+  background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.1);
+  display: flex; align-items: center; justify-content: center;
+  text-decoration: none; transition: all 0.3s;
+}
+.ea-foot-social a:hover { background: var(--c-lime); border-color: var(--c-lime); transform: translateY(-4px); }
+.ea-foot-social svg { fill: rgba(255,255,255,0.5); transition: fill 0.3s; width: 18px; height: 18px; }
+.ea-foot-social a:hover svg { fill: var(--c-dark); }
+/* Bottom bar */
+.ea-foot-bottom {
+  margin-top: 80px; padding: 32px 0;
+  border-top: 1px solid rgba(255,255,255,0.05);
+  display: flex; align-items: center; justify-content: space-between;
+  flex-wrap: wrap; gap: 16px;
+}
+.ea-foot-copy {
+  font-family: var(--f-body); font-size: 13px; font-weight: 500;
+  color: rgba(255,255,255,0.4);
+}
+.ea-foot-bottom-links { display: flex; gap: 32px; flex-wrap: wrap; }
+.ea-foot-bottom-links a {
+  font-family: var(--f-heading); font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: 1px;
+  color: rgba(255,255,255,0.4); text-decoration: none;
+  transition: color 0.3s;
+}
+.ea-foot-bottom-links a:hover { color: var(--c-lime); }
+@media (max-width: 767px) {
+  .ea-foot-bottom { text-align: center; justify-content: center; flex-direction: column; gap: 24px; }
+  .ea-foot-bottom-links { justify-content: center; gap: 20px; }
+}
+/* Sticky mobile CTA bar */
+.ea-sticky-bar { display: none; position: fixed; bottom: 0; left: 0; right: 0; z-index: 9999; background: var(--c-dark); box-shadow: 0 -4px 24px rgba(0,0,0,0.8); border-top: 1px solid rgba(255,255,255,0.05); }
+.ea-sticky-btn { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; padding: 12px 4px 10px; font-family: var(--f-heading); font-size: 10px; font-weight: 800; text-decoration: none; text-transform: uppercase; letter-spacing: 1px; transition: background 0.3s; }
+.ea-sticky-call  { color: #ffffff; border-right: 1px solid rgba(255,255,255,0.05); }
+.ea-sticky-wa    { color: #4ade80; border-right: 1px solid rgba(255,255,255,0.05); }
+.ea-sticky-quote { color: var(--c-lime); }
+.ea-sticky-call:hover  { background: rgba(255,255,255,0.02); }
+.ea-sticky-wa:hover    { background: rgba(74,222,128,0.05); }
+.ea-sticky-quote:hover { background: rgba(204,255,0,0.05); }
+@media (max-width: 767px) { .ea-sticky-bar { display: flex; } body { padding-bottom: 70px; } }
+</style>1.1vw, 16px); color: var(--cream);
+  outline: none; box-sizing: border-box; margin-bottom: 10px;
+  transition: border-color 0.2s;
+}
+.ea-foot-nl input:focus { border-color: var(--amber); }
+.ea-foot-nl input::placeholder { color: rgba(247,245,240,0.30); }
+.ea-foot-nl button {
+  width: 100%; background: var(--amber); color: #0A0A14;
+  padding: 14px; border: none; border-radius: 8px;
+  font-family: 'DM Sans', sans-serif; font-size: clamp(14px, 1.1vw, 16px); font-weight: 700;
+  cursor: pointer; transition: background 0.2s;
+}
+.ea-foot-nl button:hover { background: #f0b000; }
+/* Math captcha */
+.ea-captcha-row {
+  display: flex; align-items: center; gap: 10px; margin-bottom: 9px;
+}
+.ea-captcha-label {
+  font-family: 'DM Sans', sans-serif; font-size: 14px; font-weight: 700;
+  color: var(--amber); white-space: nowrap; flex-shrink: 0;
+  background: rgba(255,186,9,0.08); border: 1px solid rgba(255,186,9,0.22);
+  border-radius: 6px; padding: 8px 12px;
+}
+.ea-captcha-input {
+  width: 100%; padding: 11px 14px;
+  background: rgba(255,255,255,0.06);
+  border: 1.5px solid rgba(255,255,255,0.10); border-radius: 8px;
+  font-family: 'DM Sans', sans-serif; font-size: clamp(13px, 1vw, 15px); color: var(--cream);
+  outline: none; box-sizing: border-box;
+  transition: border-color 0.2s;
+  -moz-appearance: textfield;
+}
+.ea-captcha-input::-webkit-outer-spin-button,
+.ea-captcha-input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+.ea-captcha-input:focus { border-color: var(--amber); }
+.ea-captcha-input::placeholder { color: rgba(247,245,240,0.30); }
+.ea-captcha-error {
+  display: none; font-family: 'DM Sans', sans-serif; font-size: 12px;
+  color: #f87171; margin-bottom: 8px;
+}
+/* Verification code button */
+.ea-verify-btn {
+  width: 100%; background: rgba(255,186,9,0.15); color: var(--amber);
+  padding: 13px; border: 1.5px solid rgba(255,186,9,0.35); border-radius: 8px;
+  font-family: 'DM Sans', sans-serif; font-size: clamp(14px, 1.1vw, 16px); font-weight: 700;
+  cursor: pointer; transition: background 0.2s, border-color 0.2s; margin-bottom: 9px;
+}
+.ea-verify-btn:hover { background: rgba(255,186,9,0.25); border-color: var(--amber); }
+.ea-verify-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+.ea-verify-note {
+  font-family: 'DM Sans', sans-serif; font-size: 11px;
+  color: rgba(247,245,240,0.45); margin-bottom: 9px; margin-top: -4px;
+  min-height: 16px;
+}
+/* Social */
+.ea-foot-social { display: flex; gap: 10px; margin-top: 18px; }
+.ea-foot-social a {
+  width: 36px; height: 36px; border-radius: 50%;
+  background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.10);
+  display: flex; align-items: center; justify-content: center;
+  text-decoration: none; transition: background 0.2s, border-color 0.2s;
+}
+.ea-foot-social a:hover { background: rgba(255,186,9,0.15); border-color: rgba(255,186,9,0.40); }
+.ea-foot-social svg { fill: rgba(247,245,240,0.65); }
+.ea-foot-social a:hover svg { fill: var(--amber); }
+/* Bottom bar */
+.ea-foot-bottom {
+  margin-top: 48px; padding: 18px 0;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  display: flex; align-items: center; justify-content: space-between;
+  flex-wrap: wrap; gap: 10px;
+}
+.ea-foot-copy {
+  font-family: 'DM Sans', sans-serif; font-size: clamp(12px, 0.85vw, 14px);
+  color: rgba(247,245,240,0.40);
+}
+.ea-foot-bottom-links {
+  display: flex; gap: 20px;
+}
+.ea-foot-bottom-links a {
+  font-family: 'DM Sans', sans-serif; font-size: clamp(12px, 0.85vw, 14px);
+  color: rgba(247,245,240,0.40); text-decoration: none;
+  transition: color 0.2s;
+}
+.ea-foot-bottom-links a:hover { color: var(--amber); }
+@media (max-width: 767px) {
+  .ea-foot-bottom { text-align: center; justify-content: center; }
+  .ea-foot-bottom-links { justify-content: center; }
+}
+/* Sticky mobile CTA bar */
+.ea-sticky-bar { display: none; position: fixed; bottom: 0; left: 0; right: 0; z-index: 9999; background: #0A0A14; box-shadow: 0 -2px 16px rgba(0,0,0,0.4); border-top: 1px solid rgba(255,186,9,0.22); }
+.ea-sticky-btn { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; padding: 10px 4px 8px; font-family: 'DM Sans',sans-serif; font-size: 10px; font-weight: 700; text-decoration: none; text-transform: uppercase; letter-spacing: 0.4px; transition: background 0.15s; }
+.ea-sticky-call  { color: #60a5fa; border-right: 1px solid rgba(255,255,255,0.08); }
+.ea-sticky-wa    { color: #4ade80; border-right: 1px solid rgba(255,255,255,0.08); }
+.ea-sticky-quote { color: var(--amber); }
+.ea-sticky-call:hover  { background: rgba(255,255,255,0.04); }
+.ea-sticky-wa:hover    { background: rgba(255,255,255,0.04); }
+.ea-sticky-quote:hover { background: rgba(255,186,9,0.08); }
+@media (max-width: 767px) { .ea-sticky-bar { display: flex; } body { padding-bottom: 62px; } }
+</style>
+
+<footer id="ea-footer">
+  <div class="container">
+    <div class="ea-foot-row">
+
+      <!-- Col 1: Logo + About -->
+      <div class="ea-fc ea-fc-1">
+        <div class="ea-foot-about">
+          <div class="ea-foot-logo-wrap">
+            <img src="/wp-content/uploads/2024/11/efficient-logo-1-1.png" alt="Efficient Advertising Dubai">
+          </div>
+          <p>Efficient Advertising L.L.C is Dubai&rsquo;s full-service printing and advertising company, specialising in digital printing, custom signage, vehicle branding, exhibition stands, and event management solutions across the UAE.</p>
+          <p>Since 2008, we have built our reputation on exceptional print quality, fast turnaround, and outstanding customer service &mdash; combining state-of-the-art technology with a genuine commitment to every client&rsquo;s success.</p>
+        </div>
+      </div>
+
+      <!-- Col 2: Get In Touch + Social -->
+      <div class="ea-fc ea-fc-2">
+        <h3 class="ea-foot-col-title">Get In Touch</h3>
+        <ul class="ea-foot-contact">
+          <li>
+            <span class="ea-foot-label">Address</span>
+            <a href="https://maps.google.com/?q=Warehouse+11,+10C+Street,+Ras+Al+Khor+Industrial+Area+1,+Dubai" target="_blank" rel="noopener">
+              Warehouse 11, 10C Street, Ras Al Khor Industrial Area 1, Dubai, UAE
+            </a>
+          </li>
+          <li>
+            <span class="ea-foot-label">Email</span>
+            <a href="mailto:info@efficientadvt.com?cc=efficientadvt1@gmail.com">info@efficientadvt.com</a>
+          </li>
+          <li>
+            <span class="ea-foot-label">Phone</span>
+            <a href="tel:+971527966265">+971 52 796 6265</a>
+          </li>
+        </ul>
+        <div class="ea-foot-social">
+          <a href="#" aria-label="Facebook">
+            <svg width="16" height="16" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          </a>
+          <a href="#" aria-label="Twitter/X">
+            <svg width="16" height="16" viewBox="0 0 24 24"><path d="M4 4l16 16M20 4L4 20"/><path d="M20 4l-7 7m0 0l-9 9m9-9l9 9M4 4l9 9"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/company/efficientadvertisingdubai" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg width="16" height="16" viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Col 3: Useful Links -->
+      <div class="ea-fc ea-fc-3">
+        <h3 class="ea-foot-col-title">Useful Links</h3>
+        <ul class="ea-foot-links">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about-us/">About Us</a></li>
+          <li><a href="/product-category/banner-printing-dubai/">Banner Printing</a></li>
+          <li><a href="/product-category/signage-dubai/">Signage</a></li>
+          <li><a href="/product-category/exhibition-stands-dubai/">Exhibition Stands</a></li>
+          <li><a href="/product-category/vehicle-branding-dubai/">Vehicle Branding</a></li>
+          <li><a href="/same-day-printing-dubai/">Same-Day Printing</a></li>
+          <li><a href="/large-format-printing-dubai/">Large Format Printing</a></li>
+          <li><a href="/wall-graphics-dubai/">Wall Graphics</a></li>
+          <li><a href="/contact-us/">Contact Us</a></li>
+          <li><a href="/blog/">Blog</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 4: Contact Form -->
+      <div class="ea-fc ea-fc-4">
+        <h3 class="ea-foot-col-title">Contact Us</h3>
+        <form class="ea-foot-nl" id="eaFootForm" novalidate>
+          <!-- Row 1: Name + Email -->
+          <div style="display:flex;gap:8px;">
+            <input type="text" name="foot_name" placeholder="Your Name *" autocomplete="name" required style="flex:1;min-width:0;">
+            <input type="email" name="foot_email" placeholder="Email Address *" autocomplete="email" required style="flex:1;min-width:0;">
+          </div>
+          <!-- Row 2: Send Verification Code -->
+          <button type="button" id="eaSendVerify" class="ea-verify-btn">Send Verification Code</button>
+          <div class="ea-verify-note" id="eaVerifyNote"></div>
+          <!-- Row 3: Verification Code + Country -->
+          <div style="display:flex;gap:8px;">
+            <input type="text" id="eaVerifyInput" name="foot_verify" placeholder="Verification Code *" autocomplete="off" required style="flex:1;min-width:0;">
+            <input type="text" name="foot_country" placeholder="Country *" autocomplete="country-name" required style="flex:1;min-width:0;">
+          </div>
+          <!-- Row 4: Message -->
+          <textarea name="foot_message" placeholder="How can we help you? *" rows="3" required style="width:100%;padding:16px 20px;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.1);border-radius:0;font-family:var(--f-body);font-size:15px;color:var(--c-white);outline:none;box-sizing:border-box;resize:vertical;transition:all 0.3s;margin-bottom:16px;" onfocus="this.style.borderColor='var(--c-lime)';this.style.background='rgba(255,255,255,0.05)';" onblur="this.style.borderColor='rgba(255,255,255,0.1)';this.style.background='rgba(255,255,255,0.02)';"></textarea>
+          <!-- Row 5: Math captcha -->
+          <div class="ea-captcha-row">
+            <label class="ea-captcha-label" id="eaCaptchaQ"></label>
+            <input type="number" id="eaCaptchaA" class="ea-captcha-input" placeholder="= ?" autocomplete="off" required>
+          </div>
+          <div class="ea-captcha-error" id="eaCaptchaErr">Incorrect answer. Please try again.</div>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+
+    </div>
+
+    <div class="ea-foot-bottom">
+      <span class="ea-foot-copy">&copy; 2026 Efficient Advertising L.L.C. All rights reserved. Dubai, UAE.</span>
+      <div class="ea-foot-bottom-links">
+        <a href="/privacy-policy/">Privacy Policy</a>
+        <a href="/contact-us/">Contact</a>
+        <a href="/sitemap.xml">Sitemap</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- WhatsApp Floating Button -->
+<style>
+.ea-wa-float {
+  position: fixed; left: 20px; bottom: 96px; z-index: 9998;
+  width: 56px; height: 56px; border-radius: 50%;
+  background: #16a34a;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 4px 20px rgba(22,163,74,0.45);
+  text-decoration: none;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.ea-wa-float:hover { transform: scale(1.1); box-shadow: 0 6px 28px rgba(22,163,74,0.60); }
+@media (max-width: 767px) { .ea-wa-float { bottom: 72px; width: 48px; height: 48px; } }
+</style>
+<a href="https://wa.me/971527966265" target="_blank" rel="noopener noreferrer" class="ea-wa-float" aria-label="Chat on WhatsApp">
+  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="#fff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+</a>
+
+<!-- Sticky Mobile CTA Bar -->
+<div class="ea-sticky-bar" id="eaStickyBar">
+  <a href="tel:+971527966265" class="ea-sticky-btn ea-sticky-call">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.25 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C10.85 21 3 13.15 3 4c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+    Call Us
+  </a>
+  <a href="https://api.whatsapp.com/send?phone=971527966265&text=Hello%2C+I+need+a+printing+quote" target="_blank" rel="noopener" class="ea-sticky-btn ea-sticky-wa">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    WhatsApp
+  </a>
+  <a href="#ea-quote" class="ea-sticky-btn ea-sticky-quote">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+    Get Quote
+  </a>
+</div>
+
+
+<!-- ═══════════════════════════════════════════
+     SCROLL REVEAL
+═══════════════════════════════════════════ -->
+<script>
+(function(){
+  var els = document.querySelectorAll('.reveal');
+  if (!els.length) return;
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
+    });
+  }, { threshold: 0.12 });
+  els.forEach(function(el){ io.observe(el); });
+})();
+</script>
+
+<!-- ═══════════════════════════════════════════
+     FOOTER FORM — MATH CAPTCHA + VERIFY CODE
+═══════════════════════════════════════════ -->
+<script>
+(function(){
+  /* ── Math captcha ── */
+  var a = Math.floor(Math.random()*9)+1;
+  var b = Math.floor(Math.random()*9)+1;
+  var answer = a + b;
+  var qEl = document.getElementById('eaCaptchaQ');
+  var aEl = document.getElementById('eaCaptchaA');
+  var errEl = document.getElementById('eaCaptchaErr');
+  if(qEl) qEl.textContent = a + ' + ' + b + ' = ?';
+
+  /* ── Email verification code ── */
+  var verifyCode = null;
+  var sendBtn = document.getElementById('eaSendVerify');
+  var verifyInput = document.getElementById('eaVerifyInput');
+  var verifyNote = document.getElementById('eaVerifyNote');
+  var cooldown = 0;
+
+  function startCooldown(){
+    cooldown = 60;
+    sendBtn.disabled = true;
+    var t = setInterval(function(){
+      cooldown--;
+      verifyNote.textContent = 'Code sent to your email. Resend in ' + cooldown + 's';
+      if(cooldown <= 0){
+        clearInterval(t);
+        sendBtn.disabled = false;
+        verifyNote.textContent = 'Didn\'t receive it? Click to resend.';
+      }
+    }, 1000);
+  }
+
+  if(sendBtn){
+    sendBtn.addEventListener('click', function(){
+      var emailEl = document.querySelector('#eaFootForm input[name="foot_email"]');
+      if(!emailEl || !emailEl.value || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailEl.value)){
+        emailEl && (emailEl.style.borderColor = '#f87171');
+        verifyNote.textContent = 'Please enter a valid email address first.';
+        verifyNote.style.color = '#f87171';
+        return;
+      }
+      emailEl.style.borderColor = '';
+      verifyNote.style.color = 'rgba(247,245,240,0.45)';
+      /* Generate a 6-digit code (prototype: show in note since no mailer) */
+      verifyCode = Math.floor(100000 + Math.random()*900000).toString();
+      verifyNote.textContent = 'Code sent! (Prototype: your code is ' + verifyCode + ')';
+      startCooldown();
+    });
+  }
+
+  /* ── Form submit ── */
+  var form = document.getElementById('eaFootForm');
+  if(form){
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      errEl.style.display = 'none';
+
+      /* Validate captcha */
+      if(parseInt(aEl.value, 10) !== answer){
+        errEl.style.display = 'block';
+        aEl.style.borderColor = '#f87171';
+        /* Regenerate */
+        a = Math.floor(Math.random()*9)+1;
+        b = Math.floor(Math.random()*9)+1;
+        answer = a + b;
+        qEl.textContent = a + ' + ' + b + ' = ?';
+        aEl.value = '';
+        return;
+      }
+      aEl.style.borderColor = '';
+
+      /* Validate verify code */
+      if(verifyCode && verifyInput && verifyInput.value.trim() !== verifyCode){
+        verifyNote.textContent = 'Verification code is incorrect.';
+        verifyNote.style.color = '#f87171';
+        verifyInput.style.borderColor = '#f87171';
+        return;
+      }
+
+      /* Success → redirect to contact page */
+      window.location.href = '/contact-us/';
+    });
+  }
+})();
+</script>
+
+<!-- ══ Topographic contour line backgrounds ══
+     Placed at END of body so all 10 dark sections exist in DOM when this runs -->
+<script>
+(function(){
+  var DARK_SECTIONS = ['ea-hero','ea-bd-hero','ea-products','ea-stats','ea-hiw','ea-yt','ea-urgency','ea-reviews','ea-blog','ea-footer'];
+  var NS = 'http://www.w3.org/2000/svg';
+
+  function contourPath(cx, cy, rx, ry, pts, jitter) {
+    var P = [];
+    for (var i = 0; i < pts; i++) {
+      var a = (i / pts) * Math.PI * 2;
+      var j = 1 + (Math.random() - 0.5) * jitter;
+      P.push([ cx + Math.cos(a) * rx * j, cy + Math.sin(a) * ry * j ]);
+    }
+    P.push(P[0]);
+    var d = 'M ' + P[0][0].toFixed(1) + ',' + P[0][1].toFixed(1);
+    for (var i = 1; i < P.length; i++) {
+      var p0 = P[Math.max(0, i-2)];
+      var p1 = P[i-1];
+      var p2 = P[i];
+      var p3 = P[Math.min(P.length-1, i+1)];
+      var cp1x = p1[0] + (p2[0] - p0[0]) / 6;
+      var cp1y = p1[1] + (p2[1] - p0[1]) / 6;
+      var cp2x = p2[0] - (p3[0] - p1[0]) / 6;
+      var cp2y = p2[1] - (p3[1] - p1[1]) / 6;
+      d += ' C ' + cp1x.toFixed(1) + ',' + cp1y.toFixed(1)
+                 + ' ' + cp2x.toFixed(1) + ',' + cp2y.toFixed(1)
+                 + ' ' + p2[0].toFixed(1) + ',' + p2[1].toFixed(1);
+    }
+    return d + ' Z';
+  }
+
+  DARK_SECTIONS.forEach(function(id, idx) {
+    var section = document.getElementById(id);
+    if (!section) return;
+
+    if (window.getComputedStyle(section).position === 'static')
+      section.style.position = 'relative';
+
+    var svg = document.createElementNS(NS, 'svg');
+    svg.setAttribute('aria-hidden', 'true');
+    svg.setAttribute('viewBox', '0 0 1440 900');
+    svg.setAttribute('preserveAspectRatio', 'xMidYMid slice');
+    svg.style.cssText = 'position:absolute;top:0;left:0;width:100%;height:100%;z-index:0;pointer-events:none;overflow:hidden;';
+    section.insertBefore(svg, section.firstChild);
+
+    Array.prototype.forEach.call(section.children, function(child) {
+      if (child !== svg && child.style) {
+        child.style.position = 'relative';
+        child.style.zIndex   = '1';
+      }
+    });
+
+    var seed = idx * 137.5;
+    var clusters = [
+      { cx: 620 + Math.sin(seed) * 200,  cy: 420 + Math.cos(seed) * 150,    rx: 600, ry: 340, rings: 7, anim: 'ea-topo-a', dur: 42 + idx * 3 },
+      { cx: 1150 + Math.cos(seed*0.7) * 150, cy: 220 + Math.sin(seed*0.7) * 100, rx: 320, ry: 260, rings: 5, anim: 'ea-topo-b', dur: 58 + idx * 2 },
+      { cx: 240 + Math.sin(seed*1.3) * 100,  cy: 720 + Math.cos(seed*1.3) * 100, rx: 280, ry: 230, rings: 5, anim: 'ea-topo-c', dur: 37 + idx * 4 },
+    ];
+
+    clusters.forEach(function(cl, ci) {
+      var g = document.createElementNS(NS, 'g');
+      var delay = -(idx * 4.3 + ci * 6.7);
+      g.style.animation = cl.anim + ' ' + cl.dur + 's ease-in-out ' + delay.toFixed(1) + 's infinite alternate';
+      g.style.transformOrigin = cl.cx.toFixed(0) + 'px ' + cl.cy.toFixed(0) + 'px';
+      for (var r = cl.rings; r >= 1; r--) {
+        var scale = r / cl.rings;
+        var opacity = (0.04 + (1 - scale) * 0.07).toFixed(3);
+        var path = document.createElementNS(NS, 'path');
+        path.setAttribute('d', contourPath(cl.cx, cl.cy, cl.rx * scale, cl.ry * scale, 12, 0.22));
+        path.setAttribute('fill', 'none');
+        path.setAttribute('stroke', 'rgba(255,186,9,' + opacity + ')');
+        path.setAttribute('stroke-width', r === 1 ? '1.5' : '1');
+        g.appendChild(path);
+      }
+      svg.appendChild(g);
+    });
+  });
+})();
+</script>
+
+<?php wp_footer(); ?>
+</body>
+</html>
+</html>

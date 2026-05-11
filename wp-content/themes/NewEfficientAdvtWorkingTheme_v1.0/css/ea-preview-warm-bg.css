@@ -1,0 +1,284 @@
+/**
+ * EA Preview — Warm Background Only
+ * =====================================================================
+ * PREVIEW MODE ONLY — loaded via ?ea_preview=warm-bg
+ * No layout, grid, spacing, card size, or template changes.
+ * Background and colour-feel ONLY.
+ *
+ * Design intent:
+ *   Warm off-white base (#F5F2EC) to feel premium, editorial, soft-on-eyes.
+ *   Sections float transparently on the warm base.
+ *   Light panels (#FAF8F4) and white panels (#FFFFFF) layered above.
+ *   Subtle depth via box-shadow on containers — no structural resizing.
+ *   Dark-class overrides so no harsh black blocks break the warmth.
+ * =====================================================================
+ */
+
+/* ─── 1. BASE PAGE BACKGROUND ─────────────────────────────────────── */
+html,
+body {
+    background-color: #F5F2EC !important;
+}
+
+/* ─── 2. ALL SECTIONS INHERIT WARMTH (no override — transparent) ──── */
+/* Use body.home / body.tax-product_cat prefix to match specificity of     */
+/* ea-home-shell-014.css which uses: body.home #section-id { !important }  */
+body.home section,
+body.home .section,
+body.tax-product_cat section,
+body.tax-product_cat .section,
+body.page-template-index section,
+body.page-template-index .section {
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+}
+
+/* ─── 3. DESIGNATED LIGHT SECTIONS ───────────────────────────────── */
+.section-light,
+.ea-section-light,
+.bg-light,
+.bg-offwhite {
+    background-color: #FAF8F4 !important;
+}
+
+/* ─── 4. WHITE PANELS STAY WHITE ─────────────────────────────────── */
+.section-white,
+.ea-section-white,
+.bg-white {
+    background-color: #FFFFFF !important;
+}
+
+/* ─── 5. SOFT DEPTH ON CONTAINERS (no size change) ───────────────── */
+.container,
+.ea-container {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.03);
+    border-radius: 12px;
+}
+
+/* ─── 6. DARK CLASS OVERRIDES — remove harsh dark backgrounds ─────── */
+body [class*="dark-section"],
+body [class*="bg-dark"],
+body [class*="section-dark"],
+body [class*="bg-black"] {
+    background-color: #F5F2EC !important;
+    background-image: none !important;
+}
+
+/* ─── 7. HOMEPAGE-SPECIFIC SECTION BACKGROUNDS ───────────────────── */
+/* Prefix body.home / body.page-template-index to match specificity 0,2,1  */
+/* that ea-home-shell-014.css uses for its dark section overrides.          */
+
+/* Base sections — transparent (body warm bg shows through) */
+body.home #ea-hp-hero,
+body.home #ea-hp-trust-strip,
+body.home #ea-hp-products,
+body.home #ea-hp-reviews,
+body.home #ea-hp-why,
+body.page-template-index #ea-hp-hero,
+body.page-template-index #ea-hp-trust-strip,
+body.page-template-index #ea-hp-products,
+body.page-template-index #ea-hp-reviews,
+body.page-template-index #ea-hp-why {
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+}
+
+/* Alternating warm tint sections */
+body.home #ea-hp-services,
+body.home #ea-hp-portfolio,
+body.home #ea-hp-videos,
+body.home #ea-hp-faq,
+body.page-template-index #ea-hp-services,
+body.page-template-index #ea-hp-portfolio,
+body.page-template-index #ea-hp-videos,
+body.page-template-index #ea-hp-faq {
+    background-color: #FAF8F4 !important;
+    background-image: none !important;
+}
+
+/* CTA band — warm gold tint */
+body.home #ea-hp-cta,
+body.page-template-index #ea-hp-cta,
+body.home .ea-hp-cta-inner,
+body.page-template-index .ea-hp-cta-inner {
+    background-color: #F7F3E8 !important;
+    background-image: none !important;
+}
+
+/* ─── 8. CATEGORY PAGE SECTION BACKGROUNDS ───────────────────────── */
+body.tax-product_cat .ea-cat-hero {
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+}
+
+body.tax-product_cat .ea-cat-grid-section,
+body.tax-product_cat .ea-cat-products-grid {
+    background-color: #FAF8F4 !important;
+    background-image: none !important;
+}
+
+body.tax-product_cat .ea-cat-cta,
+body.tax-product_cat .ea-cat-why {
+    background-color: #F7F3E8 !important;
+    background-image: none !important;
+}
+
+/* ─── 9. TYPOGRAPHY — PREMIUM BLACK (homepage preview only) ──────── */
+/*
+ * premium-homepage.css sets white/muted text via specific class selectors
+ * with !important. We must use the SAME selectors + !important to win.
+ * --hp-white = #ffffff, --hp-muted = rgba(255,255,255,0.70) — both
+ * unreadable on warm light backgrounds, so we override to dark.
+ *
+ * DO NOT add !important to header/footer selectors (body.ea-dark-page.*).
+ */
+
+/* --- Section heading h2 (all sections use .ea-hp-section-header h2) --- */
+.ea-hp-section-header h2 {
+    color: #1a1a1a !important;
+}
+
+/* --- Hero h1 --- */
+.ea-hp-hero-content h1 {
+    color: #1a1a1a !important;
+}
+
+/* --- Service card titles h3 --- */
+.ea-hp-service-card h3 {
+    color: #1a1a1a !important;
+}
+
+/* --- Product card titles h4 --- */
+#ea-hp-products .ea-product-card__body h4 {
+    color: #1a1a1a !important;
+}
+
+/* --- Video card titles h3 --- */
+.ea-hp-video-card h3 {
+    color: #1a1a1a !important;
+}
+
+/* --- Why Choose Us card titles h3 --- */
+/* Cards have dark navy bg — text stays white (no override) */
+
+/* --- CTA heading h2 --- */
+.ea-hp-cta-inner h2 {
+    color: #1a1a1a !important;
+}
+
+/* --- Body / paragraph text (--hp-muted = rgba(255,255,255,0.70)) --- */
+.ea-hp-section-header p {
+    color: #555555 !important;
+}
+.ea-hp-hero-content > p {
+    color: #555555 !important;
+}
+.ea-hp-hero-micro {
+    color: #555555 !important;
+}
+.ea-hp-service-card p {
+    color: #555555 !important;
+}
+#ea-hp-products .ea-product-card__body p {
+    color: #555555 !important;
+}
+.ea-hp-cta-inner p {
+    color: #555555 !important;
+}
+.ea-hp-faq-answer p {
+    color: #555555 !important;
+}
+.ea-hp-review-text {
+    color: #555555 !important;
+}
+
+/* --- Trust strip labels (Sq. Ft. Printed / Clients Served etc.)      --- */
+/* Original rule: .ea-hp-trust-item span { color: var(--hp-muted) }        */
+/* --hp-muted = rgba(255,255,255,0.70) — invisible on warm bg              */
+.ea-hp-trust-item span {
+    color: #666666 !important;
+}
+
+/* --- Review source label ("Google Review")                            --- */
+/* Original: .ea-hp-review-meta span inherits --hp-muted white 70%        */
+.ea-hp-review-meta span {
+    color: #777777 !important;
+}
+
+/* --- Review author name (no !important in original, standard override) --- */
+.ea-hp-review-meta strong {
+    color: #1a1a1a;
+}
+
+/* --- FAQ question text (no !important in original) --- */
+.ea-hp-faq-item summary {
+    color: #1a1a1a;
+}
+
+/* --- NOT overridden (intentionally kept as-is) ---
+ * .ea-hp-btn--whatsapp { color: white }  ← white on green button, correct
+ * .ea-hp-portfolio-overlay span          ← white overlay on dark image, correct
+ * .ea-hp-label / .ea-hp-hero-label       ← gold accent labels, correct
+ * .ea-hp-btn--primary                    ← dark text on gold, correct
+ * All header / footer selectors          ← dark styling, untouched
+ */
+
+/* ─── 10. CATEGORY PAGE TYPOGRAPHY — PREMIUM BLACK ───────────────── */
+/*
+ * All white/near-white text on category pages converted to dark.
+ * WhatsApp button (white on green) and sticky-quote (white on dark)
+ * are intentionally left unchanged — white is correct there.
+ */
+
+/* Hero: breadcrumb links */
+body.tax-product_cat .ea-cat-breadcrumb a,
+body.tax-product_cat .ea-cat-breadcrumb .sep,
+body.tax-product_cat .ea-cat-breadcrumb .current {
+    color: #666666 !important;
+}
+
+/* Hero: h1 heading */
+body.tax-product_cat .ea-cat-hero-inner h1,
+body.tax-product_cat .ea-cat-hero h1 {
+    color: #1a1a1a !important;
+}
+
+/* Hero: description paragraph */
+body.tax-product_cat .ea-cat-hero-inner p,
+body.tax-product_cat .ea-cat-hero p {
+    color: #555555 !important;
+}
+
+/* Sub-category pills — dark navy bg, text stays light (no override) */
+/* Product card h3/p — dark navy card bg, text stays light (no override) */
+
+/* Toolbar product count — on light section bg */
+body.tax-product_cat .ea-cat-count {
+    color: #555555 !important;
+}
+
+/* Pagination numbers */
+body.tax-product_cat .ea-cat-pagination .page-numbers {
+    color: #555555 !important;
+}
+
+/* CTA section heading and description */
+body.tax-product_cat .ea-hp-container h2,
+body.tax-product_cat .ea-cat-cta h2 {
+    color: #1a1a1a !important;
+}
+
+body.tax-product_cat .ea-hp-container > p,
+body.tax-product_cat .ea-cat-cta p {
+    color: #555555 !important;
+}
+
+/* ─── 11. HEADER & FOOTER — UNCHANGED ────────────────────────────── */
+/*
+ * Intentionally NO rules targeting #header, .header, #footer, .footer,
+ * .site-header, .site-footer, .sticky-bar, .whatsapp-float.
+ * These remain in their original dark styling.
+ */

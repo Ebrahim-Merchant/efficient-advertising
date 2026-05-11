@@ -1,0 +1,134 @@
+/**
+ * EA FAQ Refined — Homepage FAQ section styling
+ * =====================================================================
+ * Approved from Preview 4. Applied to live site.
+ * Scope: Homepage FAQ section ONLY (#ea-hp-faq)
+ *
+ * Selector mapping (brief → real HTML):
+ *   .faq-section       → #ea-hp-faq .ea-hp-faq-list
+ *   .faq-item          → details.ea-hp-faq-item   (native <details>)
+ *   .faq-question      → .ea-hp-faq-item summary
+ *   .faq-answer        → .ea-hp-faq-answer
+ *   .faq-toggle        → .ea-hp-faq-icon
+ *   .faq-item.active   → details[open].ea-hp-faq-item
+ *   .faq-section h2    → #ea-hp-faq .ea-hp-section-header h2
+ *
+ * NO changes outside #ea-hp-faq.
+ * NO layout, structure, spacing, or content changes.
+ * =====================================================================
+ */
+
+/* ── FAQ LIST WRAPPER (maps to: .faq-section) ──────────────────────── */
+#ea-hp-faq .ea-hp-faq-list {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 35px;
+    background: #ffffff;
+    border-radius: 14px;
+    border: 1px solid #e8e6e2;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.03);
+}
+
+/* ── FAQ ITEM (maps to: .faq-item) ─────────────────────────────────── */
+details.ea-hp-faq-item {
+    padding: 20px 0;
+    border-bottom: 1px solid #eeeeee;
+}
+
+/* ── Remove last border (maps to: .faq-item:last-child) ─────────────── */
+details.ea-hp-faq-item:last-child {
+    border-bottom: none;
+}
+
+/* ── FAQ QUESTION — summary (maps to: .faq-question) ───────────────── */
+.ea-hp-faq-item summary {
+    font-size: 17px;
+    font-weight: 600;
+    color: #111111;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    list-style: none;
+    padding: 0;
+}
+
+/* Remove default disclosure triangle in all browsers */
+.ea-hp-faq-item summary::-webkit-details-marker { display: none; }
+.ea-hp-faq-item summary::marker { display: none; }
+
+/* ── FAQ ANSWER (maps to: .faq-answer) ─────────────────────────────── */
+.ea-hp-faq-answer {
+    font-size: 14px;
+    color: #555555;
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+.ea-hp-faq-answer p {
+    font-size: 14px;
+    color: #555555;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* ── FAQ ICON — closed state (maps to: .faq-toggle) ────────────────── */
+.ea-hp-faq-icon {
+    width: 28px;
+    height: 28px;
+    min-width: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #faf8f4;
+    border: 1px solid #d4a73a;
+    color: #d4a73a;
+    flex-shrink: 0;
+    transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.ea-hp-faq-icon svg {
+    stroke: #d4a73a;
+    width: 14px;
+    height: 14px;
+    transition: transform 0.25s ease, stroke 0.2s;
+}
+
+/* ── FAQ ICON — open state (maps to: .faq-item.active .faq-toggle) ─── */
+details[open].ea-hp-faq-item .ea-hp-faq-icon {
+    background: #d4a73a;
+    border-color: #d4a73a;
+    color: #ffffff;
+}
+
+details[open].ea-hp-faq-item .ea-hp-faq-icon svg {
+    stroke: #ffffff;
+    transform: rotate(180deg);
+}
+
+/* ── FAQ ITEM HOVER (maps to: .faq-item:hover) ──────────────────────── */
+details.ea-hp-faq-item:hover {
+    background: #faf8f4;
+    border-radius: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+/* ── SECTION HEADING (maps to: .faq-section h2) ────────────────────── */
+#ea-hp-faq .ea-hp-section-header h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* ── MOBILE ──────────────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+    #ea-hp-faq .ea-hp-faq-list {
+        padding: 20px;
+        margin: 0 15px;
+    }
+
+    .ea-hp-faq-item summary {
+        font-size: 16px;
+    }
+}
