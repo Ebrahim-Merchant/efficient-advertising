@@ -1197,6 +1197,45 @@ $(function(){
   $eaOverlay.on('click', eaCloseDrawer);
 
   /* Desktop: hover to open panels */
+  function eaSyncDesktopNavOverflow() {
+    var $eaList = $eaNav.find('.ea-mega-list').first();
+    var usedWidth = 0;
+
+    if (!$eaList.length) {
+      return;
+    }
+
+    $eaList.children('.ea-mega-item').removeClass('ea-nav-overflow');
+
+    if ($(window).width() <= 991) {
+      return;
+    }
+
+    $eaList.children('.ea-mega-item').each(function() {
+      var $item = $(this);
+      var itemWidth = Math.ceil($item.outerWidth(true));
+
+      if (usedWidth + itemWidth > $eaList.innerWidth()) {
+        $item.removeClass('is-open').addClass('ea-nav-overflow');
+        return;
+      }
+
+      usedWidth += itemWidth;
+    });
+  }
+
+  function eaQueueDesktopNavSync() {
+    if (window.requestAnimationFrame) {
+      window.requestAnimationFrame(eaSyncDesktopNavOverflow);
+      return;
+    }
+
+    eaSyncDesktopNavOverflow();
+  }
+
+  eaQueueDesktopNavSync();
+  $(window).on('load resize orientationchange', eaQueueDesktopNavSync);
+
   if ($(window).width() > 991) {
     $eaItems
       .on('mouseenter', function() {

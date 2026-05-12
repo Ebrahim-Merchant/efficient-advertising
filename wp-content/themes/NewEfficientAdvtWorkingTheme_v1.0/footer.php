@@ -433,6 +433,13 @@ footer.site-footer a:hover {
 
 /* ── Mobile: lift both buttons above sticky CTA bar (62px tall) ── */
 @media (max-width: 768px) {
+  body.home .ea-whatsapp-float,
+  body.home .ea-back-to-hero,
+  body.page-template-index .ea-whatsapp-float,
+  body.page-template-index .ea-back-to-hero {
+    display: none !important;
+  }
+
   .ea-whatsapp-float {
     left: 14px;
     bottom: 86px;

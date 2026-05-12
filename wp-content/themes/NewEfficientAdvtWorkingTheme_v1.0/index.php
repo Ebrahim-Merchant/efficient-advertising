@@ -559,6 +559,101 @@ body #ea-hp-hero .ea-hp-hero-micro a {
 #ea-hp-logos { background: #FFFFFF !important; }
 #ea-hp-logos .ea-hp-section-header h2 { color: #0F172A !important; }
 #ea-hp-logos .ea-hp-section-header p { color: #334155 !important; }
+
+.ea-mobile-hero-search {
+  display: none !important;
+}
+
+@media (max-width: 991px) {
+  #ea-hp-hero {
+    height: auto !important;
+    min-height: 0 !important;
+    align-items: flex-start !important;
+    padding: 24px 0 40px !important;
+  }
+
+  .ea-hp-hero-split-container {
+    min-height: 0 !important;
+    height: auto !important;
+    align-items: stretch !important;
+  }
+
+  .ea-hp-hero-split-text,
+  .ea-hp-hero-split-gallery {
+    margin-top: 0 !important;
+  }
+
+  .ea-mobile-hero-search {
+    display: block !important;
+    width: 100% !important;
+    margin: 16px 0 24px !important;
+  }
+
+  .ea-mobile-hero-search form {
+    display: flex !important;
+    align-items: center !important;
+    gap: 0 !important;
+    width: 100% !important;
+    background: #ffffff !important;
+    border: 1px solid rgba(20, 54, 92, 0.14) !important;
+    border-radius: 999px !important;
+    overflow: hidden !important;
+    box-shadow: 0 12px 28px rgba(20, 54, 92, 0.12) !important;
+  }
+
+  .ea-mobile-hero-search input {
+    flex: 1 1 auto !important;
+    min-width: 0 !important;
+    height: 52px !important;
+    border: 0 !important;
+    background: transparent !important;
+    color: #14365C !important;
+    font-size: 15px !important;
+    padding: 0 18px !important;
+    box-shadow: none !important;
+    outline: none !important;
+  }
+
+  .ea-mobile-hero-search input::placeholder {
+    color: #64748b !important;
+  }
+
+  .ea-mobile-hero-search button {
+    width: 56px !important;
+    height: 52px !important;
+    border: 0 !important;
+    background: #14365C !important;
+    color: #ffffff !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex: 0 0 56px !important;
+    padding: 0 !important;
+  }
+}
+
+@media (max-width: 767px) {
+  #ea-hp-hero {
+    height: auto !important;
+    min-height: 0 !important;
+    align-items: flex-start !important;
+    padding: 0 0 32px !important;
+  }
+
+  .ea-hp-hero-split-container {
+    min-height: 0 !important;
+    height: auto !important;
+    align-items: stretch !important;
+  }
+
+  .ea-hp-hero-split-text {
+    margin-top: 0 !important;
+  }
+
+  .ea-hp-hero-split-gallery {
+    margin-top: 0 !important;
+  }
+}
 </style>
 
 <!-- ═══════════════════════════════════════════
@@ -590,7 +685,15 @@ if ( empty( $single_slides ) ) {
     <!-- ── OPTION 1: APPLE-STYLE CINEMATIC SPLIT ── -->
     <div class="ea-hp-hero-split-container">
       <div class="ea-hp-hero-split-text">
-        <span class="ea-hp-hero-label"><?php echo $first_slide ? esc_html( $first_slide['eyebrow'] ) : 'Exhibition &middot; Signage &middot; Branding'; ?></span>
+        <div class="ea-mobile-hero-search" aria-label="Search products">
+          <form action="<?php echo esc_url( home_url( '/' ) ); ?>" method="get" role="search">
+            <input type="search" name="s" placeholder="Search products or services" value="<?php echo esc_attr( get_search_query() ); ?>" autocomplete="off" />
+            <button type="submit" aria-label="Search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            </button>
+            <input type="hidden" name="post_type" value="product" />
+          </form>
+        </div>
         <h1><?php echo $first_slide ? esc_html( $first_slide['heading'] ) : 'Premium Exhibition, Signage &amp; Branding Company'; ?></h1>
         <p><?php echo $first_slide ? esc_html( $first_slide['text'] ) : ''; ?></p>
 
@@ -625,7 +728,15 @@ if ( empty( $single_slides ) ) {
       
       <!-- Top Left: Main Copy Card -->
       <div class="ea-bento-card-main">
-        <span class="ea-hp-hero-label"><?php echo $first_slide ? esc_html( $first_slide['eyebrow'] ) : 'Exhibition &middot; Signage &middot; Branding'; ?></span>
+        <div class="ea-mobile-hero-search" aria-label="Search products">
+          <form action="<?php echo esc_url( home_url( '/' ) ); ?>" method="get" role="search">
+            <input type="search" name="s" placeholder="Search products or services" value="<?php echo esc_attr( get_search_query() ); ?>" autocomplete="off" />
+            <button type="submit" aria-label="Search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            </button>
+            <input type="hidden" name="post_type" value="product" />
+          </form>
+        </div>
         <h1><?php echo $first_slide ? esc_html( $first_slide['heading'] ) : 'Premium Exhibition, Signage &amp; Branding'; ?></h1>
         <p><?php echo $first_slide ? esc_html( $first_slide['text'] ) : ''; ?></p>
         
@@ -685,7 +796,15 @@ if ( empty( $single_slides ) ) {
     <div class="ea-hp-hero-bg-overlay-dark"></div>
 
     <div class="ea-hp-hero-inner-center">
-      <span class="ea-hp-hero-label"><?php echo $first_slide ? esc_html( $first_slide['eyebrow'] ) : 'Exhibition &middot; Signage &middot; Branding'; ?></span>
+      <div class="ea-mobile-hero-search" aria-label="Search products">
+        <form action="<?php echo esc_url( home_url( '/' ) ); ?>" method="get" role="search">
+          <input type="search" name="s" placeholder="Search products or services" value="<?php echo esc_attr( get_search_query() ); ?>" autocomplete="off" />
+          <button type="submit" aria-label="Search">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          </button>
+          <input type="hidden" name="post_type" value="product" />
+        </form>
+      </div>
       <h1><?php echo $first_slide ? esc_html( $first_slide['heading'] ) : 'Premium Exhibition, Signage &amp; Branding Company'; ?></h1>
       <p><?php echo $first_slide ? esc_html( $first_slide['text'] ) : ''; ?></p>
       
@@ -717,11 +836,6 @@ if ( empty( $single_slides ) ) {
   }, 7000); // 7-second peaceful pause
 })();
 </script>
-
-<!-- ═══════════════════════════════════════════
-     SECTION 2 — TRUST STRIP
-     ═══════════════════════════════════════════ -->
-<section id="ea-hp-trust-strip">
 
 <!-- ═══════════════════════════════════════════
      SECTION 2 — TRUST STRIP

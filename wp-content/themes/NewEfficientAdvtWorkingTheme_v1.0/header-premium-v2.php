@@ -676,6 +676,40 @@ strong, b {
   opacity: 1;
   transform: translateX(0);
 }
+
+@media (max-width: 991px) {
+  .ea-mega-panel {
+    display: none !important;
+    position: static !important;
+    top: auto !important;
+    left: auto !important;
+    width: 100% !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    transform: none !important;
+    padding: 0 !important;
+    border-top: none !important;
+    box-shadow: none !important;
+    background: #17385f !important;
+  }
+
+  .ea-mega-item.is-open > .ea-mega-panel {
+    display: block !important;
+  }
+
+  .ea-mega-panel-inner,
+  .ea-mega-grid {
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+
+  .ea-mega-grid {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    width: 100% !important;
+    gap: 12px !important;
+  }
+}
 </style>
 <div id="header">
   <!-- Row 1: Top bar — address · phone · email · social -->
