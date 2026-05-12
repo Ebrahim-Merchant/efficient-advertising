@@ -557,23 +557,6 @@ body.ea-preview-active-v2 #ea-hp-hero .ea-hp-hero-label {
 }
 
 
-/* V2 GLOBAL INDICATOR (Bottom Right) */
-body.ea-preview-active-v2::after {
-  content: "V2 MIRROR ACTIVE";
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #FFC107;
-  color: #000;
-  padding: 4px 8px;
-  font-size: 10px;
-  font-weight: 900;
-  border-radius: 4px;
-  z-index: 999999;
-  pointer-events: none;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-}
-
 /* ── PTR-005: CINEMATIC SCROLL ANIMATIONS ── */
 .ea-reveal {
   opacity: 0;
@@ -733,4 +716,3 @@ body.ea-preview-active-v2 .portfolio-item:hover {
   letter-spacing: 0.08em !important;
   white-space: nowrap !important;
 }
-

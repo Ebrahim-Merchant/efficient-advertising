@@ -423,8 +423,9 @@ strong, b {
 
 /* Hide Redundant Floating WA Icon on Mobile (Audit H-08) */
 @media (max-width: 767px) {
-  .ht-ctc-chat, .ccw_plugin, .ht_ctc_widget, [id^="ht-ctc-chat"], #ht-ctc-chat { 
-    display: none !important; 
+  .ht-ctc-chat, .ccw_plugin, .ht_ctc_widget, [id^="ht-ctc-chat"], #ht-ctc-chat,
+  .ea-ai-bubble {
+    display: none !important;
   }
 }
 
