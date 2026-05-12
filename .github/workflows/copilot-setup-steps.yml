@@ -1,0 +1,68 @@
+name: Copilot Setup Steps
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - .github/workflows/copilot-setup-steps.yml
+  pull_request:
+    paths:
+      - .github/workflows/copilot-setup-steps.yml
+
+jobs:
+  copilot-setup-steps:
+    runs-on: ubuntu-latest
+    timeout-minutes: 59
+
+    permissions:
+      contents: read
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v5
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Set up PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: "8.3"
+          extensions: mysqli, mbstring, curl, json, xml, zip, intl, gd
+
+      - name: Install system packages
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y jq rsync unzip zip
+
+      - name: Install WP-CLI
+        run: |
+          mkdir -p "$HOME/.local/bin"
+          curl -fsSL https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar -o "$HOME/.local/bin/wp"
+          chmod +x "$HOME/.local/bin/wp"
+          echo "$HOME/.local/bin" >> "$GITHUB_PATH"
+          wp --info
+
+      - name: Install Wasmer CLI
+        run: |
+          curl -fsSL https://get.wasmer.io -o install-wasmer.sh
+          sh install-wasmer.sh
+          echo "$HOME/.wasmer/bin" >> "$GITHUB_PATH"
+          "$HOME/.wasmer/bin/wasmer" --version
+
+      - name: Build staged Wasmer app
+        run: |
+          chmod +x scripts/sync-wasmer-app.sh
+          ./scripts/sync-wasmer-app.sh
+
+      - name: Verify staged app layout
+        run: |
+          test -f app/index.php
+          test -f app/wp-config.php
+          test -d app/wp-admin
+          test -d app/wp-includes
+          test -d app/wp-content/themes
+          test -d app/wp-content/plugins
+          test -d app/wp-content/mu-plugins
