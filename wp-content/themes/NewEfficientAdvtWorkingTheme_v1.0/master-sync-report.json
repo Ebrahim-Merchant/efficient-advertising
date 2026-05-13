@@ -1,0 +1,104 @@
+{
+    "workbook_rows": 727,
+    "processed_rows": 727,
+    "skipped_no_sku": 0,
+    "created_products": 0,
+    "updated_products": 727,
+    "assigned_parent_terms": 727,
+    "assigned_child_terms": 727,
+    "seo_updated": 1454,
+    "alt_updated": 725,
+    "errors": 0,
+    "skipped_non_product_posts": 0,
+    "error_samples": [],
+    "samples": [
+        {
+            "sku": "PS-001",
+            "product_id": 1053,
+            "title": "Matt Lamination 350gsm",
+            "slug": "matt-lamination-350gsm",
+            "category": "Print & Stationery",
+            "sub_category": "Business Cards",
+            "short_description": "Make a lasting first impression with crisp, full-colour standard business cards printed on premium card stock. Available in multiple sizes and weights to suit any brand.",
+            "seo_title": "Standard Business Cards Printing Dubai | efficientadvt.com",
+            "meta_description": "Order professional standard business cards in Dubai. Fast turnaround, full-colour printing, multiple stock options. Get your quote today."
+        },
+        {
+            "sku": "PS-002",
+            "product_id": 1054,
+            "title": "Matt Lamination 400gsm",
+            "slug": "matt-lamination-400gsm",
+            "category": "Print & Stationery",
+            "sub_category": "Business Cards",
+            "short_description": "Make a lasting first impression with crisp, full-colour standard business cards printed on premium card stock. Available in multiple sizes and weights to suit any brand.",
+            "seo_title": "Standard Business Cards Printing Dubai | efficientadvt.com",
+            "meta_description": "Order professional standard business cards in Dubai. Fast turnaround, full-colour printing, multiple stock options. Get your quote today."
+        },
+        {
+            "sku": "PS-003",
+            "product_id": 1055,
+            "title": "Glossy Lamination 400gsm",
+            "slug": "glossy-lamination-400gsm",
+            "category": "Print & Stationery",
+            "sub_category": "Business Cards",
+            "short_description": "Make a lasting first impression with crisp, full-colour standard business cards printed on premium card stock. Available in multiple sizes and weights to suit any brand.",
+            "seo_title": "Standard Business Cards Printing Dubai | efficientadvt.com",
+            "meta_description": "Order professional standard business cards in Dubai. Fast turnaround, full-colour printing, multiple stock options. Get your quote today."
+        },
+        {
+            "sku": "PS-004",
+            "product_id": 1056,
+            "title": "Spot UV Matt Lamination 400gsm",
+            "slug": "spot-uv-matt-lamination-400gsm",
+            "category": "Print & Stationery",
+            "sub_category": "Business Cards",
+            "short_description": "Make a lasting first impression with crisp, full-colour standard business cards printed on premium card stock. Available in multiple sizes and weights to suit any brand.",
+            "seo_title": "Standard Business Cards Printing Dubai | efficientadvt.com",
+            "meta_description": "Order professional standard business cards in Dubai. Fast turnaround, full-colour printing, multiple stock options. Get your quote today."
+        },
+        {
+            "sku": "PS-005",
+            "product_id": 1057,
+            "title": "Gold Foil Matt Lamination 400gsm",
+            "slug": "gold-foil-matt-lamination-400gsm",
+            "category": "Print & Stationery",
+            "sub_category": "Business Cards",
+            "short_description": "Make a lasting first impression with crisp, full-colour standard business cards printed on premium card stock. Available in multiple sizes and weights to suit any brand.",
+            "seo_title": "Standard Business Cards Printing Dubai | efficientadvt.com",
+            "meta_description": "Order professional standard business cards in Dubai. Fast turnaround, full-colour printing, multiple stock options. Get your quote today."
+        },
+        {
+            "sku": "PS-006",
+            "product_id": 1058,
+            "title": "Gold Foil Spot UV Matt Lamination 400gsm",
+            "slug": "gold-foil-spot-uv-matt-lamination-400gsm",
+            "category": "Print & Stationery",
+            "sub_category": "Business Cards",
+            "short_description": "Make a lasting first impression with crisp, full-colour standard business cards printed on premium card stock. Available in multiple sizes and weights to suit any brand.",
+            "seo_title": "Standard Business Cards Printing Dubai | efficientadvt.com",
+            "meta_description": "Order professional standard business cards in Dubai. Fast turnaround, full-colour printing, multiple stock options. Get your quote today."
+        },
+        {
+            "sku": "PS-007",
+            "product_id": 1059,
+            "title": "Art Paper (Without Lamination) 400gsm",
+            "slug": "art-paper-without-lamination-400gsm",
+            "category": "Print & Stationery",
+            "sub_category": "Business Cards",
+            "short_description": "Make a lasting first impression with crisp, full-colour standard business cards printed on premium card stock. Available in multiple sizes and weights to suit any brand.",
+            "seo_title": "Standard Business Cards Printing Dubai | efficientadvt.com",
+            "meta_description": "Order professional standard business cards in Dubai. Fast turnaround, full-colour printing, multiple stock options. Get your quote today."
+        },
+        {
+            "sku": "PS-008",
+            "product_id": 1060,
+            "title": "Business Card Box",
+            "slug": "business-card-box",
+            "category": "Print & Stationery",
+            "sub_category": "Business Cards",
+            "short_description": "Make a lasting first impression with crisp, full-colour standard business cards printed on premium card stock. Available in multiple sizes and weights to suit any brand.",
+            "seo_title": "Standard Business Cards Printing Dubai | efficientadvt.com",
+            "meta_description": "Order professional standard business cards in Dubai. Fast turnaround, full-colour printing, multiple stock options. Get your quote today."
+        }
+    ]
+}
